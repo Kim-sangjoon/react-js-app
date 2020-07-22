@@ -1,23 +1,26 @@
 {
   "files": {
-    "main.css": "/static/css/main.5f361e03.chunk.css",
-    "main.js": "/static/js/main.d9b30b67.chunk.js",
-    "main.js.map": "/static/js/main.d9b30b67.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.524f0e3e.js",
-    "runtime-main.js.map": "/static/js/runtime-main.524f0e3e.js.map",
-    "static/js/2.2aacd66b.chunk.js": "/static/js/2.2aacd66b.chunk.js",
-    "static/js/2.2aacd66b.chunk.js.map": "/static/js/2.2aacd66b.chunk.js.map",
-    "index.html": "/index.html",
-    "precache-manifest.a3e8ebb55cfe60ba2bd0526f452baf54.js": "/precache-manifest.a3e8ebb55cfe60ba2bd0526f452baf54.js",
-    "service-worker.js": "/service-worker.js",
-    "static/css/main.5f361e03.chunk.css.map": "/static/css/main.5f361e03.chunk.css.map",
-    "static/js/2.2aacd66b.chunk.js.LICENSE.txt": "/static/js/2.2aacd66b.chunk.js.LICENSE.txt",
-    "static/media/logo.svg": "/static/media/logo.5d5d9eef.svg"
+    "main.css": "/react-js-app/static/css/main.5ecd60fb.chunk.css",
+    "main.js": "/react-js-app/static/js/main.a2c38a99.chunk.js",
+    "main.js.map": "/react-js-app/static/js/main.a2c38a99.chunk.js.map",
+    "runtime-main.js": "/react-js-app/static/js/runtime-main.721a1f26.js",
+    "runtime-main.js.map": "/react-js-app/static/js/runtime-main.721a1f26.js.map",
+    "static/css/2.0983e65f.chunk.css": "/react-js-app/static/css/2.0983e65f.chunk.css",
+    "static/js/2.418a8cc7.chunk.js": "/react-js-app/static/js/2.418a8cc7.chunk.js",
+    "static/js/2.418a8cc7.chunk.js.map": "/react-js-app/static/js/2.418a8cc7.chunk.js.map",
+    "index.html": "/react-js-app/index.html",
+    "precache-manifest.6912057a9f63c693a68c0078e1420c26.js": "/react-js-app/precache-manifest.6912057a9f63c693a68c0078e1420c26.js",
+    "service-worker.js": "/react-js-app/service-worker.js",
+    "static/css/2.0983e65f.chunk.css.map": "/react-js-app/static/css/2.0983e65f.chunk.css.map",
+    "static/css/main.5ecd60fb.chunk.css.map": "/react-js-app/static/css/main.5ecd60fb.chunk.css.map",
+    "static/js/2.418a8cc7.chunk.js.LICENSE.txt": "/react-js-app/static/js/2.418a8cc7.chunk.js.LICENSE.txt",
+    "static/media/semantic.min.css": "/react-js-app/static/media/outline-icons.ef60a4f6.woff"
   },
   "entrypoints": [
-    "static/js/runtime-main.524f0e3e.js",
-    "static/js/2.2aacd66b.chunk.js",
-    "static/css/main.5f361e03.chunk.css",
-    "static/js/main.d9b30b67.chunk.js"
+    "static/js/runtime-main.721a1f26.js",
+    "static/css/2.0983e65f.chunk.css",
+    "static/js/2.418a8cc7.chunk.js",
+    "static/css/main.5ecd60fb.chunk.css",
+    "static/js/main.a2c38a99.chunk.js"
   ]
 }
