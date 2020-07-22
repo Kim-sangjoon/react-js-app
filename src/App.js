@@ -5,7 +5,7 @@ class ThemingLayout extends Component {
   render() {
    return (
     <Container style={{ marginTop: '3em' }}>
-      <Header as='h1'>Theming Examples</Header>
+      <Header as='h1'>github hosting 테스트</Header>
 
       <Header as='h2' dividing>
         Site
