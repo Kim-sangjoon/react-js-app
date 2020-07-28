@@ -3,7 +3,7 @@ import { Button, Container, Divider, Grid, Header, Image, Menu, Segment } from '
 
 const ThemingLayout = () => (
   <Container style={{ marginTop: '3em' }}>
-    <Header as='h1'>Github React 웹호스팅 테스트!!!!</Header>
+    <Header as='h1'>Github React</Header>
 
     <Header as='h2' dividing>
       Site
