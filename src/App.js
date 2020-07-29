@@ -1,7 +1,13 @@
 import React, { Component } from 'react';
-import { Button, Container, Divider, Grid, Header, Image, Menu, Segment } from 'semantic-ui-react';
+import { Button, Container, Divider, Grid, Header, Image, Menu, Segment, Confirm } from 'semantic-ui-react';
 
 class ThemingLayout extends Component {
+
+  state = { open: false }
+
+  open = () => this.setState({ open: true })
+  close = () => this.setState({ open: false })  
+  
   render() {
     return (
       <Container style={{ marginTop: '3em' }}>
@@ -276,6 +282,15 @@ class ThemingLayout extends Component {
             </Segment>
           </Grid.Column>
         </Grid>
+
+        <Divider />
+
+        <Button onClick={this.open}>comfirm</Button>
+        <Confirm 
+          open={this.state.open}
+          onCancel={this.close}
+          onConfirm={this.close}
+        />
       </Container>
     )
   }
