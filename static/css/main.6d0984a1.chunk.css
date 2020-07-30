@@ -1,0 +1,2 @@
+body{background-color:#fff;color:#484848}.dark-mode,body{transition:background-color 1s}.dark-mode{background-color:#484848;color:#fff}.dark-mode .ui.header,.dark-mode .ui.menu .item{color:#fff}.dark-mode .ui.dividing.header,.dark-mode .ui.secondary.pointing.menu{border-bottom:1px solid #d4d4d4}.dark-mode .ui.divider:not(.vertical):not(.horizontal){border-top:1px solid #d4d4d4}.dark-mode .ui.modal{color:#000}.ui.segment{background-color:transparent}
+/*# sourceMappingURL=main.6d0984a1.chunk.css.map */
