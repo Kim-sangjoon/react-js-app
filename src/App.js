@@ -1,12 +1,25 @@
 import React, { Component } from 'react';
+import { Button, Container, Divider, Grid, Header, Image, Menu, Segment, Confirm } from 'semantic-ui-react';
 import ThemingLayout from './ThemingLayout';
 
 
 class App extends Component {
-
+  chgMode = () => {
+    const element = document.body;
+    element.classList.toggle("dark-mode");
+    
+    if (element.classList == "dark-mode") {
+      document.querySelector("#darkbtn").innerText = "밝게";   		
+    } else {
+      document.querySelector("#darkbtn").innerText = "어둡게";
+    }
+ }
   render() {
-    return (   
-      <ThemingLayout />   
+    return (
+      <Segment>
+        <Button id='darkbtn' onClick={this.chgMode}>어둡게</Button>
+        <ThemingLayout />
+      </Segment>
     );
   }
 } 

@@ -1,2 +1,54 @@
-$bgcolor : #e9e9e9;
-body {background-color: $bgcolor}
+
+$darkBgColor: #484848;
+$darkTxtColor: #fff;
+$darkLineColor: #d4d4d4;
+$lightBgColor: #fff;
+$lightTxtColor: #484848;
+
+
+body {
+    background-color: $lightBgColor;
+    color: $lightTxtColor;
+    -webkit-transition: background-color 1s;
+    transition: background-color 1s;
+}
+
+// .dark-mode {
+//     background-color: $darkBgColor;
+//     color: $darkTxtColor;
+//     -webkit-transition: background-color 1s;
+//     transition: background-color 1s;    
+// }
+
+.dark-mode {
+    background-color: $darkBgColor;
+    color: $darkTxtColor;
+    -webkit-transition: background-color 1s;
+    transition: background-color 1s; 
+
+    .ui.header {
+        color: $darkTxtColor;
+    }
+    .ui.menu{
+        .item {
+            color: $darkTxtColor;
+        }
+    }
+    .ui.dividing.header {
+        border-bottom: 1px solid $darkLineColor;
+    }
+    .ui.secondary.pointing.menu {
+        border-bottom: 1px solid $darkLineColor;
+    }
+    .ui.divider:not(.vertical):not(.horizontal){
+        border-top: 1px solid $darkLineColor;
+    }
+    .ui.modal {
+        color:#000;
+    }
+           
+}
+.ui.segment {
+    background-color: transparent;
+}
+

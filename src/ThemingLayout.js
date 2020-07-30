@@ -4,7 +4,7 @@ import { ReactComponent as Watch } from './images/watch.svg';
 
 
 class ThemingLayout extends Component {
-  confirmText = '평생공부할껍니까?'
+  confirmText = '저장 하시겠습니까?'
   state = { open: false }
 
   open = () => this.setState({ open: true })
