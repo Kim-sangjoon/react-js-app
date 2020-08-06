@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Button, Container, Divider, Grid, Header, Image, Menu, Segment, Confirm } from 'semantic-ui-react';
+import { Button, Segment } from 'semantic-ui-react';
 import ThemingLayout from './ThemingLayout';
 
 
@@ -8,7 +8,7 @@ class App extends Component {
     const element = document.body;
     element.classList.toggle("dark-mode");
     
-    if (element.classList == "dark-mode") {
+    if (element.className === "dark-mode") {
       document.querySelector("#darkbtn").innerText = "밝게";   		
     } else {
       document.querySelector("#darkbtn").innerText = "어둡게";
