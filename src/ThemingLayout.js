@@ -27,7 +27,10 @@ class ThemingLayout extends Component {
             <Header as='h4'>Heading 4</Header>
             <Header as='h5'>Heading 5</Header>
             <p>
-              빌드방법 : npm run build
+              빌드 : npm run build              
+            </p>
+            <p>
+              배포 : npm run deploy
             </p>
             <p>
               Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et
