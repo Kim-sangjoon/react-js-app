@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Button, Container, Divider, Grid, Header, Image, Menu, Segment, Confirm } from 'semantic-ui-react';
-import { ReactComponent as Watch } from './images/watch.svg';
+import { ReactComponent as Watch } from '../images/watch.svg';
 
 
 class ThemingLayout extends Component {
@@ -26,9 +26,7 @@ class ThemingLayout extends Component {
             <Header as='h3'>Heading 3</Header>
             <Header as='h4'>Heading 4</Header>
             <Header as='h5'>Heading 5</Header>
-            <p>
-              빌드방법 : npm run build
-            </p>
+    
             <p>
               Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et
               magnis dis parturient montes, nascetur ridiculus mus. Nullam id dolor id nibh ultricies
