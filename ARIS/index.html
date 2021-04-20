@@ -35,7 +35,7 @@
                             <ul>
                                 <li><i></i><span>마케팅</span><p class="menu_btn"></p></li>
                                 <li><i></i><span>고객관리</span><p class="menu_btn"></p></li>
-                                <li><i onclick="megaOpen()"></i><span class="tooltip" title="메가명 클릭 시 해당 메가 다이어그램 MAP 페이지로 이동예정">영업</span><p class="menu_btn"></p></li>
+                                <li><i onclick="mega01Open()"></i><span class="tooltip" title="메가명 클릭 시 해당 메가 다이어그램 MAP 페이지로 이동예정">영업</span><p class="menu_btn"></p></li>
                                 <li><i></i><span>빌링</span><p class="menu_btn"></p></li>
                                 <li><i></i><span>파트너관리</span><p class="menu_btn"></p></li>
                                 <li><i></i><span>단말관리</span><p class="menu_btn"></p></li>
@@ -265,7 +265,7 @@
                                 <li><i></i><span>전략기획</span><p class="menu_btn"></p></li>
                                 <li><i></i><span>경영관리</span><p class="menu_btn"></p></li>
                                 <li><i></i><span>인사관리</span><p class="menu_btn"></p></li>
-                                <li><i></i><span>IT서비스관리</span><p class="menu_btn"></p></li>
+                                <li><i onclick="mega02Open()"></i><span>IT서비스관리</span><p class="menu_btn"></p></li>
                                 <li><i></i><span>일반관리</span><p class="menu_btn"></p></li>
                             </ul>
                         </div>
@@ -307,14 +307,14 @@
         </div>
     </div>
 
-    <!-- megadrop popup -->
-    <div class="megadrop_wrap">
+    <!-- megadrop popup 영업 -->
+    <div id="mega01" class="megadrop_wrap">
         <div class="megadrop_head">
             <div class="lta">
                 <span class="txt_bold">영업</span>
             </div>
             <div class="rta">
-                <button class="btn_close white icon" onclick="megaClose()">닫기</button>
+                <button class="btn_close white icon" onclick="mega01Close()">닫기</button>
             </div>
         </div>
         <div class="megadrop_body">
@@ -455,6 +455,73 @@
             </div>
         </div>
     </div>
+
+    <!-- megadrop popup IT서비스관리-->
+    <div id="mega02" class="megadrop_wrap">
+        <div class="megadrop_head">
+            <div class="lta">
+                <span class="txt_bold">영업</span>
+            </div>
+            <div class="rta">
+                <button class="btn_close white icon" onclick="mega02Close()">닫기</button>
+            </div>
+        </div>
+        <div class="megadrop_body">
+            <div class="list_type2">
+                <ul>
+                    <li>
+                        <h3>가입관리</h3>
+                        <span>서비스가입_컨슈머</span>
+                        <ul>
+                            <li>가입_모바일(신규/번호이동)길어서 잘리는 메뉴</li>
+                            <li>가입_모바일(선불)</li>
+                            <li>가입_소호(개별)</li>
+                            <li>가입_스마트홈(개별)</li>
+                            <li>가입_스마트홈(홈다회선일괄)</li>
+                            <li>가입_홈IOT_일괄</li>
+                            <li>셀프가입_모바일</li>
+                            <li>셀프가입_스마트홈</li>
+                        </ul>
+                        <span>서비스가입_기업</span>
+                        <ul>
+                            <li>서비스가입_계약가입접수</li>
+                            <li>서비스가입_시내전화</li>
+                            <li>서비스가입_시외전화</li>
+                            <li>서비스가입_기업070(신규)</li>
+                            <li>서비스가입_기업070(변경)</li>
+                            <li>서비스가입_오피스넷(신규)</li>
+                            <li>서비스가입_오피스넷(변경)</li>
+                            <li>서비스가입_오피스넷(비대면 변...</li>
+                            <li>서비스가입_구내통신</li>
+                            <li>서비스가입_콜링카드</li>
+                            <li>서비스가입_국제시외</li>
+                            <li>서비스가입_기업부가</li>
+                        </ul>
+                    </li>
+                    <li class="last">
+                        <h3>영업활동관리</h3>
+                        <span>서비스관리_기업</span>
+                        <ul>
+                            <li>P010.서비스재약정</li>
+                            <li>P020.서비스미납정지가입</li>
+                            <li>P030.서비스일시정지가입(온라인)</li>
+                            <li>P040.서비스일시정지가입(연동)</li>
+                            <li>P050.서비스일시해제가입(시스템)</li>
+                            <li>P060.서비스일시해제가입(온라인)</li>
+                            <li>P070.서비스일시해제가입(연동)</li>
+                            <li>P080.서비스일반해지가입(시스템해지)</li>
+                            <li>P090.서비스일반해지가입(기업온라인...</li>
+                            <li>P100.서비스일반해지가입(연동해지)</li>
+                            <li>P110.서비스미납해제가입</li>
+                            <li>P120.서비스미납해지가입</li>
+                            <li>P130.서비스장기미처리취소</li>
+                            <li>P140.가입진척관리</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
     <script>
     // onload ready
     $(document).ready(function(){
@@ -490,12 +557,11 @@
         }
     });
     // 팝업열고닫기
-    function megaOpen(){
-        $('.megadrop_wrap').fadeIn(200);
-    }
-    function megaClose(){
-        $('.megadrop_wrap').fadeOut(200);
-    }
+    function mega01Open(){$('#mega01').fadeIn(200)}
+    function mega01Close(){$('#mega01').fadeOut(200)}
+
+    function mega02Open(){$('#mega02').fadeIn(200)}
+    function mega02Close(){$('#mega02').fadeOut(200)}
     </script>
 </body>
 </html>
