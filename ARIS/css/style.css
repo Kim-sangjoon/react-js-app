@@ -191,9 +191,9 @@ body{background: #E8EFF5; height: 100%;}
 .megadrop_body .list_type2{padding-left: 16px; padding-top: 13px;}
 .megadrop_body .list_type2 > h3{font-size: 15px; line-height: 16px; padding-bottom: 22px; margin-bottom: 8px; cursor: default;}
 .megadrop_body .list_type2 > ul{display: flex; flex-direction: row; width: 226px; height: calc(100% - 42px);}
-.megadrop_body .list_type2 > ul > li{flex: none; color: #333333; font-size: 12px; height: fit-content; padding-right: 16px; border-right: 1px dashed #DAE3ED; padding-left: 16px; cursor: default;}
+.megadrop_body .list_type2 > ul > li{flex: none; color: #333333; font-size: 12px; padding-right: 16px; padding-left: 16px; margin-bottom: -26px; border-right: 1px dashed #DAE3ED; cursor: default;}
 .megadrop_body .list_type2.feature > ul > li{border-right: 1px solid transparent;}
-.megadrop_body .list_type2.feature > ul > li.feature_end{border-right: 1px dashed #DAE3ED; padding-right: 55px;}
+.megadrop_body .list_type2.feature > ul > li.feature_end{border-right: 1px dashed #DAE3ED; padding-right: 55px;} 
 .megadrop_body .list_type2 > ul > li:first-child{padding-left: 0px;}
 .megadrop_body .list_type2 > ul > li > ul{font-family: 'LGSmHaR'; font-size: 12px; line-height: 26px; color: #424952; padding-left: 15px; margin-bottom: 22px;}
 .megadrop_body .list_type2 > ul > li.notitle > ul{padding-top: 37px;}
