@@ -1,0 +1,94 @@
+<hashtable>
+    <data hashkey="screenConfig">
+        <screen pattern=" - #{meta_programName}" use="true"/>
+    </data>
+    <data hashkey="dataCollection">
+        <properties>
+            <property default="" description="dataCollection 명"
+                hidden="N" name="meta_name" necessary="Y" type="string"/>
+            <property default="" description="dataCollection 설명"
+                hidden="N" name="meta_desc" necessary="Y" type="multiline"/>
+        </properties>
+    </data>
+    <data hashkey="component">
+        <properties>
+            <property default="" description="component명" hidden="N"
+                name="meta_name" necessary="Y" type="string"/>
+            <property default="" description="component 설명" hidden="N"
+                name="meta_desc" necessary="Y" type="multiline"/>
+        </properties>
+    </data>
+    <data hashkey="head">
+        <properties>
+            <property default="" description="화면 ID" hidden="N"
+                name="meta_screenId" necessary="Y" type="string"/>
+            <property default="" description="화면명" hidden="N"
+                name="meta_programName" necessary="Y" type="string"/>
+            <property default="" description="화면 설명" hidden="N"
+                name="meta_desc" necessary="Y" type="multiline"/>
+            <property default="" description="생성자" hidden="N"
+                name="meta_author" necessary="Y" type="string"/>
+            <property default="" description="화면 유형" hidden="N"
+                name="meta_type" necessary="Y" type="combobox">
+                <option name="메인" value="메인"/>
+                <option name="보고서" value="보고서"/>
+                <option name="팝업" value="팝업"/>
+            </property>
+            <property default="" description="화면처리절차" hidden="N"
+                name="meta_process" necessary="Y" type="multiline"/>
+            <property default="" description="업무규칙" hidden="N"
+                name="meta_rule" necessary="Y" type="multiline"/>
+            <property default="" description="비고" hidden="N"
+                name="meta_etc" necessary="Y" type="multiline"/>
+        </properties>
+    </data>
+    <data hashkey="event">
+        <properties>
+            <property default="" description="event명" hidden="N"
+                name="metaev_name" necessary="Y" type="string"/>
+            <property default="" description="event 설명" hidden="N"
+                name="metaev_desc" necessary="Y" type="multiline"/>
+            <property default="" description="event 처리절차" hidden="N"
+                name="metaev_process" necessary="Y" type="multiline"/>
+            <property default="" description="event 업무규칙" hidden="N"
+                name="metaev_rule" necessary="Y" type="multiline"/>
+            <property default="" description="비고" hidden="N"
+                name="metaev_etc" necessary="Y" type="multiline"/>
+        </properties>
+    </data>
+    <data hashkey="submission">
+        <properties>
+            <property default="" description="submission 명" hidden="N"
+                name="meta_name" necessary="Y" type="string"/>
+            <property default="" description="submission 설명" hidden="N"
+                name="meta_desc" necessary="Y" type="multiline"/>
+            <property default="" description="submission 처리절차"
+                hidden="N" name="meta_process" necessary="Y" type="multiline"/>
+            <property default="" description="submission 업무규칙"
+                hidden="N" name="meta_rule" necessary="Y" type="multiline"/>
+            <property default="" description="비고" hidden="N"
+                name="meta_etc" necessary="Y" type="multiline"/>
+        </properties>
+    </data>
+    <data hashkey="workflow">
+        <properties>
+            <property default="" description="submission 명" hidden="N"
+                name="meta_name" necessary="Y" type="string"/>
+            <property default="" description="submission 설명" hidden="N"
+                name="meta_desc" necessary="Y" type="multiline"/>
+            <property default="" description="submission 처리절차"
+                hidden="N" name="meta_process" necessary="Y" type="multiline"/>
+            <property default="" description="submission 업무규칙"
+                hidden="N" name="meta_rule" necessary="Y" type="multiline"/>
+            <property default="" description="비고" hidden="N"
+                name="meta_etc" necessary="Y" type="multiline"/>
+        </properties>
+    </data>
+    <data hashkey="metaConfig">
+        <metainfo engmeta="" kormeta="" lengthmeta="" typemeta=""
+            use="false" virtualpointmeta="">
+            <rtrvmeta encoding="" mediatype="" timeout="30" url="http://"/>
+            <changemeta encoding="" mediatype="" timeout="30" url="http://"/>
+        </metainfo>
+    </data>
+</hashtable>

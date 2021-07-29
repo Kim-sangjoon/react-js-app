@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:ev="http://www.w3.org/2001/xml-events"
+    xmlns:w2="http://www.inswave.com/websquare" xmlns:xf="http://www.w3.org/2002/xforms">
+    <head meta_programName="툴팁 메시지">
+    	<w2:type>DEFAULT</w2:type>
+    	<w2:buildDate />
+    	<xf:model>
+    		<xf:instance>
+    			<data xmlns="" />
+    		</xf:instance>
+    		<w2:dataCollection baseNode="map">
+    			<w2:dataList baseNode="list" repeatNode="map" id="dataList1" saveRemovedData="true">
+    				<w2:columnInfo>
+    					<w2:column id="col1" name="name1" dataType="text"></w2:column>
+    					<w2:column id="col2" name="name2" dataType="text"></w2:column>
+    					<w2:column id="col3" name="name3" dataType="text"></w2:column>
+    					<w2:column id="col4" name="name4" dataType="text"></w2:column>
+    					<w2:column id="col5" name="name5" dataType="text"></w2:column>
+    				</w2:columnInfo>
+    				<w2:data use="true">
+    					<w2:row>
+    						<col1><![CDATA[Eget]]></col1>
+    						<col2><![CDATA[content]]></col2>
+    						<col3><![CDATA[2017-12-06]]></col3>
+    						<col4><![CDATA[content]]></col4>
+    						<col5><![CDATA[12,393]]></col5>
+    					</w2:row>
+    					<w2:row>
+    						<col1><![CDATA[tristique]]></col1>
+    						<col2><![CDATA[commodo suspendisse]]></col2>
+    						<col3><![CDATA[2017-12-06]]></col3>
+    						<col4><![CDATA[content]]></col4>
+    						<col5><![CDATA[12,393]]></col5>
+    					</w2:row>
+    					<w2:row>
+    						<col1><![CDATA[vivamus]]></col1>
+    						<col2><![CDATA[content]]></col2>
+    						<col3><![CDATA[2017-12-06]]></col3>
+    						<col4><![CDATA[content]]></col4>
+    						<col5><![CDATA[2,393]]></col5>
+    					</w2:row>
+    				</w2:data>
+    			</w2:dataList>
+    			<w2:dataList baseNode="list" repeatNode="map" id="dataList2" saveRemovedData="true">
+    				<w2:columnInfo>
+    					<w2:column id="col1" name="name1" dataType="text"></w2:column>
+    					<w2:column id="col2" name="name2" dataType="text"></w2:column>
+    					<w2:column id="col3" name="name3" dataType="text"></w2:column>
+    					<w2:column id="col4" name="name4" dataType="text"></w2:column>
+    				</w2:columnInfo>
+    				<w2:data use="true">
+    					<w2:row>
+    						<col1><![CDATA[sub header]]></col1>
+    						<col2><![CDATA[content]]></col2>
+    						<col3><![CDATA[content]]></col3>
+    						<col4><![CDATA[content]]></col4>
+    					</w2:row>
+    					<w2:row>
+    						<col1><![CDATA[sub header]]></col1>
+    						<col2><![CDATA[content]]></col2>
+    						<col3><![CDATA[content]]></col3>
+    						<col4><![CDATA[content]]></col4>
+    					</w2:row>
+    				</w2:data>
+    			</w2:dataList>
+    		</w2:dataCollection>
+    		<w2:workflowCollection></w2:workflowCollection>
+    	</xf:model>
+    	<script type="text/javascript" lazy="false"><![CDATA[
+	scwin.onpageload = function() {
+		/*
+			툴팁 컴포넌트는  udc 탭에서 생성합니다
+			속성 설명
+			 direct : 툴팁 노출 방향  (top ,left,right ,bottom),
+			iconType : 타입에 따라 아이콘 모양을 결정
+			toolTipMessage : 툴팁 메시지
+		*/
+	};
+
+	scwin.onpageunload = function() {
+
+	};
+]]></script>
+    	<w2:require src="/common/udc/udc_tooltipIcon.xml"></w2:require>
+    </head>
+    <body ev:onpageload="scwin.onpageload" ev:onpageunload="scwin.onpageunload">
+    	<xf:group class="sub_wrapper" id="">
+    		<w2:wframe class="page_header" id="" scope="true" src="../../../common/xml/contentsTitle.xml" style=""></w2:wframe>
+    		<xf:group class="page_contents" id=""><xf:group id="" class="page_contents_inner"><xf:group style="" id="" class="module-wrapper">
+    			<xf:group id="" class="dfbox1">
+    				<w2:textbox tagname="h3" style="" id="" label="일반 아이콘" class="fl"></w2:textbox>
+    			</xf:group>
+    			<xf:group style="" id="" class="tbbox">
+    				<xf:group tagname="table" style="" id="" class="w2tb tb">
+    					<w2:attributes>
+    						<w2:summary></w2:summary>
+    					</w2:attributes>
+    					<xf:group tagname="caption">디테일&amp;nbsp;테이블(1단)</xf:group>
+    					<xf:group tagname="colgroup">
+    						<xf:group tagname="col" style="width:18%;"></xf:group>
+    						<xf:group tagname="col" style=""></xf:group>
+    					</xf:group>
+    					<xf:group tagname="tr" style="">
+    						<xf:group tagname="th" style="" class="w2tb_th"><w2:attributes>
+    								<w2:scope>row</w2:scope>
+    							</w2:attributes><w2:textbox tagname="label" style="" id="" label="일반아이콘" class=""></w2:textbox></xf:group>
+    						<xf:group tagname="td" style="" class="w2tb_td">
+    							<w2:attributes>
+    								<w2:colspan>1</w2:colspan>
+    								<w2:rowspan>1</w2:rowspan>
+    							</w2:attributes>
+    							<xf:group tagname="span" style="" id="" class="info tip">
+    								<w2:textbox tagname="i" style="" id="" label="" class="fa fa-info-circle"></w2:textbox>
+    								<w2:textbox tagname="span" style="" id="" label="툴팁을 사용하지 않는 경우 udc를 사용할 필요 없음" class=""></w2:textbox>
+    							</xf:group>
+    						</xf:group>
+    					</xf:group>
+    				</xf:group>
+    			</xf:group>
+
+    		</xf:group><xf:group id="" class="module-wrapper"><xf:group style="" id="" class="dfbox1">
+    				<w2:textbox tagname="h3" style="" id="" label="툴팁 기능 udc 아이콘 방향지정" class="fl"></w2:textbox>
+    			</xf:group><xf:group style="" id="" class="tbbox">
+    				<xf:group tagname="table" style="" id="" class="w2tb tb">
+    					<w2:attributes>
+    						<w2:summary></w2:summary>
+    					</w2:attributes>
+    					<xf:group tagname="caption">디테일&amp;nbsp;테이블(1단)</xf:group>
+    					<xf:group tagname="colgroup">
+    						<xf:group tagname="col" style="width:18%;"></xf:group>
+    						<xf:group tagname="col"></xf:group>
+    						<xf:group tagname="col"></xf:group>
+    						<xf:group tagname="col"></xf:group>
+    						<xf:group tagname="col" style=""></xf:group>
+    					</xf:group>
+    					<xf:group tagname="tr" style="">
+    						<xf:group tagname="th" style="" class="w2tb_th"><w2:attributes>
+    								<w2:scope>row</w2:scope>
+    							</w2:attributes><w2:textbox tagname="label" style="" id="" label="툴팁 방향 지정(udc)" class=""></w2:textbox></xf:group>
+    						<xf:group tagname="td" style="" class="w2tb_td">
+    							<w2:attributes>
+    								<w2:colspan>1</w2:colspan>
+    								<w2:rowspan>1</w2:rowspan>
+    							</w2:attributes>
+    							<xf:group style="" id="" class="tb_ly wauto">
+    								<xf:group style="" id="" class="cell">
+    									<w2:textbox tagname="label" style="" id="" label="Top" class=""></w2:textbox>
+    								</xf:group>
+    								<xf:group id="" class="cell">
+    									<w2:udc_toolTipIcon toolTipMessage="툴팁입니다" iconType="info" style="width:12px;height:18px;" id="udc_toolTipIcon4" direction="top">
+    									</w2:udc_toolTipIcon>
+    								</xf:group>
+    							</xf:group>
+    						</xf:group>
+    						<xf:group tagname="td" class="w2tb_td">
+    							<w2:attributes></w2:attributes>
+    							<xf:group style="" id="" class="tb_ly wauto">
+    								<xf:group style="" id="" class="tb_ly wauto">
+    									<xf:group style="" id="" class="cell">
+    										<w2:textbox tagname="label" style="" id="" label="right" class=""></w2:textbox>
+    									</xf:group>
+    									<xf:group id="" class="cell">
+    										<w2:udc_toolTipIcon toolTipMessage="툴팁입니다" iconType="info" style="width:12px;height:18px;" id="udc_toolTipIcon5" direction="right">
+    										</w2:udc_toolTipIcon>
+    									</xf:group>
+    								</xf:group>
+    							</xf:group>
+    						</xf:group>
+    						<xf:group tagname="td" class="w2tb_td">
+    							<w2:attributes></w2:attributes>
+    							<xf:group style="" id="" class="tb_ly wauto">
+    								<xf:group style="" id="" class="cell">
+    									<w2:textbox tagname="label" style="" id="" label="bottom" class=""></w2:textbox>
+    								</xf:group>
+    								<xf:group style="" id="" class="cell">
+    									<w2:udc_toolTipIcon toolTipMessage="툴팁입니다" iconType="info" style="width:12px;height:18px;" id="udc_toolTipIcon6" direction="bottom">
+    									</w2:udc_toolTipIcon>
+    								</xf:group>
+    							</xf:group>
+    						</xf:group>
+    						<xf:group tagname="td" class="w2tb_td">
+    							<w2:attributes></w2:attributes>
+    							<xf:group style="" id="" class="tb_ly wauto">
+    								<xf:group style="" id="" class="cell">
+    									<w2:textbox tagname="label" style="" id="" label="Left" class=""></w2:textbox>
+    								</xf:group>
+    								<xf:group id="" class="cell">
+    									<w2:udc_toolTipIcon iconType="info" toolTipMessage="툴팁입니다" style="width: 12px;height: 18px;" id="" direction="left">
+    									</w2:udc_toolTipIcon>
+    								</xf:group>
+    							</xf:group>
+    						</xf:group>
+    					</xf:group>
+    				</xf:group>
+    			</xf:group></xf:group><xf:group id="" class="module-wrapper"><xf:group style="" id="" class="dfbox1">
+    				<w2:textbox tagname="h3" style="" id="" label="툴팁 기능 udc 아이콘 이미지 변경" class="fl"></w2:textbox>
+    			</xf:group><xf:group style="" id="" class="tbbox">
+    				<xf:group tagname="table" style="" id="" class="w2tb tb">
+    					<w2:attributes>
+    						<w2:summary></w2:summary>
+    					</w2:attributes>
+    					<xf:group tagname="caption">디테일&amp;nbsp;테이블(1단)</xf:group>
+    					<xf:group tagname="colgroup">
+    						<xf:group tagname="col" style="width:18%;"></xf:group>
+    						<xf:group tagname="col"></xf:group>
+    						<xf:group tagname="col"></xf:group>
+    						<xf:group tagname="col"></xf:group>
+    						<xf:group tagname="col" style=""></xf:group>
+    					</xf:group>
+    					<xf:group tagname="tr" style="">
+    						<xf:group tagname="th" style="" class="w2tb_th"><w2:attributes>
+    								<w2:scope>row</w2:scope>
+    							</w2:attributes><w2:textbox tagname="label" style="" id="" label="툴팁 아이콘 변경(udc)" class=""></w2:textbox></xf:group>
+    						<xf:group tagname="td" style="" class="w2tb_td">
+    							<w2:attributes>
+    								<w2:colspan>1</w2:colspan>
+    								<w2:rowspan>1</w2:rowspan>
+    							</w2:attributes>
+    							<xf:group style="" id="" class="tb_ly wauto">
+    								<xf:group style="" id="" class="cell">
+    									<w2:textbox tagname="label" style="" id="" label="info" class=""></w2:textbox>
+    								</xf:group>
+    								<xf:group id="" class="cell">
+    									<w2:udc_toolTipIcon iconType="info" toolTipMessage="툴팁입니다" style="width:12px;height:18px;" id="udc_toolTipIcon7" direction="top">
+    									</w2:udc_toolTipIcon>
+    								</xf:group>
+    							</xf:group>
+    						</xf:group>
+    						<xf:group tagname="td" class="w2tb_td">
+    							<w2:attributes></w2:attributes>
+    							<xf:group style="" id="" class="tb_ly wauto">
+    								<xf:group style="" id="" class="tb_ly wauto">
+    									<xf:group style="" id="" class="cell">
+    										<w2:textbox tagname="label" style="" id="" label="error" class=""></w2:textbox>
+    									</xf:group>
+    									<xf:group id="" class="cell">
+    										<w2:udc_toolTipIcon iconType="error" toolTipMessage="툴팁입니다" style="width:12px;height:18px;" id="udc_toolTipIcon8" direction="top">
+    										</w2:udc_toolTipIcon>
+    									</xf:group>
+    								</xf:group>
+    							</xf:group>
+    						</xf:group>
+    						<xf:group tagname="td" class="w2tb_td">
+    							<w2:attributes></w2:attributes>
+    							<xf:group style="" id="" class="tb_ly wauto">
+    								<xf:group style="" id="" class="cell">
+    									<w2:textbox tagname="label" style="" id="" label="warning" class=""></w2:textbox>
+    								</xf:group>
+    								<xf:group style="" id="" class="cell">
+    									<w2:udc_toolTipIcon iconType="warning" toolTipMessage="툴팁입니다" style="width:12px;height:18px;" id="udc_toolTipIcon9" direction="top">
+    									</w2:udc_toolTipIcon>
+    								</xf:group>
+    							</xf:group>
+    						</xf:group>
+    						<xf:group tagname="td" class="w2tb_td">
+    							<w2:attributes></w2:attributes>
+    							<xf:group style="" id="" class="tb_ly wauto">
+    								<xf:group style="" id="" class="cell">
+    									<w2:textbox tagname="label" style="" id="" label="question" class=""></w2:textbox>
+    								</xf:group>
+    								<xf:group id="" class="cell">
+    									<w2:udc_toolTipIcon iconType="question" toolTipMessage="툴팁입니다" style="width: 12px;height: 18px;" id="" direction="top">
+    									</w2:udc_toolTipIcon>
+    								</xf:group>
+    							</xf:group>
+    						</xf:group>
+    					</xf:group>
+    				</xf:group>
+    			</xf:group></xf:group></xf:group></xf:group>
+    	</xf:group>
+    </body>
+</html>

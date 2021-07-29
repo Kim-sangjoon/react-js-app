@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><html xmlns="http://www.w3.org/1999/xhtml" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:w2="http://www.inswave.com/websquare" xmlns:xf="http://www.w3.org/2002/xforms">
+    <head>
+        <w2:buildDate/>
+        <w2:userPalette defaultIcon="mix.png" desc=""/>
+        <xf:model>
+            <xf:instance>
+                <data xmlns=""/>
+            </xf:instance>
+        </xf:model>
+        <script type="text/javascript"><![CDATA[ ]]></script>
+    </head>
+    <body><xf:group class="tbbox" id="" style="">
+	<xf:group class="w2tb tb" id="" style="" tagname="table">
+		<w2:attributes>
+			<w2:summary>
+</w2:summary>
+</w2:attributes>
+		<xf:group tagname="caption">디테일&amp;nbsp;테이블(1단)</xf:group>
+		<xf:group tagname="colgroup">
+			<xf:group style="width:250px;" tagname="col">
+</xf:group>
+			<xf:group style="" tagname="col">
+</xf:group>
+</xf:group>
+		<xf:group style="" tagname="tr">
+			<xf:group class="w2tb_th" style="" tagname="th">
+				<w2:attributes>
+					<w2:scope>row</w2:scope>
+</w2:attributes>
+				<w2:textbox class="" id="" label="기본" style="" tagname="label">
+</w2:textbox>
+</xf:group>
+			<xf:group class="w2tb_td" style="" tagname="td">
+				<w2:attributes>
+					<w2:colspan>1</w2:colspan>
+					<w2:rowspan>1</w2:rowspan>
+</w2:attributes>
+				<xf:input adjustMaxLength="false" class="wd-150" id="" initValue="Global Best &amp; First" placeholder="" style="">
+</xf:input>
+</xf:group>
+</xf:group>
+		<xf:group style="" tagname="tr">
+			<xf:group class="w2tb_th" style="" tagname="th">
+				<w2:attributes>
+					<w2:scope>row</w2:scope>
+</w2:attributes>
+				<w2:textbox id="" label="기본 (various size)" style="" tagname="label">
+</w2:textbox>
+</xf:group>
+			<xf:group class="w2tb_td" style="" tagname="td">
+				<w2:textbox id="" label="변화를 선도하며, 안전과 최고를 추구하여, 함께 성장하는 회사" style="" tagname="span">
+</w2:textbox>
+</xf:group>
+</xf:group>
+</xf:group>
+</xf:group>
+</body>
+</html>

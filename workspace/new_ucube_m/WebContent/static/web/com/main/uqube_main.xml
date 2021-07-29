@@ -1,0 +1,608 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:w2="http://www.inswave.com/websquare"
+	xmlns:xf="http://www.w3.org/2002/xforms">
+	<head meta_programName="가입자정보조회">
+		<w2:type>DEFAULT</w2:type>
+		<w2:buildDate />
+		<xf:model>
+			<xf:instance>
+				<data xmlns="" />
+			</xf:instance>
+			<w2:dataCollection baseNode="map">
+				<w2:dataList baseNode="list" repeatNode="map" id="dataList1" saveRemovedData="true">
+					<w2:columnInfo>
+						<w2:column id="col1" name="name1" dataType="text"></w2:column>
+						<w2:column id="col2" name="name2" dataType="text"></w2:column>
+						<w2:column id="col3" name="name3" dataType="text"></w2:column>
+						<w2:column id="col4" name="name4" dataType="text"></w2:column>
+						<w2:column id="col5" name="name5" dataType="text"></w2:column>
+						<w2:column id="col6" name="name6" dataType="text"></w2:column>
+						<w2:column id="col7" name="name7" dataType="text"></w2:column>
+						<w2:column id="col8" name="name8" dataType="text"></w2:column>
+						<w2:column id="col9" name="name9" dataType="text"></w2:column>
+						<w2:column id="col10" name="name10" dataType="text"></w2:column>
+						<w2:column id="col11" name="name11" dataType="text"></w2:column>
+					</w2:columnInfo>
+					<w2:data use="true">
+						<w2:row>
+							<col1><![CDATA[가족무한사랑(유무선)]]></col1>
+
+							<col3><![CDATA[1234123400]]></col3>
+							<col4><![CDATA[이동통신]]></col4>
+							<col5><![CDATA[(LTE) 속도]]></col5>
+							<col6><![CDATA[590000000000]]></col6>
+							<col7><![CDATA[500000000000]]></col7>
+							<col8><![CDATA[개통]]></col8>
+							<col9><![CDATA[신규]]></col9>
+							<col10><![CDATA[2016-01-01]]></col10>
+							<col2><![CDATA[yes]]></col2>
+							<col11><![CDATA[2016-01-01]]></col11>
+						</w2:row>
+						<w2:row>
+							<col1><![CDATA[가족무한사랑(유무선)]]></col1>
+
+							<col3><![CDATA[1234123400]]></col3>
+							<col4><![CDATA[이동통신]]></col4>
+							<col5><![CDATA[(LTE) 데이터]]></col5>
+							<col6><![CDATA[590000000000]]></col6>
+							<col7><![CDATA[500000000001]]></col7>
+							<col8><![CDATA[개통]]></col8>
+							<col9><![CDATA[신규]]></col9>
+							<col10><![CDATA[2016-01-01]]></col10>
+							<col2><![CDATA[yes]]></col2>
+							<col11><![CDATA[2016-01-01]]></col11>
+						</w2:row>
+						<w2:row>
+							<col1><![CDATA[가족무한사랑(유무선)]]></col1>
+							<col3><![CDATA[1234123400]]></col3>
+							<col4><![CDATA[U+ 인터넷]]></col4>
+							<col5><![CDATA[광랜_19]]></col5>
+							<col6><![CDATA[590000000000]]></col6>
+							<col7><![CDATA[070-0000-0000]]></col7>
+							<col8><![CDATA[개통]]></col8>
+							<col9><![CDATA[신규]]></col9>
+							<col10><![CDATA[2016-01-01]]></col10>
+							<col2><![CDATA[yes]]></col2>
+
+							<col11><![CDATA[2016-01-01]]></col11>
+						</w2:row>
+						<w2:row>
+							<col1><![CDATA[가족무한사랑(유무선)]]></col1>
+							<col3><![CDATA[1234123400]]></col3>
+							<col4><![CDATA[U+ 인터넷]]></col4>
+							<col5><![CDATA[광랜_19]]></col5>
+							<col6><![CDATA[590000000000]]></col6>
+							<col7><![CDATA[070-0000-0000]]></col7>
+							<col8><![CDATA[개통]]></col8>
+							<col9><![CDATA[신규]]></col9>
+							<col10><![CDATA[2016-01-01]]></col10>
+							<col2><![CDATA[no]]></col2>
+							<col11><![CDATA[2016-01-01]]></col11>
+						</w2:row>
+						<w2:row>
+							<col1><![CDATA[가족무한사랑(유무선)]]></col1>
+							<col3><![CDATA[1234123400]]></col3>
+							<col4><![CDATA[이동통신]]></col4>
+							<col5><![CDATA[(LTE) 데이터]]></col5>
+							<col6><![CDATA[590000000000]]></col6>
+							<col7><![CDATA[500000000001]]></col7>
+							<col8><![CDATA[개통]]></col8>
+							<col9><![CDATA[신규]]></col9>
+							<col10><![CDATA[2016-01-01]]></col10>
+							<col2><![CDATA[no]]></col2>
+							<col11><![CDATA[2016-01-01]]></col11>
+						</w2:row>
+						<w2:row>
+							<col1><![CDATA[가족무한사랑(유무선)]]></col1>
+							<col3><![CDATA[1234123400]]></col3>
+							<col4><![CDATA[이동통신]]></col4>
+							<col5><![CDATA[(LTE) 데이터]]></col5>
+							<col6><![CDATA[590000000000]]></col6>
+							<col7><![CDATA[500000000001]]></col7>
+							<col8><![CDATA[개통]]></col8>
+							<col9><![CDATA[신규]]></col9>
+							<col10><![CDATA[2016-01-01]]></col10>
+							<col2><![CDATA[yes]]></col2>
+							<col11><![CDATA[2016-01-01]]></col11>
+						</w2:row>
+						<w2:row>
+							<col1><![CDATA[가족무한사랑(유무선)]]></col1>
+							<col3><![CDATA[1234123400]]></col3>
+							<col4><![CDATA[이동통신]]></col4>
+							<col5><![CDATA[(LTE) 데이터]]></col5>
+							<col6><![CDATA[590000000000]]></col6>
+							<col7><![CDATA[500000000001]]></col7>
+							<col8><![CDATA[개통]]></col8>
+							<col9><![CDATA[신규]]></col9>
+							<col10><![CDATA[2016-01-01]]></col10>
+							<col2><![CDATA[yes]]></col2>
+							<col11><![CDATA[2016-01-01]]></col11>
+						</w2:row>
+						<w2:row>
+							<col1><![CDATA[가족무한사랑(유무선)]]></col1>
+							<col3><![CDATA[1234123400]]></col3>
+							<col4><![CDATA[이동통신]]></col4>
+							<col5><![CDATA[(LTE) 데이터]]></col5>
+							<col6><![CDATA[590000000000]]></col6>
+							<col7><![CDATA[500000000001]]></col7>
+							<col8><![CDATA[개통]]></col8>
+							<col9><![CDATA[신규]]></col9>
+							<col10><![CDATA[2016-01-01]]></col10>
+							<col2><![CDATA[yes]]></col2>
+							<col11><![CDATA[2016-01-01]]></col11>
+						</w2:row>
+						<w2:row>
+							<col1><![CDATA[가족무한사랑(유무선)]]></col1>
+							<col3><![CDATA[1234123400]]></col3>
+							<col4><![CDATA[이동통신]]></col4>
+							<col5><![CDATA[(LTE) 데이터]]></col5>
+							<col6><![CDATA[590000000000]]></col6>
+							<col7><![CDATA[500000000001]]></col7>
+							<col8><![CDATA[개통]]></col8>
+							<col9><![CDATA[신규]]></col9>
+							<col10><![CDATA[2016-01-01]]></col10>
+							<col2><![CDATA[no]]></col2>
+							<col11><![CDATA[2016-01-01]]></col11>
+						</w2:row>
+						<w2:row>
+							<col1><![CDATA[가족무한사랑(유무선)]]></col1>
+							<col3><![CDATA[1234123400]]></col3>
+							<col4><![CDATA[이동통신]]></col4>
+							<col5><![CDATA[(LTE) 데이터]]></col5>
+							<col6><![CDATA[590000000000]]></col6>
+							<col7><![CDATA[500000000001]]></col7>
+							<col8><![CDATA[개통]]></col8>
+							<col9><![CDATA[신규]]></col9>
+							<col10><![CDATA[2016-01-01]]></col10>
+							<col2><![CDATA[no]]></col2>
+							<col11><![CDATA[2016-01-01]]></col11>
+						</w2:row>
+						<w2:row>
+							<col1><![CDATA[가족무한사랑(유무선)]]></col1>
+							<col3><![CDATA[1234123400]]></col3>
+							<col4><![CDATA[이동통신]]></col4>
+							<col5><![CDATA[(LTE) 데이터]]></col5>
+							<col6><![CDATA[590000000000]]></col6>
+							<col7><![CDATA[500000000001]]></col7>
+							<col8><![CDATA[개통]]></col8>
+							<col9><![CDATA[신규]]></col9>
+							<col10><![CDATA[2016-01-01]]></col10>
+							<col2><![CDATA[yes]]></col2>
+							<col11><![CDATA[2016-01-01]]></col11>
+						</w2:row>
+						<w2:row>
+							<col1><![CDATA[가족무한사랑(유무선)]]></col1>
+							<col3><![CDATA[1234123400]]></col3>
+							<col4><![CDATA[이동통신]]></col4>
+							<col5><![CDATA[(LTE) 데이터]]></col5>
+							<col6><![CDATA[590000000000]]></col6>
+							<col7><![CDATA[500000000001]]></col7>
+							<col8><![CDATA[개통]]></col8>
+							<col9><![CDATA[신규]]></col9>
+							<col10><![CDATA[2016-01-01]]></col10>
+							<col2><![CDATA[yes]]></col2>
+							<col11><![CDATA[2016-01-01]]></col11>
+						</w2:row>
+						<w2:row>
+							<col1><![CDATA[가족무한사랑(유무선)]]></col1>
+							<col3><![CDATA[1234123400]]></col3>
+							<col4><![CDATA[이동통신]]></col4>
+							<col5><![CDATA[(LTE) 데이터]]></col5>
+							<col6><![CDATA[590000000000]]></col6>
+							<col7><![CDATA[500000000001]]></col7>
+							<col8><![CDATA[개통]]></col8>
+							<col9><![CDATA[신규]]></col9>
+							<col10><![CDATA[2016-01-01]]></col10>
+							<col2><![CDATA[yes]]></col2>
+							<col11><![CDATA[2016-01-01]]></col11>
+						</w2:row>
+						<w2:row>
+							<col1><![CDATA[가족무한사랑(유무선)]]></col1>
+							<col3><![CDATA[1234123400]]></col3>
+							<col4><![CDATA[이동통신]]></col4>
+							<col5><![CDATA[(LTE) 데이터]]></col5>
+							<col6><![CDATA[590000000000]]></col6>
+							<col7><![CDATA[500000000001]]></col7>
+							<col8><![CDATA[개통]]></col8>
+							<col9><![CDATA[신규]]></col9>
+							<col10><![CDATA[2016-01-01]]></col10>
+							<col2><![CDATA[no]]></col2>
+							<col11><![CDATA[2016-01-01]]></col11>
+						</w2:row>
+						<w2:row>
+							<col1><![CDATA[가족무한사랑(유무선)]]></col1>
+							<col3><![CDATA[1234123400]]></col3>
+							<col4><![CDATA[이동통신]]></col4>
+							<col5><![CDATA[(LTE) 데이터]]></col5>
+							<col6><![CDATA[590000000000]]></col6>
+							<col7><![CDATA[500000000001]]></col7>
+							<col8><![CDATA[개통]]></col8>
+							<col9><![CDATA[신규]]></col9>
+							<col10><![CDATA[2016-01-01]]></col10>
+							<col2><![CDATA[no]]></col2>
+							<col11><![CDATA[2016-01-01]]></col11>
+						</w2:row>
+						<w2:row>
+							<col1><![CDATA[가족무한사랑(유무선)]]></col1>
+							<col3><![CDATA[1234123400]]></col3>
+							<col4><![CDATA[이동통신]]></col4>
+							<col5><![CDATA[(LTE) 데이터]]></col5>
+							<col6><![CDATA[590000000000]]></col6>
+							<col7><![CDATA[500000000001]]></col7>
+							<col8><![CDATA[개통]]></col8>
+							<col9><![CDATA[신규]]></col9>
+							<col10><![CDATA[2016-01-01]]></col10>
+							<col2><![CDATA[yes]]></col2>
+							<col11><![CDATA[2016-01-01]]></col11>
+						</w2:row>
+						<w2:row>
+							<col1><![CDATA[가족무한사랑(유무선)]]></col1>
+							<col3><![CDATA[1234123400]]></col3>
+							<col4><![CDATA[이동통신]]></col4>
+							<col5><![CDATA[(LTE) 데이터]]></col5>
+							<col6><![CDATA[590000000000]]></col6>
+							<col7><![CDATA[500000000001]]></col7>
+							<col8><![CDATA[개통]]></col8>
+							<col9><![CDATA[신규]]></col9>
+							<col10><![CDATA[2016-01-01]]></col10>
+							<col2><![CDATA[yes]]></col2>
+							<col11><![CDATA[2016-01-01]]></col11>
+						</w2:row>
+						<w2:row>
+							<col1><![CDATA[가족무한사랑(유무선)]]></col1>
+							<col3><![CDATA[1234123400]]></col3>
+							<col4><![CDATA[이동통신]]></col4>
+							<col5><![CDATA[(LTE) 데이터]]></col5>
+							<col6><![CDATA[590000000000]]></col6>
+							<col7><![CDATA[500000000001]]></col7>
+							<col8><![CDATA[개통]]></col8>
+							<col9><![CDATA[신규]]></col9>
+							<col10><![CDATA[2016-01-01]]></col10>
+							<col2><![CDATA[yes]]></col2>
+							<col11><![CDATA[2016-01-01]]></col11>
+						</w2:row>
+						<w2:row>
+							<col1><![CDATA[가족무한사랑(유무선)]]></col1>
+							<col3><![CDATA[1234123400]]></col3>
+							<col4><![CDATA[이동통신]]></col4>
+							<col5><![CDATA[(LTE) 데이터]]></col5>
+							<col6><![CDATA[590000000000]]></col6>
+							<col7><![CDATA[500000000001]]></col7>
+							<col8><![CDATA[개통]]></col8>
+							<col9><![CDATA[신규]]></col9>
+							<col10><![CDATA[2016-01-01]]></col10>
+							<col2><![CDATA[no]]></col2>
+							<col11><![CDATA[2016-01-01]]></col11>
+						</w2:row>
+						<w2:row>
+							<col1><![CDATA[가족무한사랑(유무선)]]></col1>
+							<col3><![CDATA[1234123400]]></col3>
+							<col4><![CDATA[이동통신]]></col4>
+							<col5><![CDATA[(LTE) 데이터]]></col5>
+							<col6><![CDATA[590000000000]]></col6>
+							<col7><![CDATA[500000000001]]></col7>
+							<col8><![CDATA[개통]]></col8>
+							<col9><![CDATA[신규]]></col9>
+							<col10><![CDATA[2016-01-01]]></col10>
+							<col2><![CDATA[no]]></col2>
+							<col11><![CDATA[2016-01-01]]></col11>
+						</w2:row>
+					</w2:data>
+				</w2:dataList>
+				<w2:dataList baseNode="list" repeatNode="map" id="dataList2" saveRemovedData="true">
+					<w2:columnInfo>
+						<w2:column id="col1" name="name1" dataType="text"></w2:column>
+						<w2:column id="col2" name="name2" dataType="text"></w2:column>
+						<w2:column id="col3" name="name3" dataType="text"></w2:column>
+						<w2:column id="col4" name="name4" dataType="text"></w2:column>
+					</w2:columnInfo>
+					<w2:data use="true">
+						<w2:row>
+							<col1><![CDATA[2019-05]]></col1>
+							<col2><![CDATA[025043]]></col2>
+							<col3><![CDATA[5.54]]></col3>
+							<col4><![CDATA[154]]></col4>
+						</w2:row>
+						<w2:row>
+							<col1><![CDATA[2019-05]]></col1>
+							<col2><![CDATA[025043]]></col2>
+							<col3><![CDATA[5.54]]></col3>
+							<col4><![CDATA[154]]></col4>
+						</w2:row>
+						<w2:row>
+							<col1><![CDATA[2019-05]]></col1>
+							<col2><![CDATA[025043]]></col2>
+							<col3><![CDATA[5.54]]></col3>
+							<col4><![CDATA[154]]></col4>
+						</w2:row>
+					</w2:data>
+				</w2:dataList>
+				<w2:dataList baseNode="list" repeatNode="map" id="dataList3" saveRemovedData="true">
+					<w2:columnInfo>
+						<w2:column id="col1" name="name1" dataType="text"></w2:column>
+						<w2:column id="col2" name="name2" dataType="text"></w2:column>
+						<w2:column id="col3" name="name3" dataType="text"></w2:column>
+						<w2:column id="col4" name="name4" dataType="text"></w2:column>
+						<w2:column id="col5" name="name5" dataType="text"></w2:column>
+					</w2:columnInfo>
+					<w2:data use="true">
+						<w2:row>
+							<col1><![CDATA[2019-05 10:29:33]]></col1>
+							<col2><![CDATA[이동통신]]></col2>
+							<col3><![CDATA[이동통신]]></col3>
+							<col4><![CDATA[일반상]]></col4>
+							<col5><![CDATA[[처리중] 요금조정처리]]></col5>
+						</w2:row>
+						<w2:row>
+							<col1><![CDATA[2019-05 10:29:33]]></col1>
+							<col2><![CDATA[이동통신]]></col2>
+							<col3><![CDATA[이동통신]]></col3>
+							<col4><![CDATA[일반상]]></col4>
+							<col5><![CDATA[[처리중] 요금조정처리]]></col5>
+						</w2:row>
+						<w2:row>
+							<col1><![CDATA[2019-05 10:29:33]]></col1>
+							<col2><![CDATA[이동통신]]></col2>
+							<col3><![CDATA[이동통신]]></col3>
+							<col4><![CDATA[일반상]]></col4>
+							<col5><![CDATA[[처리중] 요금조정처리]]></col5>
+						</w2:row>
+						<w2:row>
+							<col1><![CDATA[2019-05 10:29:33]]></col1>
+							<col2><![CDATA[이동통신]]></col2>
+							<col3><![CDATA[이동통신]]></col3>
+							<col4><![CDATA[일반상]]></col4>
+							<col5><![CDATA[[처리중] 요금조정처리]]></col5>
+						</w2:row>
+						<w2:row>
+							<col1><![CDATA[2019-05 10:29:33]]></col1>
+							<col2><![CDATA[이동통신]]></col2>
+							<col3><![CDATA[이동통신]]></col3>
+							<col4><![CDATA[일반상]]></col4>
+							<col5><![CDATA[[처리중] 요금조정처리]]></col5>
+						</w2:row>
+						<w2:row>
+							<col1><![CDATA[2019-05 10:29:33]]></col1>
+							<col2><![CDATA[이동통신]]></col2>
+							<col3><![CDATA[이동통신]]></col3>
+							<col4><![CDATA[일반상]]></col4>
+							<col5><![CDATA[[처리중] 요금조정처리]]></col5>
+						</w2:row>
+						<w2:row>
+							<col1><![CDATA[2019-05 10:29:33]]></col1>
+							<col2><![CDATA[이동통신]]></col2>
+							<col3><![CDATA[이동통신]]></col3>
+							<col4><![CDATA[일반상]]></col4>
+							<col5><![CDATA[[처리중] 요금조정처리]]></col5>
+						</w2:row>
+					</w2:data>
+				</w2:dataList>
+			</w2:dataCollection>
+			<w2:workflowCollection></w2:workflowCollection>
+		</xf:model>
+		<script type="text/javascript" lazy="false"><![CDATA[
+
+	scwin.onpageload = function() {
+
+	};
+
+	scwin.onpageunload = function() {
+
+	};
+
+
+	]]></script>
+		<w2:require src="/common/udc/udc_tooltipIcon.xml"></w2:require>
+	</head>
+	<body ev:onpageload="scwin.onpageload" ev:onpageunload="scwin.onpageunload" class="">
+		<xf:group class="main_wrap" id="">
+			<xf:group class="ly" id="" style="">
+				<xf:group id="" class="card_fixed">
+					<xf:group style="" id="" class="cmbox">
+						<xf:group style="" id="" class="sc_area">
+
+							<xf:select1 ref="" appearance="full" style="" id="" renderType="radiogroup" rows="" cols="" class="rad_cm_toggle" selectedIndex="0">
+									<xf:choices>
+										<xf:item>
+											<xf:label><![CDATA[모바일]]></xf:label>
+											<xf:value><![CDATA[]]>
+											</xf:value>
+										</xf:item>
+										<xf:item>
+											<xf:label><![CDATA[빠른수납]]></xf:label>
+											<xf:value><![CDATA[]]>
+											</xf:value>
+										</xf:item>
+										<xf:item>
+											<xf:label><![CDATA[홈]]></xf:label>
+											<xf:value><![CDATA[]]>
+											</xf:value>
+										</xf:item>
+										<xf:item>
+											<xf:label><![CDATA[기업]]></xf:label>
+											<xf:value><![CDATA[]]>
+											</xf:value>
+										</xf:item>
+										<xf:item>
+											<xf:label><![CDATA[기업(개인)]]></xf:label>
+											<xf:value><![CDATA[]]>
+											</xf:value>
+										</xf:item>
+									</xf:choices>
+								</xf:select1>
+							<xf:group id="" class="ly_form">
+								<xf:group id="" class="cell">
+									<xf:input adjustMaxLength="false" style="" id="" placeholder="상품번호" class="ibx"></xf:input>
+								</xf:group>
+								<xf:group id="" class="cell">
+									<xf:input adjustMaxLength="false" style="" id="" placeholder="생년월일" class="ibx"></xf:input>
+								</xf:group>
+							</xf:group>
+							<xf:group id="" class="ly_form">
+								<xf:group id="" class="cell">
+									<xf:input adjustMaxLength="false" style="" id="" placeholder="청구계정번호" class="ibx"></xf:input>
+								</xf:group>
+								<xf:group style="width: 80px" id="" class="cell">
+									<xf:select ref="" appearance="full" style="" id="" renderType="checkboxgroup" rows="" selectedindex="0" cols=""
+										class="cbx">
+										<xf:choices>
+											<xf:item>
+												<xf:label><![CDATA[해지포함]]></xf:label>
+												<xf:value></xf:value>
+											</xf:item>
+										</xf:choices>
+									</xf:select>
+								</xf:group>
+							</xf:group>
+							<xf:group style="" id="" class="cell">
+								<xf:input adjustMaxLength="false" style="" id="" placeholder="가입번호" class="ibx"></xf:input>
+							</xf:group>
+							<xf:group id="" class="btnbox">
+								<w2:anchor outerDiv="false" style="" id="" class="btn_df">
+									<xf:label><![CDATA[상세]]></xf:label>
+								</w2:anchor>
+								<w2:anchor outerDiv="false" style="" id="" class="btn_cm">
+									<xf:label><![CDATA[조회]]></xf:label>
+								</w2:anchor>
+							</xf:group>
+						</xf:group>
+						<xf:group style="" id="" class="info_area">
+							<xf:group id="" class="info_box">
+								<w2:textbox tagname="span" style="" id="" label="임형일" class="name"></w2:textbox>
+								<w2:textbox class="bedge1" id="" label="IB" style="" tagname="em"></w2:textbox>
+								<w2:textbox tagname="em" style="" id="" label="기변A" class="bedge2" displayFormat=""></w2:textbox>
+								<xf:group id="" class="grp_f">
+									<w2:textbox tagname="span" style="" id="" label="010-7***-3636" class="tel"></w2:textbox>
+									<w2:anchor outerDiv="false" style="" id="">
+										<xf:label><![CDATA[가입종합정보]]></xf:label>
+									</w2:anchor>
+								</xf:group>
+
+							</xf:group>
+							<xf:group tagname="ul" id="" class="personal_info">
+								<xf:group tagname="li" tabIndex="" id="">
+									<xf:group tagname="ul" id="">
+										<w2:textbox tagname="li" style="" tabIndex="" id="" label="남" class=""></w2:textbox>
+										<w2:textbox tagname="li" style="" id="" label="1987.09.30" class=""></w2:textbox>
+										<w2:textbox tagname="li" style="" id="" label="32세(만30세)" class=""></w2:textbox>
+									</xf:group>
+								</xf:group>
+								<xf:group tagname="li" id="">
+									<xf:group tagname="ul" id="" class="">
+										<w2:textbox tagname="li" style="" id="" label="내국인" class=""></w2:textbox>
+										<w2:textbox tagname="li" style="" id="" label="개인(장애인)" class=""></w2:textbox>
+									</xf:group>
+								</xf:group>
+							</xf:group>
+							<xf:group class="legal_box" id="" style="" tagname="">
+    						
+    					<xf:group id=""><w2:textbox tagname="span" userData3="" style="" id="" label="홍길남" class="name"></w2:textbox><w2:textbox tagname="em" style="" id="" label="법정대리인" class="bedge"></w2:textbox><w2:textbox tagname="span" style="" id="" label="010-3***-2883" class="tel"></w2:textbox><xf:group tagname="" id="" class="gap_dot">
+    							<w2:textbox tagname="span" style="" tabIndex="" id="" label="남" class=""></w2:textbox>
+    							<w2:textbox tagname="span" style="" id="" label="1987.09.30" class=""></w2:textbox>
+    							<w2:textbox tagname="span" style="" id="" label="32세(만30세)" class=""></w2:textbox>
+    						</xf:group></xf:group></xf:group>
+    					<xf:group tagname="ul" style="" id="" class="detail_info">
+    						<xf:group tagname="li" id="">
+    							<xf:group id="" tagname="dl">
+    								<w2:textbox tagname="dt" style="" id="" label="데이터 2배 쿠폰" class=""></w2:textbox>
+    								<xf:group tagname="dd" id="" class="sheet">
+    									<w2:textbox tagname="em" style="" id="" label="1장" class=""></w2:textbox>
+    									<w2:textbox tagname="span" style="" id="" label="/" class=""></w2:textbox>
+    									<w2:textbox tagname="span" style="" id="" label="7장" class=""></w2:textbox>
+    								</xf:group>
+    							</xf:group>
+    						</xf:group>
+    						<xf:group tagname="li" id="">
+    							<xf:group id="" class="" tagname="dl">
+    								<xf:group tagname="dt" id="" class="clearfix">
+    									<w2:textbox tagname="span" style="" id="" label="고객주소" class=""></w2:textbox>
+    									<xf:group tagname="" id="" class="fr">
+    										<xf:trigger style="" id="" type="button" class="btn_bul">
+    											<xf:label><![CDATA[설치불가]]></xf:label>
+    										</xf:trigger>
+    										<xf:trigger style="" id="" type="button" class="btn_df_bc">
+    											<xf:label><![CDATA[주소확인]]></xf:label>
+    										</xf:trigger>
+    									</xf:group>
+
+    								</xf:group>
+    								<xf:group tagname="dd" id="">
+    									<w2:textbox tagname="p" style="" id="" label="서울시 구로구 신도림로 401-6 484" class=""></w2:textbox>
+    									<w2:textbox tagname="p" style="" id="" label="**아파트 102동 303호" class=""></w2:textbox>
+    								</xf:group>
+    							</xf:group>
+    						</xf:group>
+
+    						<xf:group id="" tagname="li" style="">
+    							<xf:group id="" tagname="dl">
+    								<w2:textbox tagname="dt" style="" id="" label="LG U+ 고객되신 지" class=""></w2:textbox>
+    								<w2:textbox tagname="dd" style="" id="" label="7년 11개월 (2,988일)" class=""></w2:textbox>
+    							</xf:group>
+    						</xf:group>
+    					</xf:group>
+    					<xf:group tagname="ul" style="" id="" class="bool_info">
+    						<xf:group tagname="li" id="">
+    							<xf:group id="" tagname="dl">
+    								<w2:textbox tagname="dt" style="" id="" label="법정/지정대리인" class=""></w2:textbox>
+    								<xf:group id="" class="" tagname="dd">
+    									<w2:textbox tagname="span" style="" id="" label="" class="bool_no"></w2:textbox>
+    								</xf:group>
+    							</xf:group>
+    						</xf:group>
+    						<xf:group id="" tagname="li" style="">
+    							<xf:group id="" tagname="dl">
+    								<w2:textbox class="" id="" label="고객성향" style="" tagname="dt"></w2:textbox>
+    								<xf:group id="" class="" tagname="dd">
+    									<w2:textbox tagname="span" style="" id="" label="" class="bool_yes"></w2:textbox>
+    								</xf:group>
+    							</xf:group>
+    						</xf:group>
+    						<xf:group id="" tagname="li" style="">
+    							<xf:group id="" tagname="dl">
+    								<w2:textbox class="" id="" label="특기사항" style="" tagname="dt"></w2:textbox>
+    								<xf:group id="" class="" tagname="dd">
+    									<w2:textbox tagname="span" style="" id="" label="" class="bool_yes"></w2:textbox>
+    								</xf:group>
+    							</xf:group>
+    						</xf:group>
+    						<xf:group id="" style="" tagname="li">
+    							<xf:group id="" tagname="dl">
+    								<w2:textbox class="" id="" label="U+ ID" style="" tagname="dt"></w2:textbox>
+    								<xf:group id="" class="" tagname="dd">
+    									<w2:textbox tagname="span" style="" id="" label="" class="bool_yes"></w2:textbox>
+    								</xf:group>
+    							</xf:group>
+    						</xf:group>
+    					</xf:group>
+    					<xf:group tagname="dl" style="" id="" class="matrix">
+    						<xf:group tagname="dt" id="">
+    							<xf:group tagname="h3" id="">
+    								<w2:textbox tagname="strong" style="" id="" label="결합"></w2:textbox>
+    								<w2:textbox tagname="span" style="" id="" label="매트릭스"></w2:textbox>
+    							</xf:group>
+    						</xf:group>
+    						<xf:group tagname="dd" style="" id="" class="bann1">
+    							<w2:textbox tagname="i" style="" id="" label=""></w2:textbox>
+    							<xf:group tagname="em" id="">
+    								<w2:textbox tagname="strong" style="" id="" label="1순위 모바일"></w2:textbox>
+    								<w2:textbox tagname="span" style="" id="" label="요금체 추천"></w2:textbox>
+    							</xf:group>
+    							<w2:textbox tagname="span" style="" id="" label="(유튜브 영상을 자주 시청)"></w2:textbox>
+
+    						</xf:group>
+    						<xf:group tagname="dd" style="" id="" class="bann2">
+    							<w2:textbox tagname="i" style="" id="" label=""></w2:textbox>
+    							<xf:group tagname="em" id="">
+    								<w2:textbox tagname="strong" style="" id="" label="1순위 홈서비스"></w2:textbox>
+    								<w2:textbox tagname="span" style="" id="" label="신규 유치 제안"></w2:textbox>
+    							</xf:group>
+    							<w2:textbox tagname="span" style="" id="" label="(2인 이상 가구 추정)"></w2:textbox>
+    						</xf:group>
+    					</xf:group>
+    				</xf:group>
+    				
+    			</xf:group></xf:group><w2:wframe style="" id="" class="card_flexible" src="/web/com/main/wf_main1.xml"></w2:wframe>
+			</xf:group>
+    	</xf:group>
+    </body>
+</html>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:w2="http://www.inswave.com/websquare"
+	xmlns:xf="http://www.w3.org/2002/xforms">
+	<head meta_programName="입력 폼시간 입력">
+		<w2:type>DEFAULT</w2:type>
+		<w2:buildDate />
+		<xf:model>
+			<xf:instance>
+				<data xmlns="" />
+			</xf:instance>
+			<w2:dataCollection baseNode="map">
+				<w2:dataMap baseNode="map" id="dma_userSearch">
+					<w2:keyInfo>
+						<w2:key id="userIdx" name="userIdx" dataType="text"></w2:key>
+					</w2:keyInfo>
+				</w2:dataMap>
+				<w2:dataMap baseNode="map" id="dma_userInfo">
+					<w2:keyInfo>
+						<w2:key id="applUserId" name="사용자아이디" dataType="text"></w2:key>
+						<w2:key id="userNm" name="사원명" dataType="text"></w2:key>
+						<w2:key id="userPass" name="비밀번호" dataType="text"></w2:key>
+						<w2:key id="empId" name="사원번호" dataType="text"></w2:key>
+						<w2:key id="emailAddr" name="이메일주소" dataType="text"></w2:key>
+						<w2:key id="languageCode" name="언어코드" dataType="text"></w2:key>
+						<w2:key id="menuUseYn" name="메뉴사용여부" dataType="text"></w2:key>
+						<w2:key id="deptCd" name="부서코드" dataType="text"></w2:key>
+					</w2:keyInfo>
+					<w2:data></w2:data>
+				</w2:dataMap>
+			</w2:dataCollection>
+			<w2:workflowCollection></w2:workflowCollection>
+		</xf:model>
+		<script type="text/javascript" lazy="false"><![CDATA[
+	scwin.onpageload = function() {
+		/*
+			시간컴포넌트는 udc 탭에서 생성합니다.
+		*/
+	};
+
+	scwin.onpageunload = function() {
+
+	};
+]]></script>
+		<w2:require src="/common/udc/udc_timePicker.xml"></w2:require>
+	</head>
+	<body ev:onpageload="scwin.onpageload" ev:onpageunload="scwin.onpageunload">
+		<xf:group id="" class="sub_wrapper">
+			<w2:wframe src="../../../common/xml/contentsTitle.xml" scope="true" style="" id="" class="page_header" nextTabID=""></w2:wframe>
+			<xf:group id="" class="page_contents">
+			<xf:group id="" class="page_contents_inner"><xf:group style="" id="tbl_userInfo" class="tbbox">
+					<xf:group tagname="table" style="width:100%;" id="" class="w2tb tb">
+						<w2:attributes>
+							<w2:summary></w2:summary>
+						</w2:attributes>
+						<xf:group tagname="caption"></xf:group>
+						<xf:group tagname="colgroup">
+							<xf:group tagname="col" style="width:15.00%;"></xf:group>
+							<xf:group tagname="col" style=""></xf:group>
+						</xf:group>
+						<xf:group tagname="tr" style="">
+							<xf:group tagname="th" style="" class="w2tb_th">
+								<w2:attributes>
+									<w2:scope>row</w2:scope>
+								</w2:attributes>
+								<w2:textbox tagname="label" style="" id="" label="시간(udc)" class="req"></w2:textbox>
+							</xf:group>
+							<xf:group tagname="td" style="" class="w2tb_td">
+								<w2:attributes>
+									<w2:colspan>1</w2:colspan>
+									<w2:rowspan>1</w2:rowspan>
+								</w2:attributes>
+								<w2:udc_timePicker style="width: 90px;" id=""></w2:udc_timePicker>
+							</xf:group>
+						</xf:group>
+					</xf:group>
+				</xf:group></xf:group></xf:group>
+		</xf:group>
+	</body>
+</html>

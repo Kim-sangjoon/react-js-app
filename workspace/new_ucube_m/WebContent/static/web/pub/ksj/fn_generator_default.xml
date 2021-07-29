@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="/ws/cm/css/all.css" type="text/css"?>
+<?xml-stylesheet href="/ws/cm/css/contents.css" type="text/css"?>
+<?xml-stylesheet href="/ws/cm/css/style.css" type="text/css"?>
+<html xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:ev="http://www.w3.org/2001/xml-events"
+    xmlns:w2="http://www.inswave.com/websquare" xmlns:xf="http://www.w3.org/2002/xforms">
+    <head meta_screenName="generator 기본 샘플"><w2:type>DEFAULT</w2:type>
+    	<w2:buildDate />
+    	<xf:model>
+    		<xf:instance>
+    			<data xmlns="" />
+    		</xf:instance>
+    	</xf:model>
+    	<style type="text/css"><![CDATA[
+    		.rowClass0{
+    			background-color:#eee;
+    		}
+    		.rowClass1{
+    			background-color:#FFE4E1;
+    		}
+    	]]></style>
+    	<script type="text/javascript" lazy="false"><![CDATA[ 
+			scwin.trigger1_onclick = function(e){
+	  			var tmpObj;
+	  			var tmpIdx = generator1.getLength();
+	  			generator1.insertChild();
+	  			
+	  			//get text label
+	  			tmpObj = generator1.getChild( tmpIdx , "textbox1" );
+	  			tmpObj.addClass("rowClass"+(tmpIdx%2));
+	  			
+	  			//get input obj
+	  			tmpObj = generator1.getChild( tmpIdx , "input1" );
+	  			tmpObj.setValue("lbl"+tmpIdx);
+	  			tmpObj.setUserData("eduKey","edu"+tmpIdx);
+			};
+			
+			scwin.trigger2_onclick = function(e){
+				var tmpIdx = this.getGeneratedIndex();
+				alert("getGeneratedIndex===============>" + tmpIdx);
+				var tmpInputObj = generator1.getChild( tmpIdx , "input1" );
+				
+				//위의 행위를 아래의 API를 이용하여 한번에 처리 할수도 있다.
+				//var tmpInputObj = this.getGeneratedComponent("input1");
+				
+//				alert(tmpInputObj.getValue() + " :: " + tmpInputObj.getUserData("eduKey"));
+				
+			};
+		]]></script>
+    </head>
+    <body>
+
+    <xf:group id="" style="" class="sub_contents">
+    	<xf:group class="pgtbox" id="" style="">
+    		<w2:textbox class="pgt_tit" id="" label="Component Template - Generator" style=""></w2:textbox>
+    	</xf:group>
+    	<xf:group class="dfbox mt10" id="" style="">
+    		<w2:anchor class="btn_download" href="/ws/download/advanced/fn_dynamicCreate.zip" id="" name="" outerDiv="false" style="">
+    			<xf:label><![CDATA[Download]]></xf:label>
+    		</w2:anchor>
+    	</xf:group><w2:textbox id="" label='Gennerator컴포넌트의 기본 사용법 샘플이다.&lt;br/&gt;' style="" tagname="" class="txt_guide"></w2:textbox>
+    	<w2:textbox class="tit_h2 mt50 " id="" label="01. Generator Coding Guide" style=""></w2:textbox>
+    	<xf:group class="samplebox" id="" style="">
+    		<xf:group class="" id="" style="" tagname="dd">
+    			<w2:textbox class="dmb" id="" label="Generator 예시" style=""></w2:textbox>
+    			<w2:textbox class="dbd dp" id=""
+    				label='[addItem]버튼을 클릭하면 하단에 행이 동적으로 추가된다.&lt;br/&gt;추가된 행의 [getValue]버튼을 클릭하면 현재행의 inputbox의 value를 alert으로 표현한다.&lt;br/&gt;&lt;br/&gt;반복된 컴포넌트는 ID가 동적으로 할당되므로 초기에 정의한 ID로 접근이 불가하다.&lt;br/&gt;스크립트에서 반복된 컴포넌트에 접근하는 경우는 아래와 같이 2가지로 나뉜다.&lt;br/&gt;&lt;br/&gt;1. insertChild method를 이용하여 컴포넌트를 추가한 경우.&lt;br/&gt;아래와 같이 Generator컴포넌트의 getChild method를 이용한다.&lt;br/&gt;[Generator ID].getChild( rowIndex, "ComponentID" );&lt;br/&gt;ex) generator1.getChild( 0 , "input1" ); //0번째 반복된 행의 "input1" 컴포넌트를 반환한다.&lt;br/&gt;&lt;br/&gt;2. 반복된 컴포넌트에 이벤트를 등록한 경우.&lt;br/&gt;(스크립트의 scwin.trigger2_onclick method 참조)&lt;br/&gt;this.getGeneratedIndex(); //자신의 위치(row index)를 반환&lt;br/&gt;this.getGeneratedComponent("input1");//반복된 형제 컴포넌트를 반환'
+    				style="">
+    			</w2:textbox>
+    		</xf:group>
+    	</xf:group>
+    	<w2:textbox class="tit_h2 mt50 " id="" label="02. Generator 적용" style=""></w2:textbox>
+    	<xf:group class="samplebox" id="" style="">
+    		<xf:group class="" id="" style="" tagname="dd">
+    			<xf:trigger id="trigger1" style="width: 120px;height: 28px;" ev:onclick="scwin.trigger1_onclick" type="button" class="fr dmr wq_trg2">
+    				<xf:label>addItem</xf:label>
+    			</xf:trigger>
+    		</xf:group>
+    	</xf:group>
+    	<w2:generator id="generator1" style="overflow: hidden;margin-top: 10px;">
+    		<xf:group id="group1" style="overflow:hidden;width:340px;border:1px solid #ddd;margin-bottom:4px;" class="">
+    			<w2:textbox id="textbox1" style="float:left;width: 80px;padding-top:10px;padding-bottom:10px;text-align:center;" label="이름"></w2:textbox>
+    			<xf:input id="input1" style="width: 148px;height: 24px;float:left;margin-top:4px;margin-left:4px;"></xf:input>
+    			<xf:trigger id="trigger2" style="float:left;margin-top: 5px;margin-left: 4px;width: 80px;height: 24px;" ev:onclick="scwin.trigger2_onclick" type="button" class="dmr wq_trg2">
+    				<xf:label>getValue</xf:label>
+    			</xf:trigger>
+    		</xf:group>
+    	</w2:generator>
+
+
+
+
+
+
+    	
+    </xf:group></body>
+</html>

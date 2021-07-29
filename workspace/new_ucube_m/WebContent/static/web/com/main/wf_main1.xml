@@ -1,0 +1,1378 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:w2="http://www.inswave.com/websquare"
+	xmlns:xf="http://www.w3.org/2002/xforms">
+	<head meta_programName="가입자정보조회">
+		<w2:type>DEFAULT</w2:type>
+		<w2:buildDate />
+		<xf:model>
+			<xf:instance>
+				<data xmlns="" />
+			</xf:instance>
+			<w2:dataCollection baseNode="map">
+				<w2:dataList baseNode="list" repeatNode="map" id="dataList1" saveRemovedData="true">
+					<w2:columnInfo>
+						<w2:column id="col1" name="name1" dataType="text"></w2:column>
+						<w2:column id="col2" name="name2" dataType="text"></w2:column>
+						<w2:column id="col3" name="name3" dataType="text"></w2:column>
+						<w2:column id="col4" name="name4" dataType="text"></w2:column>
+						<w2:column id="col5" name="name5" dataType="text"></w2:column>
+						<w2:column id="col6" name="name6" dataType="text"></w2:column>
+						<w2:column id="col7" name="name7" dataType="text"></w2:column>
+						<w2:column id="col8" name="name8" dataType="text"></w2:column>
+						<w2:column id="col9" name="name9" dataType="text"></w2:column>
+						<w2:column id="col10" name="name10" dataType="text"></w2:column>
+						<w2:column id="col11" name="name11" dataType="text"></w2:column>
+					</w2:columnInfo>
+					<w2:data use="true">
+						<w2:row>
+							<col1><![CDATA[가족무한사랑(유무선)]]></col1>
+
+							<col3><![CDATA[1234123400]]></col3>
+							<col4><![CDATA[이동통신]]></col4>
+							<col5><![CDATA[(LTE) 속도]]></col5>
+							<col6><![CDATA[590000000000]]></col6>
+							<col7><![CDATA[500000000000]]></col7>
+							<col8><![CDATA[개통]]></col8>
+							<col9><![CDATA[신규]]></col9>
+							<col10><![CDATA[2016-01-01]]></col10>
+							<col2><![CDATA[yes]]></col2>
+							<col11><![CDATA[2016-01-01]]></col11>
+						</w2:row>
+						<w2:row>
+							<col1><![CDATA[가족무한사랑(유무선)]]></col1>
+
+							<col3><![CDATA[1234123400]]></col3>
+							<col4><![CDATA[이동통신]]></col4>
+							<col5><![CDATA[(LTE) 데이터]]></col5>
+							<col6><![CDATA[590000000000]]></col6>
+							<col7><![CDATA[500000000001]]></col7>
+							<col8><![CDATA[개통]]></col8>
+							<col9><![CDATA[신규]]></col9>
+							<col10><![CDATA[2016-01-01]]></col10>
+							<col2><![CDATA[yes]]></col2>
+							<col11><![CDATA[2016-01-01]]></col11>
+						</w2:row>
+						<w2:row>
+							<col1><![CDATA[가족무한사랑(유무선)]]></col1>
+							<col3><![CDATA[1234123400]]></col3>
+							<col4><![CDATA[U+ 인터넷]]></col4>
+							<col5><![CDATA[광랜_19]]></col5>
+							<col6><![CDATA[590000000000]]></col6>
+							<col7><![CDATA[070-0000-0000]]></col7>
+							<col8><![CDATA[개통]]></col8>
+							<col9><![CDATA[신규]]></col9>
+							<col10><![CDATA[2016-01-01]]></col10>
+							<col2><![CDATA[yes]]></col2>
+
+							<col11><![CDATA[2016-01-01]]></col11>
+						</w2:row>
+						<w2:row>
+							<col1><![CDATA[가족무한사랑(유무선)]]></col1>
+							<col3><![CDATA[1234123400]]></col3>
+							<col4><![CDATA[U+ 인터넷]]></col4>
+							<col5><![CDATA[광랜_19]]></col5>
+							<col6><![CDATA[590000000000]]></col6>
+							<col7><![CDATA[070-0000-0000]]></col7>
+							<col8><![CDATA[개통]]></col8>
+							<col9><![CDATA[신규]]></col9>
+							<col10><![CDATA[2016-01-01]]></col10>
+							<col2><![CDATA[no]]></col2>
+							<col11><![CDATA[2016-01-01]]></col11>
+						</w2:row>
+						<w2:row>
+							<col1><![CDATA[가족무한사랑(유무선)]]></col1>
+							<col3><![CDATA[1234123400]]></col3>
+							<col4><![CDATA[이동통신]]></col4>
+							<col5><![CDATA[(LTE) 데이터]]></col5>
+							<col6><![CDATA[590000000000]]></col6>
+							<col7><![CDATA[500000000001]]></col7>
+							<col8><![CDATA[개통]]></col8>
+							<col9><![CDATA[신규]]></col9>
+							<col10><![CDATA[2016-01-01]]></col10>
+							<col2><![CDATA[no]]></col2>
+							<col11><![CDATA[2016-01-01]]></col11>
+						</w2:row>
+						<w2:row>
+							<col1><![CDATA[가족무한사랑(유무선)]]></col1>
+							<col3><![CDATA[1234123400]]></col3>
+							<col4><![CDATA[이동통신]]></col4>
+							<col5><![CDATA[(LTE) 데이터]]></col5>
+							<col6><![CDATA[590000000000]]></col6>
+							<col7><![CDATA[500000000001]]></col7>
+							<col8><![CDATA[개통]]></col8>
+							<col9><![CDATA[신규]]></col9>
+							<col10><![CDATA[2016-01-01]]></col10>
+							<col2><![CDATA[yes]]></col2>
+							<col11><![CDATA[2016-01-01]]></col11>
+						</w2:row>
+						<w2:row>
+							<col1><![CDATA[가족무한사랑(유무선)]]></col1>
+							<col3><![CDATA[1234123400]]></col3>
+							<col4><![CDATA[이동통신]]></col4>
+							<col5><![CDATA[(LTE) 데이터]]></col5>
+							<col6><![CDATA[590000000000]]></col6>
+							<col7><![CDATA[500000000001]]></col7>
+							<col8><![CDATA[개통]]></col8>
+							<col9><![CDATA[신규]]></col9>
+							<col10><![CDATA[2016-01-01]]></col10>
+							<col2><![CDATA[yes]]></col2>
+							<col11><![CDATA[2016-01-01]]></col11>
+						</w2:row>
+						<w2:row>
+							<col1><![CDATA[가족무한사랑(유무선)]]></col1>
+							<col3><![CDATA[1234123400]]></col3>
+							<col4><![CDATA[이동통신]]></col4>
+							<col5><![CDATA[(LTE) 데이터]]></col5>
+							<col6><![CDATA[590000000000]]></col6>
+							<col7><![CDATA[500000000001]]></col7>
+							<col8><![CDATA[개통]]></col8>
+							<col9><![CDATA[신규]]></col9>
+							<col10><![CDATA[2016-01-01]]></col10>
+							<col2><![CDATA[yes]]></col2>
+							<col11><![CDATA[2016-01-01]]></col11>
+						</w2:row>
+						<w2:row>
+							<col1><![CDATA[가족무한사랑(유무선)]]></col1>
+							<col3><![CDATA[1234123400]]></col3>
+							<col4><![CDATA[이동통신]]></col4>
+							<col5><![CDATA[(LTE) 데이터]]></col5>
+							<col6><![CDATA[590000000000]]></col6>
+							<col7><![CDATA[500000000001]]></col7>
+							<col8><![CDATA[개통]]></col8>
+							<col9><![CDATA[신규]]></col9>
+							<col10><![CDATA[2016-01-01]]></col10>
+							<col2><![CDATA[no]]></col2>
+							<col11><![CDATA[2016-01-01]]></col11>
+						</w2:row>
+						<w2:row>
+							<col1><![CDATA[가족무한사랑(유무선)]]></col1>
+							<col3><![CDATA[1234123400]]></col3>
+							<col4><![CDATA[이동통신]]></col4>
+							<col5><![CDATA[(LTE) 데이터]]></col5>
+							<col6><![CDATA[590000000000]]></col6>
+							<col7><![CDATA[500000000001]]></col7>
+							<col8><![CDATA[개통]]></col8>
+							<col9><![CDATA[신규]]></col9>
+							<col10><![CDATA[2016-01-01]]></col10>
+							<col2><![CDATA[no]]></col2>
+							<col11><![CDATA[2016-01-01]]></col11>
+						</w2:row>
+						<w2:row>
+							<col1><![CDATA[가족무한사랑(유무선)]]></col1>
+							<col3><![CDATA[1234123400]]></col3>
+							<col4><![CDATA[이동통신]]></col4>
+							<col5><![CDATA[(LTE) 데이터]]></col5>
+							<col6><![CDATA[590000000000]]></col6>
+							<col7><![CDATA[500000000001]]></col7>
+							<col8><![CDATA[개통]]></col8>
+							<col9><![CDATA[신규]]></col9>
+							<col10><![CDATA[2016-01-01]]></col10>
+							<col2><![CDATA[yes]]></col2>
+							<col11><![CDATA[2016-01-01]]></col11>
+						</w2:row>
+						<w2:row>
+							<col1><![CDATA[가족무한사랑(유무선)]]></col1>
+							<col3><![CDATA[1234123400]]></col3>
+							<col4><![CDATA[이동통신]]></col4>
+							<col5><![CDATA[(LTE) 데이터]]></col5>
+							<col6><![CDATA[590000000000]]></col6>
+							<col7><![CDATA[500000000001]]></col7>
+							<col8><![CDATA[개통]]></col8>
+							<col9><![CDATA[신규]]></col9>
+							<col10><![CDATA[2016-01-01]]></col10>
+							<col2><![CDATA[yes]]></col2>
+							<col11><![CDATA[2016-01-01]]></col11>
+						</w2:row>
+						<w2:row>
+							<col1><![CDATA[가족무한사랑(유무선)]]></col1>
+							<col3><![CDATA[1234123400]]></col3>
+							<col4><![CDATA[이동통신]]></col4>
+							<col5><![CDATA[(LTE) 데이터]]></col5>
+							<col6><![CDATA[590000000000]]></col6>
+							<col7><![CDATA[500000000001]]></col7>
+							<col8><![CDATA[개통]]></col8>
+							<col9><![CDATA[신규]]></col9>
+							<col10><![CDATA[2016-01-01]]></col10>
+							<col2><![CDATA[yes]]></col2>
+							<col11><![CDATA[2016-01-01]]></col11>
+						</w2:row>
+						<w2:row>
+							<col1><![CDATA[가족무한사랑(유무선)]]></col1>
+							<col3><![CDATA[1234123400]]></col3>
+							<col4><![CDATA[이동통신]]></col4>
+							<col5><![CDATA[(LTE) 데이터]]></col5>
+							<col6><![CDATA[590000000000]]></col6>
+							<col7><![CDATA[500000000001]]></col7>
+							<col8><![CDATA[개통]]></col8>
+							<col9><![CDATA[신규]]></col9>
+							<col10><![CDATA[2016-01-01]]></col10>
+							<col2><![CDATA[no]]></col2>
+							<col11><![CDATA[2016-01-01]]></col11>
+						</w2:row>
+						<w2:row>
+							<col1><![CDATA[가족무한사랑(유무선)]]></col1>
+							<col3><![CDATA[1234123400]]></col3>
+							<col4><![CDATA[이동통신]]></col4>
+							<col5><![CDATA[(LTE) 데이터]]></col5>
+							<col6><![CDATA[590000000000]]></col6>
+							<col7><![CDATA[500000000001]]></col7>
+							<col8><![CDATA[개통]]></col8>
+							<col9><![CDATA[신규]]></col9>
+							<col10><![CDATA[2016-01-01]]></col10>
+							<col2><![CDATA[no]]></col2>
+							<col11><![CDATA[2016-01-01]]></col11>
+						</w2:row>
+						<w2:row>
+							<col1><![CDATA[가족무한사랑(유무선)]]></col1>
+							<col3><![CDATA[1234123400]]></col3>
+							<col4><![CDATA[이동통신]]></col4>
+							<col5><![CDATA[(LTE) 데이터]]></col5>
+							<col6><![CDATA[590000000000]]></col6>
+							<col7><![CDATA[500000000001]]></col7>
+							<col8><![CDATA[개통]]></col8>
+							<col9><![CDATA[신규]]></col9>
+							<col10><![CDATA[2016-01-01]]></col10>
+							<col2><![CDATA[yes]]></col2>
+							<col11><![CDATA[2016-01-01]]></col11>
+						</w2:row>
+						<w2:row>
+							<col1><![CDATA[가족무한사랑(유무선)]]></col1>
+							<col3><![CDATA[1234123400]]></col3>
+							<col4><![CDATA[이동통신]]></col4>
+							<col5><![CDATA[(LTE) 데이터]]></col5>
+							<col6><![CDATA[590000000000]]></col6>
+							<col7><![CDATA[500000000001]]></col7>
+							<col8><![CDATA[개통]]></col8>
+							<col9><![CDATA[신규]]></col9>
+							<col10><![CDATA[2016-01-01]]></col10>
+							<col2><![CDATA[yes]]></col2>
+							<col11><![CDATA[2016-01-01]]></col11>
+						</w2:row>
+						<w2:row>
+							<col1><![CDATA[가족무한사랑(유무선)]]></col1>
+							<col3><![CDATA[1234123400]]></col3>
+							<col4><![CDATA[이동통신]]></col4>
+							<col5><![CDATA[(LTE) 데이터]]></col5>
+							<col6><![CDATA[590000000000]]></col6>
+							<col7><![CDATA[500000000001]]></col7>
+							<col8><![CDATA[개통]]></col8>
+							<col9><![CDATA[신규]]></col9>
+							<col10><![CDATA[2016-01-01]]></col10>
+							<col2><![CDATA[yes]]></col2>
+							<col11><![CDATA[2016-01-01]]></col11>
+						</w2:row>
+						<w2:row>
+							<col1><![CDATA[가족무한사랑(유무선)]]></col1>
+							<col3><![CDATA[1234123400]]></col3>
+							<col4><![CDATA[이동통신]]></col4>
+							<col5><![CDATA[(LTE) 데이터]]></col5>
+							<col6><![CDATA[590000000000]]></col6>
+							<col7><![CDATA[500000000001]]></col7>
+							<col8><![CDATA[개통]]></col8>
+							<col9><![CDATA[신규]]></col9>
+							<col10><![CDATA[2016-01-01]]></col10>
+							<col2><![CDATA[no]]></col2>
+							<col11><![CDATA[2016-01-01]]></col11>
+						</w2:row>
+						<w2:row>
+							<col1><![CDATA[가족무한사랑(유무선)]]></col1>
+							<col3><![CDATA[1234123400]]></col3>
+							<col4><![CDATA[이동통신]]></col4>
+							<col5><![CDATA[(LTE) 데이터]]></col5>
+							<col6><![CDATA[590000000000]]></col6>
+							<col7><![CDATA[500000000001]]></col7>
+							<col8><![CDATA[개통]]></col8>
+							<col9><![CDATA[신규]]></col9>
+							<col10><![CDATA[2016-01-01]]></col10>
+							<col2><![CDATA[no]]></col2>
+							<col11><![CDATA[2016-01-01]]></col11>
+						</w2:row>
+					</w2:data>
+				</w2:dataList>
+				<w2:dataList baseNode="list" repeatNode="map" id="dataList2" saveRemovedData="true">
+					<w2:columnInfo>
+						<w2:column id="col1" name="name1" dataType="text"></w2:column>
+						<w2:column id="col2" name="name2" dataType="text"></w2:column>
+						<w2:column id="col3" name="name3" dataType="text"></w2:column>
+						<w2:column id="col4" name="name4" dataType="text"></w2:column>
+					</w2:columnInfo>
+					<w2:data use="true">
+						<w2:row>
+							<col1><![CDATA[2019-05]]></col1>
+							<col2><![CDATA[025043]]></col2>
+							<col3><![CDATA[5.54]]></col3>
+							<col4><![CDATA[154]]></col4>
+						</w2:row>
+						<w2:row>
+							<col1><![CDATA[2019-05]]></col1>
+							<col2><![CDATA[025043]]></col2>
+							<col3><![CDATA[5.54]]></col3>
+							<col4><![CDATA[154]]></col4>
+						</w2:row>
+						<w2:row>
+							<col1><![CDATA[2019-05]]></col1>
+							<col2><![CDATA[025043]]></col2>
+							<col3><![CDATA[5.54]]></col3>
+							<col4><![CDATA[154]]></col4>
+						</w2:row>
+					</w2:data>
+				</w2:dataList>
+				<w2:dataList baseNode="list" repeatNode="map" id="dataList3" saveRemovedData="true">
+					<w2:columnInfo>
+						<w2:column id="col1" name="name1" dataType="text"></w2:column>
+						<w2:column id="col2" name="name2" dataType="text"></w2:column>
+						<w2:column id="col3" name="name3" dataType="text"></w2:column>
+						<w2:column id="col4" name="name4" dataType="text"></w2:column>
+						<w2:column id="col5" name="name5" dataType="text"></w2:column>
+					</w2:columnInfo>
+					<w2:data use="true">
+						<w2:row>
+							<col1><![CDATA[2019-05 10:29:33]]></col1>
+							<col2><![CDATA[이동통신]]></col2>
+							<col3><![CDATA[이동통신]]></col3>
+							<col4><![CDATA[일반상]]></col4>
+							<col5><![CDATA[[처리중] 요금조정처리]]></col5>
+						</w2:row>
+						<w2:row>
+							<col1><![CDATA[2019-05 10:29:33]]></col1>
+							<col2><![CDATA[이동통신]]></col2>
+							<col3><![CDATA[이동통신]]></col3>
+							<col4><![CDATA[일반상]]></col4>
+							<col5><![CDATA[[처리중] 요금조정처리]]></col5>
+						</w2:row>
+						<w2:row>
+							<col1><![CDATA[2019-05 10:29:33]]></col1>
+							<col2><![CDATA[이동통신]]></col2>
+							<col3><![CDATA[이동통신]]></col3>
+							<col4><![CDATA[일반상]]></col4>
+							<col5><![CDATA[[처리중] 요금조정처리]]></col5>
+						</w2:row>
+						<w2:row>
+							<col1><![CDATA[2019-05 10:29:33]]></col1>
+							<col2><![CDATA[이동통신]]></col2>
+							<col3><![CDATA[이동통신]]></col3>
+							<col4><![CDATA[일반상]]></col4>
+							<col5><![CDATA[[처리중] 요금조정처리]]></col5>
+						</w2:row>
+						<w2:row>
+							<col1><![CDATA[2019-05 10:29:33]]></col1>
+							<col2><![CDATA[이동통신]]></col2>
+							<col3><![CDATA[이동통신]]></col3>
+							<col4><![CDATA[일반상]]></col4>
+							<col5><![CDATA[[처리중] 요금조정처리]]></col5>
+						</w2:row>
+						<w2:row>
+							<col1><![CDATA[2019-05 10:29:33]]></col1>
+							<col2><![CDATA[이동통신]]></col2>
+							<col3><![CDATA[이동통신]]></col3>
+							<col4><![CDATA[일반상]]></col4>
+							<col5><![CDATA[[처리중] 요금조정처리]]></col5>
+						</w2:row>
+						<w2:row>
+							<col1><![CDATA[2019-05 10:29:33]]></col1>
+							<col2><![CDATA[이동통신]]></col2>
+							<col3><![CDATA[이동통신]]></col3>
+							<col4><![CDATA[일반상]]></col4>
+							<col5><![CDATA[[처리중] 요금조정처리]]></col5>
+						</w2:row>
+					</w2:data>
+				</w2:dataList>
+			</w2:dataCollection>
+			<w2:workflowCollection></w2:workflowCollection>
+		</xf:model>
+		<script type="text/javascript" lazy="false"><![CDATA[
+
+	scwin.onpageload = function() {
+
+	};
+
+	scwin.onpageunload = function() {
+
+	};
+
+	scwin.df_maketAgree = function(_value) {
+	  if(_value == 'yes'){
+	    return '<div class="bool_yes">yes</div>';
+	  } else {
+	    return '<div class="bool_no">no</div>';
+	  }
+	};
+
+	scwin.btn_overlayer_onclick = function() {
+		$p.$('#grp_overlayerFix').toggleClass('on');
+		
+		if($p.$('#grp_overlayerFix').is('.on')){
+		    grp_overlayer.setStyle('height','622px');
+		} else {		    
+		    grp_overlayer.setStyle('height','');
+		}
+		
+	};
+	]]></script>
+		<w2:require src="/common/udc/udc_tooltipIcon.xml"></w2:require>
+	</head>
+	<body ev:onpageload="scwin.onpageload" ev:onpageunload="scwin.onpageunload" class="card_flexible">
+    <xf:group id="" class="">
+						<xf:group style="" id="" class="bc_dfbox">
+							<xf:group id="" tagname="h3">
+								<w2:textbox tagname="span" style="" id="" label="계약정보"></w2:textbox>
+								<w2:textbox id="" label="(12건)" style="" tagname="em"></w2:textbox>
+							</xf:group>
+							<xf:select ref="" appearance="full" style="" id="" renderType="checkboxgroup" rows="" selectedindex="-1" cols="0" class="cbx">
+								<xf:choices>
+									<xf:item>
+										<xf:label><![CDATA[추가가구정보포함]]></xf:label>
+										<xf:value></xf:value>
+									</xf:item>
+								</xf:choices>
+							</xf:select>
+							<w2:anchor id="" outerDiv="false" style="" class="btn_bc_agree" clickEventElement="">
+								<xf:label><![CDATA[가구정보 조회동의]]></xf:label>
+							</w2:anchor>
+							<xf:group id="" tagname="" style="" class="fr"><xf:group id="" class="noti_alert"><w2:textbox tagname="span" style="" id="" label="개통"></w2:textbox><w2:textbox tagname="span" style="" id="" label="전화번호변경"></w2:textbox></xf:group><w2:textbox id="" label="변경일 2019-01-24" style="" tagname="span" class="fs12 txt_point lh20"></w2:textbox>
+								
+							</xf:group>
+						</xf:group>
+						
+					<xf:group id="grp_overlayerFix" class="overlayer_fix" style=""><xf:group id="grp_overlayer" class="overlayer" style="" adaptiveThreshold="">
+							<w2:gridView oddEvenColorDisplay="true" rowNumVisible="" showSortableImage="" rowNumHeaderValue=""
+								scrollByColumn="false" defaultCellHeight="" ev:onheaderclick="" focusMode="row" rowNumWidth="" evenRowBackgroundColor=""
+								autoFit="allColumn" id="" mergeCells="" class="wq_gvw bc" showSortableUseFilter="" ev:oncellclick="" editModeEvent="onclick"
+								scrollByColumnAdaptive="false" readOnly="true" sortable="true" rowStatusHeaderValue="" mergeCol="" showLastRow="true"
+								rowStatusVisible="" tooltipDisplay="true" dataList="data:dataList1" oddRowBackgroundColor="#ffffff" style="height:116px;"
+								ev:oncelldblclick="" visibleRowNum="" autoFitMinWidth="1000">
+								<w2:caption style="" id="caption1" value="this is a grid caption."></w2:caption>
+								<w2:header style="" id="header1">
+									<w2:row style="" id="row1">
+										<w2:column removeBorderStyle="false" width="100" inputType="text" id="column14" value="결합유형"
+											blockSelect="false" displayMode="label">
+										</w2:column>
+										<w2:column removeBorderStyle="false" width="70" inputType="text" id="column26" value="마케팅동의"
+											blockSelect="false" displayMode="label">
+										</w2:column>
+										<w2:column removeBorderStyle="false" width="80" inputType="text" id="column5" value="서비스"
+											blockSelect="false" displayMode="label">
+										</w2:column>
+										<w2:column removeBorderStyle="false" width="90" inputType="text" id="column3" value="요금제"
+											blockSelect="false" displayMode="label">
+										</w2:column>
+										<w2:column removeBorderStyle="false" width="120" inputType="text" id="column1" value="청구계정번호"
+											blockSelect="false" displayMode="label">
+										</w2:column>
+										<w2:column removeBorderStyle="false" width="120" inputType="text" id="column17" value="상품번호"
+											blockSelect="false" displayMode="label">
+										</w2:column>
+										<w2:column removeBorderStyle="false" width="45" inputType="text" id="column15" value="상태"
+											blockSelect="false" displayMode="label">
+										</w2:column>
+										<w2:column removeBorderStyle="false" width="45" inputType="text" id="column21" value="상세"
+											blockSelect="false" displayMode="label">
+										</w2:column>
+										<w2:column removeBorderStyle="false" width="95" inputType="text" id="column19" value="최초개통일"
+											blockSelect="false" displayMode="label">
+										</w2:column>
+										<w2:column removeBorderStyle="false" width="95" inputType="text" id="column25" value="상태변경일"
+											blockSelect="false" displayMode="label">
+										</w2:column>
+										<w2:column removeBorderStyle="false" width="105" inputType="text" id="column23" value="가입번호"
+											blockSelect="false" displayMode="label">
+										</w2:column>
+									</w2:row>
+								</w2:header>
+								<w2:gBody style="" id="gBody1">
+									<w2:row style="" id="row2">
+										<w2:column removeBorderStyle="false" width="100" inputType="text" id="col1" escape="false"
+											blockSelect="false" displayMode="label">
+											<w2:choices>
+												<w2:item>
+													<w2:label><![CDATA[new row]]></w2:label>
+													<w2:value></w2:value>
+												</w2:item>
+												<w2:item>
+													<w2:label><![CDATA[new row]]></w2:label>
+													<w2:value></w2:value>
+												</w2:item>
+												<w2:item>
+													<w2:label><![CDATA[new row]]></w2:label>
+													<w2:value></w2:value>
+												</w2:item>
+												<w2:item>
+													<w2:label><![CDATA[new row]]></w2:label>
+													<w2:value></w2:value>
+												</w2:item>
+											</w2:choices>
+										</w2:column>
+										<w2:column removeBorderStyle="false" width="70" inputType="text" id="col2" blockSelect="false"
+											displayMode="label" displayFormatter="scwin.df_maketAgree" class="txt_point">
+										</w2:column>
+										<w2:column removeBorderStyle="false" width="80" inputType="text" id="col3" blockSelect="false"
+											displayMode="label">
+										</w2:column>
+										<w2:column removeBorderStyle="false" width="90" inputType="text" id="col4" blockSelect="false"
+											displayMode="label">
+										</w2:column>
+										<w2:column removeBorderStyle="false" width="120" inputType="text" id="col5" blockSelect="false"
+											displayMode="label">
+										</w2:column>
+										<w2:column removeBorderStyle="false" width="120" inputType="text" id="col6" blockSelect="false"
+											displayMode="label">
+										</w2:column>
+										<w2:column removeBorderStyle="false" width="45" inputType="text" id="col7" class="ov"
+											blockSelect="false" displayMode="label">
+										</w2:column>
+										<w2:column removeBorderStyle="false" width="45" inputType="text" id="col8" class="ov"
+											blockSelect="false" displayMode="label">
+										</w2:column>
+										<w2:column removeBorderStyle="false" width="95" inputType="text" id="col9" blockSelect="false"
+											displayMode="label">
+										</w2:column>
+										<w2:column removeBorderStyle="false" width="95" inputType="text" id="col10" class="ov"
+											blockSelect="false" displayMode="label">
+										</w2:column>
+										<w2:column removeBorderStyle="false" width="105" inputType="text" id="col11" blockSelect="false"
+											displayMode="label">
+										</w2:column>
+									</w2:row>
+								</w2:gBody>
+							</w2:gridView>
+							<xf:group id="" class="ol_btnbox">
+							<w2:anchor outerDiv="false" clickEventElement="" style="" id="btn_overlayer" class="btn_overlayer" ev:onclick="scwin.btn_overlayer_onclick">
+								<xf:label><![CDATA[]]></xf:label>
+							</w2:anchor>
+						</xf:group></xf:group></xf:group></xf:group><xf:group class="ly" id="">
+					<xf:group class="smbox item1" id="" style="">
+									<xf:group class="bc_dfbox ic1" id="" style="" tagname="">
+									<xf:group id="" tagname="h3">
+										<w2:textbox class="" id="" label="" style="" tagname="i"></w2:textbox>
+										<w2:textbox class="" id="" label="납부/청구정보 요약" style="" tagname="span"></w2:textbox>
+									</xf:group></xf:group>
+									<xf:group class="smbox_body" id="" style="" adaptiveThreshold="">
+
+										<xf:group id="" class="bc_list" tagname="ul">
+
+											<xf:group id="" tagname="li">
+												<xf:group id="" tagname="a">
+													<w2:attributes>
+														<w2:href>javascript:void(null);</w2:href>
+													</w2:attributes>
+													<w2:textbox class="" dataType="" displayFormat="" id="" label="청구계정총요금" style="" tagname="label">
+													</w2:textbox>
+													<xf:group id="" class="rta">
+														<w2:textbox tagname="span" dataType="number" displayFormat="#,###" style="" id="" label="70000" class="" localeRef="">
+														</w2:textbox>
+														<w2:textbox class="won" id="" label="원" style="" tagname="span"></w2:textbox>
+													</xf:group>
+												</xf:group>
+												<xf:group id="" tagname="ul" class="sub">
+													<xf:group id="" tagname="li">
+														<xf:group id="" tagname="a">
+															<w2:attributes>
+																<w2:href>javascript:void(null);</w2:href>
+															</w2:attributes>
+															<w2:textbox class="" dataType="" displayFormat="" id="" label="당월청구요금" style="" tagname="label">
+															</w2:textbox>
+															<xf:group tagname="" id="" class="rta">
+																<w2:textbox tagname="span" dataType="number" displayFormat="#,###" style="" id="" label="68000" class="">
+																</w2:textbox>
+																<w2:textbox tagname="span" style="" id="" label="원" class="won"></w2:textbox>
+															</xf:group>
+														</xf:group>
+													</xf:group>
+													<xf:group id="" tagname="li" style="">
+														<xf:group id="" tagname="a">
+															<w2:attributes>
+																<w2:href>javascript:void(null);</w2:href>
+															</w2:attributes>
+															<w2:textbox class="" dataType="" displayFormat="" id="" label="연체요금" style="" tagname="label">
+															</w2:textbox>
+															<xf:group class="rta bc_point" id="" tagname="">
+																<w2:textbox class="" dataType="number" displayFormat="#,###" id="" label="2000" style="" tagname="span">
+																</w2:textbox>
+																<w2:textbox class="won" id="" label="원" style="" tagname="span"></w2:textbox>
+															</xf:group>
+														</xf:group>
+													</xf:group>
+												</xf:group>
+											</xf:group>
+											<xf:group id="" tagname="li" style="">
+												<xf:group id="" tagname="a">
+													<w2:attributes>
+														<w2:href>javascript:void(null);</w2:href>
+													</w2:attributes>
+													<w2:textbox class="" dataType="" displayFormat="" id="" label="납부방법" style="" tagname="label">
+													</w2:textbox>
+													<xf:group class="rta" id="">
+														<w2:textbox class="" id="" label="엘지카드 000*-****-****-9943" style="" tagname="span">
+														</w2:textbox>
+														<w2:textbox class="badge" id="" label="제휴" style="" tagname="span" dataType="">
+														</w2:textbox>
+													</xf:group>
+												</xf:group>
+												<xf:group id="" tagname="ul" class="sub">
+													<xf:group id="" tagname="li" class="item">
+														<xf:group id="" tagname="a">
+															<w2:attributes>
+																<w2:href>javascript:void(null);</w2:href>
+															</w2:attributes>
+															<w2:textbox class="" dataType="" displayFormat="" id="" label="최초출금일" style="" tagname="label">
+															</w2:textbox>
+															<xf:group class="rta" id="" tagname="">
+																<w2:textbox class="" id="" label="18일" style="" tagname="span"></w2:textbox>
+															</xf:group>
+														</xf:group>
+														<xf:group id="" tagname="a">
+															<w2:attributes>
+																<w2:href>javascript:void(null);</w2:href>
+															</w2:attributes>
+															<w2:textbox class="" dataType="" displayFormat="" id="" label="납부자" style="" tagname="label">
+															</w2:textbox>
+															<xf:group class="rta" id="" tagname="">
+																<w2:textbox class="" dataType="" displayFormat="" id="" label="홍길동 (388002)" style="" tagname="span">
+																</w2:textbox>
+															</xf:group>
+														</xf:group>
+													</xf:group>
+												<xf:group tagname="li" style="" id="" class="sm_btn_box">
+												<xf:group id="" class="fr">
+													<xf:trigger style="" id="" type="button" class="btn_sm">
+														<xf:label><![CDATA[CMS]]></xf:label>
+													</xf:trigger>
+													<xf:trigger style="" id="" type="button" class="btn_sm">
+														<xf:label><![CDATA[출금보류]]></xf:label>
+													</xf:trigger>
+													<xf:trigger style="" id="" type="button" class="btn_sm">
+														<xf:label><![CDATA[납부방법변경이력]]></xf:label>
+													</xf:trigger>
+													<xf:trigger style="" id="" type="button" class="btn_sm">
+														<xf:label><![CDATA[입금전용계좌 SMS발송]]></xf:label>
+													</xf:trigger>
+												</xf:group>
+											</xf:group></xf:group>
+											</xf:group>
+
+											
+											<xf:group id="" style="" tagname="li">
+												<xf:group id="" tagname="a">
+													<w2:attributes>
+														<w2:href>javascript:void(null);</w2:href>
+													</w2:attributes>
+													<w2:textbox class="" dataType="" displayFormat="" id="" label="청구서" style="" tagname="label">
+													</w2:textbox>
+												</xf:group>
+												<xf:group class="sub" id="" tagname="ul">
+													<xf:group class="" id="" tagname="li">
+														<xf:group id="" tagname="a">
+															<w2:attributes>
+																<w2:href>javascript:void(null);</w2:href>
+															</w2:attributes>
+															<w2:textbox class="" dataType="" displayFormat="" id="" label="주소" style="" tagname="label">
+															</w2:textbox>
+															<xf:group class="rta" id="" tagname="">
+																<w2:textbox class="address" id="" label="서울 용산구 용산대로 엘지아파트 주소가 길어질 경우 두줄 처리되는 형태 101동 204호" style="" tagname="span">
+																</w2:textbox>
+															</xf:group>
+														</xf:group>
+													</xf:group>
+													<xf:group class="" id="" tagname="li" style="">
+														<xf:group id="" tagname="a">
+															<w2:attributes>
+																<w2:href>javascript:void(null);</w2:href>
+															</w2:attributes>
+															<w2:textbox class="" dataType="" displayFormat="" id="" label="유형" style="" tagname="label">
+															</w2:textbox>
+															<xf:group class="rta" id="" tagname="">
+																<w2:textbox class="" id="" label="휴대폰(간편)청구서" style="" tagname="span">
+																</w2:textbox>
+															</xf:group>
+														</xf:group>
+													</xf:group>
+													<xf:group class="" id="" style="" tagname="li">
+														<xf:group id="" tagname="a">
+															<w2:attributes>
+																<w2:href>javascript:void(null);</w2:href>
+															</w2:attributes>
+															<w2:textbox class="" dataType="" displayFormat="" id="" label="수령인" style="" tagname="label">
+															</w2:textbox>
+															<xf:group class="rta" id="" tagname="">
+																<w2:textbox class="" id="" label="홍*동" style="" tagname="span"></w2:textbox>
+															</xf:group>
+														</xf:group>
+													</xf:group>
+													<xf:group class="item" id="" tagname="li" style="">
+														<xf:group id="" tagname="a">
+															<w2:attributes>
+																<w2:href>javascript:void(null);</w2:href>
+															</w2:attributes>
+															<w2:textbox class="" dataType="" displayFormat="" id="" label="부달여부" style="" tagname="label">
+															</w2:textbox>
+															<xf:group class="rta" id="" tagname="">
+																<w2:textbox class="bool_yes" id="" label="" style="" tagname="span"></w2:textbox>
+															</xf:group>
+														</xf:group>
+														<xf:group id="" tagname="a">
+															<w2:attributes>
+																<w2:href>javascript:void(null);</w2:href>
+															</w2:attributes>
+															<w2:textbox class="" dataType="" displayFormat="" id="" label="발행오류" style="" tagname="label">
+															</w2:textbox>
+															<xf:group class="rta" id="" tagname="">
+																<w2:textbox class="bool_no" id="" label="" style="" tagname="span"></w2:textbox>
+															</xf:group>
+														</xf:group>
+													</xf:group>
+													<xf:group class="sm_btn_box last" id="" style="" tagname="li">
+														<xf:group class="fr" id="">
+															<xf:trigger class="btn_sm" id="" style="" type="button">
+																<xf:label><![CDATA[청구서재발행]]></xf:label>
+															</xf:trigger>
+														</xf:group>
+													</xf:group>
+												</xf:group>
+											</xf:group>
+										</xf:group>
+									</xf:group>
+								</xf:group><xf:group class="smbox item2" id="" style="">
+									<xf:group class="bc_dfbox ic2" id="" style="">
+									<xf:group id="" tagname="h3">
+										<w2:textbox class="" id="" label="" style="" tagname="i"></w2:textbox>
+										<w2:textbox tagname="span" style="" id="" label="요금제 요약" class=""></w2:textbox>
+									</xf:group></xf:group>
+									<xf:group adaptiveThreshold="" class="smbox_body" id="" style="">
+										<xf:group class="bc_list" id="" tagname="ul">
+											<xf:group id="" tagname="li"><xf:group id="" tagname="ul"><xf:group tagname="li" id="">
+												<xf:group tagname="a" id="">
+													<w2:attributes>
+														<w2:href>javascript:void(null);</w2:href>
+													</w2:attributes>
+													<w2:textbox tagname="label" dataType="" displayFormat="" style="" id="" label="가입요금제" class="">
+													</w2:textbox>
+													<xf:group id="" class="rta">
+														<w2:textbox tagname="span" dataType="" localeRef="" displayFormat="" style="" id="" label="(LTE) 데이터_일반" class="">
+														</w2:textbox>
+														<w2:udc_toolTipIcon iconType="question" toolTipMessage="익월" style="width: 20px;" id="" direction="right">
+														</w2:udc_toolTipIcon>
+													</xf:group>
+												</xf:group>
+												<xf:group tagname="ul" id="" class="sub">
+													<xf:group tagname="li" id="">
+														<xf:group tagname="a" id="">
+															<w2:attributes>
+																<w2:href>javascript:void(null);</w2:href>
+															</w2:attributes>
+															<w2:textbox tagname="label" dataType="" displayFormat="" style="" id="" label="기본료" class="">
+															</w2:textbox>
+															<xf:group tagname="" id="" class="rta">
+																<w2:textbox tagname="span" dataType="number" displayFormat="#,###" style="" id="" label="32890" class="">
+																</w2:textbox>
+																<w2:textbox tagname="span" style="" id="" label="원" class="won"></w2:textbox>
+															</xf:group>
+														</xf:group>
+													</xf:group>
+												</xf:group>
+											</xf:group><xf:group tagname="li" style="" id="">
+												<xf:group tagname="a" id="">
+													<w2:attributes>
+														<w2:href>javascript:void(null);</w2:href>
+													</w2:attributes>
+													<w2:textbox tagname="label" dataType="" displayFormat="" style="" id="" label="부가서비스" class="">
+													</w2:textbox>
+													<xf:group id="" class="rta">
+														<w2:textbox tagname="span" dataType="number" localeRef="" displayFormat="#,###" style="" id="" label="5500" class="">
+														</w2:textbox>
+														<w2:textbox tagname="span" style="" id="" label="원" class="won"></w2:textbox>
+													</xf:group>
+												</xf:group>
+												<xf:group tagname="ul" id="" class="sub">
+													<xf:group tagname="li" style="" id="" class="">
+														<xf:group tagname="a" id="">
+															<w2:attributes>
+																<w2:href>javascript:void(null);</w2:href>
+															</w2:attributes>
+															<xf:group tagname="" id="" class="rta">
+																<w2:textbox tagname="span" localeRef="" style="" id="" label="[유료] 중고폰 보장 외 4건" class="">
+																</w2:textbox>
+																<w2:udc_toolTipIcon iconType="question" toolTipMessage="익월" style="width: 20px;" id="" direction="right">
+																</w2:udc_toolTipIcon>
+															</xf:group>
+														</xf:group>
+													</xf:group>
+													<xf:group tagname="li" id="" class="item">
+														<xf:group tagname="a" id="">
+															<w2:attributes>
+																<w2:href>javascript:void(null);</w2:href>
+															</w2:attributes>
+															<w2:textbox tagname="label" dataType="" displayFormat="" style="" id="" label="서비스예약" class="">
+															</w2:textbox>
+															<xf:group tagname="" id="" class="rta">
+																<w2:textbox tagname="span" style="" id="" label="" class="bool_yes"></w2:textbox>
+															</xf:group>
+														</xf:group>
+														<xf:group tagname="a" id="">
+															<w2:attributes>
+																<w2:href>javascript:void(null);</w2:href>
+															</w2:attributes>
+															<w2:textbox tagname="label" dataType="" displayFormat="" style="" id="" label="통화편리서비스" class="">
+															</w2:textbox>
+															<xf:group tagname="" id="" class="rta">
+																<w2:textbox tagname="span" dataType="number" displayFormat="#,###" style="" id="" label="3" class="">
+																</w2:textbox>
+																<w2:textbox tagname="span" style="" id="" label="건" class=""></w2:textbox>
+																<xf:trigger style="" id="" type="button" class="btn_bc_tip">
+																	<xf:label></xf:label>
+																</xf:trigger>
+															</xf:group>
+														</xf:group>
+													</xf:group>
+												</xf:group>
+											</xf:group></xf:group></xf:group><xf:group id="" style="" tagname="li">
+												<xf:group id="" tagname="a">
+													<w2:attributes>
+														<w2:href>javascript:void(null);</w2:href>
+													</w2:attributes>
+													<w2:textbox class="" dataType="" displayFormat="" id="" label="단말기 할부정보" style="" tagname="label">
+													</w2:textbox>
+													<xf:group class="rta" id="" style="">
+														<w2:textbox class="badge" dataType="" id="" label="이중할부" style="" tagname="span"></w2:textbox>
+													</xf:group>
+												</xf:group>
+												<xf:group class="sub" id="" tagname="ul">
+													<xf:group class="" id="" tagname="li">
+														<xf:group id="" tagname="a">
+															<w2:attributes>
+																<w2:href>javascript:void(null);</w2:href>
+															</w2:attributes>
+															<xf:group class="rta" id="" tagname="">
+																<w2:textbox class="" id="" label="잔여 : 663,000원 / 13개월 / 월 43,313원" style="" tagname="span">
+																</w2:textbox>
+															</xf:group>
+														</xf:group>
+													</xf:group>
+													<xf:group class="" id="" style="" tagname="li">
+														<xf:group id="" tagname="a">
+															<w2:attributes>
+																<w2:href>javascript:void(null);</w2:href>
+															</w2:attributes>
+															<xf:group class="rta" id="" tagname="">
+																<w2:textbox class="" id="" label="잔여 : 123,000원 / 04개월 / 월 30,313원" style="" tagname="span">
+																</w2:textbox>
+															</xf:group>
+														</xf:group>
+													</xf:group>
+												</xf:group>
+											</xf:group>
+											<xf:group id="" style="" tagname="li" class="">
+												<xf:group id="" tagname="" class="tit">
+													<w2:textbox tagname="h4" dataType="" displayFormat="" style="" id="" label="3개월 평균 사용량 요약" class="">
+													</w2:textbox>
+													<xf:group style="" id="" class="rta">
+														<xf:trigger style="" id="" type="button" class="btn_sm">
+															<xf:label><![CDATA[상세보기]]></xf:label>
+														</xf:trigger>
+													</xf:group>
+												</xf:group>
+												<xf:group id="" tagname="ul">
+													<xf:group tagname="li" style="" id="">
+														<w2:gridView oddEvenColorDisplay="true" rowNumVisible="" showSortableImage="" rowNumHeaderValue="" scrollByColumn="false" defaultCellHeight="" ev:onheaderclick="" focusMode="row" rowNumWidth="" evenRowBackgroundColor="" autoFit="allColumn" id="" mergeCells="" class="wq_gvw bc type1" showSortableUseFilter="" ev:oncellclick="" editModeEvent="onclick" scrollByColumnAdaptive="false" readOnly="true" sortable="true" rowStatusHeaderValue="" mergeCol="" rowStatusVisible="" tooltipDisplay="true" dataList="data:dataList2" oddRowBackgroundColor="" style="height:134px;" ev:oncelldblclick="" visibleRowNum="3" adaptive="" adaptiveThreshold="">
+															<w2:caption style="" id="caption1" value="this is a grid caption."></w2:caption>
+															<w2:header style="" id="header1">
+																<w2:row style="" id="row1">
+																	<w2:column removeBorderStyle="false" width="90" inputType="text" id="column14" value="사용년월" blockSelect="false" displayMode="label">
+																	</w2:column>
+																	<w2:column removeBorderStyle="false" width="90" inputType="text" id="column5" value="음성+영상" blockSelect="false" displayMode="label">
+																	</w2:column>
+																	<w2:column removeBorderStyle="false" width="100" inputType="text" id="column3" value="데이터(GB)" blockSelect="false" displayMode="label">
+																	</w2:column>
+																	<w2:column removeBorderStyle="false" width="80" inputType="text" id="column1" value="메시지(건)" blockSelect="false" displayMode="label">
+																	</w2:column>
+																</w2:row>
+															</w2:header>
+															<w2:gBody style="" id="gBody1">
+																<w2:row style="" id="row2">
+																	<w2:column removeBorderStyle="false" width="90" inputType="text" id="col1" blockSelect="false" displayMode="label">
+																		<w2:choices>
+																			<w2:item>
+																				<w2:label><![CDATA[new row]]></w2:label>
+																				<w2:value></w2:value>
+																			</w2:item>
+																			<w2:item>
+																				<w2:label><![CDATA[new row]]></w2:label>
+																				<w2:value></w2:value>
+																			</w2:item>
+																			<w2:item>
+																				<w2:label><![CDATA[new row]]></w2:label>
+																				<w2:value></w2:value>
+																			</w2:item>
+																			<w2:item>
+																				<w2:label><![CDATA[new row]]></w2:label>
+																				<w2:value></w2:value>
+																			</w2:item>
+																		</w2:choices>
+																	</w2:column>
+																	<w2:column removeBorderStyle="false" width="90" inputType="text" id="col2" blockSelect="false" displayMode="label" displayFormat="##:##:##" dataType="" customModelUnformatter="">
+																	</w2:column>
+																	<w2:column removeBorderStyle="false" width="100" inputType="text" id="col3" blockSelect="false" displayMode="label">
+																	</w2:column>
+																	<w2:column removeBorderStyle="false" width="80" inputType="text" id="col4" blockSelect="false" displayMode="label">
+																	</w2:column>
+																</w2:row>
+															</w2:gBody>
+															<w2:footer style="" id="footer1">
+																<w2:row style="" id="row3">
+																	<w2:column removeBorderStyle="false" width="90" inputType="text" id="column35" blockSelect="false" displayMode="label" value="평균 사용량">
+																	</w2:column>
+																	<w2:column removeBorderStyle="false" width="90" inputType="expression" id="column34" blockSelect="false" displayMode="label" expression="sum('col2') " dataType="" class="" displayFormat="##:##:##">
+																	</w2:column>
+																	<w2:column removeBorderStyle="false" width="100" inputType="expression" id="column33" blockSelect="false" displayMode="label" expression="sum('col3') ">
+																	</w2:column>
+																	<w2:column removeBorderStyle="false" width="80" inputType="expression" id="column32" blockSelect="false" displayMode="label" expression="sum('col4') " displayFormat="#,###" dataType="number">
+																	</w2:column>
+																</w2:row>
+															</w2:footer>
+														</w2:gridView>
+													</xf:group>
+												</xf:group>
+											</xf:group>
+										</xf:group>
+									</xf:group>
+								</xf:group><xf:group class="smbox  item3" id="" style="">
+								<xf:group class="bc_dfbox ic3" id="" style="">
+									<w2:textbox class="" id="" label="" style="" tagname="i"></w2:textbox>
+									<xf:group id="" tagname="h3">
+										<w2:textbox class="" id="" label="" style="" tagname="i"></w2:textbox>
+										<w2:textbox tagname="span" style="" id="" label="혜택 요약" class=""></w2:textbox>
+									</xf:group>
+									<xf:group class="fr" id="">
+										<xf:trigger class="btn_bc_more" id="" style="" type="button">
+											<xf:label><![CDATA[전체 할인목록]]></xf:label>
+										</xf:trigger>
+									</xf:group>
+								</xf:group>
+								<xf:group adaptiveThreshold="" class="smbox_body" id="" style="">
+									<xf:group class="bc_list" id="" tagname="ul">
+										<xf:group id="" tagname="li"><xf:group id="" tagname="ul"><xf:group tagname="li" id="">
+											<xf:group tagname="a" id="">
+												<w2:attributes>
+													<w2:href>javascript:void(null);</w2:href>
+												</w2:attributes>
+												<w2:textbox tagname="label" dataType="" displayFormat="" style="" id="" label="결합할인" class="">
+												</w2:textbox>
+											</xf:group>
+											<xf:group tagname="ul" id="" class="sub">
+												<xf:group tagname="li" id="">
+													<xf:group tagname="a" id="">
+														<w2:attributes>
+															<w2:href>javascript:void(null);</w2:href>
+														</w2:attributes>
+														<w2:textbox tagname="label" dataType="" displayFormat="" style="" id="" label="가무사(유무선)" class="">
+														</w2:textbox>
+														<xf:group tagname="" id="" class="rta">
+															<w2:textbox tagname="span" dataType="number" displayFormat="#,###" style="" id="" label="5500" class="">
+															</w2:textbox>
+															<w2:textbox tagname="span" style="" id="" label="원" class="won"></w2:textbox>
+														</xf:group>
+													</xf:group>
+												</xf:group>
+												<xf:group tagname="li" style="" id="">
+													<xf:group tagname="a" id="">
+														<w2:attributes>
+															<w2:href>javascript:void(null);</w2:href>
+														</w2:attributes>
+														<w2:textbox tagname="label" dataType="" displayFormat="" style="" id="" label="구)가무사클럽" class="">
+														</w2:textbox>
+														<xf:group tagname="" id="" class="rta">
+															<w2:textbox tagname="span" dataType="number" displayFormat="#,###" style="" id="" label="10500" class="">
+															</w2:textbox>
+															<w2:textbox tagname="span" style="" id="" label="원" class="won"></w2:textbox>
+														</xf:group>
+													</xf:group>
+												</xf:group>
+											</xf:group>
+										</xf:group><xf:group tagname="li" style="" id="">
+											<xf:group tagname="a" id="">
+												<w2:attributes>
+													<w2:href>javascript:void(null);</w2:href>
+												</w2:attributes>
+												<w2:textbox tagname="label" dataType="" displayFormat="" style="" id="" label="약정할인" class="">
+												</w2:textbox>
+												<xf:group id="" class="rta">
+													<w2:textbox tagname="span" style="" id="" label="24개월" class=""></w2:textbox>
+													<w2:textbox tagname="span" dataType="" style="" id="" label="펜딩" class="badge"></w2:textbox>
+												</xf:group>
+											</xf:group>
+										</xf:group></xf:group></xf:group>
+										<xf:group id="" tagname="li"><xf:group id="" tagname="ul"><xf:group tagname="li" style="" id="">
+											<xf:group tagname="a" id="">
+												<w2:attributes>
+													<w2:href>javascript:void(null);</w2:href>
+												</w2:attributes>
+												<w2:textbox tagname="label" dataType="" displayFormat="" style="" id="" label="선택약정할인" class="">
+												</w2:textbox>
+												<xf:group style="" id="" class="rta">
+													<w2:textbox tagname="span" style="" id="" label="12개월/25%" class=""></w2:textbox>
+													<w2:textbox tagname="span" dataType="" style="" id="" label="펜딩" class="badge"></w2:textbox>
+												</xf:group>
+											</xf:group>
+											<xf:group tagname="ul" style="" id="" class="sub">
+												<xf:group tagname="li" id="">
+													<xf:group tagname="a" id="">
+														<w2:attributes>
+															<w2:href>javascript:void(null);</w2:href>
+														</w2:attributes>
+														<w2:textbox tagname="label" dataType="" displayFormat="" style="" id="" label="선택약정(월)" class="">
+														</w2:textbox>
+														<xf:group tagname="" id="" class="rta">
+															<w2:textbox tagname="span" dataType="number" displayFormat="#,###" style="" id="" label="16500" class="">
+															</w2:textbox>
+															<w2:textbox tagname="span" style="" id="" label="원" class="won"></w2:textbox>
+														</xf:group>
+													</xf:group>
+												</xf:group>
+												<xf:group tagname="li" style="" id="">
+													<xf:group tagname="a" id="">
+														<w2:attributes>
+															<w2:href>javascript:void(null);</w2:href>
+														</w2:attributes>
+														<w2:textbox tagname="label" dataType="" displayFormat="" style="" id="" label="해지 시 할인반환금" class="">
+														</w2:textbox>
+														<xf:group tagname="" id="" class="rta">
+															<w2:textbox tagname="span" dataType="number" displayFormat="#,###" style="" id="" label="240500" class="">
+															</w2:textbox>
+															<w2:textbox tagname="span" style="" id="" label="원" class="won"></w2:textbox>
+														</xf:group>
+													</xf:group>
+												</xf:group>
+											</xf:group>
+										</xf:group><xf:group tagname="li" userData2="" id="" class="item">
+											<xf:group tagname="a" id="">
+												<w2:attributes>
+													<w2:href>javascript:void(null);</w2:href>
+												</w2:attributes>
+												<w2:textbox tagname="label" dataType="" displayFormat="" style="" id="" label="복지할인" class="">
+												</w2:textbox>
+												<xf:group tagname="" id="" class="rta">
+													<w2:textbox tagname="span" style="" id="" label="" class="bool_yes"></w2:textbox>
+													<w2:textbox tagname="span" dataType="" style="" id="" label="장애인" class="badge"></w2:textbox>
+												</xf:group>
+											</xf:group>
+											<xf:group tagname="a" id="">
+												<w2:attributes>
+													<w2:href>javascript:void(null);</w2:href>
+												</w2:attributes>
+												<w2:textbox tagname="label" dataType="" displayFormat="" style="" id="" label="기타할인" class="">
+												</w2:textbox>
+												<xf:group tagname="" id="" class="rta">
+													<w2:textbox tagname="span" dataType="number" displayFormat="#,###" style="" id="" label="2" class="">
+													</w2:textbox>
+													<w2:textbox tagname="span" style="" id="" label="건" class="won"></w2:textbox>
+													<xf:trigger style="" id="" type="button" class="btn_bc_tip">
+														<xf:label></xf:label>
+													</xf:trigger>
+												</xf:group>
+											</xf:group>
+										</xf:group></xf:group></xf:group>
+									<xf:group id="" tagname="li"><xf:group id="" tagname="ul"><xf:group tagname="li" style="" id="">
+											<xf:group tagname="a" id="">
+												<w2:attributes>
+													<w2:href>javascript:void(null);</w2:href>
+												</w2:attributes>
+												<w2:textbox tagname="label" dataType="" displayFormat="" style="" id="" label="멤버십" class="">
+												</w2:textbox>
+												<xf:group id="" class="rta">
+													<w2:textbox tagname="span" style="" id="" label="VVIP" class=""></w2:textbox>
+												</xf:group>
+											</xf:group>
+											<xf:group tagname="ul" id="" class="sub">
+												<xf:group tagname="li" style="" id="" class="item m">
+													<xf:group tagname="a" id="">
+														<w2:attributes>
+															<w2:href>javascript:void(null);</w2:href>
+														</w2:attributes>
+														<w2:textbox tagname="label" dataType="" displayFormat="" style="" id="" label="잔여포인트" class="">
+														</w2:textbox>
+														<xf:group tagname="" style="" id="" class="rta bc_point">
+															<w2:textbox tagname="span" dataType="number" displayFormat="#,###" style="" id="" label="90240" class="">
+															</w2:textbox>
+															<w2:textbox tagname="span" style="" id="" label="원" class="won"></w2:textbox>
+														</xf:group>
+													</xf:group>
+													<xf:group tagname="a" id="">
+														<w2:attributes>
+															<w2:href>javascript:void(null);</w2:href>
+														</w2:attributes>
+														<w2:textbox tagname="label" dataType="" displayFormat="" style="" id="" label="나만의 콕" class="">
+														</w2:textbox>
+														<xf:group tagname="" id="" class="rta">
+															<w2:textbox tagname="span" style="" id="" label="영화" class=""></w2:textbox>
+														</xf:group>
+													</xf:group>
+												</xf:group>
+											</xf:group>
+										</xf:group><xf:group tagname="li" style="" id="">
+											<xf:group tagname="a" id="">
+												<w2:attributes>
+													<w2:href>javascript:void(null);</w2:href>
+												</w2:attributes>
+												<w2:textbox tagname="label" dataType="" displayFormat="" style="" id="" label="결제서비스" class="">
+												</w2:textbox>
+											</xf:group>
+											<xf:group tagname="ul" style="" id="" class="sub">
+												<xf:group tagname="li" id="">
+													<xf:group tagname="a" id="">
+														<w2:attributes>
+															<w2:href>javascript:void(null);</w2:href>
+														</w2:attributes>
+														<w2:textbox tagname="label" dataType="" displayFormat="" style="" id="" label="휴대폰 소액결제 차단해제 / 휴대폰 결제 차단해제" class="">
+														</w2:textbox>
+													</xf:group>
+												</xf:group>
+												<xf:group tagname="li" style="" id="" class="last">
+													<xf:group tagname="a" id="">
+														<w2:attributes>
+															<w2:href>javascript:void(null);</w2:href>
+														</w2:attributes>
+														<w2:textbox tagname="label" dataType="" displayFormat="" style="" id="" label="(당월)총 결제금액" class="">
+														</w2:textbox>
+														<xf:group tagname="" id="" class="rta">
+															<w2:textbox tagname="span" dataType="number" displayFormat="#,###" style="" id="" label="235500" class="">
+															</w2:textbox>
+															<w2:textbox tagname="span" style="" id="" label="원" class="won"></w2:textbox>
+														</xf:group>
+													</xf:group>
+												</xf:group>
+											</xf:group>
+										</xf:group></xf:group></xf:group></xf:group>
+								</xf:group>
+							</xf:group></xf:group><xf:group class="ly" id="" style="">
+						<xf:group class="col7" id="" style="">
+							<xf:group class="bc_tbc_box" id="" style="">
+								<w2:tabControl alwaysDraw="false" class="bc_tbc" confirmFalseAction="new" confirmTrueAction="exist" id="" style="" useConfirmMessage="false" useMoveNextTabFocus="false" useTabKeyOnly="true">
+									<w2:tabs disabled="false" id="tabs1" label="응대메모" style="" title=""></w2:tabs>
+									<w2:tabs disabled="false" id="tabs2" label="작업메모" style="" title="작업메모"></w2:tabs>
+									<w2:tabs disabled="false" id="tabs3" label="SMS발송이력" style="" title="SMS발송이력"></w2:tabs>
+									<w2:tabs disabled="false" id="tabs4" label="접촉이력" style="" title="접촉이력"></w2:tabs>
+									<w2:content alwaysDraw="false" id="content1" style="">
+										<w2:gridView autoFit="allColumn" class="wq_gvw bc type1" dataList="data:dataList3" defaultCellHeight="" editModeEvent="onclick" ev:oncellclick="" ev:oncelldblclick="" ev:onheaderclick="" evenRowBackgroundColor="" focusMode="row" id="" mergeCells="" mergeCol="" oddEvenColorDisplay="true" oddRowBackgroundColor="" readOnly="true" rowNumHeaderValue="" rowNumVisible="" rowNumWidth="" rowStatusHeaderValue="" rowStatusVisible="" scrollByColumn="false" scrollByColumnAdaptive="false" showLastRow="true" showSortableImage="" showSortableUseFilter="" sortable="true" style="height:136px;" tooltipDisplay="true" visibleRowNum="">
+											<w2:caption id="caption1" style="" value="this is a grid caption."></w2:caption>
+											<w2:header id="header1" style="">
+												<w2:row id="row1" style="">
+													<w2:column blockSelect="false" displayMode="label" id="column14" inputType="text" removeBorderStyle="false" value="상담일시" width="120">
+													</w2:column>
+													<w2:column blockSelect="false" displayMode="label" id="column5" inputType="text" removeBorderStyle="false" value="상품구분" width="80">
+													</w2:column>
+													<w2:column blockSelect="false" displayMode="label" id="column3" inputType="text" removeBorderStyle="false" value="소분류" width="80">
+													</w2:column>
+													<w2:column blockSelect="false" displayMode="label" id="column1" inputType="text" removeBorderStyle="false" value="응대구분" width="80">
+													</w2:column>
+													<w2:column blockSelect="false" displayMode="label" id="column15" inputType="text" removeBorderStyle="false" value="꼬리표상태" width="120">
+													</w2:column>
+												</w2:row>
+											</w2:header>
+											<w2:gBody id="gBody1" style="">
+												<w2:row id="row2" style="">
+													<w2:column blockSelect="false" displayMode="label" id="col1" inputType="text" removeBorderStyle="false" width="120">
+														<w2:choices>
+															<w2:item>
+																<w2:label><![CDATA[new row]]></w2:label>
+																<w2:value></w2:value>
+															</w2:item>
+															<w2:item>
+																<w2:label><![CDATA[new row]]></w2:label>
+																<w2:value></w2:value>
+															</w2:item>
+															<w2:item>
+																<w2:label><![CDATA[new row]]></w2:label>
+																<w2:value></w2:value>
+															</w2:item>
+															<w2:item>
+																<w2:label><![CDATA[new row]]></w2:label>
+																<w2:value></w2:value>
+															</w2:item>
+														</w2:choices>
+													</w2:column>
+													<w2:column blockSelect="false" displayMode="label" id="col2" inputType="text" removeBorderStyle="false" width="80">
+													</w2:column>
+													<w2:column blockSelect="false" displayMode="label" id="col3" inputType="text" removeBorderStyle="false" width="80">
+													</w2:column>
+													<w2:column blockSelect="false" displayMode="label" id="col4" inputType="text" removeBorderStyle="false" width="80">
+													</w2:column>
+													<w2:column blockSelect="false" displayMode="label" id="col5" inputType="text" removeBorderStyle="false" width="120">
+													</w2:column>
+												</w2:row>
+											</w2:gBody>
+										</w2:gridView>
+									</w2:content>
+									<w2:content alwaysDraw="false" id="content2" style="height:NaNpx">
+										<w2:gridView autoFit="allColumn" class="wq_gvw bc type1" dataList="data:dataList3" defaultCellHeight="" editModeEvent="onclick" ev:oncellclick="" ev:oncelldblclick="" ev:onheaderclick="" evenRowBackgroundColor="" focusMode="row" id="" mergeCells="" mergeCol="" oddEvenColorDisplay="true" oddRowBackgroundColor="" readOnly="true" rowNumHeaderValue="" rowNumVisible="" rowNumWidth="" rowStatusHeaderValue="" rowStatusVisible="" scrollByColumn="false" scrollByColumnAdaptive="false" showLastRow="true" showSortableImage="" showSortableUseFilter="" sortable="true" style="height:136px;" tooltipDisplay="true" visibleRowNum="">
+											<w2:caption id="caption1" style="" value="this is a grid caption."></w2:caption>
+											<w2:header id="header1" style="">
+												<w2:row id="row1" style="">
+													<w2:column blockSelect="false" displayMode="label" id="column14" inputType="text" removeBorderStyle="false" value="상담일시" width="120">
+													</w2:column>
+													<w2:column blockSelect="false" displayMode="label" id="column5" inputType="text" removeBorderStyle="false" value="상품구분" width="80">
+													</w2:column>
+													<w2:column blockSelect="false" displayMode="label" id="column3" inputType="text" removeBorderStyle="false" value="소분류" width="80">
+													</w2:column>
+													<w2:column blockSelect="false" displayMode="label" id="column1" inputType="text" removeBorderStyle="false" value="응대구분" width="80">
+													</w2:column>
+													<w2:column blockSelect="false" displayMode="label" id="column15" inputType="text" removeBorderStyle="false" value="꼬리표상태" width="120">
+													</w2:column>
+												</w2:row>
+											</w2:header>
+											<w2:gBody id="gBody1" style="">
+												<w2:row id="row2" style="">
+													<w2:column blockSelect="false" displayMode="label" id="col1" inputType="text" removeBorderStyle="false" width="120">
+														<w2:choices>
+															<w2:item>
+																<w2:label><![CDATA[new row]]></w2:label>
+																<w2:value></w2:value>
+															</w2:item>
+															<w2:item>
+																<w2:label><![CDATA[new row]]></w2:label>
+																<w2:value></w2:value>
+															</w2:item>
+															<w2:item>
+																<w2:label><![CDATA[new row]]></w2:label>
+																<w2:value></w2:value>
+															</w2:item>
+															<w2:item>
+																<w2:label><![CDATA[new row]]></w2:label>
+																<w2:value></w2:value>
+															</w2:item>
+														</w2:choices>
+													</w2:column>
+													<w2:column blockSelect="false" displayMode="label" id="col2" inputType="text" removeBorderStyle="false" width="80">
+													</w2:column>
+													<w2:column blockSelect="false" displayMode="label" id="col3" inputType="text" removeBorderStyle="false" width="80">
+													</w2:column>
+													<w2:column blockSelect="false" displayMode="label" id="col4" inputType="text" removeBorderStyle="false" width="80">
+													</w2:column>
+													<w2:column blockSelect="false" displayMode="label" id="col5" inputType="text" removeBorderStyle="false" width="120">
+													</w2:column>
+												</w2:row>
+											</w2:gBody>
+										</w2:gridView>
+									</w2:content>
+									<w2:content alwaysDraw="false" id="content3" style="height:NaNpx"></w2:content>
+									<w2:content alwaysDraw="false" id="content4" style=""></w2:content>
+								</w2:tabControl>
+								<xf:group class="rta" id="">
+									<xf:trigger class="btn_bc_add" id="" style="" type="button">
+										<xf:label><![CDATA[등록]]></xf:label>
+									</xf:trigger>
+									<xf:trigger class="btn_bc_more" id="" style="" type="button">
+										<xf:label><![CDATA[상세보기]]></xf:label>
+									</xf:trigger>
+								</xf:group>
+							</xf:group>
+						</xf:group>
+						<xf:group class="col3" id="" style="">
+							
+							<xf:group class="bc_tbc_box" id="" style="">
+								<w2:tabControl alwaysDraw="false" class="bc_tbc device" confirmFalseAction="new" confirmTrueAction="exist" id="" style="" useConfirmMessage="false" useMoveNextTabFocus="false" useTabKeyOnly="true">
+									<w2:tabs disabled="false" id="tabs1" label="기기/장비정보" style="" localeRef="" title="기기/장비정보"></w2:tabs>
+									<w2:tabs disabled="false" id="tabs2" label="가입점 정보" style="" tabHTML="" tabType="" title="가입점 정보"></w2:tabs>
+									<w2:content alwaysDraw="false" id="content1" style="">
+										<xf:group class="bc_list" id="" style="" tagname="ul">
+											<xf:group id="" style="" tagname="li">
+												<xf:group id="" tagname="a">
+													<w2:attributes>
+														<w2:href>javascript:void(null);</w2:href>
+													</w2:attributes>
+													<w2:textbox class="" dataType="" displayFormat="" id="" label="기기정보" style="" tagname="label">
+													</w2:textbox>
+													<xf:group class="rta" id="" style="">
+														<w2:textbox class="" id="" label="iPhone XR(64GB)" style="" tagname="span"></w2:textbox>
+														<xf:trigger class="btn_bc_tip" id="" style="" type="button">
+															<xf:label></xf:label>
+														</xf:trigger>
+														<w2:textbox class="" id="" label=" / 정상" style="" tagname="span"></w2:textbox>
+													</xf:group>
+												</xf:group>
+												<xf:group id="" style="" tagname="ul" class="sub">
+													<xf:group id="" tagname="li">
+														<xf:group id="" tagname="a">
+															<w2:attributes>
+																<w2:href>javascript:void(null);</w2:href>
+															</w2:attributes>
+															<w2:textbox class="" dataType="" displayFormat="" id="" label="일련번호" style="" tagname="label">
+															</w2:textbox>
+															<xf:group class="rta" id="" tagname="">
+																<w2:textbox class="" id="" label="F72FSENN277483JF" style="" tagname="span">
+																</w2:textbox>
+																<xf:trigger class="btn_sm" id="" style="" type="button">
+																	<xf:label><![CDATA[단말기]]></xf:label>
+																</xf:trigger>
+																<xf:trigger class="btn_sm" id="" style="" type="button">
+																	<xf:label><![CDATA[Naming]]></xf:label>
+																</xf:trigger>
+																<xf:trigger class="btn_sm" id="" style="" type="button">
+																	<xf:label><![CDATA[USIM]]></xf:label>
+																</xf:trigger>
+															</xf:group>
+														</xf:group>
+													</xf:group>
+												</xf:group>
+											</xf:group>
+										<xf:group id="" class="" tagname="li"><xf:group id="" tagname="ul" class="sub"><xf:group tagname="li" userData2="" id="" class="item m">
+														<xf:group tagname="a" id="">
+															<w2:attributes>
+																<w2:href>javascript:void(null);</w2:href>
+															</w2:attributes>
+															<w2:textbox tagname="label" dataType="" displayFormat="" style="" id="" label="임대폰" class="">
+															</w2:textbox>
+															<xf:group tagname="" id="" class="rta">
+																<w2:textbox tagname="span" style="" id="" label="" class="bool_yes"></w2:textbox>
+															</xf:group>
+														</xf:group>
+														<xf:group tagname="a" id="">
+															<w2:attributes>
+																<w2:href>javascript:void(null);</w2:href>
+															</w2:attributes>
+															<w2:textbox tagname="label" dataType="" displayFormat="" style="" id="" label="단말" class="">
+															</w2:textbox>
+															<xf:group tagname="" id="" class="rta">
+																<w2:textbox tagname="span" dataType="" style="" id="" label="" class="bool_no">
+																</w2:textbox>
+															</xf:group>
+														</xf:group>
+														<xf:group tagname="a" style="" id="">
+															<w2:attributes>
+																<w2:href>javascript:void(null);</w2:href>
+															</w2:attributes>
+															<w2:textbox tagname="label" dataType="" displayFormat="" style="" id="" label="4G" class="">
+															</w2:textbox>
+															<xf:group tagname="" id="" class="rta">
+																<w2:textbox tagname="span" dataType="" style="" id="" label="" class="bool_no">
+																</w2:textbox>
+															</xf:group>
+														</xf:group>
+													</xf:group></xf:group></xf:group><xf:group id="" class="" tagname="li"><xf:group id="" tagname="ul" class="sub"><xf:group tagname="li" style="" userData2="" id="" class="item m">
+														<xf:group tagname="a" style="" id="">
+															<w2:attributes>
+																<w2:href>javascript:void(null);</w2:href>
+															</w2:attributes>
+															<w2:textbox tagname="label" dataType="" displayFormat="" style="" id="" label="폰케어플러스" class="">
+															</w2:textbox>
+															<xf:group tagname="" id="" class="rta">
+																<w2:textbox tagname="span" style="" id="" label="" class="bool_yes"></w2:textbox>
+															</xf:group>
+														</xf:group>
+														<xf:group tagname="a" style="" id="">
+															<w2:attributes>
+																<w2:href>javascript:void(null);</w2:href>
+															</w2:attributes>
+															<w2:textbox tagname="label" dataType="" displayFormat="" style="" id="" label="중고폰보장" class="">
+															</w2:textbox>
+															<xf:group tagname="" id="" class="rta">
+																<w2:textbox tagname="span" style="" id="" label="" class="bool_yes"></w2:textbox>
+															</xf:group>
+														</xf:group>
+													</xf:group></xf:group></xf:group></xf:group>
+									</w2:content>
+									<w2:content alwaysDraw="false" id="content2" style="height:NaNpx">
+									</w2:content>
+								</w2:tabControl>
+							</xf:group>
+						</xf:group>
+					</xf:group></body>
+</html>

@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:ev="http://www.w3.org/2001/xml-events"
+    xmlns:w2="http://www.inswave.com/websquare" xmlns:xf="http://www.w3.org/2002/xforms">
+    <head meta_programName="P1-1 Single View to Edit">
+    	<w2:type>DEFAULT</w2:type>
+        <w2:buildDate/>
+        <xf:model>
+            <xf:instance>
+                <data xmlns=""/>
+            </xf:instance>
+            <w2:dataCollection baseNode="map">
+            </w2:dataCollection>
+            <w2:workflowCollection>
+            </w2:workflowCollection>
+        </xf:model>
+         <script type="text/javascript" lazy="false"><![CDATA[
+        
+	scwin.onpageload = function() {
+		
+	};
+	
+	scwin.onpageunload = function() {
+		
+	};
+
+]]></script>
+    </head>
+    <body ev:onpageload="scwin.onpageload" ev:onpageunload="scwin.onpageunload">
+    	<xf:group class="sub_wrapper" id="">
+    		<w2:wframe class="page_header" id="" scope="true" src="../../../common/xml/contentsTitle.xml" style=""></w2:wframe>
+    	<xf:group id="" class="page_contents"><xf:group id="" class="page_contents_inner"><xf:group id="" tagname="section"><xf:group style="" id="" class="tbbox">
+    			<xf:group tagname="table" style="width:100%;" id="" class="w2tb tb">
+    				<w2:attributes>
+    					<w2:summary></w2:summary>
+    				</w2:attributes>
+    				<xf:group tagname="caption"></xf:group>
+    				<xf:group tagname="colgroup">
+    					<xf:group tagname="col" style="width:120px;"></xf:group>
+    					<xf:group tagname="col" style=""></xf:group>
+    					<xf:group tagname="col" style="width:120px;"></xf:group>
+    					<xf:group tagname="col" style="width:20%"></xf:group>
+    				</xf:group>
+    				<xf:group tagname="tr" style="">
+    					<xf:group tagname="th" style="" class="w2tb_th">
+    						<w2:attributes>
+    							<w2:scope>row</w2:scope>
+    						</w2:attributes>
+    						<w2:textbox tagname="label" style="" id="" label="제목" class=""></w2:textbox>
+    					</xf:group>
+    					<xf:group tagname="td" style="" class="w2tb_td">
+    						<w2:attributes>
+    							<w2:colspan>1</w2:colspan>
+    							<w2:rowspan>1</w2:rowspan>
+    						</w2:attributes>
+    						<w2:textbox tagname="span" style="" id="" label="[중요] KAIT 출입국 연계서비스 일시중단(2/27 목, 19시~21시 30분)"></w2:textbox>
+    					</xf:group>
+    					<xf:group tagname="th" text="" class="w2tb_th">
+    						<w2:attributes></w2:attributes>
+    						<w2:textbox tagname="label" style="" id="" label="조회수" class=""></w2:textbox>
+    					</xf:group>
+    					<xf:group tagname="td" class="w2tb_td">
+    						<w2:attributes></w2:attributes>
+    						<w2:textbox tagname="span" style="" id="" label="8544"></w2:textbox>
+    					</xf:group>
+    				</xf:group>
+    				<xf:group tagname="tr" style="">
+    					<xf:group tagname="th" style="" class="w2tb_th">
+    						<w2:attributes>
+    							<w2:scope>row</w2:scope>
+    						</w2:attributes>
+    						<w2:textbox tagname="label" style="" id="" label="등록자"></w2:textbox>
+    					</xf:group>
+    					<xf:group tagname="td" style="" class="w2tb_td">
+    						<w2:textbox tagname="span" style="" id="" label="이동통신"></w2:textbox>
+    					</xf:group>
+    					<xf:group tagname="th" style="" class="w2tb_th">
+    						<w2:attributes>
+    							<w2:scope>row</w2:scope>
+    						</w2:attributes>
+    						<w2:textbox tagname="label" style="" id="" label="등록일시" class=""></w2:textbox>
+    					</xf:group>
+    					<xf:group tagname="td" style="" class="w2tb_td">
+    						<w2:textbox tagname="span" style="" id="" label="2020-06-19 14:10:36"></w2:textbox>
+    					</xf:group>
+    				</xf:group>
+    				<xf:group tagname="tr">
+    					<xf:group tagname="td" style="" class="w2tb_td">
+    						<w2:attributes>
+    							<w2:scope>row</w2:scope>
+    							<w2:colspan>4</w2:colspan>
+    							<w2:rowspan>1</w2:rowspan>
+    						</w2:attributes>
+    						<w2:textbox tagname="p" style="" id="" label="리스크관리팀입니다.&lt;br/&gt;&lt;br/&gt;법무부(출입국사무소) 인프라개선 작업으로&lt;br/&gt;&lt;br/&gt;외국인인증 서비스 및 신분증진위여부(부정가입) 외국인 인증업무가 간헐적으로 지연될 수 있사오니, 업무 참고하시기 바랍니다.&lt;br/&gt;&lt;br/&gt;작업으로 인한 간헐 지연 시간대 : 2020.2.27(목)~21:30" class="borad_read">
+    						</w2:textbox>
+    					</xf:group>
+    				</xf:group>
+    				<xf:group tagname="tr" style="">
+    					<xf:group tagname="th" style="" class="w2tb_th">
+    						<w2:attributes>
+    							<w2:scope>row</w2:scope>
+    						</w2:attributes>
+    						<w2:textbox tagname="label" style="" id="" label="첨부파일" class=""></w2:textbox>
+    					</xf:group>
+    					<xf:group tagname="td" style="" class="w2tb_td">
+    						<w2:attributes>
+    							<w2:colspan>3</w2:colspan>
+    							<w2:rowspan>1</w2:rowspan>
+    						</w2:attributes>
+    						<xf:group adaptiveThreshold="" tagname="ul" style="" id="" class="att_list">
+    							<xf:group tagname="li" toolTip="" style="" id="">
+    								<w2:anchor outerDiv="false" style="" id="">
+    									<xf:label><![CDATA[File001.jpg(100kbyte)]]></xf:label>
+    								</w2:anchor>
+    							</xf:group>
+    							<xf:group tagname="li" toolTip="" style="" id="">
+    								<w2:anchor outerDiv="false" style="" id="">
+    									<xf:label><![CDATA[File002.jpg(100kbyte)]]></xf:label>
+    								</w2:anchor>
+    							</xf:group>
+    						</xf:group>
+    						<xf:trigger style="" id="" type="button" class="btn_in">
+    							<xf:label><![CDATA[전체파일받기]]></xf:label>
+    						</xf:trigger>
+    					</xf:group>
+    				</xf:group>
+    			</xf:group>
+</xf:group></xf:group><xf:group style="" id="" class="btnbox last">
+    			<xf:group id="" class="rta">
+    				<xf:trigger style="" id="btn_trigger3" type="button" class="btn_df">
+    					<xf:label><![CDATA[수정]]></xf:label>
+    				</xf:trigger>
+    				<xf:trigger ev:onclick="" style="" id="btn_trigger4" type="button" class="btn_df">
+    					<xf:label><![CDATA[삭제]]></xf:label>
+    				</xf:trigger>
+    				<xf:group class="div_bar" id="" style=""></xf:group>
+    				<xf:trigger class="btn_df prev" id="" style="" type="button">
+    					<xf:label><![CDATA[이전]]></xf:label>
+    				</xf:trigger>
+    				<xf:trigger class="btn_df next" id="" style="" type="button">
+    					<xf:label><![CDATA[다음]]></xf:label>
+    				</xf:trigger>
+    				<xf:trigger class="btn_df list" id="" style="" type="button">
+    					<xf:label><![CDATA[목록]]></xf:label>
+    				</xf:trigger>
+    			</xf:group>
+</xf:group></xf:group></xf:group></xf:group>
+    </body>
+</html>

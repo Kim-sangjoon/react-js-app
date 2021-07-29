@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><html xmlns="http://www.w3.org/1999/xhtml" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:w2="http://www.inswave.com/websquare" xmlns:xf="http://www.w3.org/2002/xforms">
+    <head>
+        <w2:buildDate/>
+        <w2:userPalette defaultIcon="mix.png" desc=""/>
+        <xf:model>
+            <xf:instance>
+                <data xmlns=""/>
+            </xf:instance>
+        </xf:model>
+        <script type="text/javascript"><![CDATA[ ]]></script>
+    </head>
+    <body><w2:pageList displayButtonType="display" displayFormat="#" ev:onviewchange="scwin.pageList_onviewchange" id="pgl_checkSelect" pageSize="10" renderType="list" style="">
+</w2:pageList>
+</body>
+</html>

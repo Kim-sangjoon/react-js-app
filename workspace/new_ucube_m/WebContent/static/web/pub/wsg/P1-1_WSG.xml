@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:ev="http://www.w3.org/2001/xml-events"
+    xmlns:w2="http://www.inswave.com/websquare" xmlns:xf="http://www.w3.org/2002/xforms">
+    <head meta_programName="P1-1 Single View to Edit">
+    	<w2:type>DEFAULT</w2:type>
+        <w2:buildDate/>
+        <xf:model>
+            <xf:instance>
+                <data xmlns=""/>
+            </xf:instance>
+            <w2:dataCollection baseNode="map">
+            	<w2:dataMap baseNode="map" id="dm_basic">
+            		<w2:data use="true">
+            			<name><![CDATA[홍길동 ]]></name>
+            			<regCode><![CDATA[8211212]]></regCode>
+            			<gender><![CDATA[ 0]]></gender>
+            		</w2:data>
+            		<w2:keyInfo>
+            			<w2:key id="name" name="name1" dataType="text"></w2:key>
+            			<w2:key id="regCode" name="name2" dataType="text"></w2:key>
+            			<w2:key id="gender" name="name3" dataType="text"></w2:key>
+            		</w2:keyInfo>
+            	</w2:dataMap>
+            	<w2:dataList baseNode="list" id="dlt_rdoData" repeatNode="map" saveRemovedData="true" style="">
+            		<w2:columnInfo>
+            			<w2:column dataType="text" id="label" name="name1"></w2:column>
+            			<w2:column dataType="text" id="value" name="name2"></w2:column>
+            		</w2:columnInfo>
+            		<w2:data use="true">
+            			<w2:row>
+            				<label><![CDATA[남성]]></label>
+            				<value><![CDATA[0]]></value>
+            			</w2:row>
+            			<w2:row>
+            				<label><![CDATA[여성]]></label>
+            				<value><![CDATA[1]]></value>
+            			</w2:row>
+            		</w2:data>
+            	</w2:dataList>
+            </w2:dataCollection>
+            <w2:workflowCollection>
+            </w2:workflowCollection>
+        </xf:model>
+         <script type="text/javascript" lazy="false"><![CDATA[
+        
+	scwin.onpageload = function() {
+		
+	};
+	
+	scwin.onpageunload = function() {
+		
+	};
+
+	
+	scwin.btn_trigger4_onclick = function(e) {
+		confirm("삭제하시겠습니까?")
+	};
+	]]></script>
+    </head>
+    <body ev:onpageload="scwin.onpageload" ev:onpageunload="scwin.onpageunload">
+    	<xf:group class="sub_wrapper" id="">
+    		<w2:wframe class="page_header" id="" scope="true" src="../../../common/xml/contentsTitle.xml" style=""></w2:wframe>
+    	<xf:group id="" class="page_contents"><xf:group id="" class="page_contents_inner"><xf:group id="" class="shbox">
+    			<xf:group id="" class="shbox_grp">
+    				<xf:group style="" id="" class="sh_grp">
+    				<w2:textbox tagname="label" style="" id="" label="사용자명"></w2:textbox><xf:input ref="data:dm_basic.name" adjustMaxLength="false" style="width: 150px" id="" placeholder="" allowChar=""></xf:input></xf:group>
+    				<xf:group style="" id="" class="sh_grp">
+    				<w2:textbox tagname="label" style="" id="" label="주민번호 앞 6자리"></w2:textbox><xf:input ref="data:dm_basic.regCode" maxlength="6" adjustMaxLength="false" style="width: 150px;" id="" placeholder="" allowChar="0-9">
+    							</xf:input></xf:group>
+    				<xf:group style="" id="" class="sh_grp">
+    				<w2:textbox tagname="label" style="" id="" label="성별"></w2:textbox><xf:select1 ref="data:dm_basic.gender" appearance="full" style="" id="" rows="" renderType="radiogroup" cols="" selectedIndex="0">
+    								<xf:choices>
+    									<xf:itemset nodeset="data:dlt_rdoData">
+    										<xf:label ref="label"></xf:label>
+    										<xf:value ref="value"></xf:value>
+    									</xf:itemset>
+    								</xf:choices>
+    							</xf:select1></xf:group>
+    				<xf:group style="" id="" class="sh_grp">
+    				<w2:textbox tagname="label" style="" id="" label="사용자 ID"></w2:textbox><xf:input adjustMaxLength="false" style="width: 150px;" id="" placeholder="ID"></xf:input></xf:group>
+    				<xf:group tagname="" id="" class="sh_btn" tabIndex="">
+    				<xf:trigger style="" id="btn_trigger1" type="button" class="btn_sh">
+    							<xf:label><![CDATA[검색]]></xf:label>
+    						</xf:trigger></xf:group>
+    			</xf:group>
+    		</xf:group><xf:group id="" tagname="section"><xf:group style="" id="" class="dfbox">
+    			<w2:textbox tagname="h3" style="" id="" label="사원정보"></w2:textbox>
+    		</xf:group><xf:group style="" id="" class="tbbox">
+    			<xf:group tagname="table" style="width:100%;" id="" class="w2tb tb">
+    				<w2:attributes>
+    					<w2:summary></w2:summary>
+    				</w2:attributes>
+    				<xf:group tagname="caption"></xf:group>
+    				<xf:group tagname="colgroup">
+    					<xf:group tagname="col" style="width:15.00%;"></xf:group>
+    					<xf:group tagname="col" style=""></xf:group>
+    					<xf:group tagname="col" style="width:15.00%;"></xf:group>
+    					<xf:group tagname="col" style=""></xf:group>
+    				</xf:group>
+    				<xf:group tagname="tr" style="">
+    					<xf:group tagname="th" style="" class="w2tb_th">
+    						<w2:attributes>
+    							<w2:scope>row</w2:scope>
+    						</w2:attributes>
+    						<w2:textbox tagname="label" style="" id="" label="사용자 ID" class="req"></w2:textbox>
+    					</xf:group>
+    					<xf:group tagname="td" style="" class="w2tb_td">
+    						<w2:attributes>
+    							<w2:colspan>3</w2:colspan>
+    							<w2:rowspan>1</w2:rowspan>
+    						</w2:attributes>
+    						<w2:textbox tagname="span" style="" id="" label="Satou"></w2:textbox>
+    					</xf:group>
+    				</xf:group>
+    				<xf:group tagname="tr" style="">
+    					<xf:group tagname="th" style="" class="w2tb_th">
+    						<w2:attributes>
+    							<w2:scope>row</w2:scope>
+    						</w2:attributes>
+    						<w2:textbox tagname="label" style="" id="" label="사용자명"></w2:textbox>
+    					</xf:group>
+    					<xf:group tagname="td" style="" class="w2tb_td">
+    						<w2:textbox tagname="span" style="" id="" label="Airi Satou"></w2:textbox>
+    					</xf:group>
+    					<xf:group tagname="th" style="" class="w2tb_th">
+    						<w2:attributes>
+    							<w2:scope>row</w2:scope>
+    						</w2:attributes>
+    						<w2:textbox tagname="label" style="" id="" label="역할그룹" class=""></w2:textbox>
+    					</xf:group>
+    					<xf:group tagname="td" style="" class="w2tb_td">
+    						<w2:textbox tagname="span" style="" id="" label="게시판관리그룹"></w2:textbox>
+    					</xf:group>
+    				</xf:group>
+    				<xf:group tagname="tr">
+    					<xf:group tagname="th" style="" class="w2tb_th">
+    						<w2:attributes>
+    							<w2:scope>row</w2:scope>
+    						</w2:attributes>
+    						<w2:textbox tagname="label" style="" id="" label="휴대폰"></w2:textbox>
+    					</xf:group>
+    					<xf:group tagname="td" style="" class="w2tb_td">
+    						<w2:textbox tagname="span" style="" id="" label="010-9876-5432"></w2:textbox>
+    					</xf:group>
+    					<xf:group tagname="th" style="" class="w2tb_th">
+    						<w2:attributes>
+    							<w2:scope>row</w2:scope>
+    						</w2:attributes>
+    						<w2:textbox tagname="label" style="" id="" label="자택전화" class=""></w2:textbox>
+    					</xf:group>
+    					<xf:group tagname="td" style="" class="w2tb_td">
+    						<w2:textbox tagname="span" style="" id="" label="02-9876-5432"></w2:textbox>
+    					</xf:group>
+    				</xf:group>
+    				<xf:group tagname="tr">
+    					<xf:group tagname="th" style="" class="w2tb_th">
+    						<w2:attributes>
+    							<w2:scope>row</w2:scope>
+    						</w2:attributes>
+    						<w2:textbox tagname="label" style="" id="" label="등록여부"></w2:textbox>
+    					</xf:group>
+    					<xf:group tagname="td" style="" class="w2tb_td">
+    						<w2:textbox tagname="span" style="" id="" label="Y"></w2:textbox>
+    					</xf:group>
+    					<xf:group tagname="th" style="" class="w2tb_th">
+    						<w2:attributes>
+    							<w2:scope>row</w2:scope>
+    						</w2:attributes>
+    						<w2:textbox tagname="label" style="" id="" label="주시스템" class=""></w2:textbox>
+    					</xf:group>
+    					<xf:group tagname="td" style="" class="w2tb_td">
+    						<w2:textbox tagname="span" style="" id="" label="UCube"></w2:textbox>
+    					</xf:group>
+    				</xf:group>
+    				<xf:group tagname="tr">
+    					<xf:group tagname="th" style="" class="w2tb_th">
+    						<w2:attributes>
+    							<w2:scope>row</w2:scope>
+    						</w2:attributes>
+    						<w2:textbox tagname="label" style="" id="" label="사용자시스템"></w2:textbox>
+    					</xf:group>
+    					<xf:group tagname="td" style="" class="w2tb_td">
+    						<w2:attributes>
+    							<w2:colspan>3</w2:colspan>
+    							<w2:rowspan>1</w2:rowspan>
+    						</w2:attributes>
+    					</xf:group>
+    				</xf:group>
+    				<xf:group tagname="tr">
+    					<xf:group tagname="th" style="" class="w2tb_th">
+    						<w2:attributes>
+    							<w2:scope>row</w2:scope>
+    						</w2:attributes>
+    						<w2:textbox tagname="label" style="" id="" label="등록자"></w2:textbox>
+    					</xf:group>
+    					<xf:group tagname="td" style="" class="w2tb_td">
+    						<w2:attributes>
+    							<w2:colspan>3</w2:colspan>
+    							<w2:rowspan>1</w2:rowspan>
+    						</w2:attributes>
+    						<w2:textbox tagname="span" style="" id="" label="홍길동 책임 아키텍처팀"></w2:textbox>
+    					</xf:group>
+    				</xf:group>
+    			</xf:group>
+    		</xf:group></xf:group><xf:group style="" id="" class="btnbox last">
+    			<xf:group id="" class="rta">
+    				<xf:trigger style="" id="btn_trigger2" type="button" class="btn_df">
+    					<xf:label><![CDATA[신규]]></xf:label>
+    				</xf:trigger>
+    				<xf:trigger style="" id="btn_trigger3" type="button" class="btn_df">
+    					<xf:label><![CDATA[수정]]></xf:label>
+    				</xf:trigger>
+    				<xf:trigger ev:onclick="scwin.btn_trigger4_onclick" style="" id="btn_trigger4" type="button" class="btn_df">
+    					<xf:label><![CDATA[삭제]]></xf:label>
+    				</xf:trigger>
+    			</xf:group>
+    		</xf:group></xf:group></xf:group></xf:group>
+    </body>
+</html>

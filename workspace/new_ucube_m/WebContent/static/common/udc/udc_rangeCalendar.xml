@@ -1,0 +1,528 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:ev="http://www.w3.org/2001/xml-events"
+    xmlns:w2="http://www.inswave.com/websquare" xmlns:xf="http://www.w3.org/2002/xforms">
+    <head meta_programName="기간달력 udc">
+    	<w2:type>UDC</w2:type>
+        <w2:buildDate/>
+        <w2:model></w2:model>
+    </head>
+    <body>
+    	<!--/** WEBSQUARE UDC */
+    		{
+    		"disableIcon": "",
+    		"notSupportBrowser": "",
+    		"htmlRender": "",
+    		"icon": "",
+    		"description": "",
+    		"version": "",
+    		"apis": [],
+    		"pluginName": "udc_dbCaleandar",
+    		"width": "190px",
+    		"company": "",
+    		"developer": "",
+    		"componentName": "udc_dbCaleandar",
+    		"category": "caleandar",
+    		"properties": [
+    		{
+    		"default": "",
+    		"necessary": "Y",
+    		"hidden": "N",
+    		"name": "id",
+    		"description": "Component id",
+    		"type": "string",
+    		"bindparent": "",
+    		"option": ""
+    		},
+    		{
+    		"default": "",
+    		"necessary": "N",
+    		"hidden": "N",
+    		"name": "refSt",
+    		"description": "시작 인풋박스 데이터 바인딩 속성",
+    		"type": "bindColumn",
+    		"bindparent": "",
+    		"option": ""
+    		},
+    		{
+    		"default": "",
+    		"necessary": "N",
+    		"hidden": "N",
+    		"name": "refEd",
+    		"description": "종료 인풋박스 데이터 바인딩 속성",
+    		"type": "bindColumn",
+    		"bindparent": "",
+    		"option": ""
+    		},
+    		{
+    		"default": "picker",
+    		"necessary": "N",
+    		"hidden": "N",
+    		"name": "pickerType",
+    		"description": "달력 유형",
+    		"type": "combobox",
+    		"bindparent": "",
+    		"option": "[picker,pickerAfter,list]"
+    		},
+    		{
+    		"default": "false",
+    		"necessary": "N",
+    		"hidden": "N",
+    		"name": "mandatory",
+    		"description": "그룹유효성 체크시 필수값 여부를 체크 할지 여부 기본값은 fasle",
+    		"type": "combobox",
+    		"bindparent": "",
+    		"option": "[true,false]"
+    		}
+    		],
+    		"events": [],
+    		"height": ""
+    		}
+    	-->
+    	<xf:group id="" class="udc_ica_grp" pluginName="udc_dbCaleandar">
+    		<link rel="stylesheet" type="text/css" href=""></link>
+    		<style type="text/css"><![CDATA[ ]]></style>
+    		<script type="text/javascript" src=""></script>
+    		<script ev:event="oncreated(options)" type="text/javascript"><![CDATA[
+				/**
+				 * //property handling
+				 * $w.log("id:" + options.id);
+				 * $w.log("refSt:" + options.refSt);
+				 * $w.log("refEd:" + options.refEd);
+				 * $w.log("pickerType:" + options.pickerType);
+				 * $w.log("mandatory:" + options.mandatory);
+				 *
+				 * //event trigger
+				*/
+
+				/**
+				 * //property handling
+				 * $w.log("id:" + options.id);
+				 * $w.log("refSt:" + options.refSt);
+				 * $w.log("refEd:" + options.refEd);
+				 * $w.log("pickerType:" + options.pickerType);
+				 * $w.log("mandatory:" + options.mandatory);
+				 *
+				 * //event trigger
+				*/
+
+				/**
+				 * //property handling
+				 * $w.log("id:" + options.id);
+				 * $w.log("refSt:" + options.refSt);
+				 * $w.log("refEd:" + options.refEd);
+				 * $w.log("pickerType:" + options.pickerType);
+				 * $w.log("mandatory:" + options.mandatory);
+				 *
+				 * //event trigger
+				*/
+
+				/**
+				 * //property handling
+				 * $w.log("id:" + options.id);
+				 * $w.log("refSt:" + options.refSt);
+				 * $w.log("refEd:" + options.refEd);
+				 * $w.log("pickerType:" + options.pickerType);
+				 * $w.log("mandatory:" + options.mandatory);
+				 *
+				 * //event trigger
+				*/
+
+				/**
+				 * //property handling
+				 * $w.log("id:" + options.id);
+				 * $w.log("refSt:" + options.refSt);
+				 * $w.log("refEd:" + options.refEd);
+				 * $w.log("pickerType:" + options.pickerType);
+				 * $w.log("mandatory:" + options.mandatory);
+				 *
+				 * //event trigger
+				*/
+
+				/**
+				 * //property handling
+				 * $w.log("id:" + options.id);
+				 * $w.log("refSt:" + options.refSt);
+				 * $w.log("refEd:" + options.refEd);
+				 * $w.log("pickerType:" + options.pickerType);
+				 *
+				 * //event trigger
+				*/
+
+				/**
+				 * //property handling
+				 * $w.log("id:" + options.id);
+				 * $w.log("style:" + options.style);
+				 * $w.log("class:" + options.class);
+				 * $w.log("refSt:" + options.refSt);
+				 * $w.log("refEd:" + options.refEd);
+				 * $w.log("pickerType:" + options.pickerType);
+				 *
+				 * //event trigger
+				*/
+
+				/**
+				 * //property handling
+				 * $w.log("id:" + options.id);
+				 * $w.log("style:" + options.style);
+				 * $w.log("class:" + options.class);
+				 * $w.log("refSt:" + options.refSt);
+				 * $w.log("refEd:" + options.refEd);
+				 * $w.log("pickerType:" + options.pickerType);
+				 *
+				 * //event trigger
+				*/
+
+				/**
+				 * //property handling
+				 * $w.log("id:" + options.id);
+				 * $w.log("style:" + options.style);
+				 * $w.log("class:" + options.class);
+				 * $w.log("refSt:" + options.refSt);
+				 * $w.log("refEd:" + options.refEd);
+				 * $w.log("pickerType:" + options.pickerType);
+				 *
+				 * //event trigger
+				*/
+
+				/**
+				 * //property handling
+				 * $w.log("id:" + options.id);
+				 * $w.log("style:" + options.style);
+				 * $w.log("class:" + options.class);
+				 * $w.log("refSt:" + options.refSt);
+				 * $w.log("refEd:" + options.refEd);
+				 * $w.log("pickerType:" + options.pickerType);
+				 *
+				 * //event trigger
+				*/
+
+				/**
+				 * //property handling
+				 * $w.log("id:" + options.id);
+				 * $w.log("style:" + options.style);
+				 * $w.log("class:" + options.class);
+				 * $w.log("refSt:" + options.refSt);
+				 * $w.log("refEd:" + options.refEd);
+				 *
+				 * //event trigger
+				*/
+
+				/**
+				 * //property handling
+				 * $w.log("id:" + options.id);
+				 * $w.log("style:" + options.style);
+				 * $w.log("class:" + options.class);
+				 * $w.log("stRef:" + options.stRef);
+				 * $w.log("edRef:" + options.edRef);
+				 *
+				 * //event trigger
+				*/
+
+				/**
+				 * //property handling
+				 * $w.log("id:" + options.id);
+				 * $w.log("style:" + options.style);
+				 * $w.log("class:" + options.class);
+				 * $w.log("ref:" + options.ref);
+				 *
+				 * //event trigger
+				*/
+
+				/**
+				 * //property handling
+				 * $w.log("id:" + options.id);
+				 * $w.log("style:" + options.style);
+				 * $w.log("class:" + options.class);
+				 * $w.log("ref:" + options.ref);
+				 *
+				 * //event trigger
+				*/
+
+				var pTop = $p.top();
+				if (com.util.isEmpty(pTop.com)) {
+					pTop = WebSquare.util.getMainFrame();
+				};
+				if(!com.util.isEmpty(pTop)){
+					var wfm_udcDbCalendar = pTop.com.util.getComponent( "udcDbCalendarPop" );
+					if (com.util.isEmpty(wfm_udcDbCalendar)) {
+							wfm_udcDbCalendar = pTop.com.util.createComponent("udcDbCalendarPop", "wframe", {
+							src : gcm.CONTEXT_PATH + "/common/xml/commonDatePicker.xml"
+						}, WebSquare.getBody());
+					}
+				}else{
+					var wfm_udcDbCalendar = com.util.getComponent( "udcDbCalendarPop" );
+						if (com.util.isEmpty(wfm_udcTimePicker)) {
+							wfm_udcDbCalendar = com.util.createComponent("udcDbCalendarPop", "wframe", {
+							src : gcm.CONTEXT_PATH + "/common/xml/commonTimePicker.xml"
+						}, WebSquare.getBody());
+					}
+				}
+
+				//초기화함수
+				udc_obj._initDbCalenadr = function(v) {
+					var refSt =  options.refSt || "";
+					var refEd =  options.refEd || "";
+
+					if(refSt !=""){
+						ipt_stCal.setRef(refSt);
+					}
+
+					if(refEd !=""){
+						ipt_edCal.setRef(refEd)
+					}
+
+
+					//초기값 셋팅
+					udc_obj.initValue();
+
+					if(WebSquare.util.getBoolean(options.mandatory)){
+						ipt_stCal.setMandatory(true);
+						ipt_edCal.setMandatory(true);
+					}
+				};
+
+				udc_obj.initValue = function() {
+					var stVal= ipt_stCal.getValue();
+					var edVal= ipt_edCal.getValue();
+
+					if(com.util.isEmpty(stVal) && !com.util.isEmpty(edVal)){//시작없음 종료있음
+						if(!com.date.isDate(edVal)){ //종료값이 날짜형식이 아니면 시작 종료 오늘날짜
+							var today = com.date.getServerDateTime("yyyyMMdd");
+							ipt_stCal.setValue(today);
+							ipt_edCal.setValue(today);
+						}else{
+							ipt_stCal.setValue(edVal); //종료값으로 시작값  셋팅
+						}
+					}else if(!com.util.isEmpty(stVal) && com.util.isEmpty(edVal)){//시작있음 종료없음
+						if(!com.date.isDate(stVal)){ //시작 날짜형식이 아니면 종료값으로 시작값 셋팅
+							var today = com.date.getServerDateTime("yyyyMMdd");
+							ipt_stCal.setValue(today);
+							ipt_edCal.setValue(today);
+						}else{
+							ipt_edCal.setValue(stVal); //시작값으로 종료값  셋팅
+						}
+					}else if(com.util.isEmpty(stVal) && com.util.isEmpty(edVal)){//시작 ,종료 모두 없으면 오늘날짜
+						var today = com.date.getServerDateTime("yyyyMMdd");
+						ipt_stCal.setValue(today);
+						ipt_edCal.setValue(today);
+					}else if(!com.util.isEmpty(stVal) && !com.util.isEmpty(edVal)){//시작있음 종료있음
+						if(com.date.isDate(stVal) && !com.date.isDate(stVal)){//종료 날짜형식이 아니면 시작값으로 종료값 셋팅
+							ipt_edCal.setValue(stVal);
+						}else if(!com.date.isDate(stVal) && com.date.isDate(stVal)){//시작 날짜형식이 아니면 종료값으로 시작값 셋팅
+							ipt_stCal.setValue(edVal);
+						}else if(!com.date.isDate(stVal) && !com.date.isDate(stVal)){//시작, 종료가 날짜형식이 아니면 오늘날짜
+							var today = com.date.getServerDateTime("yyyyMMdd");
+							ipt_stCal.setValue(today);
+							ipt_edCal.setValue(today);
+						}
+					}
+				};
+
+				//[달력버튼] 클릭
+				udc_obj.showDbCalenadr = function() {
+					event.stopPropagation();
+					com.win._layerHideAll();
+
+					var paramJSON ={};
+					paramJSON.stId = ipt_stCal.id;
+					paramJSON.edId = ipt_edCal.id;
+					paramJSON.pickerType = options.pickerType || "picker";
+					var paramStr = JSON.stringify(paramJSON);
+					var udcPopScwinObj = wfm_udcDbCalendar.getObj("scwin");
+
+					if ( !com.util.isEmpty(ipt_stCal.getValue()) && !com.date.isDate(ipt_stCal.getValue())){
+						com.win.alert("입력값은 yyyyMMdd 형식이어야 합니다 . 입력값 : " + ipt_stCal.getValue() );
+						return;
+			    	}else if(!com.util.isEmpty(ipt_edCal.getValue()) && !com.date.isDate(ipt_edCal.getValue())){
+			    		com.win.alert("입력값은 yyyyMMdd 형식이어야 합니다 . 입력값 : " + ipt_edCal.getValue() );
+			    		return;
+			    	}
+
+
+					udcPopScwinObj.datePickerinit(udc_obj.id,paramStr);
+				};
+
+				//인풋캘린더에서 직접입력후  온블러시 사용
+				udc_obj._popGotoCalendar = function(calType,value) {
+					var stVal = ipt_stCal.getValue();;
+					var edVal = ipt_edCal.getValue();
+					var diff = com.date.diffDate(stVal,edVal);
+					if(calType =="st"){
+						if(diff<0){
+							ipt_edCal.setValue(stVal);
+						}
+					}else if(calType =="ed"){
+						if(diff<0){
+							ipt_stCal.setValue(edVal);
+						}
+
+					}
+
+					if(com.util.isEmpty(diff)){
+						if(com.util.isEmpty(stVal) && !com.util.isEmpty(edVal)){
+							ipt_stCal.setValue(edVal);
+						}else if(!com.util.isEmpty(stVal) && com.util.isEmpty(edVal)){
+							ipt_edCal.setValue(stVal);
+						}
+					}
+					var udcPopScwinObj = wfm_udcDbCalendar.getObj("scwin");
+					udcPopScwinObj.gotoCalendar(calType,value);
+				};
+
+
+				//시작 날짜 set 함수
+				udc_obj.setStValue = function(dateVal) {
+					return ipt_stCal.setValue(dateVal);
+				};
+
+				//시작 날짜 get 함수
+				udc_obj.getStValue = function() {
+					return ipt_stCal.getValue();
+				};
+
+				//종료 날짜 set 함수
+				udc_obj.setEdValue = function(dateVal) {
+					return ipt_edCal.setValue(dateVal);
+				};
+
+				//종료 날짜 get 함수
+				udc_obj.getEdValue = function(calType,value) {
+					return ipt_edCal.getValue();
+				};
+
+
+				//PickerType set 함수
+				udc_obj.setPickerType = function(pickerType) {
+					var topFrame = $p.top();
+					if (com.util.isEmpty(topFrame.com)) {
+						topFrame = WebSquare.util.getMainFrame();
+					}
+					if(!com.util.isEmpty(pickerType) && pickerType =="picker" || pickerType =="pickerAfter" || pickerType =="list"){
+
+						if(!com.util.isEmpty($p.top) && typeof $p.top === "function"){
+							var dbCalendarPop = topFrame.com.util.getComponent("udcDbCalendarPop");
+						}else{
+							var dbCalendarPop = com.util.getComponent("udcDbCalendarPop");
+						}
+
+						if(!com.util.isEmpty(dbCalendarPop) && dbCalendarPop.getStyle("display") != "none"){
+							var grpDbCalPop = dbCalendarPop.getObj("grp_udcDbCalPop");
+							if(!com.util.isEmpty(dbCalendarPop)) {
+								grpDbCalPop.hide();
+							}
+						}
+
+						options.pickerType = pickerType;
+					}
+				};
+
+				//PickerType get 함수
+				udc_obj.getPickerType = function() {
+					return options.pickerType;
+				};
+
+
+				//임시 : 공통화예정 달력레이어 생성
+				udc_obj.showLayer = function(btnId,popId,paramStr) {
+				    try {
+					    	var btnObj = WebSquare.util.getComponentById(btnId);
+					    	var _layerObj = WebSquare.util.getComponentById(popId);
+
+				            var objLeft = WebSquare.style.getAbsoluteLeft(btnObj.render);
+				            var objTop = WebSquare.style.getAbsoluteTop(btnObj.render) + btnObj.render.offsetHeight + 5;
+				            var scrollLeft = document.documentElement.scrollLeft || document.body.scrollLeft;
+				            var scrollTop = document.documentElement.scrollTop ||document.body.scrollTop;
+				            var objWidth = parseInt(_layerObj.getStyle("width")) + parseInt(_layerObj.getStyle("border-right-width")) + parseInt(_layerObj.getStyle("border-left-width"));
+				            if (!btnObj.options.rightAlign) {
+				                if (objLeft + objWidth > scrollLeft + (document.documentElement.clientWidth || document.body.clientWidth)) {
+				                    objLeft = scrollLeft + (document.documentElement.clientWidth || document.body.clientWidth) - objWidth - 10;
+				                }
+				            }
+
+				           _layerObj.show("block", btnObj.uuid);
+				            var scrollHeight = document.documentElement.scrollHeight || document.body.scrollHeight;
+				            var scrollAdjust = scrollHeight -_layerObj.render.offsetHeight;
+				            if (objTop > scrollAdjust) {
+				                objTop = scrollAdjust;
+				            }
+				            if (btnObj.options.rightAlign) {
+				                objLeft = objLeft - (objWidth - btnObj.render.offsetWidth) - 23;
+				                if (objLeft < 0) {
+				                    objLeft = WebSquare.style.getAbsoluteLeft(btnObj.render);
+				                }
+				                if (objLeft + objWidth > scrollTop + (document.documentElement.clientWidth || document.body.clientWidth)) {
+				                    objLeft = scrollTop + (document.documentElement.clientWidth || document.body.clientWidth) - objWidth - 23;
+				                }
+				            }
+				           _layerObj.setPosition(objLeft, objTop);
+				            var direction = btnObj.options.direction || "auto";
+
+				            if (direction== "auto") {
+				                var reTop = WebSquare.style.getAbsoluteTop(btnObj.render) - scrollTop;
+				                var reHeight = document.documentElement.clientHeight - (reTop + btnObj.render.offsetHeight);
+				                var layerHeight =_layerObj.render.offsetHeight;
+				                if (reHeight < layerHeight && reTop > layerHeight) {
+				                    direction = "up";
+				                }
+				            }
+				            if (direction == "up") {
+				                objTop = WebSquare.style.getAbsoluteTop(btnObj.render) -_layerObj.render.offsetHeight - 5;
+				               _layerObj.setPosition(objLeft, objTop);
+				            }
+				    } catch (e) {
+				        WebSquare.exception.printStackTrace(e, null, btnObj);
+				    }
+				};
+
+				udc_obj._initDbCalenadr();
+				]]></script>
+    		<script ev:event="onattributeChanged(type,value)" type="text/javascript"><![CDATA[ ]]></script>
+    		<script ev:event="ondestroyed()" type="text/javascript"><![CDATA[ ]]></script>
+    		<xf:group id="grp_udcBox" class="udc_ica">
+    			<xf:trigger style="" id="btn_ica" type="button" class="btn_ica">
+    				<xf:label><![CDATA[달력에서 선택]]></xf:label>
+    				<script ev:event="onclick(e)" type="text/javascript"><![CDATA[
+    					udc_obj.showDbCalenadr();
+    				 ]]></script>
+    			</xf:trigger>
+    			<xf:group id="">
+    				<xf:group style="" id="" class="tb_ly">
+    					<xf:group style="" id="" class="cell">
+    						<w2:inputCalendar footerDiv="false" id="ipt_stCal" style="" renderDiv="true" focusOnDateSelect="false"
+    							calendarValueType="yearMonthDate" rightAlign="false" renderType="component" keepInvalidDate="false" dateValidSet="true"
+    							dateValidCheck="true" validator="">
+    							<script ev:event="onclick(e)" type="text/javascript"><![CDATA[
+
+    							 ]]></script>
+    							<script ev:event="onblur(e)" type="text/javascript"><![CDATA[
+    								udc_obj._popGotoCalendar("st",this.getValue());
+    							 ]]></script>
+    						</w2:inputCalendar>
+    					</xf:group>
+    					<xf:group id="" class="cell txt">
+    						<w2:textbox tagname="span" style="" id="" label="~" class=""></w2:textbox>
+    					</xf:group>
+    					<xf:group id="" class="cell">
+    						<w2:inputCalendar calendarValueType="yearMonthDate" focusOnDateSelect="false" footerDiv="false" id="ipt_edCal"
+    							renderDiv="true" renderType="component" rightAlign="false" style="" dateValidCheck="true" dateValidSet="true"
+    							keepInvalidDate="false" validator="" validCheck="">
+    							<script ev:event="onclick(e)" type="text/javascript"><![CDATA[
+
+    							 ]]></script>
+    							<script ev:event="onblur(e)" type="text/javascript"><![CDATA[
+
+    								udc_obj._popGotoCalendar("ed",this.getValue());
+    							 ]]></script>
+    						</w2:inputCalendar>
+    					</xf:group>
+    				</xf:group>
+    			</xf:group>
+    			<script ev:event="onclick(e)" type="text/javascript"><![CDATA[
+
+    			 ]]></script>
+    		</xf:group>
+    	</xf:group>
+
+    </body>
+</html>

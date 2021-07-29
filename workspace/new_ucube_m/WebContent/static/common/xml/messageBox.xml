@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:ev="http://www.w3.org/2001/xml-events"
+    xmlns:w2="http://www.inswave.com/websquare" xmlns:xf="http://www.w3.org/2002/xforms">
+    <head meta_programId="CMXM0002" meta_programName="공통 메시지 박스">
+    	<w2:type>DEFAULT</w2:type>
+        <w2:buildDate/>
+        <xf:model>
+            <xf:instance>
+                <data xmlns=""/>
+            </xf:instance>
+            <w2:dataCollection baseNode="map">
+            </w2:dataCollection>
+            <w2:workflowCollection>
+            </w2:workflowCollection>
+        </xf:model>
+         <script type="text/javascript" lazy="false"><![CDATA[
+
+	scwin.onpageload = function() {
+		try{
+			scwin.initMsgBox();
+
+		}catch(e){
+			$w.log(e.stack);
+		}
+
+	};
+
+	scwin.onpageunload = function() {
+
+	};
+
+	scwin.initMsgBox = function(){
+		try{
+			var messageType 	= scwin.getMessageType();
+			var message 		= com.data.getParameter("message") || "메시지 없음";
+			tbx_msg.setValue(message);
+
+			if(messageType =="alert"){
+				grp_btnBox.removeClass("item2");				
+				tbx_msg.removeClass("confirm");
+			}else{
+				grp_btnBox.addClass("item2");
+				tbx_msg.addClass("confirm");
+			}
+
+		}catch(e){
+			$w.log(e.stack);
+		}
+	}
+
+	//[확인]
+	scwin.btn_confirm_onclick = function(e) {
+		try{
+			var callbackFn		= com.data.getParameter("callbackFn");
+			var callBackParam		= com.data.getParameter("callBackParam");
+			if(scwin.getMessageType() == "confirm"){
+				callBackParam.clickValue = true;
+			}
+			com.win.closePopup(callbackFn , callBackParam);
+		}catch(e){
+			$w.log(e.stack);
+		}
+	};
+
+	//[취소]
+	scwin.btn_cancel_onclick = function(e) {
+			var callbackFn		= com.data.getParameter("callbackFn");
+			var callBackParam		= com.data.getParameter("callBackParam");
+			if(scwin.getMessageType() == "confirm"){
+				callBackParam.clickValue = false;
+			}
+			com.win.closePopup(callbackFn , callBackParam);
+	};
+
+	scwin.getMessageType = function(){
+		var messageType 	= com.data.getParameter("messageType") || "alert";
+		return messageType;
+	}
+	]]></script>
+    </head>
+    <body ev:onpageload="scwin.onpageload" ev:onpageunload="scwin.onpageunload">
+    	<xf:group class="msg-box" id="" style="" tagname="">
+    		<xf:group id="" class="msg-ov"><xf:group id="" class="msg-tbl"><xf:group tagname="" id="" class="msg-cell">
+    		<w2:textbox tagname="p" style="" id="tbx_msg" label="해당 데이터를 삭제하시겠습니까?"></w2:textbox></xf:group></xf:group></xf:group>
+	<xf:group id="grp_btnBox" class="btnbox item2">
+		<xf:trigger style="" id="btn_confirm" type="button" class="btn_cm" ev:onclick="scwin.btn_confirm_onclick">
+			<xf:label><![CDATA[확인]]></xf:label>
+		</xf:trigger>
+		<xf:trigger style="" id="btn_cancel" type="button" class="btn_df" ev:onclick="scwin.btn_cancel_onclick">
+			<xf:label><![CDATA[취소]]></xf:label>
+		</xf:trigger>
+	</xf:group></xf:group>
+    </body>
+</html>

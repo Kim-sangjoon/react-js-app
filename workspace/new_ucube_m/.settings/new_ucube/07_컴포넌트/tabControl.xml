@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><html xmlns="http://www.w3.org/1999/xhtml" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:w2="http://www.inswave.com/websquare" xmlns:xf="http://www.w3.org/2002/xforms">
+    <head>
+        <w2:buildDate/>
+        <w2:userPalette defaultIcon="mix.png" desc=""/>
+        <xf:model>
+            <xf:instance>
+                <data xmlns=""/>
+            </xf:instance>
+        </xf:model>
+        <script type="text/javascript"><![CDATA[ ]]></script>
+    </head>
+    <body><xf:group class="tbc_box" id="" style="">
+	<w2:tabControl alwaysDraw="false" class="wq_tbc" confirmFalseAction="new" confirmTrueAction="exist" id="" style="" useConfirmMessage="false" useMoveNextTabFocus="false" useTabKeyOnly="true">
+		<w2:tabs disabled="false" id="tabs1" label="첫번째 탭" style="">
+		</w2:tabs>
+		<w2:tabs disabled="false" id="tabs2" label="두번째 탭" style="">
+		</w2:tabs>
+		<w2:tabs disabled="false" id="tabs3" label="세번째 긴 레이블 탭" style="">
+		</w2:tabs>
+		<w2:content alwaysDraw="false" id="content1" style="">
+		</w2:content>
+		<w2:content alwaysDraw="false" id="content2" style="height:NaNpx">
+		</w2:content>
+		<w2:content alwaysDraw="false" id="content3" style="height:NaNpx">
+		</w2:content>
+</w2:tabControl>
+</xf:group>
+</body>
+</html>

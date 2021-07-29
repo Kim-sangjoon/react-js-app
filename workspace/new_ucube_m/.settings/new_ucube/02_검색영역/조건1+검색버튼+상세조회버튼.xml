@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><html xmlns="http://www.w3.org/1999/xhtml" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:w2="http://www.inswave.com/websquare" xmlns:xf="http://www.w3.org/2002/xforms">
+    <head>
+        <w2:buildDate/>
+        <w2:userPalette defaultIcon="mix.png" desc=""/>
+        <xf:model>
+            <xf:instance>
+                <data xmlns=""/>
+            </xf:instance>
+        </xf:model>
+        <script type="text/javascript"><![CDATA[ ]]></script>
+    </head>
+    <body><xf:group class="shbox" id="" style="">
+	<xf:group class="shbox_grp" id="">
+		<xf:group class="sh_grp last" id="" style="">
+			<xf:group class="stb" id="">
+				<xf:group class="th" id="">
+					<w2:textbox id="" label="사용자ID" style="" tagname="label">
+					</w2:textbox>
+</xf:group>
+				<xf:group class="td" id="">
+					<xf:input adjustMaxLength="false" class="wd-200" id="" placeholder="검색어" style="">
+					</xf:input>
+</xf:group>
+</xf:group>
+</xf:group>
+		<xf:group class="list-inline" id="" tagname="ul">
+			<xf:group id="" tagname="li">
+				<xf:trigger class="btn_cm" id="trigger1" style="" type="button">
+					<xf:label>
+<![CDATA[검색]]></xf:label>
+</xf:trigger>
+</xf:group>
+			<xf:group id="" style="" tagname="li">
+				<w2:udc_searchDetailShow detailGrpId="grp_scDetail" id="" style="">
+				</w2:udc_searchDetailShow>
+</xf:group>
+</xf:group>
+</xf:group>
+	<xf:group class="sh_detail_grp" id="grp_scDetail" style="">
+		<xf:group class="sh_grp" id="" style="">
+			<xf:group class="stb" id="">
+				<xf:group class="th" id="">
+					<w2:textbox class="" id="" label="조건명" style="" tagname="label">
+					</w2:textbox>
+</xf:group>
+				<xf:group class="td" id="">
+					<xf:select1 allOption="true" appearance="minimal" chooseOption="" class="" direction="auto" disabled="false" disabledClass="w2selectbox_disabled" id="" ref="" style="width: 120px;" submenuSize="auto">
+						<xf:choices>
+							<xf:item>
+								<xf:label>
+<![CDATA[옵션1]]></xf:label>
+								<xf:value>
+								</xf:value>
+</xf:item>
+							<xf:item>
+								<xf:label>
+<![CDATA[옵션2]]></xf:label>
+								<xf:value>
+								</xf:value>
+</xf:item>
+							<xf:item>
+								<xf:label>
+<![CDATA[옵션3]]></xf:label>
+								<xf:value>
+								</xf:value>
+</xf:item>
+							<xf:item>
+								<xf:label>
+<![CDATA[기이인 옵션]]></xf:label>
+								<xf:value>
+								</xf:value>
+</xf:item>
+</xf:choices>
+</xf:select1>
+</xf:group>
+</xf:group>
+</xf:group>
+		<xf:group class="sh_grp" id="" style="">
+			<xf:group class="stb" id="">
+				<xf:group class="th" id="">
+					<w2:textbox class="" id="" label="조건명" style="" tagname="label">
+					</w2:textbox>
+</xf:group>
+				<xf:group class="td" id="">
+					<xf:input adjustMaxLength="false" id="" placeholder="" style="">
+					</xf:input>
+</xf:group>
+</xf:group>
+</xf:group>
+</xf:group>
+</xf:group>
+</body>
+</html>

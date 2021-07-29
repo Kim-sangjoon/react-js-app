@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:ev="http://www.w3.org/2001/xml-events"
+    xmlns:w2="http://www.inswave.com/websquare" xmlns:xf="http://www.w3.org/2002/xforms">
+    <head meta_programName="검색영역">
+    	<w2:type>DEFAULT</w2:type>
+    	<w2:buildDate />
+    	<xf:model>
+    		<xf:instance>
+    			<data xmlns="" />
+    		</xf:instance>
+    		<w2:dataCollection baseNode="map"></w2:dataCollection>
+    		<w2:workflowCollection></w2:workflowCollection>
+    	</xf:model>
+    	<script type="text/javascript" lazy="false"><![CDATA[
+        
+	scwin.onpageload = function() {
+		
+	};
+	
+	scwin.onpageunload = function() {
+		
+	};
+	
+]]></script>
+    	<w2:require src="../../../common/udc/udc_rangeCalendar.xml"></w2:require>
+    	<w2:require src="../../../common/udc/udc_searchDetailToggle.xml"></w2:require>
+    	<w2:require src="/common/udc/udc_rangeCalendar.xml"></w2:require>
+    	<w2:require src="/common/udc/udc_searchDetailToggle.xml"></w2:require>
+    </head>
+    <body ev:onpageload="scwin.onpageload" ev:onpageunload="scwin.onpageunload">
+    	<xf:group class="sub_wrapper" id="">
+    		<w2:wframe class="page_header" id="" scope="true" src="../../../common/xml/contentsTitle.xml" style=""></w2:wframe>
+    	<xf:group id="" class="page_contents"><xf:group id="" class="page_contents_inner"><xf:group style="" id="" class="content_info">
+    			<xf:group tagname="ul" id="" class="content_list">
+    				<w2:textbox tagname="li" style="" id="" label="검색조건은 내용의 범위가 큰 순서에서 작은 순서로 배치한다. (단, 중요도에 따라 예외사항을 둘 수 있다.)"></w2:textbox>
+    				<w2:textbox tagname="li" style="" id="" label="필수 입력표시는 레이블 좌측에 별도의 * 표시를 하고 입력필드에 BG컬러를 적용한다. (필수 입력값이 너무 많을 경우에는 BG컬러 사용을 자제함)">
+    				</w2:textbox>
+    				<w2:textbox tagname="li" style="" id="" label="조건영역이 2줄 이상 배치될 경우 가급적 상세조회 버튼을 추가하여 hidden 레이어로 제공한다."></w2:textbox>
+    				<w2:textbox tagname="li" style="" id="" label="옵션이 4개 이상일 경우 콤보박스 적용을 권장하고 콤보의 기본값은 “전체” 또는 디폴트 옵션으로 표시한다.&lt;br/&gt;(단, 전체 옵션이 없거나 디폴트 옵션을 none으로 하고 싶은 경우 예외적으로 “선택”이라고 표시해준다.)">
+    				</w2:textbox>
+    			</xf:group>
+    		</xf:group><xf:group id="" tagname="section"><xf:group id="" class="dfbox">
+    			<w2:textbox tagname="h3" style="" label="조건검색 기본 예시" id=""></w2:textbox>
+    		</xf:group><xf:group id="" class="shbox">
+    			<xf:group id="" class="shbox_grp">
+    				<xf:group style="" id="" class="sh_grp">
+    				<w2:textbox tagname="label" style="" id="" label="조건명"></w2:textbox><xf:input adjustMaxLength="false" style="width: 100px" id="" placeholder="검색어"></xf:input></xf:group>
+    				<xf:group tagname="" id="" class="sh_btn">
+    					<xf:trigger style="" id="" type="button" class="btn_df">
+    						<xf:label><![CDATA[초기화]]></xf:label>
+    					</xf:trigger>
+    					<xf:trigger style="" id="" type="button" class="btn_sh">
+    						<xf:label><![CDATA[검색]]></xf:label>
+    					</xf:trigger>
+    				</xf:group>
+    			</xf:group>
+    		</xf:group><xf:group style="" id="" class="shbox">
+    			<xf:group id="" class="shbox_grp">
+    				<xf:group style="" id="" class="sh_grp">
+    				<w2:textbox tagname="label" style="" id="" label="조건명"></w2:textbox><xf:select ref="" appearance="full" style="" id="" renderType="checkboxgroup" rows="" selectedindex="-1" cols="">
+    								<xf:choices>
+    									<xf:item>
+    										<xf:label><![CDATA[옵션1]]></xf:label>
+    										<xf:value><![CDATA[]]></xf:value>
+    									</xf:item>
+    									<xf:item>
+    										<xf:label><![CDATA[옵션2]]></xf:label>
+    										<xf:value><![CDATA[]]></xf:value>
+    									</xf:item>
+    									<xf:item>
+    										<xf:label><![CDATA[옵션3]]></xf:label>
+    										<xf:value><![CDATA[]]></xf:value>
+    									</xf:item>
+    								</xf:choices>
+    							</xf:select></xf:group>
+    				<xf:group style="" id="" class="sh_grp">
+    				<w2:textbox tagname="label" style="" id="" label="조건명"></w2:textbox><xf:select1 ref="" appearance="full" style="" id="" renderType="radiogroup" rows="" cols="" selectedIndex="-1">
+    								<xf:choices>
+    									<xf:item>
+    										<xf:label><![CDATA[전체고객]]></xf:label>
+    										<xf:value><![CDATA[]]></xf:value>
+    									</xf:item>
+    									<xf:item>
+    										<xf:label><![CDATA[나의 고객]]></xf:label>
+    										<xf:value><![CDATA[]]></xf:value>
+    									</xf:item>
+    								</xf:choices>
+    							</xf:select1></xf:group>
+    				<xf:group tagname="" id="" class="sh_btn">
+    					<xf:trigger style="" id="" type="button" class="btn_df">
+    						<xf:label><![CDATA[초기화]]></xf:label>
+    					</xf:trigger>
+    					<xf:trigger style="" id="" type="button" class="btn_sh">
+    						<xf:label><![CDATA[검색]]></xf:label>
+    					</xf:trigger>
+    				</xf:group>
+    			</xf:group>
+    		</xf:group><xf:group style="" id="" class="shbox">
+    			<xf:group id="" class="shbox_grp">
+    				<xf:group style="" id="" class="sh_grp">
+    				<xf:select1 ref="" submenuSize="auto" appearance="minimal" disabledClass="w2selectbox_disabled" chooseOption="" disabled="false" style="width: 130px;" allOption="" id="" direction="auto">
+    								<xf:choices>
+    									<xf:item>
+    										<xf:label><![CDATA[조건명]]></xf:label>
+    										<xf:value><![CDATA[]]></xf:value>
+    									</xf:item>
+    								</xf:choices>
+    							</xf:select1><xf:input adjustMaxLength="false" style="width: 130px" id="" placeholder="검색어"></xf:input></xf:group>
+    				<xf:group style="" id="" class="sh_grp">
+    				<w2:textbox tagname="label" style="" id="" label="조건명" class=""></w2:textbox><xf:select1 ref="" submenuSize="auto" appearance="minimal" disabledClass="w2selectbox_disabled" chooseOption="" disabled="false" style="width: 120px;" allOption="true" id="" class="" direction="auto">
+    								<xf:choices>
+    									<xf:item>
+    										<xf:label><![CDATA[옵션1]]></xf:label>
+    										<xf:value></xf:value>
+    									</xf:item>
+    									<xf:item>
+    										<xf:label><![CDATA[옵션2]]></xf:label>
+    										<xf:value></xf:value>
+    									</xf:item>
+    									<xf:item>
+    										<xf:label><![CDATA[옵션3]]></xf:label>
+    										<xf:value></xf:value>
+    									</xf:item>
+    									<xf:item>
+    										<xf:label><![CDATA[기이인 옵션]]></xf:label>
+    										<xf:value></xf:value>
+    									</xf:item>
+    								</xf:choices>
+    							</xf:select1></xf:group>
+    				<xf:group style="" id="" class="sh_grp last">
+    				<w2:textbox tagname="label" style="" id="" label="조건명" class=""></w2:textbox><xf:group style="width: 220px" id="" class="ly_form">
+
+    								<xf:input adjustMaxLength="false" style="" id="" placeholder=""></xf:input><w2:textbox tagname="span" style="" id="" label="~" class="txt"></w2:textbox><xf:input adjustMaxLength="false" style="" id="" placeholder=""></xf:input></xf:group></xf:group>
+    				<xf:group tagname="" id="" class="sh_btn">
+    					<xf:trigger style="" id="" type="button" class="btn_df">
+    						<xf:label><![CDATA[초기화]]></xf:label>
+    					</xf:trigger>
+    					<xf:trigger style="" id="" type="button" class="btn_sh">
+    						<xf:label><![CDATA[검색]]></xf:label>
+    					</xf:trigger>
+    				</xf:group>
+    			</xf:group>
+    		</xf:group></xf:group><xf:group id="" tagname="section"><xf:group style="" id="" class="dfbox">
+    			<w2:textbox tagname="h3" style="" id="" label="조건검색 응용 예시 (개인화버튼)"></w2:textbox>
+    		</xf:group><xf:group style="" id="" class="shbox">
+    			<xf:group id="" class="shbox_grp">
+    				<xf:group style="" id="" class="sh_grp">
+    				<w2:textbox tagname="label" style="" id="" label="요청일"></w2:textbox><w2:inputCalendar footerDiv="false" rightAlign="false" focusOnDateSelect="false" readOnly="" style="" id="" renderType="component" class="wd-110 validate" renderDiv="true" calendarValueType="yearMonthDate">
+    							</w2:inputCalendar></xf:group>
+    				<xf:group style="" id="" class="sh_grp">
+    				<w2:textbox tagname="label" style="" id="" label="요청일"></w2:textbox><w2:udc_dbCaleandar pickerType="picker" style="" id=""></w2:udc_dbCaleandar></xf:group>
+    				<xf:group style="" id="" class="sh_grp">
+    				<w2:textbox tagname="label" style="" id="" label="급여반영월" class="req"></w2:textbox><w2:inputCalendar footerDiv="false" rightAlign="false" focusOnDateSelect="false" readOnly="" style="" id="" renderType="component" class="wd-110" renderDiv="true" calendarValueType="yearMonth">
+    							</w2:inputCalendar></xf:group>
+    				<xf:group tagname="" id="" class="sh_btn">
+    					<xf:trigger style="" id="" type="button" class="btn_df">
+    						<xf:label><![CDATA[초기화]]></xf:label>
+    					</xf:trigger>
+    					<xf:trigger style="" id="" type="button" class="btn_sh">
+    						<xf:label><![CDATA[검색]]></xf:label>
+    					</xf:trigger>
+    					<xf:trigger class="btn_pz" ev:onclick="scwin.btn_userSerchInfo_onclick" id="btn_userSerchInfo" style=""
+    						type="button">
+    						<xf:label><![CDATA[조회조건 개인화]]></xf:label>
+    					</xf:trigger>
+    				</xf:group>
+    			</xf:group>
+    		</xf:group></xf:group><xf:group id="" tagname="section"><xf:group style="" id="" class="dfbox">
+    			<w2:textbox tagname="h3" style="" id="" label="상세검색 예시"></w2:textbox>
+    		</xf:group><xf:group style="" id="" class="shbox">
+    			<xf:group id="" class="shbox_grp">
+    				<xf:group style="" id="" class="sh_grp">
+    					<w2:textbox tagname="label" style="" id="" label="조건명"></w2:textbox>
+    					<xf:input adjustMaxLength="false" style="" id="" placeholder="검색어"></xf:input>
+    					<xf:group style="" id="" class="lov wd-150">
+    						<xf:input adjustMaxLength="false" style="" id="" placeholder="" class="wd-full"></xf:input>
+    						<xf:trigger style="" id="" type="button" class="btn_lov">
+    							<xf:label></xf:label>
+    						</xf:trigger>
+    					</xf:group>
+    				</xf:group>
+    				<xf:group tagname="" id="" class="sh_btn">
+    					<xf:trigger style="" id="" type="button" class="btn_df">
+    						<xf:label><![CDATA[초기화]]></xf:label>
+    					</xf:trigger>
+    					<xf:trigger style="" id="" type="button" class="btn_sh">
+    						<xf:label><![CDATA[검색]]></xf:label>
+    					</xf:trigger>
+    					<w2:udc_searchDetailShow detailGrpId="grp_scDetail" style="" id=""></w2:udc_searchDetailShow>
+    				</xf:group>
+    			</xf:group>
+    			<xf:group style="" id="grp_scDetail" class="shbox_grp detail">
+    				<xf:group style="" id="" class="sh_grp">
+    				<xf:select1 ref="" submenuSize="auto" appearance="minimal" disabledClass="w2selectbox_disabled" chooseOption="" disabled="false" style="width: 130px;" allOption="" id="" direction="auto">
+    								<xf:choices>
+    									<xf:item>
+    										<xf:label><![CDATA[조건명]]></xf:label>
+    										<xf:value></xf:value>
+    									</xf:item>
+    								</xf:choices>
+    							</xf:select1><xf:input adjustMaxLength="false" style="" id="" placeholder="검색어"></xf:input></xf:group>
+    				<xf:group style="" id="" class="sh_grp">
+    				<w2:textbox tagname="label" style="" id="" label="조건명" class=""></w2:textbox><xf:select1 ref="" submenuSize="auto" appearance="minimal" disabledClass="w2selectbox_disabled" chooseOption="" disabled="false" style="width: 120px;" allOption="true" id="" class="" direction="auto">
+    								<xf:choices>
+    									<xf:item>
+    										<xf:label><![CDATA[옵션1]]></xf:label>
+    										<xf:value></xf:value>
+    									</xf:item>
+    									<xf:item>
+    										<xf:label><![CDATA[옵션2]]></xf:label>
+    										<xf:value></xf:value>
+    									</xf:item>
+    									<xf:item>
+    										<xf:label><![CDATA[옵션3]]></xf:label>
+    										<xf:value></xf:value>
+    									</xf:item>
+    									<xf:item>
+    										<xf:label><![CDATA[기이인 옵션]]></xf:label>
+    										<xf:value></xf:value>
+    									</xf:item>
+    								</xf:choices>
+    							</xf:select1></xf:group>
+    				<xf:group style="" id="" class="sh_grp">
+    					<w2:textbox tagname="label" style="" id="" label="조건명" class=""></w2:textbox>
+    					<xf:group style="width: 220px" id="" class="ly_form">
+    						<xf:input adjustMaxLength="false" style="" id="" placeholder=""></xf:input>
+    						<w2:textbox tagname="span" style="" id="" label="~" class="txt"></w2:textbox>
+    						<xf:input adjustMaxLength="false" style="" id="" placeholder=""></xf:input>
+    					</xf:group>
+    				</xf:group>
+    			</xf:group>
+    		</xf:group></xf:group></xf:group></xf:group></xf:group>
+    </body>
+</html>

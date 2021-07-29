@@ -1,0 +1,373 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:ev="http://www.w3.org/2001/xml-events"
+    xmlns:w2="http://www.inswave.com/websquare" xmlns:xf="http://www.w3.org/2002/xforms">
+    <head meta_programName="버튼">
+    	<w2:type>DEFAULT</w2:type>
+        <w2:buildDate/>
+        <xf:model>
+            <xf:instance>
+                <data xmlns=""/>
+            </xf:instance>
+            <w2:dataCollection baseNode="map">
+            	<w2:dataList baseNode="list" repeatNode="map" id="dataList1" saveRemovedData="true">
+            		<w2:columnInfo>
+            			<w2:column id="col1" name="name1" dataType="text"></w2:column>
+            			<w2:column id="col2" name="name2" dataType="text"></w2:column>
+            			<w2:column id="col3" name="name3" dataType="text"></w2:column>
+            		</w2:columnInfo>
+            		<w2:data use="true">
+            			<w2:row>
+            				<col1><![CDATA[1차/승인]]></col1>
+            				<col2><![CDATA[대기]]></col2>
+            				<col3><![CDATA[]]></col3>
+            			</w2:row>
+            			<w2:row>
+            				<col1><![CDATA[2차/승인]]></col1>
+            				<col2><![CDATA[]]></col2>
+            				<col3><![CDATA[]]></col3>
+            			</w2:row>
+            		</w2:data>
+            	</w2:dataList>
+            </w2:dataCollection>
+            <w2:workflowCollection>
+            </w2:workflowCollection>
+        </xf:model>
+         <script type="text/javascript" lazy="false"><![CDATA[
+        
+	scwin.onpageload = function() {
+		
+	};
+	
+	scwin.onpageunload = function() {
+		
+	};
+	
+	
+	
+	scwin.btn_toggle_onclick = function(e) {
+		var obj = $('#'+this.id);
+		
+		obj.toggleClass('plus minus');
+		obj.parents().next('div.toggle-body').slideToggle();
+	};
+	
+	
+
+	 ]]></script>
+    </head>
+    <body ev:onpageload="scwin.onpageload" ev:onpageunload="scwin.onpageunload">
+    	<xf:group class="sub_wrapper" id="">
+    		<w2:wframe class="page_header" id="" scope="true" src="../../../common/xml/contentsTitle.xml" style=""></w2:wframe>
+    	<xf:group id="" class="page_contents"><xf:group id="" class="page_contents_inner"><xf:group style="" id="" class="content_info">
+    			<xf:group tagname="ul" id="" class="content_list">
+    				<w2:textbox tagname="li" style="" id="" label="버튼은 업무처리의 흐름에 따라 배치하는 것을 기본 원칙으로 하며, 사용권한이 없거나 필요가 없는 버튼은 보여지지 않도록한다."></w2:textbox>
+    				<w2:textbox tagname="li" style="" id="" label="서로 다른 성격의 버튼 그룹은 Bar로 구분하여 표현한다."></w2:textbox>
+    				<w2:textbox tagname="li" style="" id="" label="모듈제어버튼은 테이블 우상단에 위치하며 각 모듈의 기능을 담당한다."></w2:textbox>
+    				<w2:textbox tagname="li" style="" id="" label="전체제어버튼은 화면 하단에 위치하며 전체 페이지의 기능을 담당한다.&lt;br/&gt;- 좌측으로부터 업무버튼, 기본 CRUD버튼, 네비게이션버튼, 컨펌버튼 순으로 배열한다. &lt;br/&gt;- 같은 그룹 내에서는, 좌측으로부터 긍정적인 의미를 가진 버튼, 중요도가 높은 버튼 순으로 배열한다.&lt;br/&gt;- 페이지를 제어하는 버튼이 아닌 '참고를 위한 링크'버튼은 좌측 하단에 위치한다.">
+    				</w2:textbox>
+    				<w2:textbox tagname="li" style="" id="" label="전체제어버튼 사용시 유의사항&lt;br/&gt;- 등록, 확인, 저장, 승인 등의 컨펌성 버튼은 색상을 달리하여 시각적으로 차별화한다. (btn-primary class적용)&lt;br/&gt;- 등록 : 새로운 1건을 등록하기 위해 화면 이동하는 버튼 (신규X, 등록하기X)&lt;br/&gt;- 수정 : 기존 1건을 수정하기 위해 화면 이동하는 버튼 (변경X) &lt;br/&gt;- '수정완료'버튼은 '저장'으로 표기하며 '수정'으로 표기하지 않도록 유의한다.">
+    				</w2:textbox>
+    			</xf:group>
+    		</xf:group><xf:group style="" id="" class="" tagname="section">
+    			<xf:group id="" class="dfbox">
+    				<xf:trigger class="btn_icon minus" ev:onclick="scwin.btn_toggle_onclick" id="" style="" type="button">
+    					<xf:label></xf:label>
+    				</xf:trigger>
+    				<w2:textbox tagname="h3" style="" id="" label="버튼 레이블링 가이드 - 인라인버튼"></w2:textbox>
+    			</xf:group>
+    			<xf:group id="" class="toggle-body">
+    				<xf:group style="" id="" class="tbbox">
+    					<xf:group tagname="table" style="" id="" class="w2tb tb">
+    						<w2:attributes>
+    							<w2:summary></w2:summary>
+    						</w2:attributes>
+    						<xf:group tagname="caption">디테일&amp;nbsp;테이블(1단)</xf:group>
+    						<xf:group tagname="colgroup">
+    							<xf:group tagname="col" style="width:250px;"></xf:group>
+    							<xf:group tagname="col"></xf:group>
+    							<xf:group tagname="col" style="width:45px;"></xf:group>
+    						</xf:group>
+    						<xf:group tagname="tr" style="">
+    							<xf:group tagname="th" style="" class="w2tb_th">
+    								<w2:attributes>
+    									<w2:scope>row</w2:scope>
+    								</w2:attributes>
+    								<w2:textbox tagname="label" style="" id="" label="Slogan" class=""></w2:textbox>
+    							</xf:group>
+    							<xf:group tagname="td" style="" class="w2tb_td">
+    								<w2:attributes>
+    									<w2:colspan>1</w2:colspan>
+    									<w2:rowspan>1</w2:rowspan>
+    								</w2:attributes>
+    								<xf:input adjustMaxLength="false" style="" id="" placeholder="" class="wd-150"
+    									initValue="Global Best &amp; First">
+    								</xf:input>
+    							</xf:group>
+    							<xf:group tagname="td" class="w2tb_td tac">
+    								<w2:attributes>
+    									<w2:colspan>1</w2:colspan>
+    									<w2:rowspan>2</w2:rowspan>
+    								</w2:attributes>
+    								<xf:trigger centerOnImageClass="" class="btn_ic delete" id="" style="" type="button">
+    									<xf:label></xf:label>
+    								</xf:trigger>
+    							</xf:group>
+    						</xf:group>
+    						<xf:group tagname="tr" style="">
+    							<xf:group tagname="th" style="" class="w2tb_th">
+    								<w2:attributes>
+    									<w2:scope>row</w2:scope>
+    								</w2:attributes>
+    								<w2:textbox tagname="label" style="" id="" label="보안게이트 시뮬레이션"></w2:textbox>
+    							</xf:group>
+    							<xf:group tagname="td" style="" class="w2tb_td">
+    								<xf:trigger centerOnImageClass="" class="btn_in icon forward" id="" style="" type="button">
+    									<xf:label><![CDATA[]]></xf:label>
+    								</xf:trigger>
+    							</xf:group>
+    						</xf:group>
+    					</xf:group>
+    				</xf:group>
+    				<xf:group style="" id="" class="tbbox no_bt">
+    					<xf:group tagname="table" style="" id="" class="w2tb tb">
+    						<w2:attributes>
+    							<w2:summary></w2:summary>
+    						</w2:attributes>
+    						<xf:group tagname="caption">디테일&amp;nbsp;테이블(1단)</xf:group>
+    						<xf:group tagname="colgroup">
+    							<xf:group tagname="col" style="width:250px;"></xf:group>
+    							<xf:group tagname="col" style=""></xf:group>
+    						</xf:group>
+    						<xf:group tagname="tr" style="">
+    							<xf:group tagname="th" style="" class="w2tb_th">
+    								<w2:attributes>
+    									<w2:scope>row</w2:scope>
+    								</w2:attributes>
+    								<w2:textbox tagname="label" style="" id="" label="신청서" class=""></w2:textbox>
+    							</xf:group>
+    							<xf:group tagname="td" style="" class="w2tb_td">
+    								<w2:attributes>
+    									<w2:colspan>1</w2:colspan>
+    									<w2:rowspan>1</w2:rowspan>
+    								</w2:attributes>
+    								<xf:group style="" id="" class="ly_form">
+    									<w2:textbox tagname="span" style="" id="" label="2018년도 신청서" class="txt"></w2:textbox>
+    									<xf:trigger centerOnImageClass="" class="btn_in upload" id="" style="" type="button">
+    										<xf:label><![CDATA[업로드]]></xf:label>
+    									</xf:trigger>
+    									<xf:trigger centerOnImageClass="" class="btn_in download" id="" style="" type="button">
+    										<xf:label><![CDATA[다운로드]]></xf:label>
+    									</xf:trigger>
+    								</xf:group>
+
+
+    							</xf:group>
+    						</xf:group>
+    						<xf:group tagname="tr" style="">
+    							<xf:group tagname="th" style="" class="w2tb_th">
+    								<w2:attributes>
+    									<w2:scope>row</w2:scope>
+    								</w2:attributes>
+    								<w2:textbox tagname="label" style="" id="" label="휴가"></w2:textbox>
+    							</xf:group>
+    							<xf:group tagname="td" style="" class="w2tb_td">
+    								<xf:group class="ly_form" id="" style="">
+    									<w2:textbox class="txt" id="" label="0.5일 (소진예정휴가 0일)" style="" tagname="span"></w2:textbox>
+    									<xf:trigger centerOnImageClass="" class="btn_in" id="" style="" type="button">
+    										<xf:label><![CDATA[휴가신청]]></xf:label>
+    									</xf:trigger>
+    									<xf:trigger centerOnImageClass="" class="btn_in" id="" style="" type="button">
+    										<xf:label><![CDATA[비활성화버튼]]></xf:label>
+    									</xf:trigger>
+    								</xf:group>
+    							</xf:group>
+    						</xf:group>
+    					</xf:group>
+    				</xf:group>
+    				
+    			</xf:group>
+</xf:group><xf:group id="" class="" tagname="section"><xf:group id="" class="dfbox"><xf:group style="" id="" class="rta">
+    					<xf:trigger ev:onclick="" style="" id="" type="button" class="btn_df">
+    						<xf:label><![CDATA[연계업무A]]></xf:label>
+    					</xf:trigger>
+    					<w2:textbox tagname="" style="" id="" label="" class="div_bar"></w2:textbox>
+    					<xf:trigger ev:onclick="" style="" id="" type="button" class="btn_df copy">
+    						<xf:label><![CDATA[행복사]]></xf:label>
+    					</xf:trigger>
+    					<xf:trigger ev:onclick="" style="" id="" type="button" class="btn_df add">
+    						<xf:label><![CDATA[행추가]]></xf:label>
+    					</xf:trigger>
+    					<xf:trigger ev:onclick="" style="" id="" type="button" class="btn_df del">
+    						<xf:label><![CDATA[행취소]]></xf:label>
+    					</xf:trigger>
+    					<xf:trigger ev:onclick="" style="" id="" type="button" class="btn_df undo">
+    						<xf:label><![CDATA[실행취소]]></xf:label>
+    					</xf:trigger>
+    					<xf:trigger ev:onclick="" style="" id="" type="button" class="btn_df form_down">
+    						<xf:label><![CDATA[양식다운로드]]></xf:label>
+    					</xf:trigger>
+    					<xf:trigger ev:onclick="" style="" id="" type="button" class="btn_df excel_up">
+    						<xf:label><![CDATA[엑셀업로드]]></xf:label>
+    					</xf:trigger>
+    					<xf:trigger ev:onclick="" style="" id="" type="button" class="btn_df large_excel_down">
+    						<xf:label><![CDATA[대용량엑셀다운로드]]></xf:label>
+    					</xf:trigger>
+    					<xf:trigger ev:onclick="" style="" id="" type="button" class="btn_df  excel_down">
+    						<xf:label><![CDATA[엑셀다운로드]]></xf:label>
+    					</xf:trigger>
+    					<xf:trigger ev:onclick="" style="" id="" type="button" class="btn_df pdf">
+    						<xf:label><![CDATA[PDF다운로드]]></xf:label>
+    					</xf:trigger>
+    					<xf:trigger ev:onclick="" style="" id="" type="button" class="btn_df report">
+    						<xf:label><![CDATA[출력]]></xf:label>
+    					</xf:trigger>
+    					<xf:trigger ev:onclick="" style="" id="" type="button" class="btn_df icon pz">
+    						<xf:label><![CDATA[그리드 개인화]]></xf:label>
+    					</xf:trigger>
+    				</xf:group></xf:group><w2:gridView scrollByColumnAdaptive="false" focusMode="row" tooltipDisplay="true" dataList="data:dataList1" scrollByColumn="false" style="height: 81px;" autoFit="allColumn" id="" sortable="true" visibleRowNum="10" class="wq_gvw" defaultCellHeight="">
+    					<w2:caption style="" id="caption1" value="this is a grid caption."></w2:caption>
+    					<w2:header style="" id="header1">
+    						<w2:row style="" id="row1">
+    							<w2:column removeBorderStyle="false" width="100" inputType="text" id="column10" value="단계" blockSelect="false" displayMode="label">
+    							</w2:column>
+    							<w2:column removeBorderStyle="false" width="150" inputType="text" id="column9" value="진행상태" blockSelect="false" displayMode="label">
+    							</w2:column>
+    							<w2:column removeBorderStyle="false" width="400" inputType="text" id="column7" value="결재자/처리자" blockSelect="false" displayMode="label">
+    							</w2:column>
+    							<w2:column removeBorderStyle="false" width="40" inputType="text" id="column13" blockSelect="false" displayMode="label">
+    							</w2:column>
+    							<w2:column removeBorderStyle="false" width="40" inputType="text" id="column11" blockSelect="false" displayMode="label">
+    							</w2:column>
+    						</w2:row>
+    					</w2:header>
+    					<w2:gBody style="" id="gBody1">
+    						<w2:row style="" id="row2">
+    							<w2:column removeBorderStyle="false" width="100" inputType="text" style="" id="col1" blockSelect="false" displayMode="label">
+    							</w2:column>
+    							<w2:column removeBorderStyle="false" width="150" inputType="text" style="" id="col2" blockSelect="false" displayMode="label">
+    							</w2:column>
+    							<w2:column ref="" textAlign="left" removeBorderStyle="false" chooseOption="" width="400" viewType="icon" inputType="select" style="" id="col3" allOption="" blockSelect="false" displayMode="label">
+    								<w2:choices>
+    									<w2:item>
+    										<w2:label><![CDATA[옵션1]]></w2:label>
+    										<w2:value><![CDATA[]]></w2:value>
+    									</w2:item>
+    									<w2:item>
+    										<w2:label><![CDATA[옵션2]]></w2:label>
+    										<w2:value><![CDATA[]]></w2:value>
+    									</w2:item>
+    								</w2:choices>
+    							</w2:column>
+    							<w2:column removeBorderStyle="false" width="40" inputType="user" style="" id="col4" value='&lt;button class="w2trigger btn_icon"&gt;&lt;i class="fa fa-plus-square-o" aria-hidden="true"&gt;&lt;/i&gt;&lt;/button&gt;' blockSelect="false" displayMode="label">
+    							</w2:column>
+    							<w2:column removeBorderStyle="false" width="40" inputType="user" style="" id="col5" value='&lt;button class="w2trigger btn_icon"&gt;&lt;i class="fa fa-minus-square-o" aria-hidden="true"&gt;&lt;/i&gt;&lt;/button&gt;' blockSelect="false" displayMode="label">
+    							</w2:column>
+    						</w2:row>
+    					</w2:gBody>
+    				</w2:gridView></xf:group><xf:group style="" id="" class="" tagname="section">
+    			<xf:group id="" class="dfbox">
+    				<xf:trigger class="btn_icon minus" ev:onclick="scwin.btn_toggle_onclick" id="" style="" type="button">
+    					<xf:label></xf:label>
+    				</xf:trigger>
+    				<w2:textbox tagname="h3" style="" id="" label="버튼 레이블링 가이드 - 모듈제어버튼, 전체제어버튼"></w2:textbox>
+    				<xf:group id="" class="rta">
+    					<xf:trigger centerOnImageClass="" class="btn_df download" id="" style="" type="button">
+    						<xf:label><![CDATA[다운로드]]></xf:label>
+    					</xf:trigger>
+    					<xf:trigger centerOnImageClass="" class="btn_df upload" id="" style="" type="button">
+    						<xf:label><![CDATA[업로드]]></xf:label>
+    					</xf:trigger>
+    					<xf:trigger centerOnImageClass="" class="btn_df add" id="" style="" type="button">
+    						<xf:label><![CDATA[행추가]]></xf:label>
+    					</xf:trigger>
+    					<xf:trigger class="btn_df del" id="" style="" type="button" centerOnImageClass="">
+    						<xf:label><![CDATA[행삭제]]></xf:label>
+    					</xf:trigger>
+    				</xf:group>
+    			</xf:group>
+    			<xf:group id="" class="toggle-body">
+    				<w2:gridView scrollByColumnAdaptive="false" focusMode="row" tooltipDisplay="true" dataList="data:dlt_grdData4" scrollByColumn="false" style="height: 100px;" autoFit="allColumn" id="" sortable="true" visibleRowNum="all" class="wq_gvw" defaultCellHeight="">
+    					<w2:caption style="" id="caption1" value="this is a grid caption."></w2:caption>
+    					<w2:header style="" id="header1">
+    						<w2:row style="" id="row1">
+    							<w2:column removeBorderStyle="false" width="120" inputType="text" style="" id="column10" value="Volutpat" blockSelect="false" displayMode="label">
+    							</w2:column>
+    							<w2:column removeBorderStyle="false" width="200" inputType="text" style="" id="column9" value="integer" blockSelect="false" displayMode="label">
+    							</w2:column>
+    							<w2:column removeBorderStyle="false" width="100" inputType="text" style="" id="column7" value="Date" blockSelect="false" displayMode="label">
+    							</w2:column>
+    							<w2:column removeBorderStyle="false" width="120" inputType="text" style="" id="column5" value="Tortor header" blockSelect="false" displayMode="label">
+    							</w2:column>
+    							<w2:column removeBorderStyle="false" width="100" inputType="text" style="" id="column3" value="Total" blockSelect="false" displayMode="label">
+    							</w2:column>
+    						</w2:row>
+    					</w2:header>
+    					<w2:gBody style="" id="gBody1">
+    						<w2:row style="" id="row2">
+    							<w2:column textAlign="left" removeBorderStyle="false" width="120" inputType="text" id="name1" blockSelect="false" displayMode="label">
+    							</w2:column>
+    							<w2:column textAlign="left" removeBorderStyle="false" width="200" inputType="text" id="position" blockSelect="false" displayMode="label">
+    							</w2:column>
+    							<w2:column removeBorderStyle="false" width="100" inputType="text" id="office" blockSelect="false" displayMode="label">
+    							</w2:column>
+    							<w2:column removeBorderStyle="false" width="60" inputType="text" id="age" blockSelect="false" displayMode="label">
+    							</w2:column>
+    							<w2:column textAlign="left" removeBorderStyle="false" width="100" inputType="text" id="startDate" blockSelect="false" displayMode="label">
+    							</w2:column>
+    						</w2:row>
+    					</w2:gBody>
+    				</w2:gridView>
+    				<xf:group style="" id="" class="btnbox last">
+    					<xf:group id="" class="lta">
+    						<xf:trigger style="" id="" type="button" class="btn_df">
+    							<xf:label><![CDATA[업무]]></xf:label>
+    						</xf:trigger>
+    						<xf:trigger style="" id="" type="button" class="btn_df">
+    							<xf:label><![CDATA[참고]]></xf:label>
+    						</xf:trigger>
+    					</xf:group>
+    					<xf:group id="" class="rta">
+    						<xf:trigger style="" id="" type="button" class="btn_df">
+    							<xf:label><![CDATA[등록]]></xf:label>
+    						</xf:trigger>
+    						<xf:trigger style="" id="" type="button" class="btn_df">
+    							<xf:label><![CDATA[수정]]></xf:label>
+    						</xf:trigger>
+    						<xf:trigger anchorWithGroupClass="" class="btn_cm save" id="" style="" type="button">
+    							<xf:label><![CDATA[저장]]></xf:label>
+    						</xf:trigger>
+    						<xf:trigger anchorWithGroupClass="" class="btn_cm save" id="" style="" type="button" disabled="true">
+    							<xf:label><![CDATA[저장]]></xf:label>
+    						</xf:trigger>
+    						<xf:trigger style="" id="" type="button" class="btn_df">
+    							<xf:label><![CDATA[임시저장]]></xf:label>
+    						</xf:trigger>
+    						<xf:trigger style="" id="" type="button" class="btn_df">
+    							<xf:label><![CDATA[삭제]]></xf:label>
+    						</xf:trigger>
+    						<xf:trigger class="btn_cm confirm" id="" style="" type="button" anchorWithGroupClass="">
+    							<xf:label><![CDATA[확인]]></xf:label>
+    						</xf:trigger>
+    						<xf:trigger style="" id="" type="button" class="btn_df">
+    							<xf:label><![CDATA[취소]]></xf:label>
+    						</xf:trigger>
+    						<w2:textbox class="div_bar" id="" label="" style="" tagname=""></w2:textbox>
+    						<xf:trigger class="btn_df prev" id="" style="" type="button">
+    							<xf:label><![CDATA[이전]]></xf:label>
+    						</xf:trigger>
+    						<xf:trigger class="btn_df next" id="" style="" type="button">
+    							<xf:label><![CDATA[다음]]></xf:label>
+    						</xf:trigger>
+    						<xf:trigger class="btn_df list" id="" style="" type="button">
+    							<xf:label><![CDATA[목록]]></xf:label>
+    						</xf:trigger>
+    						<xf:trigger style="" disabled="true" id="" type="button" class="btn_df">
+    							<xf:label><![CDATA[비활성화 버튼]]></xf:label>
+    						</xf:trigger>
+    					</xf:group>
+    				</xf:group>
+    			</xf:group>
+    		</xf:group></xf:group></xf:group></xf:group>
+    </body>
+</html>

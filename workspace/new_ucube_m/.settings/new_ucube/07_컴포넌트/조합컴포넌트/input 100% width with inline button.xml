@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><html xmlns="http://www.w3.org/1999/xhtml" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:w2="http://www.inswave.com/websquare" xmlns:xf="http://www.w3.org/2002/xforms">
+    <head>
+        <w2:buildDate/>
+        <w2:userPalette defaultIcon="mix.png" desc=""/>
+        <xf:model>
+            <xf:instance>
+                <data xmlns=""/>
+            </xf:instance>
+        </xf:model>
+        <script type="text/javascript"><![CDATA[ ]]></script>
+    </head>
+    <body><xf:group class="tb_ly" id="" style="">
+	<xf:group class="cell" id="">
+		<xf:input adjustMaxLength="false" id="" placeholder="" style="" class="wd-full">
+		</xf:input>
+</xf:group>
+	<xf:group class="cell btn" id="">
+		<xf:trigger class="btn_in" id="" style="" type="button">
+			<xf:label>
+<![CDATA[inline button]]></xf:label>
+</xf:trigger>
+</xf:group>
+</xf:group>
+</body>
+</html>

@@ -1,0 +1,698 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:w2="http://www.inswave.com/websquare"
+	xmlns:xf="http://www.w3.org/2002/xforms">
+	<head meta_programName="납부계정변경">
+		<w2:type>DEFAULT</w2:type>
+		<w2:buildDate />
+		<xf:model>
+			<xf:instance>
+				<data xmlns="" />
+			</xf:instance>
+			<w2:dataCollection baseNode="map">
+				<w2:dataList baseNode="list" repeatNode="map" id="dataList2" saveRemovedData="true">
+					<w2:columnInfo>
+						<w2:column id="col1" name="name1" dataType="text"></w2:column>
+						<w2:column id="col2" name="name2" dataType="text"></w2:column>
+						<w2:column id="col3" name="name3" dataType="text"></w2:column>
+						<w2:column id="col4" name="name4" dataType="text"></w2:column>
+					</w2:columnInfo>
+					<w2:data use="true">
+						<w2:row>
+							<col1><![CDATA[2019-05]]></col1>
+							<col2><![CDATA[025043]]></col2>
+							<col3><![CDATA[5.54]]></col3>
+							<col4><![CDATA[154]]></col4>
+						</w2:row>
+						<w2:row>
+							<col1><![CDATA[2019-05]]></col1>
+							<col2><![CDATA[025043]]></col2>
+							<col3><![CDATA[5.54]]></col3>
+							<col4><![CDATA[154]]></col4>
+						</w2:row>
+						<w2:row>
+							<col1><![CDATA[2019-05]]></col1>
+							<col2><![CDATA[025043]]></col2>
+							<col3><![CDATA[5.54]]></col3>
+							<col4><![CDATA[154]]></col4>
+						</w2:row>
+					</w2:data>
+				</w2:dataList>
+				<w2:dataList baseNode="list" repeatNode="map" id="dataList3" saveRemovedData="true">
+					<w2:columnInfo>
+						<w2:column id="col1" name="name1" dataType="text"></w2:column>
+						<w2:column id="col2" name="name2" dataType="text"></w2:column>
+						<w2:column id="col3" name="name3" dataType="text"></w2:column>
+						<w2:column id="col4" name="name4" dataType="text"></w2:column>
+						<w2:column id="col5" name="name5" dataType="text"></w2:column>
+					</w2:columnInfo>
+					<w2:data use="true">
+						<w2:row>
+							<col1><![CDATA[2019-05 10:29:33]]></col1>
+							<col2><![CDATA[이동통신]]></col2>
+							<col3><![CDATA[이동통신]]></col3>
+							<col4><![CDATA[일반상]]></col4>
+							<col5><![CDATA[[처리중] 요금조정처리]]></col5>
+						</w2:row>
+						<w2:row>
+							<col1><![CDATA[2019-05 10:29:33]]></col1>
+							<col2><![CDATA[이동통신]]></col2>
+							<col3><![CDATA[이동통신]]></col3>
+							<col4><![CDATA[일반상]]></col4>
+							<col5><![CDATA[[처리중] 요금조정처리]]></col5>
+						</w2:row>
+						<w2:row>
+							<col1><![CDATA[2019-05 10:29:33]]></col1>
+							<col2><![CDATA[이동통신]]></col2>
+							<col3><![CDATA[이동통신]]></col3>
+							<col4><![CDATA[일반상]]></col4>
+							<col5><![CDATA[[처리중] 요금조정처리]]></col5>
+						</w2:row>
+						<w2:row>
+							<col1><![CDATA[2019-05 10:29:33]]></col1>
+							<col2><![CDATA[이동통신]]></col2>
+							<col3><![CDATA[이동통신]]></col3>
+							<col4><![CDATA[일반상]]></col4>
+							<col5><![CDATA[[처리중] 요금조정처리]]></col5>
+						</w2:row>
+						<w2:row>
+							<col1><![CDATA[2019-05 10:29:33]]></col1>
+							<col2><![CDATA[이동통신]]></col2>
+							<col3><![CDATA[이동통신]]></col3>
+							<col4><![CDATA[일반상]]></col4>
+							<col5><![CDATA[[처리중] 요금조정처리]]></col5>
+						</w2:row>
+						<w2:row>
+							<col1><![CDATA[2019-05 10:29:33]]></col1>
+							<col2><![CDATA[이동통신]]></col2>
+							<col3><![CDATA[이동통신]]></col3>
+							<col4><![CDATA[일반상]]></col4>
+							<col5><![CDATA[[처리중] 요금조정처리]]></col5>
+						</w2:row>
+						<w2:row>
+							<col1><![CDATA[2019-05 10:29:33]]></col1>
+							<col2><![CDATA[이동통신]]></col2>
+							<col3><![CDATA[이동통신]]></col3>
+							<col4><![CDATA[일반상]]></col4>
+							<col5><![CDATA[[처리중] 요금조정처리]]></col5>
+						</w2:row>
+					</w2:data>
+				</w2:dataList>
+				<w2:dataList baseNode="list" id="dataList1" repeatNode="map" saveRemovedData="true" style="">
+					<w2:columnInfo>
+						<w2:column dataType="text" id="col0" name="name12"></w2:column>
+						<w2:column dataType="text" id="col3" name="name3"></w2:column>
+						<w2:column dataType="text" id="col4" name="name4"></w2:column>
+						<w2:column dataType="text" id="col5" name="name5"></w2:column>
+						<w2:column dataType="text" id="col11" name="name11"></w2:column>
+						<w2:column dataType="text" id="col6" name="name6"></w2:column>
+						<w2:column dataType="text" id="col7" name="name7"></w2:column>
+						<w2:column dataType="text" id="col8" name="name8"></w2:column>
+						<w2:column dataType="text" id="col9" name="name9"></w2:column>
+						<w2:column dataType="text" id="col10" name="name10"></w2:column>
+						<w2:column dataType="text" id="col12" name="name12"></w2:column>
+					</w2:columnInfo>
+					<w2:data use="true">
+						<w2:row>
+							<col3><![CDATA[U+인터넷]]></col3>
+							<col4><![CDATA[광랜_주택]]></col4>
+							<col5><![CDATA[590000000000]]></col5>
+							<col6><![CDATA[500000000000]]></col6>
+							<col7><![CDATA[개통]]></col7>
+							<col8><![CDATA[신규]]></col8>
+							<col9><![CDATA[2016-01-01]]></col9>
+							<col10><![CDATA[2016-01-01]]></col10>
+							<col12><![CDATA[1234123400]]></col12>
+							<col0></col0>
+							<col11><![CDATA[김엘지]]></col11>
+						</w2:row>
+						<w2:row>
+							<col3><![CDATA[U+ TV㈜]]></col3>
+							<col4><![CDATA[고급형]]></col4>
+							<col5><![CDATA[590000000000]]></col5>
+							<col6><![CDATA[500000000001]]></col6>
+							<col7><![CDATA[개통]]></col7>
+							<col8><![CDATA[신규]]></col8>
+							<col9><![CDATA[2016-01-01]]></col9>
+							<col10><![CDATA[2016-01-01]]></col10>
+							<col12><![CDATA[1234123400]]></col12>
+							<col0><![CDATA[o]]></col0>
+							<col11><![CDATA[김엘지]]></col11>
+						</w2:row>
+						<w2:row>
+							<col3><![CDATA[U+ 인터넷전화]]></col3>
+							<col4><![CDATA[인터넷전화]]></col4>
+							<col5><![CDATA[590000000000]]></col5>
+							<col6><![CDATA[070-0000-0000]]></col6>
+							<col7><![CDATA[개통]]></col7>
+							<col8><![CDATA[신규]]></col8>
+							<col9><![CDATA[2016-01-01]]></col9>
+							<col10><![CDATA[2016-01-01]]></col10>
+							<col12><![CDATA[1234123400]]></col12>
+							<col0></col0>
+							<col11><![CDATA[김엘지]]></col11>
+						</w2:row>
+						<w2:row>
+							<col3><![CDATA[이동통신]]></col3>
+							<col4><![CDATA[(LTE) 데이터_일반]]></col4>
+							<col5><![CDATA[590000000000]]></col5>
+							<col12><![CDATA[1234123400]]></col12>
+							<col6><![CDATA[070-0000-0000]]></col6>
+							<col7><![CDATA[개통]]></col7>
+							<col8><![CDATA[신규]]></col8>
+							<col9><![CDATA[2016-01-01]]></col9>
+							<col10><![CDATA[2016-01-01]]></col10>
+							<col11><![CDATA[홍길동]]></col11>
+						</w2:row>
+					</w2:data>
+				</w2:dataList>
+			</w2:dataCollection>
+			<w2:workflowCollection></w2:workflowCollection>
+		</xf:model>
+		<script type="text/javascript" lazy="false"><![CDATA[
+
+	scwin.onpageload = function() {
+		
+	};
+
+	scwin.onpageunload = function() {
+
+	};
+
+	
+
+	]]></script>
+		<w2:require src="/common/udc/udc_tooltipIcon.xml"></w2:require>
+	</head>
+	<body ev:onpageload="scwin.onpageload" ev:onpageunload="scwin.onpageunload" class="">
+		<xf:group style="" id="grp_subWrap" class="sub_wrap">
+			<w2:wframe class="sub_left" id="wfm_side" scope="true" src="/web/com/layout/wf_acd.xml" style="" tagname=""></w2:wframe>
+			<xf:group id="" class="sub_contents">
+				<w2:wframe src="../../../common/xml/contentsTitle.xml" scope="true" style="" id="" class="page_header"></w2:wframe>
+				<xf:group id="" class="page_contents">
+					<xf:group style="" id="" class="page_contents_inner">
+						<xf:group id="" tagname="section"><xf:group style="" id="" class="dfbox">
+							<xf:group id="" class="lta">
+								<w2:textbox tagname="h3" style="" id="" label="변경대상 계약정보"></w2:textbox>
+								<xf:select ref="" appearance="full" style="" id="" renderType="checkboxgroup" rows="" selectedindex="-1" class="cbx" cols="">
+									<xf:choices>
+										<xf:item>
+											<xf:label><![CDATA[다회선 계약포함]]></xf:label>
+											<xf:value></xf:value>
+										</xf:item>
+									</xf:choices>
+								</xf:select>
+								<w2:anchor outerDiv="false" clickEventElement="" style="" id="" class="btn_bc_agree">
+									<xf:label><![CDATA[가구정보 조회동의]]></xf:label>
+								</w2:anchor>
+							</xf:group>
+						</xf:group><w2:gridView oddEvenColorDisplay="true" rowNumVisible="" showSortableImage="" rowNumHeaderValue="" scrollByColumn="false" defaultCellHeight="" ev:onheaderclick="" focusMode="row" rowNumWidth="" evenRowBackgroundColor="#ffffda" autoFit="allColumn" id="gridView1" mergeCells="bycol" class="wq_gvw" showSortableUseFilter="" ev:oncellclick="" editModeEvent="onclick" scrollByColumnAdaptive="false" readOnly="" sortable="true" rowStatusHeaderValue="" mergeCol="col1" rowStatusVisible="" tooltipDisplay="true" dataList="data:dataList1" oddRowBackgroundColor="#ffffff" style="height:134px;" ev:oncelldblclick="" visibleRowNum="">
+							<w2:caption style="" id="caption1" value="this is a grid caption."></w2:caption>
+							<w2:header style="" id="header1">
+								<w2:row style="" id="row1">
+									<w2:column removeBorderStyle="false" width="40" checkboxLabel="ckb" inputType="checkbox" style="" id="column26" sortable="false" blockSelect="false" displayMode="label" fixColumnWidth="true">
+									</w2:column>
+									<w2:column removeBorderStyle="false" width="100" inputType="text" style="" id="column14" value="서비스" blockSelect="false" displayMode="label">
+									</w2:column>
+									<w2:column removeBorderStyle="false" width="80" inputType="text" style="" id="column7" value="요금제" blockSelect="false" displayMode="label">
+									</w2:column>
+									<w2:column removeBorderStyle="false" width="120" inputType="text" style="" id="column5" value="청구계정번호" blockSelect="false" displayMode="label">
+									</w2:column>
+									<w2:column removeBorderStyle="false" width="70" inputType="text" style="" id="column3" value="사용자" blockSelect="false" displayMode="label">
+									</w2:column>
+									<w2:column removeBorderStyle="false" width="120" inputType="text" style="" id="column1" value="상품번호" blockSelect="false" displayMode="label">
+									</w2:column>
+									<w2:column removeBorderStyle="false" width="45" inputType="text" style="" id="column15" value="상태" blockSelect="false" displayMode="label">
+									</w2:column>
+									<w2:column removeBorderStyle="false" width="45" inputType="text" style="" id="column21" value="상세" blockSelect="false" displayMode="label">
+									</w2:column>
+									<w2:column removeBorderStyle="false" width="95" inputType="text" style="" id="column19" value="최초개통일" blockSelect="false" displayMode="label">
+									</w2:column>
+									<w2:column removeBorderStyle="false" width="95" inputType="text" style="" id="column25" value="상태변경일" blockSelect="false" displayMode="label">
+									</w2:column>
+									<w2:column removeBorderStyle="false" width="105" inputType="text" style="" id="column23" value="가입번호" blockSelect="false" displayMode="label">
+									</w2:column>
+								</w2:row>
+							</w2:header>
+							<w2:gBody style="" id="gBody1">
+								<w2:row style="" id="row2">
+									<w2:column removeBorderStyle="false" width="40" checkboxLabel="ckb" inputType="checkbox" id="col0" blockSelect="false" displayMode="label">
+									</w2:column>
+									<w2:column removeBorderStyle="false" width="100" inputType="text" id="col3" blockSelect="false" displayMode="label">
+										<w2:choices>
+											<w2:item>
+												<w2:label><![CDATA[new row]]></w2:label>
+												<w2:value></w2:value>
+											</w2:item>
+											<w2:item>
+												<w2:label><![CDATA[new row]]></w2:label>
+												<w2:value></w2:value>
+											</w2:item>
+											<w2:item>
+												<w2:label><![CDATA[new row]]></w2:label>
+												<w2:value></w2:value>
+											</w2:item>
+											<w2:item>
+												<w2:label><![CDATA[new row]]></w2:label>
+												<w2:value></w2:value>
+											</w2:item>
+										</w2:choices>
+									</w2:column>
+									<w2:column removeBorderStyle="false" width="70" inputType="text" id="col4" blockSelect="false" displayMode="label">
+									</w2:column>
+									<w2:column removeBorderStyle="false" width="90" inputType="text" id="col5" blockSelect="false" displayMode="label">
+									</w2:column>
+									<w2:column removeBorderStyle="false" width="70" inputType="text" id="col11" blockSelect="false" displayMode="label">
+									</w2:column>
+									<w2:column removeBorderStyle="false" width="120" inputType="text" id="col6" blockSelect="false" displayMode="label">
+									</w2:column>
+									<w2:column removeBorderStyle="false" width="45" inputType="text" id="col7" blockSelect="false" displayMode="label">
+									</w2:column>
+									<w2:column removeBorderStyle="false" width="45" inputType="text" id="col8" blockSelect="false" displayMode="label">
+									</w2:column>
+									<w2:column removeBorderStyle="false" width="95" inputType="text" id="col9" blockSelect="false" displayMode="label">
+									</w2:column>
+									<w2:column removeBorderStyle="false" width="95" inputType="text" id="col10" blockSelect="false" displayMode="label">
+									</w2:column>
+									<w2:column removeBorderStyle="false" width="105" inputType="text" id="col12" blockSelect="false" displayMode="label">
+									</w2:column>
+								</w2:row>
+							</w2:gBody>
+						</w2:gridView><xf:group style="" id="" class="btnbox">
+							<xf:group id="" class="rta">
+								<xf:trigger style="" id="btn_trigger1" type="button" class="btn_cm">
+									<xf:label><![CDATA[청구계정변경]]></xf:label>
+								</xf:trigger>
+							</xf:group>
+						</xf:group></xf:group>
+						<xf:group id="" tagname="section"><xf:group style="" id="" class="dfbox">
+							<w2:textbox tagname="h3" style="" id="" label="납부계정상세"></w2:textbox>
+						</xf:group><xf:group style="" id="" class="tbbox">
+							<xf:group tagname="table" style="" id="" class="w2tb tb">
+								<w2:attributes>
+									<w2:summary></w2:summary>
+								</w2:attributes>
+								<xf:group tagname="caption">디테일&amp;nbsp;테이블(2단)</xf:group>
+								<xf:group tagname="colgroup">
+									<xf:group tagname="col" style="width:150px;"></xf:group>
+									<xf:group tagname="col" style=""></xf:group>
+									<xf:group tagname="col" style="width:150px;"></xf:group>
+									<xf:group tagname="col"></xf:group>
+									<xf:group tagname="col" style="width:150px;"></xf:group>
+									<xf:group tagname="col"></xf:group>
+									<xf:group tagname="col" style="width:150px;"></xf:group>
+									<xf:group tagname="col" style=""></xf:group>
+								</xf:group>
+								<xf:group tagname="tr" style="">
+									<xf:group tagname="th" style="" class="w2tb_th">
+										<w2:attributes>
+											<w2:scope>row</w2:scope>
+										</w2:attributes>
+										<w2:textbox tagname="label" style="" id="" label="고객명" class=""></w2:textbox>
+									</xf:group>
+									<xf:group tagname="td" style="" class="w2tb_td">
+										<w2:attributes>
+											<w2:colspan>1</w2:colspan>
+											<w2:rowspan>1</w2:rowspan>
+										</w2:attributes>
+										<w2:textbox tagname="span" style="" id="" label="홍*동"></w2:textbox>
+									</xf:group>
+									<xf:group tagname="th" class="w2tb_th">
+										<w2:attributes>
+											<w2:scope>row</w2:scope>
+										</w2:attributes>
+										<w2:textbox tagname="label" style="" id="" label="생년월일" class=""></w2:textbox>
+									</xf:group>
+									<xf:group tagname="td" class="w2tb_td">
+										<w2:attributes></w2:attributes>
+										<w2:textbox tagname="span" style="" id="" label="770930"></w2:textbox>
+									</xf:group>
+									<xf:group tagname="th" tooltipDisplay="" text="" class="w2tb_th">
+										<w2:attributes></w2:attributes>
+										<w2:textbox tagname="label" style="" id="" label="납부방법"></w2:textbox>
+									</xf:group>
+									<xf:group tagname="td" class="w2tb_td">
+										<w2:attributes></w2:attributes>
+										<w2:textbox tagname="span" style="" id="" label="신용카드자동이체"></w2:textbox>
+									</xf:group>
+									<xf:group tagname="th" tooltipDisplay="" text="" class="w2tb_th">
+										<w2:attributes></w2:attributes>
+										<w2:textbox tagname="label" style="" id="" label="카드사" class=""></w2:textbox>
+									</xf:group>
+									<xf:group tagname="td" class="w2tb_td">
+										<w2:attributes></w2:attributes>
+										<w2:textbox tagname="span" style="" id="" label="**카드"></w2:textbox>
+									</xf:group>
+								</xf:group>
+								<xf:group tagname="tr" style="">
+									<xf:group tagname="th" style="" class="w2tb_th">
+										<w2:attributes>
+											<w2:scope>row</w2:scope>
+										</w2:attributes>
+										<w2:textbox tagname="label" style="" id="" label="카드번호"></w2:textbox>
+									</xf:group>
+									<xf:group tagname="td" style="" class="w2tb_td">
+										<w2:textbox tagname="span" style="" id="" label="000*-****-****-0000"></w2:textbox>
+									</xf:group>
+									<xf:group tagname="th" class="w2tb_th">
+										<w2:attributes>
+											<w2:scope>row</w2:scope>
+										</w2:attributes>
+										<w2:textbox tagname="label" style="" id="" label="카드만기년월"></w2:textbox>
+									</xf:group>
+									<xf:group tagname="td" class="w2tb_td">
+										<w2:attributes></w2:attributes>
+										<w2:textbox tagname="span" style="" id="" label="****-**"></w2:textbox>
+									</xf:group>
+									<xf:group tagname="th" tooltipDisplay="" text="" class="w2tb_th">
+										<w2:attributes></w2:attributes>
+										<w2:textbox tagname="label" style="" id="" label="최초출금일자"></w2:textbox>
+									</xf:group>
+									<xf:group tagname="td" class="w2tb_td">
+										<w2:attributes>
+											<w2:colspan>3</w2:colspan>
+											<w2:rowspan>1</w2:rowspan>
+										</w2:attributes>
+										<w2:textbox tagname="span" style="" id="" label="1차"></w2:textbox>
+									</xf:group>
+								</xf:group>
+							</xf:group>
+						</xf:group></xf:group>
+
+						<xf:group id="" tagname="section"><xf:group style="" id="" class="dfbox">
+							<w2:textbox tagname="h3" style="" id="" label="변경정보입력"></w2:textbox>
+						</xf:group><xf:group style="" id="" class="tbbox">
+							<xf:group tagname="table" style="" id="" class="w2tb tb">
+								<w2:attributes>
+									<w2:summary></w2:summary>
+								</w2:attributes>
+								<xf:group tagname="caption">디테일&amp;nbsp;테이블(2단)</xf:group>
+								<xf:group tagname="colgroup">
+									<xf:group tagname="col" style="width:150px;"></xf:group>
+									<xf:group tagname="col" style=""></xf:group>
+									<xf:group tagname="col" style="width:150px;"></xf:group>
+									<xf:group tagname="col" style=""></xf:group>
+								</xf:group>
+								<xf:group tagname="tr" style="">
+									<xf:group tagname="th" style="" class="w2tb_th">
+										<w2:attributes>
+											<w2:scope>row</w2:scope>
+										</w2:attributes>
+										<w2:textbox tagname="label" style="" id="" label="등록유형" class=""></w2:textbox>
+									</xf:group>
+									<xf:group tagname="td" style="" class="w2tb_td">
+										<w2:attributes>
+											<w2:colspan>3</w2:colspan>
+											<w2:rowspan>1</w2:rowspan>
+										</w2:attributes>
+										<xf:select1 ref="" appearance="full" style="" id="" renderType="radiogroup" rows="" cols="" class="rad" selectedIndex="0">
+											<xf:choices>
+												<xf:item>
+													<xf:label><![CDATA[명의고객복사]]></xf:label>
+													<xf:value></xf:value>
+												</xf:item>
+												<xf:item>
+													<xf:label><![CDATA[납부고객복사]]></xf:label>
+													<xf:value></xf:value>
+												</xf:item>
+												<xf:item>
+													<xf:label><![CDATA[신규등록]]></xf:label>
+													<xf:value></xf:value>
+												</xf:item>
+											</xf:choices>
+										</xf:select1>
+									</xf:group>
+								</xf:group>
+								<xf:group tagname="tr" style="">
+									<xf:group tagname="th" style="" class="w2tb_th">
+										<w2:attributes>
+											<w2:scope>row</w2:scope>
+										</w2:attributes>
+										<w2:textbox tagname="label" style="" id="" label="납부자명"></w2:textbox>
+									</xf:group>
+									<xf:group tagname="td" style="" class="w2tb_td">
+										<w2:attributes>
+											<w2:colspan>1</w2:colspan>
+											<w2:rowspan>1</w2:rowspan>
+										</w2:attributes>
+										<xf:group id="" class="ly_form wa">
+											<xf:input adjustMaxLength="false" style="" id="" placeholder="" class="wd-100" initValue="김*지">
+											</xf:input>
+											<xf:select ref="" appearance="full" style="" id="" renderType="checkboxgroup" rows="" selectedindex="-1" class="cbx fn" cols="">
+												<xf:choices>
+													<xf:item>
+														<xf:label><![CDATA[사업자]]></xf:label>
+														<xf:value><![CDATA[]]></xf:value>
+													</xf:item>
+												</xf:choices>
+											</xf:select>
+										</xf:group>
+									</xf:group>
+									<xf:group tagname="th" class="w2tb_th">
+										<w2:attributes></w2:attributes>
+										<w2:textbox tagname="label" style="" id="" label="생년월일"></w2:textbox>
+									</xf:group>
+									<xf:group tagname="td" class="w2tb_td">
+										<w2:attributes></w2:attributes>
+										<xf:group id="" class="ly_form wa">
+											<xf:input customModelUnformatter="" adjustMaxLength="false" style="" id="" placeholder="" class="wd-100" initValue="770903">
+											</xf:input>
+											<xf:select ref="" appearance="full" style="" id="" renderType="checkboxgroup" rows="" selectedindex="-1" class="cbx" cols="">
+												<xf:choices>
+													<xf:item>
+														<xf:label><![CDATA[외국인]]></xf:label>
+														<xf:value></xf:value>
+													</xf:item>
+												</xf:choices>
+											</xf:select>
+										</xf:group>
+									</xf:group>
+								</xf:group>
+								<xf:group tagname="tr">
+									<xf:group tagname="th" class="w2tb_th">
+										<w2:attributes>
+											<w2:scope>row</w2:scope>
+										</w2:attributes>
+										<w2:textbox tagname="label" style="" id="" label="납부방법"></w2:textbox>
+									</xf:group>
+									<xf:group tagname="td" class="w2tb_td">
+										<w2:attributes>
+											<w2:colspan>3</w2:colspan>
+											<w2:rowspan>1</w2:rowspan>
+										</w2:attributes>
+										<xf:select1 ref="" appearance="full" style="" id="" renderType="radiogroup" rows="" cols="" class="rad" selectedIndex="1">
+											<xf:choices>
+												<xf:item>
+													<xf:label><![CDATA[자동이체]]></xf:label>
+													<xf:value></xf:value>
+												</xf:item>
+												<xf:item>
+													<xf:label><![CDATA[신용카드]]></xf:label>
+													<xf:value></xf:value>
+												</xf:item>
+												<xf:item>
+													<xf:label><![CDATA[지로]]></xf:label>
+													<xf:value></xf:value>
+												</xf:item>
+											</xf:choices>
+										</xf:select1>
+										<xf:trigger style="" id="" type="button" class="btn_in">
+											<xf:label><![CDATA[제휴카드유치자]]></xf:label>
+										</xf:trigger>
+									</xf:group>
+								</xf:group>
+								<xf:group tagname="tr">
+									<xf:group tagname="th" class="w2tb_th">
+										<w2:attributes>
+											<w2:scope>row</w2:scope>
+										</w2:attributes>
+										<w2:textbox tagname="label" style="" id="" label="카드정보"></w2:textbox>
+									</xf:group>
+									<xf:group tagname="td" class="w2tb_td">
+										<w2:attributes>
+											<w2:colspan>1</w2:colspan>
+											<w2:rowspan>1</w2:rowspan>
+										</w2:attributes>
+										<xf:group id="" class="ly_form wa">
+											<xf:input displayFormat="####-####-####-####" maskFormat="default" adjustMaxLength="false" style="" applyFormat="all" id="" placeholder="____-____-____-____" class="wd-150" initValue="">
+											</xf:input>
+											<xf:input preventCopyPaste="" adjustMaxLength="false" style="" readOnly="true" id="" placeholder="" customModelFormatter="" class="wd-60" initValue="**카드">
+											</xf:input>
+										</xf:group>
+									</xf:group>
+									<xf:group tagname="th" tooltipDisplay="" class="w2tb_th">
+										<w2:attributes></w2:attributes>
+										<w2:textbox tagname="label" style="" id="" label="유효기간"></w2:textbox>
+									</xf:group>
+									<xf:group tagname="td" class="w2tb_td">
+										<w2:attributes></w2:attributes>
+										<xf:input dataType="" displayFormat="####.##" maskFormat="default" adjustMaxLength="false" style="" applyFormat="all" id="" placeholder="YYYY.MM" class="wd-100" initValue="">
+										</xf:input>
+									</xf:group>
+								</xf:group>
+								<xf:group tagname="tr" style="">
+									<xf:group tagname="th" class="w2tb_th">
+										<w2:attributes>
+											<w2:scope>row</w2:scope>
+										</w2:attributes>
+										<w2:textbox tagname="label" style="" id="" label="최초출금일"></w2:textbox>
+										<w2:udc_toolTipIcon iconType="question" toolTipMessage="익월" style="width: 20px;" id="" direction="right">
+										</w2:udc_toolTipIcon>
+									</xf:group>
+									<xf:group tagname="td" class="w2tb_td">
+										<w2:attributes></w2:attributes>
+										<xf:select1 ref="" submenuSize="auto" appearance="minimal" disabledClass="w2selectbox_disabled" chooseOption="" disabled="false" style="" allOption="" id="" class="wd-130" direction="auto">
+											<xf:choices>
+												<xf:item>
+													<xf:label><![CDATA[1차(15일)]]></xf:label>
+													<xf:value></xf:value>
+												</xf:item>
+												<xf:item>
+													<xf:label><![CDATA[2차(30일)]]></xf:label>
+													<xf:value></xf:value>
+												</xf:item>
+											</xf:choices>
+										</xf:select1>
+									</xf:group>
+									<xf:group tagname="th" class="w2tb_th">
+										<w2:attributes>
+											<w2:scope>row</w2:scope>
+										</w2:attributes>
+										<w2:textbox tagname="label" style="" id="" label="증빙방법"></w2:textbox>
+									</xf:group>
+									<xf:group tagname="td" class="w2tb_td">
+										<w2:attributes></w2:attributes>
+										<xf:select1 ref="" appearance="full" style="" id="" renderType="radiogroup" rows="" cols="" class="rad" selectedIndex="1">
+											<xf:choices>
+												<xf:item>
+													<xf:label><![CDATA[스캔]]></xf:label>
+													<xf:value></xf:value>
+												</xf:item>
+												<xf:item>
+													<xf:label><![CDATA[스캔+팩스]]></xf:label>
+													<xf:value></xf:value>
+												</xf:item>
+											</xf:choices>
+										</xf:select1>
+									</xf:group>
+								</xf:group>
+								<xf:group tagname="tr">
+									<xf:group tagname="th" class="w2tb_th">
+										<w2:attributes>
+											<w2:scope>row</w2:scope>
+										</w2:attributes>
+										<w2:textbox tagname="label" style="" id="" label="변경예약건"></w2:textbox>
+										<w2:udc_toolTipIcon iconType="question" toolTipMessage="익월반영" style="width: 20px;" id="" direction="right">
+										</w2:udc_toolTipIcon>
+									</xf:group>
+									<xf:group tagname="td" class="w2tb_td">
+										<w2:attributes></w2:attributes>
+										<w2:textbox tagname="" style="" id="" label="" class="bool_yes"></w2:textbox>
+										<xf:trigger style="" id="" type="button" class="btn_in">
+											<xf:label><![CDATA[기존 예약건 조회]]></xf:label>
+										</xf:trigger>
+									</xf:group>
+									<xf:group tagname="th" class="w2tb_th">
+										<w2:attributes>
+											<w2:scope>row</w2:scope>
+										</w2:attributes>
+										<w2:textbox tagname="label" style="" id="" label="반영시기"></w2:textbox>
+									</xf:group>
+									<xf:group tagname="td" class="w2tb_td">
+										<w2:attributes></w2:attributes>
+										<xf:select1 ref="" appearance="full" name="aaadd" style="" id="" renderType="radiogroup" rows="" cols="" class="rad" selectedIndex="0">
+											<xf:choices>
+												<xf:item>
+													<xf:label><![CDATA[익월반영 ]]></xf:label>
+													<xf:value></xf:value>
+												</xf:item>
+											</xf:choices>
+										</xf:select1>
+										<w2:udc_toolTipIcon iconType="question" toolTipMessage="익월반영" style="width: 20px;" id="" direction="top">
+										</w2:udc_toolTipIcon>
+										<xf:select1 ref="" appearance="full" name="aaadd" style="" id="" renderType="radiogroup" rows="" class="rad ml15" cols="" selectedIndex="-1">
+											<xf:choices>
+												<xf:item>
+													<xf:label><![CDATA[당월반영 ]]></xf:label>
+													<xf:value></xf:value>
+												</xf:item>
+											</xf:choices>
+										</xf:select1>
+										<w2:udc_toolTipIcon iconType="question" toolTipMessage="당월반영" style="width: 20px;" id="" direction="top">
+										</w2:udc_toolTipIcon>
+									</xf:group>
+								</xf:group>
+							</xf:group>
+						</xf:group><xf:group style="" id="" class="tbbox">
+							<xf:group tagname="table" style="" id="" class="w2tb tb">
+								<w2:attributes>
+									<w2:summary></w2:summary>
+								</w2:attributes>
+								<xf:group tagname="caption">디테일&amp;nbsp;테이블(2단)</xf:group>
+								<xf:group tagname="colgroup">
+									<xf:group tagname="col" style="width:150px;"></xf:group>
+									<xf:group tagname="col" style=""></xf:group>
+									<xf:group tagname="col" style="width:150px;"></xf:group>
+									<xf:group tagname="col"></xf:group>
+									<xf:group tagname="col" style="width:150px;"></xf:group>
+									<xf:group tagname="col"></xf:group>
+								</xf:group>
+								<xf:group tagname="tr" style="">
+									<xf:group tagname="th" style="" class="w2tb_th">
+										<w2:attributes>
+											<w2:scope>row</w2:scope>
+										</w2:attributes>
+										<w2:textbox tagname="label" style="" id="" label="신청인" class=""></w2:textbox>
+									</xf:group>
+									<xf:group tagname="td" style="" class="w2tb_td">
+										<w2:attributes>
+											<w2:colspan>1</w2:colspan>
+											<w2:rowspan>1</w2:rowspan>
+										</w2:attributes>
+										<xf:input maskFormat="" adjustMaxLength="false" style="" maskFormatModelExcludeChar="" id="" placeholder="이름" class="ibx" initValue="">
+										</xf:input>
+									</xf:group>
+									<xf:group tagname="th" class="w2tb_th">
+										<w2:attributes>
+											<w2:scope>row</w2:scope>
+										</w2:attributes>
+										<w2:textbox tagname="label" style="" id="" label="연락처" class=""></w2:textbox>
+									</xf:group>
+									<xf:group tagname="td" class="w2tb_td">
+										<w2:attributes></w2:attributes>
+										<xf:input adjustMaxLength="false" style="" id="" placeholder="" class="ibx" initValue=""></xf:input>
+									</xf:group>
+									<xf:group tagname="th" tooltipDisplay="" text="" class="w2tb_th">
+										<w2:attributes></w2:attributes>
+										<w2:textbox tagname="label" style="" id="" label="명의차와의 관계"></w2:textbox>
+									</xf:group>
+									<xf:group tagname="td" class="w2tb_td">
+										<w2:attributes></w2:attributes>
+										<xf:select1 ref="" submenuSize="auto" appearance="minimal" disabledClass="w2selectbox_disabled" chooseOption="" disabled="false" style="" allOption="" id="" class="sbx" direction="auto">
+											<xf:choices></xf:choices>
+										</xf:select1>
+									</xf:group>
+								</xf:group>
+							</xf:group>
+						</xf:group><xf:group id="" class="txa_memo">
+							<w2:textbox tagname="label" style="" id="" label="메모" class=""></w2:textbox>
+							<xf:textarea style="" id="" placeholder="메모를 입력하세요." class="txa"></xf:textarea>
+						</xf:group></xf:group><xf:group style="" id="" class="btnbox last">
+							<xf:group id="" class="lta">
+								<xf:trigger style="" id="" type="button" class="btn_df">
+									<xf:label><![CDATA[납부계정변경이력 조회]]></xf:label>
+								</xf:trigger>
+							</xf:group>
+							<xf:group id="" class="rta">
+								<xf:trigger style="" id="" type="button" class="btn_cm save">
+									<xf:label><![CDATA[저장]]></xf:label>
+								</xf:trigger>
+								<xf:trigger style="" id="" type="button" class="btn_df">
+									<xf:label><![CDATA[취소]]></xf:label>
+								</xf:trigger>
+							</xf:group>
+						</xf:group>
+					</xf:group>
+				</xf:group>
+			</xf:group>
+		</xf:group></body>
+</html>

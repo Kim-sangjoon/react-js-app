@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><html xmlns="http://www.w3.org/1999/xhtml" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:w2="http://www.inswave.com/websquare" xmlns:xf="http://www.w3.org/2002/xforms">
+    <head>
+        <w2:buildDate/>
+        <w2:userPalette defaultIcon="mix.png" desc=""/>
+        <xf:model>
+            <xf:instance>
+                <data xmlns=""/>
+            </xf:instance>
+        </xf:model>
+        <script type="text/javascript"><![CDATA[ ]]></script>
+    </head>
+    <body><xf:group class="lybox shuttle" id="" style="">
+	<xf:group class="ly_col" id="" style="">
+		<w2:gridView autoFit="allColumn" class="wq_gvw" dataList="" defaultCellHeight="32" focusMode="row" id="" scrollByColumn="false" scrollByColumnAdaptive="false" sortable="true" style="height:365px;" tooltipDisplay="true" visibleRowNum="10">
+			<w2:caption id="caption1" style="" value="this is a grid caption.">
+			</w2:caption>
+			<w2:header id="header1" style="">
+				<w2:row id="row1" style="">
+					<w2:column blockSelect="false" displayMode="label" id="column10" inputType="text" removeBorderStyle="false" value="header" width="70">
+</w2:column>
+					<w2:column blockSelect="false" displayMode="label" id="column9" inputType="text" removeBorderStyle="false" value="header" width="70">
+</w2:column>
+					<w2:column blockSelect="false" displayMode="label" id="column7" inputType="text" removeBorderStyle="false" value="header" width="70">
+</w2:column>
+					<w2:column blockSelect="false" displayMode="label" id="column5" inputType="text" removeBorderStyle="false" value="header" width="70">
+</w2:column>
+</w2:row>
+</w2:header>
+			<w2:gBody id="gBody1" style="">
+				<w2:row id="row2" style="">
+					<w2:column blockSelect="false" displayMode="label" id="col1" inputType="text" removeBorderStyle="false" textAlign="left" width="70">
+</w2:column>
+					<w2:column blockSelect="false" displayMode="label" id="col2" inputType="text" removeBorderStyle="false" textAlign="left" width="70">
+</w2:column>
+					<w2:column blockSelect="false" displayMode="label" id="col3" inputType="text" removeBorderStyle="false" textAlign="left" width="70">
+</w2:column>
+					<w2:column blockSelect="false" displayMode="label" id="col4" inputType="text" removeBorderStyle="false" textAlign="left" width="70">
+</w2:column>
+</w2:row>
+</w2:gBody>
+</w2:gridView>
+</xf:group>
+	<xf:group class="ly_col arrow" id="" style="">
+		<xf:group class="" id="" style="" tagname="ul">
+			<xf:group class="" id="" tagname="li">
+				<xf:group class="w2trigger btn_df" id="" style="" tagname="button">
+					<w2:attributes>
+						<w2:type>button</w2:type>
+</w2:attributes>
+					<w2:textbox class="fa fa-angle-double-right" id="" label="" style="" tagname="i">
+					</w2:textbox>
+</xf:group>
+</xf:group>
+			<xf:group class="" id="" tagname="li">
+				<xf:group class="w2trigger btn_df" id="" style="" tagname="button">
+					<w2:attributes>
+						<w2:type>button</w2:type>
+</w2:attributes>
+					<w2:textbox class="fa fa-angle-double-left" id="" label="" style="" tagname="i">
+					</w2:textbox>
+</xf:group>
+</xf:group>
+</xf:group>
+</xf:group>
+	<xf:group class="ly_col" id="" style="">
+		<w2:gridView autoFit="allColumn" class="wq_gvw" dataList="" defaultCellHeight="32" focusMode="row" id="" scrollByColumn="false" scrollByColumnAdaptive="false" sortable="true" style="height:365px;" tooltipDisplay="true" visibleRowNum="10">
+			<w2:caption id="caption1" style="" value="this is a grid caption.">
+			</w2:caption>
+			<w2:header id="header1" style="">
+				<w2:row id="row1" style="">
+					<w2:column blockSelect="false" displayMode="label" id="column10" inputType="text" removeBorderStyle="false" value="header" width="70">
+</w2:column>
+					<w2:column blockSelect="false" displayMode="label" id="column9" inputType="text" removeBorderStyle="false" value="header" width="70">
+</w2:column>
+					<w2:column blockSelect="false" displayMode="label" id="column7" inputType="text" removeBorderStyle="false" value="header" width="70">
+</w2:column>
+					<w2:column blockSelect="false" displayMode="label" id="column5" inputType="text" removeBorderStyle="false" value="header" width="70">
+</w2:column>
+</w2:row>
+</w2:header>
+			<w2:gBody id="gBody1" style="">
+				<w2:row id="row2" style="">
+					<w2:column blockSelect="false" displayMode="label" id="col1" inputType="text" removeBorderStyle="false" textAlign="left" width="70">
+</w2:column>
+					<w2:column blockSelect="false" displayMode="label" id="col2" inputType="text" removeBorderStyle="false" textAlign="left" width="70">
+</w2:column>
+					<w2:column blockSelect="false" displayMode="label" id="col3" inputType="text" removeBorderStyle="false" textAlign="left" width="70">
+</w2:column>
+					<w2:column blockSelect="false" displayMode="label" id="col4" inputType="text" removeBorderStyle="false" textAlign="left" width="70">
+</w2:column>
+</w2:row>
+</w2:gBody>
+</w2:gridView>
+</xf:group>
+</xf:group>
+</body>
+</html>

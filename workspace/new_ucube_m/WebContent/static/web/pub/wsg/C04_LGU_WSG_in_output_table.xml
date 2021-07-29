@@ -1,0 +1,802 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:ev="http://www.w3.org/2001/xml-events"
+    xmlns:w2="http://www.inswave.com/websquare" xmlns:xf="http://www.w3.org/2002/xforms">
+    <head meta_programName="입출력 테이블">
+    	<w2:type>DEFAULT</w2:type>
+        <w2:buildDate/>
+        <xf:model>
+            <xf:instance>
+                <data xmlns=""/>
+            </xf:instance>
+            <w2:dataCollection baseNode="map">
+            	<w2:dataList baseNode="list" repeatNode="map" id="dataList1" saveRemovedData="true">
+            		<w2:columnInfo>
+            			<w2:column id="col1" name="name1" dataType="text"></w2:column>
+            			<w2:column id="col2" name="name2" dataType="text"></w2:column>
+            			<w2:column id="col3" name="name3" dataType="text"></w2:column>
+            			<w2:column id="col4" name="name4" dataType="text"></w2:column>
+            			<w2:column id="col5" name="name5" dataType="text"></w2:column>
+            		</w2:columnInfo>
+            		<w2:data use="true">
+            			<w2:row>
+            				<col1><![CDATA[Eget]]></col1>
+            				<col2><![CDATA[content]]></col2>
+            				<col3><![CDATA[2017-12-06]]></col3>
+            				<col4><![CDATA[content]]></col4>
+            				<col5><![CDATA[12,393]]></col5>
+            			</w2:row>
+            			<w2:row>
+            				<col1><![CDATA[tristique]]></col1>
+            				<col2><![CDATA[commodo suspendisse]]></col2>
+            				<col3><![CDATA[2017-12-06]]></col3>
+            				<col4><![CDATA[content]]></col4>
+            				<col5><![CDATA[12,393]]></col5>
+            			</w2:row>
+            			<w2:row>
+            				<col1><![CDATA[vivamus]]></col1>
+            				<col2><![CDATA[content]]></col2>
+            				<col3><![CDATA[2017-12-06]]></col3>
+            				<col4><![CDATA[content]]></col4>
+            				<col5><![CDATA[2,393]]></col5>
+            			</w2:row>
+            		</w2:data>
+            	</w2:dataList>
+            	<w2:dataList baseNode="list" repeatNode="map" id="dataList2" saveRemovedData="true">
+            		<w2:columnInfo>
+            			<w2:column id="col1" name="name1" dataType="text"></w2:column>
+            			<w2:column id="col2" name="name2" dataType="text"></w2:column>
+            			<w2:column id="col3" name="name3" dataType="text"></w2:column>
+            			<w2:column id="col4" name="name4" dataType="text"></w2:column>
+            		</w2:columnInfo>
+            		<w2:data use="true">
+            			<w2:row>
+            				<col1><![CDATA[sub header]]></col1>
+            				<col2><![CDATA[content]]></col2>
+            				<col3><![CDATA[content]]></col3>
+            				<col4><![CDATA[content]]></col4>
+            			</w2:row>
+            			<w2:row>
+            				<col1><![CDATA[sub header]]></col1>
+            				<col2><![CDATA[content]]></col2>
+            				<col3><![CDATA[content]]></col3>
+            				<col4><![CDATA[content]]></col4>
+            			</w2:row>
+            		</w2:data>
+            	</w2:dataList>
+            </w2:dataCollection>
+            <w2:workflowCollection>
+            </w2:workflowCollection>
+        </xf:model>
+         <script type="text/javascript" lazy="false"><![CDATA[
+
+	scwin.onpageload = function() {
+		
+	};
+
+	scwin.onpageunload = function() {
+
+	};
+
+
+	scwin.btn_toggle_onclick = function(e) {
+		var obj = $('#'+this.id);
+		
+		obj.toggleClass('plus minus');
+		obj.parents().next('div.toggle-body').slideToggle();
+	};
+	]]></script>
+    </head>
+    <body ev:onpageload="scwin.onpageload" ev:onpageunload="scwin.onpageunload">
+    	<xf:group class="sub_wrapper" id="">
+    		<w2:wframe class="page_header" id="" scope="true" src="../../../common/xml/contentsTitle.xml" style=""></w2:wframe>
+    	<xf:group id="" class="page_contents"><xf:group id="" class="page_contents_inner"><xf:group style="" id="" class="content_info">
+    			<xf:group tagname="ul" id="" class="content_list">
+    				<w2:textbox tagname="li" style="" id="" label="1단~3단 레이아웃 내에서 활용하며 항목간 관련성이 높은 경우에 한 행에 나란히 배치한다. (4단 레이아웃 지양)"></w2:textbox>
+    				<w2:textbox tagname="li" style="" id="" label="입력항목이 많고, 그룹핑이 가능한 경우 입출력 테이블을 분리하여 적용 한다. (서브타이틀 활용)"></w2:textbox>
+    				<w2:textbox tagname="li" style="" id="" label="테이블 컨텐츠가 과도하게 많고 스크롤이 많이 발생할 경우 접기/펼치기를 활용하여 중요 테이블 위주로 적용한다.">
+    				</w2:textbox>
+    			</xf:group>
+    		</xf:group><xf:group id="" class="" tagname="section">
+    			<xf:group id="" class="dfbox">
+    				<xf:trigger class="btn_icon minus" ev:onclick="scwin.btn_toggle_onclick" id="btn_toggle" style="" type="button">
+    					<xf:label><![CDATA[]]></xf:label>
+    				</xf:trigger>
+    				<w2:textbox tagname="h3" style="" label="디테일 테이블(1단)" id=""></w2:textbox>
+    			</xf:group>
+    			<xf:group id="" class="toggle-body">
+    				<xf:group style="" id="" class="tbbox">
+    					<xf:group tagname="table" style="" id="" class="w2tb tb">
+    						<w2:attributes>
+    							<w2:summary></w2:summary>
+    						</w2:attributes>
+    						<xf:group tagname="caption">디테일&amp;nbsp;테이블(1단)</xf:group>
+    						<xf:group tagname="colgroup">
+    							<xf:group tagname="col" style="width:250px;"></xf:group>
+    							<xf:group tagname="col" style=""></xf:group>
+    						</xf:group>
+    						<xf:group tagname="tr" style="">
+    							<xf:group tagname="th" style="" class="w2tb_th">
+    								<w2:attributes>
+    									<w2:scope>row</w2:scope>
+    								</w2:attributes>
+    								<w2:textbox tagname="label" style="" id="" label="기본" class=""></w2:textbox>
+    							</xf:group>
+    							<xf:group tagname="td" style="" class="w2tb_td">
+    								<w2:attributes>
+    									<w2:colspan>1</w2:colspan>
+    									<w2:rowspan>1</w2:rowspan>
+    								</w2:attributes>
+    								<xf:input adjustMaxLength="false" style="" id="" placeholder="" class="wd-150" initValue="Global Best &amp; First">
+    								</xf:input>
+    							</xf:group>
+    						</xf:group>
+    						<xf:group tagname="tr" style="">
+    							<xf:group tagname="th" style="" class="w2tb_th">
+    								<w2:attributes>
+    									<w2:scope>row</w2:scope>
+    								</w2:attributes>
+    								<w2:textbox tagname="label" style="" id="" label="기본 (various size)"></w2:textbox>
+    							</xf:group>
+    							<xf:group tagname="td" style="" class="w2tb_td">
+    								<w2:textbox tagname="span" style="" id="" label="변화를 선도하며, 안전과 최고를 추구하여, 함께 성장하는 회사"></w2:textbox>
+    							</xf:group>
+    						</xf:group>
+    					</xf:group>
+    				</xf:group>
+    				<xf:group style="" id="" class="tbbox no_bt">
+    					<xf:group tagname="table" style="" id="" class="w2tb tb">
+    						<w2:attributes>
+    							<w2:summary></w2:summary>
+    						</w2:attributes>
+    						<xf:group tagname="caption">디테일&amp;nbsp;테이블(1단)</xf:group>
+    						<xf:group tagname="colgroup">
+    							<xf:group tagname="col" style="width:250px;"></xf:group>
+    							<xf:group tagname="col" style=""></xf:group>
+    						</xf:group>
+    						<xf:group tagname="tr" style="">
+    							<xf:group tagname="th" style="" class="w2tb_th">
+    								<w2:attributes>
+    									<w2:scope>row</w2:scope>
+    								</w2:attributes>
+    								<w2:textbox tagname="label" style="" id="" label="2016" class=""></w2:textbox>
+    							</xf:group>
+    							<xf:group tagname="td" style="" class="w2tb_td">
+    								<w2:attributes>
+    									<w2:colspan>1</w2:colspan>
+    									<w2:rowspan>1</w2:rowspan>
+    								</w2:attributes>
+    								<w2:textbox tagname="span" style="" id="" label="싱가포르 T301 차량기지 프로젝트 단독 수주 (SGD 19.88억)"></w2:textbox>
+    							</xf:group>
+    						</xf:group>
+    						<xf:group tagname="tr" style="">
+    							<xf:group tagname="th" style="" class="w2tb_th">
+    								<w2:attributes>
+    									<w2:scope>row</w2:scope>
+    								</w2:attributes>
+    								<w2:textbox tagname="label" style="" id="" label="2015"></w2:textbox>
+    							</xf:group>
+    							<xf:group tagname="td" style="" class="w2tb_td">
+    								<w2:textbox tagname="span" style="" id="" label="베네수엘라 피리탈 가스 플랜트 프로젝트 단독 수주(26억불)"></w2:textbox>
+    							</xf:group>
+    						</xf:group>
+    					</xf:group>
+    				</xf:group>
+    			</xf:group>
+    		</xf:group><xf:group style="" id="" class="" tagname="section">
+    			<xf:group id="" text="" class="dfbox">
+    				<w2:textbox tagname="h3" style="" id="" label="디테일 테이블(2단)"></w2:textbox>
+    			</xf:group>
+    			<xf:group style="" id="" class="tbbox">
+    				<xf:group tagname="table" style="" id="" class="w2tb tb">
+    					<w2:attributes>
+    						<w2:summary></w2:summary>
+    					</w2:attributes>
+    					<xf:group tagname="caption">디테일&amp;nbsp;테이블(2단)</xf:group>
+    					<xf:group tagname="colgroup">
+    						<xf:group tagname="col" style="width:15%;"></xf:group>
+    						<xf:group tagname="col" style=""></xf:group>
+    						<xf:group tagname="col" style="width:15%;"></xf:group>
+    						<xf:group tagname="col" style=""></xf:group>
+    					</xf:group>
+    					<xf:group tagname="tr" style="">
+    						<xf:group tagname="th" style="" class="w2tb_th">
+    							<w2:attributes>
+    								<w2:scope>row</w2:scope>
+    							</w2:attributes>
+    							<w2:textbox tagname="label" style="" id="" label="Slogan" class=""></w2:textbox>
+    						</xf:group>
+    						<xf:group tagname="td" style="" class="w2tb_td">
+    							<w2:attributes>
+    								<w2:colspan>1</w2:colspan>
+    								<w2:rowspan>1</w2:rowspan>
+    							</w2:attributes>
+    							<w2:textbox tagname="span" style="" id="" label="Global Best &amp; First"></w2:textbox>
+    						</xf:group>
+    						<xf:group tagname="th" class="w2tb_th">
+    							<w2:attributes>
+    								<w2:scope>row</w2:scope>
+    							</w2:attributes>
+    							<w2:textbox tagname="label" style="" id="" label="maecenas" class=""></w2:textbox>
+    						</xf:group>
+    						<xf:group tagname="td" class="w2tb_td">
+    							<w2:attributes></w2:attributes>
+    							<w2:textbox tagname="span" style="" id="" label="content"></w2:textbox>
+    						</xf:group>
+    					</xf:group>
+    					<xf:group tagname="tr" style="">
+    						<xf:group tagname="th" style="" class="w2tb_th">
+    							<w2:attributes>
+    								<w2:scope>row</w2:scope>
+    							</w2:attributes>
+    							<w2:textbox tagname="label" style="" id="" label="aliquam"></w2:textbox>
+    						</xf:group>
+    						<xf:group tagname="td" style="" class="w2tb_td">
+
+    							<w2:textbox tagname="span" style="" id="" label="Ac non non, platea ut ac."></w2:textbox>
+    						</xf:group>
+    						<xf:group tagname="th" class="w2tb_th">
+    							<w2:attributes>
+    								<w2:scope>row</w2:scope>
+    							</w2:attributes>
+    							<w2:textbox tagname="label" style="" id="" label="nostra" class=""></w2:textbox>
+    						</xf:group>
+    						<xf:group tagname="td" class="w2tb_td">
+    							<w2:attributes></w2:attributes>
+    							<w2:textbox tagname="span" style="" id="" label="content"></w2:textbox>
+    						</xf:group>
+    					</xf:group>
+    					<xf:group tagname="tr">
+    						<xf:group tagname="th" class="w2tb_th">
+    							<w2:attributes>
+    								<w2:scope>row</w2:scope>
+    							</w2:attributes>
+    							<w2:textbox tagname="label" style="" id="" label="fermentum"></w2:textbox>
+    						</xf:group>
+    						<xf:group tagname="td" class="w2tb_td">
+    							<w2:attributes>
+    								<w2:colspan>3</w2:colspan>
+    								<w2:rowspan>1</w2:rowspan>
+    							</w2:attributes>
+    							<w2:textbox tagname="span" style="" id="" label="content"></w2:textbox>
+    						</xf:group>
+    					</xf:group>
+    				</xf:group>
+    			</xf:group>
+    		</xf:group><xf:group style="" id="" class="" tagname="section">
+    			<xf:group id="" class="dfbox">
+    				<w2:textbox tagname="h3" style="" id="" label="디테일 테이블(3단)"></w2:textbox>
+    			</xf:group>
+    			<xf:group style="" id="" class="tbbox">
+    				<xf:group tagname="table" style="" id="" class="w2tb tb">
+    					<w2:attributes>
+    						<w2:summary></w2:summary>
+    					</w2:attributes>
+    					<xf:group tagname="caption">디테일&amp;nbsp;테이블(3단)</xf:group>
+    					<xf:group tagname="colgroup">
+    						<xf:group tagname="col" style="width:15%;"></xf:group>
+    						<xf:group tagname="col" style=""></xf:group>
+    						<xf:group tagname="col" style="width:15.00%;"></xf:group>
+    						<xf:group tagname="col" style="width:15%;"></xf:group>
+    						<xf:group tagname="col" style="width:15%;"></xf:group>
+    						<xf:group tagname="col" style=""></xf:group>
+    					</xf:group>
+    					<xf:group tagname="tr" style="">
+    						<xf:group tagname="th" style="" class="w2tb_th">
+    							<w2:attributes>
+    								<w2:scope>row</w2:scope>
+    							</w2:attributes>
+    							<w2:textbox tagname="label" style="" id="" label="potenti" class=""></w2:textbox>
+    						</xf:group>
+    						<xf:group tagname="td" style="" class="w2tb_td">
+    							<w2:attributes>
+    								<w2:colspan>1</w2:colspan>
+    								<w2:rowspan>1</w2:rowspan>
+    							</w2:attributes>
+    							<w2:textbox tagname="span" style="" id="" label="Lorem ipsum dolor arcu."></w2:textbox>
+    						</xf:group>
+    						<xf:group tagname="th" class="w2tb_th">
+    							<w2:attributes>
+    								<w2:scope>row</w2:scope>
+    							</w2:attributes>
+    							<w2:textbox tagname="label" style="" id="" label="odio" class=""></w2:textbox>
+    						</xf:group>
+    						<xf:group tagname="td" class="w2tb_td">
+    							<w2:attributes></w2:attributes>
+    							<w2:textbox tagname="span" style="" id="" label="Eget at, lacinia blandit pede mattis."></w2:textbox>
+    						</xf:group>
+    						<xf:group tagname="th" class="w2tb_th">
+    							<w2:attributes>
+    								<w2:scope>row</w2:scope>
+    							</w2:attributes>
+    							<w2:textbox tagname="label" style="" id="" label="header" class=""></w2:textbox>
+    						</xf:group>
+    						<xf:group tagname="td" class="w2tb_td">
+    							<w2:attributes></w2:attributes>
+    							<w2:textbox tagname="span" style="" id="" label="At tempor vel, cum fusce sellus."></w2:textbox>
+    						</xf:group>
+    					</xf:group>
+    					<xf:group tagname="tr">
+    						<xf:group tagname="th" class="w2tb_th">
+    							<w2:attributes>
+    								<w2:scope>row</w2:scope>
+    							</w2:attributes>
+    							<w2:textbox tagname="label" style="" id="" label="header" class=""></w2:textbox>
+    						</xf:group>
+    						<xf:group tagname="td" class="w2tb_td">
+    							<w2:attributes></w2:attributes>
+    							<w2:textbox tagname="span" style="" id="" label="Eget at, lacinia blandit lacinia rutrum pede mattis."></w2:textbox>
+    						</xf:group>
+    						<xf:group tagname="th" class="w2tb_th">
+    							<w2:attributes>
+    								<w2:scope>row</w2:scope>
+    							</w2:attributes>
+    							<w2:textbox tagname="label" style="" id="" label="metus sed" class=""></w2:textbox>
+    						</xf:group>
+    						<xf:group tagname="td" class="w2tb_td">
+    							<w2:attributes></w2:attributes>
+    							<w2:textbox tagname="span" style="" id="" label="looooong"></w2:textbox>
+    						</xf:group>
+    						<xf:group tagname="th" class="w2tb_th">
+    							<w2:attributes>
+    								<w2:scope>row</w2:scope>
+    							</w2:attributes>
+    							<w2:textbox tagname="label" style="" id="" label="blandit pede" class=""></w2:textbox>
+    						</xf:group>
+    						<xf:group tagname="td" class="w2tb_td">
+    							<w2:attributes></w2:attributes>
+    							<w2:textbox tagname="span" style="" id="" label="content"></w2:textbox>
+    						</xf:group>
+    					</xf:group>
+    					<xf:group tagname="tr" style="">
+    						<xf:group tagname="th" style="" class="w2tb_th">
+    							<w2:attributes>
+    								<w2:scope>row</w2:scope>
+    							</w2:attributes>
+    							<w2:textbox tagname="label" style="" id="" label="tellus"></w2:textbox>
+    						</xf:group>
+    						<xf:group tagname="td" style="" class="w2tb_td">
+    							<w2:textbox tagname="span" style="" id="" label="Lorem ipsum dolor sit"></w2:textbox>
+    						</xf:group>
+    						<xf:group tagname="th" class="w2tb_th">
+    							<w2:attributes>
+    								<w2:scope>row</w2:scope>
+    							</w2:attributes>
+    							<w2:textbox tagname="label" style="" id="" label="metus sed" class=""></w2:textbox>
+    						</xf:group>
+    						<xf:group tagname="td" class="w2tb_td">
+    							<w2:attributes>
+    								<w2:colspan>3</w2:colspan>
+    								<w2:rowspan>1</w2:rowspan>
+    							</w2:attributes>
+    							<w2:textbox tagname="span" style="" id="" label="At tempor vel, cum fusce eu tellus lacinia phasellus."></w2:textbox>
+    						</xf:group>
+    					</xf:group>
+    					<xf:group tagname="tr">
+    						<xf:group tagname="th" class="w2tb_th">
+    							<w2:attributes>
+    								<w2:scope>row</w2:scope>
+    							</w2:attributes>
+    							<w2:textbox tagname="label" style="" id="" label="ipsum"></w2:textbox>
+    						</xf:group>
+    						<xf:group tagname="td" class="w2tb_td">
+    							<w2:attributes>
+    								<w2:colspan>5</w2:colspan>
+    								<w2:rowspan>1</w2:rowspan>
+    							</w2:attributes>
+    							<w2:textbox tagname="span" style="" id="" label="Neque conubia ornare torquent, dapibus rhoncus"></w2:textbox>
+    						</xf:group>
+    					</xf:group>
+    				</xf:group>
+    			</xf:group>
+    		</xf:group><xf:group style="" id="" class="" tagname="section">
+    			<xf:group id="" class="dfbox">
+    				<xf:trigger class="btn_icon plus" ev:onclick="scwin.btn_toggle_onclick" id="" style="" type="button">
+    					<xf:label></xf:label>
+    				</xf:trigger>
+    				<w2:textbox tagname="h3" style="" id="" label="디테일 테이블(4단) - 가급적 사용 자제"></w2:textbox>
+    			</xf:group>
+    			<xf:group style="display:none;" id="" class="toggle-body">
+    				<xf:group style="" id="" class="tbbox">
+    					<xf:group tagname="table" style="" id="" class="w2tb tb">
+    						<w2:attributes>
+    							<w2:summary></w2:summary>
+    						</w2:attributes>
+    						<xf:group tagname="caption">디테일&amp;nbsp;테이블(3단)</xf:group>
+    						<xf:group tagname="colgroup">
+    							<xf:group tagname="col" style="width:12%;"></xf:group>
+    							<xf:group tagname="col" style=""></xf:group>
+    							<xf:group tagname="col" style="width:12%;"></xf:group>
+    							<xf:group tagname="col" style="width:15%;"></xf:group>
+    							<xf:group tagname="col" style="width:12%;"></xf:group>
+    							<xf:group tagname="col"></xf:group>
+    							<xf:group tagname="col" style="width:12%;"></xf:group>
+    							<xf:group tagname="col" style=""></xf:group>
+    						</xf:group>
+    						<xf:group tagname="tr" style="">
+    							<xf:group tagname="th" style="" class="w2tb_th">
+    								<w2:attributes>
+    									<w2:scope>row</w2:scope>
+    								</w2:attributes>
+    								<w2:textbox tagname="label" style="" id="" label="potenti" class=""></w2:textbox>
+    							</xf:group>
+    							<xf:group tagname="td" style="" class="w2tb_td">
+    								<w2:attributes>
+    									<w2:colspan>1</w2:colspan>
+    									<w2:rowspan>1</w2:rowspan>
+    								</w2:attributes>
+    								<w2:textbox tagname="span" style="" id="" label="Lorem ipsum dolor arcu."></w2:textbox>
+    							</xf:group>
+    							<xf:group tagname="th" class="w2tb_th">
+    								<w2:attributes>
+    									<w2:scope>row</w2:scope>
+    								</w2:attributes>
+    								<w2:textbox tagname="label" style="" id="" label="odio" class=""></w2:textbox>
+    							</xf:group>
+    							<xf:group tagname="td" class="w2tb_td">
+    								<w2:attributes></w2:attributes>
+    								<w2:textbox tagname="span" style="" id="" label="Eget at, lacinia blandit pede mattis."></w2:textbox>
+    							</xf:group>
+    							<xf:group tagname="th" class="w2tb_th">
+    								<w2:attributes>
+    									<w2:scope>row</w2:scope>
+    								</w2:attributes>
+    								<w2:textbox tagname="label" style="" id="" label="header" class=""></w2:textbox>
+    							</xf:group>
+    							<xf:group tagname="td" class="w2tb_td">
+    								<w2:attributes></w2:attributes>
+    								<w2:textbox tagname="span" style="" id="" label="At tempor vel, cum fusce sellus."></w2:textbox>
+    							</xf:group>
+    							<xf:group tagname="th" class="w2tb_th">
+    								<w2:attributes>
+    									<w2:scope>row</w2:scope>
+    								</w2:attributes>
+    								<w2:textbox tagname="label" style="" id="" label="header" class=""></w2:textbox>
+    							</xf:group>
+    							<xf:group tagname="td" class="w2tb_td">
+    								<w2:attributes></w2:attributes>
+    								<w2:textbox tagname="span" style="" id="" label="At tempor vel, cum fusce sellus."></w2:textbox>
+    							</xf:group>
+    						</xf:group>
+    						<xf:group tagname="tr">
+    							<xf:group tagname="th" class="w2tb_th">
+    								<w2:attributes>
+    									<w2:scope>row</w2:scope>
+    								</w2:attributes>
+    								<w2:textbox tagname="label" style="" id="" label="header" class=""></w2:textbox>
+    							</xf:group>
+    							<xf:group tagname="td" class="w2tb_td">
+    								<w2:attributes></w2:attributes>
+    								<w2:textbox tagname="span" style="" id="" label="Eget at, lacinia blandit lacinia rutrum pede mattis.">
+    								</w2:textbox>
+    							</xf:group>
+    							<xf:group tagname="th" class="w2tb_th">
+    								<w2:attributes>
+    									<w2:scope>row</w2:scope>
+    								</w2:attributes>
+    								<w2:textbox tagname="label" style="" id="" label="metus sed" class=""></w2:textbox>
+    							</xf:group>
+    							<xf:group tagname="td" class="w2tb_td">
+    								<w2:attributes></w2:attributes>
+    								<w2:textbox tagname="span" style="" id="" label="looooong"></w2:textbox>
+    							</xf:group>
+    							<xf:group tagname="th" class="w2tb_th">
+    								<w2:attributes>
+    									<w2:scope>row</w2:scope>
+    								</w2:attributes>
+    								<w2:textbox tagname="label" style="" id="" label="blandit pede" class=""></w2:textbox>
+    							</xf:group>
+    							<xf:group tagname="td" class="w2tb_td">
+    								<w2:attributes></w2:attributes>
+    								<w2:textbox tagname="span" style="" id="" label="content"></w2:textbox>
+    							</xf:group>
+    							<xf:group tagname="th" class="w2tb_th">
+    								<w2:attributes>
+    									<w2:scope>row</w2:scope>
+    								</w2:attributes>
+    								<w2:textbox tagname="label" style="" id="" label="blandit pede" class=""></w2:textbox>
+    							</xf:group>
+    							<xf:group tagname="td" class="w2tb_td">
+    								<w2:attributes></w2:attributes>
+    								<w2:textbox tagname="span" style="" id="" label="content"></w2:textbox>
+    							</xf:group>
+    						</xf:group>
+    						<xf:group tagname="tr" style="">
+    							<xf:group tagname="th" style="" class="w2tb_th">
+    								<w2:attributes>
+    									<w2:scope>row</w2:scope>
+    								</w2:attributes>
+    								<w2:textbox tagname="label" style="" id="" label="tellus"></w2:textbox>
+    							</xf:group>
+    							<xf:group tagname="td" style="" class="w2tb_td">
+    								<w2:textbox tagname="span" style="" id="" label="Lorem ipsum dolor sit"></w2:textbox>
+    							</xf:group>
+    							<xf:group tagname="th" class="w2tb_th">
+    								<w2:attributes>
+    									<w2:scope>row</w2:scope>
+    								</w2:attributes>
+    								<w2:textbox tagname="label" style="" id="" label="metus sed" class=""></w2:textbox>
+    							</xf:group>
+    							<xf:group tagname="td" class="w2tb_td">
+    								<w2:attributes>
+    									<w2:colspan>5</w2:colspan>
+    									<w2:rowspan>1</w2:rowspan>
+    								</w2:attributes>
+    								<w2:textbox tagname="span" style="" id="" label="At tempor vel, cum fusce eu tellus lacinia phasellus.">
+    								</w2:textbox>
+    							</xf:group>
+    						</xf:group>
+    						<xf:group tagname="tr">
+    							<xf:group tagname="th" class="w2tb_th">
+    								<w2:attributes>
+    									<w2:scope>row</w2:scope>
+    								</w2:attributes>
+    								<w2:textbox tagname="label" style="" id="" label="ipsum"></w2:textbox>
+    							</xf:group>
+    							<xf:group tagname="td" class="w2tb_td">
+    								<w2:attributes>
+    									<w2:colspan>7</w2:colspan>
+    									<w2:rowspan>1</w2:rowspan>
+    								</w2:attributes>
+    								<w2:textbox tagname="span" style="" id="" label="Neque conubia ornare torquent, dapibus rhoncus"></w2:textbox>
+    							</xf:group>
+    						</xf:group>
+    					</xf:group>
+    				</xf:group>
+    			</xf:group>
+    		</xf:group><xf:group style="" id="" class="" tagname="section">
+    			<xf:group id="" class="dfbox">
+    				<w2:textbox tagname="h3" style="" id="" label="디테일 테이블(기타)"></w2:textbox>
+    			</xf:group>
+    			<xf:group style="" id="" class="tbbox">
+    				<xf:group tagname="table" style="" id="" class="w2tb tb">
+    					<w2:attributes>
+    						<w2:summary></w2:summary>
+    					</w2:attributes>
+    					<xf:group tagname="caption">디테일&amp;nbsp;테이블(2단)</xf:group>
+    					<xf:group tagname="colgroup">
+    						<xf:group tagname="col" style="width:15%;"></xf:group>
+    						<xf:group tagname="col"></xf:group>
+    						<xf:group tagname="col" style=""></xf:group>
+    						<xf:group tagname="col" style="width:15%;"></xf:group>
+    						<xf:group tagname="col"></xf:group>
+    						<xf:group tagname="col" style=""></xf:group>
+    					</xf:group>
+    					<xf:group tagname="tr" style="">
+    						<xf:group tagname="th" style="" class="w2tb_th">
+    							<w2:attributes>
+    								<w2:scope>row</w2:scope>
+    							</w2:attributes>
+    							<w2:textbox tagname="label" style="" id="" label="metus sed	" class=""></w2:textbox>
+    						</xf:group>
+    						<xf:group tagname="td" style="" class="w2tb_td">
+    							<w2:attributes>
+    								<w2:colspan>1</w2:colspan>
+    								<w2:rowspan>1</w2:rowspan>
+    							</w2:attributes>
+    							<w2:textbox tagname="span" style="" id="" label="tincidunt"></w2:textbox>
+    						</xf:group>
+    						<xf:group tagname="td" class="w2tb_td">
+    							<w2:attributes></w2:attributes>
+    							<w2:textbox tagname="span" style="" id="" label="phasellus"></w2:textbox>
+    						</xf:group>
+    						<xf:group tagname="th" class="w2tb_th">
+    							<w2:attributes>
+    								<w2:scope>row</w2:scope>
+    							</w2:attributes>
+    							<w2:textbox tagname="label" style="" id="" label="tempor" class=""></w2:textbox>
+    						</xf:group>
+    						<xf:group tagname="td" class="w2tb_td">
+    							<w2:attributes></w2:attributes>
+    							<w2:textbox tagname="span" style="" id="" label="	cum fusce eu tellus lacinia phasellus."></w2:textbox>
+    						</xf:group>
+    						<xf:group tagname="td" class="w2tb_td">
+    							<w2:attributes></w2:attributes>
+    							<w2:textbox tagname="span" style="" id="" label="content"></w2:textbox>
+    						</xf:group>
+    					</xf:group>
+    					<xf:group tagname="tr" style="">
+    						<xf:group tagname="th" style="" class="w2tb_th">
+    							<w2:attributes>
+    								<w2:scope>row</w2:scope>
+    							</w2:attributes>
+    							<w2:textbox tagname="label" style="" id="" label="header"></w2:textbox>
+    						</xf:group>
+    						<xf:group tagname="td" style="" class="w2tb_td">
+    							<w2:textbox tagname="span" style="" id="" label="Lorem aliquam faucibus lobortis arcu."></w2:textbox>
+    						</xf:group>
+    						<xf:group tagname="td" class="w2tb_td">
+    							<w2:attributes></w2:attributes>
+    							<w2:textbox tagname="span" style="" id="" label="tincidunt"></w2:textbox>
+    						</xf:group>
+    						<xf:group tagname="th" class="w2tb_th">
+    							<w2:attributes>
+    								<w2:scope>row</w2:scope>
+    							</w2:attributes>
+    							<w2:textbox tagname="label" style="" id="" label="ipsum" class=""></w2:textbox>
+    						</xf:group>
+    						<xf:group tagname="td" class="w2tb_td">
+    							<w2:attributes></w2:attributes>
+    							<w2:textbox tagname="span" style="" id="" label="lobortis"></w2:textbox>
+    						</xf:group>
+    						<xf:group tagname="td" class="w2tb_td">
+    							<w2:attributes></w2:attributes>
+    							<w2:textbox tagname="span" style="" id="" label="content"></w2:textbox>
+    						</xf:group>
+    					</xf:group>
+    					<xf:group tagname="tr">
+    						<xf:group tagname="th" class="w2tb_th">
+    							<w2:attributes>
+    								<w2:scope>row</w2:scope>
+    							</w2:attributes>
+    							<w2:textbox tagname="label" style="" id="" label="header"></w2:textbox>
+    						</xf:group>
+    						<xf:group tagname="td" class="w2tb_td">
+    							<w2:attributes></w2:attributes>
+    							<w2:textbox tagname="span" style="" id="" label="content"></w2:textbox>
+    						</xf:group>
+    						<xf:group tagname="td" class="w2tb_td">
+    							<w2:attributes></w2:attributes>
+    							<w2:textbox tagname="span" style="" id="" label="tincidunt"></w2:textbox>
+    						</xf:group>
+    						<xf:group tagname="th" class="w2tb_th">
+    							<w2:attributes>
+    								<w2:scope>row</w2:scope>
+    							</w2:attributes>
+    							<w2:textbox tagname="label" style="" id="" label="header"></w2:textbox>
+    						</xf:group>
+    						<xf:group tagname="td" class="w2tb_td">
+    							<w2:attributes></w2:attributes>
+    							<w2:textbox tagname="span" style="" id="" label="lacinia phasellus.	"></w2:textbox>
+    						</xf:group>
+    						<xf:group tagname="td" class="w2tb_td">
+    							<w2:attributes></w2:attributes>
+    							<w2:textbox tagname="span" style="" id="" label="content"></w2:textbox>
+    						</xf:group>
+    					</xf:group>
+    				</xf:group>
+    			</xf:group>
+    		</xf:group><xf:group style="" id="" class="" tagname="section">
+    			<xf:group id="" class="dfbox">
+    				<xf:trigger class="btn_icon minus" ev:onclick="scwin.btn_toggle_onclick" id="" style="" type="button">
+    					<xf:label></xf:label>
+    				</xf:trigger>
+    				<w2:textbox tagname="h3" style="" id="" label="리스트 테이블"></w2:textbox>
+    				<xf:group style="" id="" class="rta">
+    					<xf:trigger class="btn_df add" ev:onclick="" id="" style="" type="button">
+    						<xf:label><![CDATA[행추가]]></xf:label>
+    					</xf:trigger>
+    					<xf:trigger class="btn_df del" ev:onclick="" id="" style="" type="button">
+    						<xf:label><![CDATA[행삭제]]></xf:label>
+    					</xf:trigger>
+    				</xf:group>
+    			</xf:group>
+    			<xf:group id="" class="toggle-body">
+    				<w2:gridView scrollByColumnAdaptive="false" focusMode="row" tooltipDisplay="true" dataList="data:dataList1" scrollByColumn="false" style="height: 100px;" autoFit="allColumn" id="" sortable="true" visibleRowNum="10" class="wq_gvw" defaultCellHeight="">
+    					<w2:caption style="" id="caption1" value="this is a grid caption."></w2:caption>
+    					<w2:header style="" id="header1">
+    						<w2:row style="" id="row1">
+    							<w2:column removeBorderStyle="false" width="70" inputType="text" id="column10" value="Volutpat" blockSelect="false" displayMode="label">
+    							</w2:column>
+    							<w2:column removeBorderStyle="false" width="150" inputType="text" id="column9" value="integer" blockSelect="false" displayMode="label">
+    							</w2:column>
+    							<w2:column removeBorderStyle="false" width="200" inputType="text" id="column7" value="중앙 정렬(일정한 데이터 길이)" blockSelect="false" displayMode="label">
+    							</w2:column>
+    							<w2:column removeBorderStyle="false" width="90" inputType="text" id="column13" value="Tortor header" blockSelect="false" displayMode="label">
+    							</w2:column>
+    							<w2:column removeBorderStyle="false" width="250" inputType="text" id="column11" value="우측 정렬(금액,수량 등 비교 데이터)" blockSelect="false" displayMode="label">
+    							</w2:column>
+    						</w2:row>
+    					</w2:header>
+    					<w2:gBody style="" id="gBody1">
+    						<w2:row style="" id="row2">
+    							<w2:column textAlign="left" removeBorderStyle="false" width="70" inputType="text" id="col1" blockSelect="false" displayMode="label">
+    							</w2:column>
+    							<w2:column textAlign="left" removeBorderStyle="false" width="150" inputType="text" id="col2" blockSelect="false" displayMode="label">
+    							</w2:column>
+    							<w2:column removeBorderStyle="false" width="200" inputType="text" id="col3" blockSelect="false" displayMode="label">
+    							</w2:column>
+    							<w2:column textAlign="left" removeBorderStyle="false" width="90" inputType="text" id="col4" blockSelect="false" displayMode="label">
+    							</w2:column>
+    							<w2:column textAlign="right" removeBorderStyle="false" width="250" inputType="text" id="col5" blockSelect="false" displayMode="label">
+    							</w2:column>
+    						</w2:row>
+    					</w2:gBody>
+    				</w2:gridView>
+    				<xf:group style="" id="" class="tbbox no_bt">
+    					<xf:group tagname="table" style="" id="" class="w2tb tb">
+    						<w2:attributes>
+    							<w2:summary></w2:summary>
+    						</w2:attributes>
+    						<xf:group tagname="caption">디테일&amp;nbsp;테이블(2단)</xf:group>
+    						<xf:group tagname="colgroup">
+    							<xf:group tagname="col" style="width:15%;"></xf:group>
+    							<xf:group tagname="col" style=""></xf:group>
+    							<xf:group tagname="col" style="width:15%;"></xf:group>
+    							<xf:group tagname="col" style=""></xf:group>
+    						</xf:group>
+    						<xf:group tagname="tr" style="">
+    							<xf:group tagname="th" style="" class="w2tb_th">
+    								<w2:attributes>
+    									<w2:scope>row</w2:scope>
+    								</w2:attributes>
+    								<w2:textbox tagname="label" style="" id="" label="header" class=""></w2:textbox>
+    							</xf:group>
+    							<xf:group tagname="td" style="" class="w2tb_td">
+    								<w2:attributes>
+    									<w2:colspan>1</w2:colspan>
+    									<w2:rowspan>1</w2:rowspan>
+    								</w2:attributes>
+    								<w2:textbox tagname="span" style="" id="" label="content"></w2:textbox>
+    							</xf:group>
+    							<xf:group tagname="th" class="w2tb_th">
+    								<w2:attributes>
+    									<w2:scope>row</w2:scope>
+    								</w2:attributes>
+    								<w2:textbox tagname="label" style="" id="" label="header" class=""></w2:textbox>
+    							</xf:group>
+    							<xf:group tagname="td" class="w2tb_td">
+    								<w2:attributes></w2:attributes>
+    								<w2:textbox tagname="span" style="" id="" label="content"></w2:textbox>
+    							</xf:group>
+    						</xf:group>
+    						<xf:group tagname="tr" style="">
+    							<xf:group tagname="th" style="" class="w2tb_th">
+    								<w2:attributes>
+    									<w2:scope>row</w2:scope>
+    								</w2:attributes>
+    								<w2:textbox tagname="label" style="" id="" label="header"></w2:textbox>
+    							</xf:group>
+    							<xf:group tagname="td" style="" class="w2tb_td">
+    								<w2:textbox tagname="span" style="" id="" label="content"></w2:textbox>
+    							</xf:group>
+    							<xf:group tagname="th" class="w2tb_th">
+    								<w2:attributes>
+    									<w2:scope>row</w2:scope>
+    								</w2:attributes>
+    								<w2:textbox tagname="label" style="" id="" label="header" class=""></w2:textbox>
+    							</xf:group>
+    							<xf:group tagname="td" class="w2tb_td">
+    								<w2:attributes></w2:attributes>
+    								<w2:textbox tagname="span" style="" id="" label="content"></w2:textbox>
+    							</xf:group>
+    						</xf:group>
+    					</xf:group>
+    				</xf:group>
+    			</xf:group>
+    		</xf:group><xf:group style="" id="" class="" tagname="section">
+    			<xf:group id="" class="dfbox">
+    				<w2:textbox tagname="h3" style="" id="" label="리스트 테이블(sub header)"></w2:textbox>
+    			</xf:group>
+    			<w2:gridView scrollByColumnAdaptive="false" focusMode="row" tooltipDisplay="true" dataList="data:dataList2" scrollByColumn="false" style="height: 100px;" autoFit="allColumn" id="" sortable="true" visibleRowNum="10" class="wq_gvw" defaultCellHeight="">
+    				<w2:caption style="" id="caption1" value="this is a grid caption."></w2:caption>
+    				<w2:header style="" id="header1">
+    					<w2:row style="" id="row1">
+    						<w2:column removeBorderStyle="false" width="100" inputType="text" id="column10" value="header" blockSelect="false" displayMode="label">
+    						</w2:column>
+    						<w2:column removeBorderStyle="false" width="70" inputType="text" id="column9" value="header" blockSelect="false" displayMode="label">
+    						</w2:column>
+    						<w2:column removeBorderStyle="false" width="70" inputType="text" id="column7" value="header" blockSelect="false" displayMode="label">
+    						</w2:column>
+    						<w2:column removeBorderStyle="false" width="70" inputType="text" id="column13" value="header" blockSelect="false" displayMode="label">
+    						</w2:column>
+    					</w2:row>
+    				</w2:header>
+    				<w2:gBody style="" id="gBody1">
+    					<w2:row style="" id="row2">
+    						<w2:column removeBorderStyle="false" width="100" inputType="text" id="col1" class="th-sub" blockSelect="false" displayMode="label">
+    						</w2:column>
+    						<w2:column textAlign="left" removeBorderStyle="false" width="70" inputType="text" id="col2" blockSelect="false" displayMode="label">
+    						</w2:column>
+    						<w2:column textAlign="left" removeBorderStyle="false" width="70" inputType="text" id="col3" blockSelect="false" displayMode="label">
+    						</w2:column>
+    						<w2:column textAlign="left" removeBorderStyle="false" width="70" inputType="text" id="col4" blockSelect="false" displayMode="label">
+    						</w2:column>
+    					</w2:row>
+    				</w2:gBody>
+    			</w2:gridView>
+    			<w2:pageList ev:onviewchange="scwin.pageList_onviewchange" displayButtonType="display" displayFormat="#" pageSize="10" style="" id="pgl_checkSelect" renderType="list">
+    			</w2:pageList>
+    		</xf:group></xf:group></xf:group></xf:group>
+    </body>
+</html>

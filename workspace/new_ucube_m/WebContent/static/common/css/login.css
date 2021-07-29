@@ -1,0 +1,35 @@
+@charset "utf-8";
+
+/* ==========================================================================
+   Login
+   ========================================================================== */
+
+.lo_body {position:relative; width:100%; height:100%; margin:0; padding:0; background:#fff}
+.lo_wrapper {overflow:auto; position:absolute; top:0; left:0; width:100%; height:100%}
+.lo_wrapper * {box-sizing:border-box}
+.lo_contents {position:absolute; top:50%; left:50%; margin:-207px 0 0 -175px; width:304px}
+
+.lo_system_logo {padding:0 0 57px}
+.lo_system_logo h2 {font-family:'LGSmHaR'; font-weight:600; font-size:36px; line-height:39px; color:#202020; text-align:center; letter-spacing:0.01em}
+
+.lo_form {position:relative; padding:0; display:flex; flex-direction:column}
+.lo_form label {display:block; font-size:14px; line-height:19px; letter-spacing:0.28em; color:#6B7682; opacity:0; transition:all 0.3s}
+.lo_form label.tbx_id {order:-1}
+.lo_form .ibx_id {order:0}
+.lo_form label.tbx_pw {order:1; margin-top:30px}
+.lo_form .ibx_pw {order:2}
+.lo_form .w2input {border:0; height:44px; width:100%; background:#fff; border-bottom:1px solid #BEC9D4; font-size:16px; letter-spacing: 0.2em; transition:border-bottom 0.3s}
+.lo_form .w2input:focus {border-color:#6B7682}
+.lo_form .w2input:focus + label {opacity:1}
+.lo_form .ibx_id.w2input.validate {padding-right:21px; border-color:#F94B50; background-image:url(../../../common/images/ico_ibx_error.svg); background-repeat:no-repeat; background-position:right 6px center; background-size:20px}
+.lo_form .w2input.validate:focus + label {color:#F94B50}
+
+.lo_form .info {order:3; margin-top:30px}
+.lo_form .info p {color:#8996A3; letter-spacing:-0.02em}
+
+.btn_login {order:4; width:100%; height:55px; background:linear-gradient(90deg, #9B30CE 1.67%, #D75FBC 79.51%); border:0; border-radius:39px; color:#fff; font-family:'LGSmHaR'; font-size:20px; font-weight:600; letter-spacing:0.095em; margin-top:60px}
+
+
+.tbx_validate {display:none; position:absolute; left:0; font-size:12px; line-height:16px; letter-spacing:-0.02em; color:#F94B50}
+.tbx_validate.id {top:69px}
+.tbx_validate.pw {top:99px}

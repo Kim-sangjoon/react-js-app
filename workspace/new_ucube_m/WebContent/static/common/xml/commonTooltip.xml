@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:ev="http://www.w3.org/2001/xml-events"
+    xmlns:w2="http://www.inswave.com/websquare" xmlns:xf="http://www.w3.org/2002/xforms">
+    <head meta_programName="공통툴팁레이어" meta_programId="CMXM0003">
+    	<w2:type>DEFAULT</w2:type>
+        <w2:buildDate/>
+        <xf:model>
+            <xf:instance>
+                <data xmlns=""/>
+            </xf:instance>
+            <w2:dataCollection baseNode="map">
+            </w2:dataCollection>
+            <w2:workflowCollection>
+            </w2:workflowCollection>
+        </xf:model>
+         <script type="text/javascript" lazy="false"><![CDATA[
+
+	scwin.onpageload = function() {
+
+	};
+
+	scwin.onpageunload = function() {
+
+	};
+
+	scwin.setToolTipMsg = function(toolTipMsg){
+		if(toolTipMsg!=""){
+			tbx_toolTipMsg.setValue(toolTipMsg);
+		}
+	};]]></script>
+    </head>
+    <body ev:onpageload="scwin.onpageload" ev:onpageunload="scwin.onpageunload">
+    	<xf:group id="grp_toolTipPop" class="tooltip fade right" style='transition : opacity 0.5s;z-index: 6110;display: none;'><xf:group id="" class="tooltip-arrow"></xf:group><xf:group id="" class="tooltip-inner"><w2:textbox tagname="span" style="" id="tbx_toolTipMsg" label="이 영역에 해당하는 안내 문구가 텍스트형태로 제공됩니다." class=""></w2:textbox></xf:group></xf:group>
+
+    </body>
+</html>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><html xmlns="http://www.w3.org/1999/xhtml" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:w2="http://www.inswave.com/websquare" xmlns:xf="http://www.w3.org/2002/xforms">
+    <head>
+        <w2:buildDate/>
+        <w2:userPalette defaultIcon="mix.png" desc=""/>
+        <xf:model>
+            <xf:instance>
+                <data xmlns=""/>
+            </xf:instance>
+        </xf:model>
+        <script type="text/javascript"><![CDATA[ ]]></script>
+    </head>
+    <body><xf:group id="" class="shbox">
+	<xf:group id="" class="shbox_grp">
+		<xf:group style="" id="" class="sh_grp">
+			<xf:group id="" class="stb">
+				<xf:group id="" class="th">
+					<w2:textbox tagname="label" style="" id="" label="조건명">
+					</w2:textbox>
+</xf:group>
+				<xf:group id="" class="td">
+					<xf:input adjustMaxLength="false" style="" id="" placeholder="검색어">
+					</xf:input>
+</xf:group>
+</xf:group>
+</xf:group>
+		<xf:group id="" tagname="ul" class="list-inline">
+			<xf:group id="" tagname="li">
+				<xf:trigger style="" id="" type="button" class="btn_cm">
+					<xf:label>
+<![CDATA[검색]]></xf:label>
+</xf:trigger>
+</xf:group>
+</xf:group>
+</xf:group>
+</xf:group>
+</body>
+</html>
