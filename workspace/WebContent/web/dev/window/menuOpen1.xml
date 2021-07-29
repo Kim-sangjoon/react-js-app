@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:w2="http://www.inswave.com/websquare"
+	xmlns:xf="http://www.w3.org/2002/xforms">
+	<head meta_programName="메뉴 오픈(호출화면)">
+		<w2:type>DEFAULT</w2:type>
+		<w2:buildDate />
+		<xf:model>
+			<xf:instance>
+				<data xmlns="" />
+			</xf:instance>
+			<w2:dataCollection baseNode="map">
+				<w2:dataMap baseNode="map" id="dma_basic">
+					<w2:keyInfo>
+						<w2:key id="regCode" name="name1" dataType="text"></w2:key>
+						<w2:key id="position" name="name2" dataType="text"></w2:key>
+						<w2:key id="office" name="name3" dataType="text"></w2:key>
+						<w2:key id="age" name="name4" dataType="text"></w2:key>
+						<w2:key id="startDate" name="name5" dataType="text"></w2:key>
+						<w2:key id="salary" name="name6" dataType="text"></w2:key>
+					</w2:keyInfo>
+					<w2:data use="true">
+						<regCode><![CDATA[홍길동]]></regCode>
+						<position><![CDATA[Chief Executive Officer (CEO)]]></position>
+						<office><![CDATA[London]]></office>
+						<age><![CDATA[33]]></age>
+						<startDate><![CDATA[20180505]]></startDate>
+						<salary><![CDATA[162700]]></salary>
+					</w2:data>
+				</w2:dataMap>
+			</w2:dataCollection>
+			<w2:workflowCollection>
+			</w2:workflowCollection>
+		</xf:model>
+		<script type="text/javascript" lazy="false"><![CDATA[
+
+	scwin.onpageload = function() {
+
+	};
+
+	scwin.onpageunload = function() {
+
+	};
+
+	scwin.btn_openMenu_onclick = function(e) {
+		var data = {
+			"empInfo" : dma_basic.getJSON()
+		};
+		com.win.openMenu("100000411", data);
+	};
+
+
+	scwin.btn_moveMenu_onclick = function(e) {
+		var data = {
+			"empInfo" : dma_basic.getJSON()
+		};
+		com.win.moveMenu("100000411", data);
+	};
+	]]></script>
+	</head>
+	<body ev:onpageload="scwin.onpageload" ev:onpageunload="scwin.onpageunload">
+		<xf:group class="sub_wrapper" id="">
+			<w2:wframe class="page_header" id="" scope="true" src="../../../common/xml/contentsTitle.xml" style=""></w2:wframe>
+			<xf:group class="page_contents" id="">
+			<xf:group id="" class="page_contents_inner"><xf:group id="" class="module-wrapper">
+					<xf:group id="" class="dfbox">
+						<w2:textbox tagname="h3" style="" label="메뉴 오픈 예시 (호출자)" id=""></w2:textbox>
+					</xf:group>
+					<xf:group style="" id="" class="tbbox">
+						<xf:group tagname="table" style="" id="" class="w2tb tb">
+							<w2:attributes>
+								<w2:summary></w2:summary>
+							</w2:attributes>
+							<xf:group tagname="caption">디테일&amp;nbsp;테이블(1단)</xf:group>
+							<xf:group tagname="colgroup">
+								<xf:group tagname="col" style="width:15%;"></xf:group>
+								<xf:group tagname="col" style=""></xf:group>
+							</xf:group>
+							<xf:group tagname="tr" style="">
+								<xf:group tagname="th" class="w2tb_th"><w2:attributes>
+										<w2:scope>row</w2:scope>
+									</w2:attributes><w2:textbox tagname="label" style="" id="" label="화면 오픈"></w2:textbox></xf:group>
+								<xf:group tagname="td" class="w2tb_td">
+									<w2:attributes></w2:attributes>
+
+									<xf:group style="" id="" class="ly_form wa">
+										<xf:trigger centerOnImageClass="" class="btn_in" id="btn_openMenu" style="" type="button" ev:onclick="scwin.btn_openMenu_onclick">
+											<xf:label><![CDATA[Open Menu]]></xf:label>
+										</xf:trigger>
+										<xf:group tagname="span" style="" id="" class="info tip">
+											<w2:textbox tagname="i" style="" id="" label="" class="fa fa-info-circle"></w2:textbox>
+											<w2:textbox tagname="p" style="" id="" label="특정 메뉴의 화면을 오픈함" class=""></w2:textbox>
+										</xf:group>
+									</xf:group>
+								</xf:group>
+							</xf:group>
+						</xf:group>
+						
+					</xf:group>
+				<xf:group id="" class="tbbox"><xf:group tagname="table" style="" id="" class="w2tb tb">
+							<w2:attributes>
+								<w2:summary></w2:summary>
+							</w2:attributes>
+							<xf:group tagname="caption">디테일&amp;nbsp;테이블(1단)</xf:group>
+							<xf:group tagname="colgroup">
+								<xf:group tagname="col" style="width:15%;"></xf:group>
+								<xf:group tagname="col" style=""></xf:group>
+							</xf:group>
+							<xf:group tagname="tr" style="">
+								<xf:group tagname="th" class="w2tb_th"><w2:attributes>
+										<w2:scope>row</w2:scope>
+									</w2:attributes><w2:textbox tagname="label" style="" id="" label="화면 이동"></w2:textbox></xf:group>
+								<xf:group tagname="td" class="w2tb_td">
+									<w2:attributes></w2:attributes>
+									<xf:group style="" id="" class="ly_form wa">
+										<xf:trigger centerOnImageClass="" class="btn_in" ev:onclick="scwin.btn_moveMenu_onclick"
+											id="btn_moveMenu" style="" type="button">
+											<xf:label><![CDATA[Move Menu]]></xf:label>
+										</xf:trigger>
+										<xf:group tagname="span" style="" id="" class="info tip">
+											<w2:textbox tagname="i" style="" id="" label="" class="fa fa-info-circle"></w2:textbox>
+											<w2:textbox tagname="p" style="" id="" label="특정 메뉴의 화면으로 이동함" class=""></w2:textbox>
+										</xf:group>
+									</xf:group>
+								</xf:group>
+							</xf:group>
+						</xf:group></xf:group><xf:group style="" id="" class="tbbox">
+							<xf:group tagname="table" style="width:100%;" id="" class="w2tb tb">
+								<w2:attributes>
+									<w2:summary></w2:summary>
+								</w2:attributes>
+								<xf:group tagname="caption"></xf:group>
+								<xf:group tagname="colgroup">
+									<xf:group tagname="col" style="width:15.00%;"></xf:group>
+									<xf:group tagname="col" style=""></xf:group>
+								</xf:group>
+								<xf:group tagname="tr" style="">
+									<xf:group tagname="th" style="" class="w2tb_th">
+										<w2:attributes>
+											<w2:scope>row</w2:scope>
+										</w2:attributes>
+										<w2:textbox tagname="label" style="" id="" label="Name1" class="req"></w2:textbox>
+									</xf:group>
+									<xf:group tagname="td" style="" class="w2tb_td">
+										<w2:attributes>
+											<w2:colspan>1</w2:colspan>
+											<w2:rowspan>1</w2:rowspan>
+										</w2:attributes>
+										<xf:input ref="data:dma_basic.regCode" maxlength="6" adjustMaxLength="false" style="" allowChar="" id="ipx_name" placeholder="" class="req">
+										</xf:input>
+									</xf:group>
+								</xf:group>
+								<xf:group tagname="tr" style="">
+									<xf:group tagname="th" style="" class="w2tb_th">
+										<w2:attributes>
+											<w2:scope>row</w2:scope>
+										</w2:attributes>
+										<w2:textbox tagname="label" style="" id="" label="Position"></w2:textbox>
+									</xf:group>
+									<xf:group tagname="td" style="" class="w2tb_td">
+										<xf:input ref="data:dma_basic.position" maxlength="6" adjustMaxLength="false" style="" allowChar="" id="ipx_position" placeholder="">
+										</xf:input>
+									</xf:group>
+								</xf:group>
+								<xf:group tagname="tr">
+									<xf:group tagname="th" style="" class="w2tb_th">
+										<w2:attributes>
+											<w2:scope>row</w2:scope>
+										</w2:attributes>
+										<w2:textbox tagname="label" style="" id="" label="Office"></w2:textbox>
+									</xf:group>
+									<xf:group tagname="td" style="" class="w2tb_td">
+										<xf:input ref="data:dma_basic.office" maxlength="6" adjustMaxLength="false" style="" allowChar="" id="ipx_office" placeholder="">
+										</xf:input>
+									</xf:group>
+								</xf:group>
+								<xf:group tagname="tr">
+									<xf:group tagname="th" class="w2tb_th">
+										<w2:attributes>
+											<w2:scope>row</w2:scope>
+										</w2:attributes>
+										<w2:textbox tagname="label" style="" id="" label="salary"></w2:textbox>
+									</xf:group>
+									<xf:group tagname="td" class="w2tb_td">
+										<w2:attributes></w2:attributes>
+										<xf:input ref="data:dma_basic.salary" maxlength="6" adjustMaxLength="false" style="" allowChar="" id="ibx_office20" placeholder="">
+										</xf:input>
+									</xf:group>
+								</xf:group>
+							</xf:group>
+						</xf:group></xf:group></xf:group></xf:group>
+		</xf:group>
+	</body>
+</html>

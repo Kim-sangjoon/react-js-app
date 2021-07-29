@@ -1,0 +1,446 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:ev="http://www.w3.org/2001/xml-events"
+    xmlns:w2="http://www.inswave.com/websquare" xmlns:xf="http://www.w3.org/2002/xforms">
+    <head meta_programName="P3-4 List/Detail Edit">
+    	<w2:type>DEFAULT</w2:type>
+    	<w2:buildDate />
+    	<xf:model>
+    		<xf:instance>
+    			<data xmlns="" />
+    		</xf:instance>
+    		<w2:dataCollection baseNode="map">
+    			<w2:dataList baseNode="list" repeatNode="map" id="dlt_grdAllData" saveRemovedData="true">
+    				<w2:columnInfo>
+    					<w2:column id="name1" name="정책구분" dataType="text"></w2:column>
+    					<w2:column id="name2" name="그룹명" dataType="text"></w2:column>
+    					<w2:column id="name3" name="요금제명" dataType="text"></w2:column>
+    					<w2:column id="name4" name="요금제코드" dataType="text"></w2:column>
+    					<w2:column id="name5" name="기본료" dataType="text"></w2:column>
+    					<w2:column id="name6" name="음성요율(원/초)" dataType="text"></w2:column>
+    					<w2:column id="name7" name="문자요율(원/건)" dataType="text"></w2:column>
+    					<w2:column id="name8" name="데이터요율구분" dataType="text"></w2:column>
+    					<w2:column id="name9" name="데이터요율(원/KB)" dataType="text"></w2:column>
+    					<w2:column id="name10" name="데이터상한금액" dataType="text"></w2:column>
+    				</w2:columnInfo>
+    				<w2:data use="true">
+    					<w2:row>
+    						<name1><![CDATA[추천]]></name1>
+    						<name2><![CDATA[LTE 청소년 요금제]]></name2>
+
+    						<name3><![CDATA[LTE 청소년 19]]></name3>
+    						<name4><![CDATA[LPZ0001369]]></name4>
+    						<name5><![CDATA[19,000]]></name5>
+
+    						<name6><![CDATA[2.5]]></name6>
+    						<name7><![CDATA[15]]></name7>
+    						<name8><![CDATA[단일요율]]></name8>
+    						<name9><![CDATA[0.08]]></name9>
+    						<name10><![CDATA[150,000]]></name10>
+
+    					</w2:row>
+    					<w2:row></w2:row>
+    					<w2:row></w2:row>
+    					<w2:row></w2:row>
+    					<w2:row></w2:row>
+    				</w2:data>
+    			</w2:dataList>
+    		</w2:dataCollection>
+    		<w2:workflowCollection></w2:workflowCollection>
+    	</xf:model>
+    	<script type="text/javascript" lazy="false"><![CDATA[
+
+	scwin.onpageload = function() {
+		pgl_checkSelect.setCount(10);
+	};
+
+	scwin.onpageunload = function() {
+
+	};
+]]></script>
+    	<w2:require src="/common/udc/udc_rangeCalendar.xml"></w2:require>
+    </head>
+    <body ev:onpageload="scwin.onpageload" ev:onpageunload="scwin.onpageunload">
+    	<xf:group class="sub_wrapper" id="" style="">
+    		<w2:wframe class="page_header" id="" scope="true" src="../../../common/xml/contentsTitle.xml" style=""></w2:wframe>
+    	<xf:group id="" class="page_contents" style="">
+    		<xf:group id="" class="page_contents_inner" style="">
+    			<xf:group id="" class="shbox" style="">
+    				<xf:group id="" class="shbox_grp">
+    					<xf:group style="" id="" class="sh_grp">
+    						<w2:textbox tagname="label" style="" id="" label="정책구분" class=""></w2:textbox>
+    						<xf:select1 allOption="true" appearance="minimal" chooseOption="" chooseOptionLabel="" class="wd-150"
+    							direction="auto" disabled="false" disabledClass="w2selectbox_disabled" id="" ref="" style="" submenuSize="auto" nextTabID="">
+    							<xf:choices></xf:choices>
+    						</xf:select1>
+    					</xf:group>
+    					<xf:group style="" id="" class="sh_grp">
+    						<w2:textbox tagname="label" style="" id="" label="그룹명"></w2:textbox>
+    						<xf:select1 allOption="true" appearance="minimal" chooseOption="" chooseOptionLabel="" class="wd-150"
+    							direction="auto" disabled="false" disabledClass="w2selectbox_disabled" id="" nextTabID="" ref="" style="" submenuSize="auto">
+    							<xf:choices></xf:choices>
+    						</xf:select1>
+    					</xf:group>
+    					<xf:group class="sh_grp" id="" style="">
+    						<w2:textbox id="" label="사용여부" style="" tagname="label"></w2:textbox>
+    						<xf:select1 allOption="true" appearance="minimal" chooseOption="" chooseOptionLabel="" class="wd-150"
+    							direction="auto" disabled="false" disabledClass="w2selectbox_disabled" id="" ref="" style="" submenuSize="auto">
+    							<xf:choices></xf:choices>
+    						</xf:select1>
+    					</xf:group>
+    					<xf:group class="sh_grp" id="" style="">
+    						<w2:textbox id="" label="요금제명" style="" tagname="label"></w2:textbox>
+    						<xf:input adjustMaxLength="false" class="wd-200" id="" initValue="" placeholder="" style=""></xf:input>
+    					</xf:group>
+    					<xf:group class="sh_grp" id="" style="">
+    						<w2:textbox id="" label="요금제코드" style="" tagname="label"></w2:textbox>
+    						<xf:input adjustMaxLength="false" class="wd-150" id="" initValue="" placeholder="" style=""></xf:input>
+    					</xf:group>
+    					<xf:group tagname="" id="" class="sh_btn">
+    						<xf:trigger ev:onclick="" style="" id="btn_search" type="button" class="btn_sh">
+    							<xf:label><![CDATA[검색]]></xf:label>
+    						</xf:trigger>
+    					</xf:group>
+
+    				</xf:group>
+    			</xf:group>
+    			<xf:group id="" tagname="section">
+    				<xf:group style="" id="" class="dfbox">
+    					<w2:textbox tagname="h3" style="" id="" label="요금제 정책 목록"></w2:textbox>
+    					<xf:group tagname="" id="" class="gvw_info">
+    						<w2:textbox tagname="span" style="" id="" label="Total :" class=""></w2:textbox>
+    						<w2:textbox tagname="em" style="" id="" label="47" class=""></w2:textbox>
+    					</xf:group>
+    					<xf:group class="rta" id="" style="">
+    						<xf:trigger centerOnImageClass="" class="btn_df icon pz" id="" style="" type="button" tabIndex="" disabled="">
+    							<xf:label><![CDATA[개인화]]></xf:label>
+    						</xf:trigger>
+    					</xf:group>
+    				</xf:group>
+    				<xf:group style="flex:1;display: flex;flex-direction: column;" id="" class="gvwbox">
+    					<w2:gridView autoFit="allColumn" class="wq_gvw" dataList="data:dlt_grdAllData" defaultCellHeight=""
+    						editModeEvent="onclick" ev:oncellclick="" ev:oncelldblclick="" ev:onheaderclick="" focusMode="row" id="" rowNumHeaderValue="번호"
+    						rowNumVisible="true" rowNumWidth="60" rowStatusHeaderValue="상태" rowStatusVisible="false" rowStatusWidth="" scrollByColumn="false"
+    						scrollByColumnAdaptive="false" showSortableImage="" showSortableUseFilter="" sortable="true" style="height:297px;"
+    						visibleRowNum="" readOnly="true" readOnlyTabIgnore="">
+    						<w2:caption style="" id="caption1" value="this is a grid caption."></w2:caption>
+    						<w2:header style="" id="header1">
+    							<w2:row style="" id="row1">
+    								<w2:column removeBorderStyle="false" width="100" inputType="text" style="" id="column40" value="정책구분"
+    									blockSelect="false" displayMode="label">
+    								</w2:column>
+    								<w2:column removeBorderStyle="false" width="150" inputType="text" style="" id="column39" value="그룹명"
+    									blockSelect="false" displayMode="label">
+    								</w2:column>
+    								<w2:column removeBorderStyle="false" width="200" inputType="text" style="" id="column38" value="요금제명"
+    									blockSelect="false" displayMode="label">
+    								</w2:column>
+    								<w2:column removeBorderStyle="false" width="100" inputType="text" style="" id="column37" value="요금제코드"
+    									blockSelect="false" displayMode="label">
+    								</w2:column>
+    								<w2:column removeBorderStyle="false" width="120" inputType="text" style="" id="column36" value="기본료"
+    									blockSelect="false" displayMode="label">
+    								</w2:column>
+    								<w2:column removeBorderStyle="false" width="100" inputType="text" style="" id="column35"
+    									value="음성요율(원/초)" blockSelect="false" displayMode="label">
+    								</w2:column>
+    								<w2:column removeBorderStyle="false" width="100" inputType="text" style="" id="column34"
+    									value="문자요율(원/건)" blockSelect="false" displayMode="label">
+    								</w2:column>
+    								<w2:column removeBorderStyle="false" width="100" inputType="text" style="" id="column33" value="데이터요율구분"
+    									blockSelect="false" displayMode="label">
+    								</w2:column>
+    								<w2:column removeBorderStyle="false" width="100" inputType="text" style="" id="column32"
+    									value="데이터요율(원/KB)" blockSelect="false" displayMode="label">
+    								</w2:column>
+    								<w2:column removeBorderStyle="false" width="100" inputType="text" style="" id="column31" value="데이터상한금액"
+    									blockSelect="false" displayMode="label">
+    								</w2:column>
+    							</w2:row>
+    						</w2:header>
+    						<w2:gBody style="" id="gBody1">
+    							<w2:row style="" id="row2">
+    								<w2:column removeBorderStyle="false" width="70" inputType="text" style="" id="name1" value=""
+    									blockSelect="false" displayMode="label">
+    								</w2:column>
+    								<w2:column removeBorderStyle="false" width="150" inputType="text" style="" id="name2" value=""
+    									blockSelect="false" displayMode="label" textAlign="left">
+    								</w2:column>
+    								<w2:column removeBorderStyle="false" width="200" inputType="text" style="" id="name3" value=""
+    									blockSelect="false" displayMode="label" textAlign="left">
+    								</w2:column>
+    								<w2:column removeBorderStyle="false" width="100" inputType="text" style="" id="name4" value=""
+    									blockSelect="false" displayMode="label">
+    								</w2:column>
+    								<w2:column removeBorderStyle="false" width="120" inputType="text" style="" id="name5" value=""
+    									blockSelect="false" displayMode="label" textAlign="right">
+    								</w2:column>
+    								<w2:column textAlign="right" removeBorderStyle="false" width="150" inputType="text" style="" id="name6"
+    									value="" blockSelect="false" displayMode="label">
+    								</w2:column>
+    								<w2:column removeBorderStyle="false" width="70" inputType="text" style="" id="name7" value=""
+    									blockSelect="false" displayMode="label" textAlign="right">
+    								</w2:column>
+    								<w2:column removeBorderStyle="false" width="70" inputType="text" style="" id="name8" value=""
+    									blockSelect="false" displayMode="label">
+    								</w2:column>
+    								<w2:column textAlign="right" removeBorderStyle="false" width="70" inputType="text" style="" id="name9"
+    									value="" blockSelect="false" displayMode="label">
+    								</w2:column>
+    								<w2:column removeBorderStyle="false" width="70" inputType="text" style="" id="name10" value=""
+    									blockSelect="false" displayMode="label" textAlign="right">
+    								</w2:column>
+    							</w2:row>
+    						</w2:gBody>
+    					</w2:gridView>
+    				</xf:group>
+    			</xf:group>
+    			<xf:group id="" tagname="section" style="">
+    				<xf:group class="dfbox" id="" style="">
+    					<w2:textbox id="" label="정책기본정보" style="" tagname="h3"></w2:textbox>
+    				</xf:group>
+    				<xf:group class="tbbox" id="" style="">
+    					<xf:group class="w2tb tb" id="" style="width:100%;" tagname="table">
+    						<w2:attributes>
+    							<w2:summary></w2:summary>
+    						</w2:attributes>
+    						<xf:group tagname="caption"></xf:group>
+    						<xf:group tagname="colgroup">
+    							<xf:group style="width:120px;" tagname="col"></xf:group>
+    							<xf:group style="" tagname="col"></xf:group>
+    							<xf:group style="width:120px;" tagname="col"></xf:group>
+    							<xf:group tagname="col"></xf:group>
+    							<xf:group style="width:120px;" tagname="col"></xf:group>
+    							<xf:group style="" tagname="col"></xf:group>
+    						</xf:group>
+    						<xf:group style="" tagname="tr">
+    							<xf:group class="w2tb_th" style="" tagname="th">
+    								<w2:attributes>
+    									<w2:scope>row</w2:scope>
+    								</w2:attributes>
+    								<w2:textbox class="req" id="" label="요금제그룹명" style="" tagname="label"></w2:textbox>
+    							</xf:group>
+    							<xf:group class="w2tb_td" style="" tagname="td">
+    								<w2:attributes>
+    									<w2:colspan>1</w2:colspan>
+    									<w2:rowspan>1</w2:rowspan>
+    								</w2:attributes>
+    								<xf:input adjustMaxLength="false" class="wd-full" id="" initValue="LTE 청소년 요금제" placeholder="" style=""></xf:input>
+    							</xf:group>
+    							<xf:group class="w2tb_th" tagname="th" text="">
+    								<w2:attributes></w2:attributes>
+    								<w2:textbox class="req" id="" label="음성요율" style="" tagname="label"></w2:textbox>
+    							</xf:group>
+    							<xf:group class="w2tb_td" tagname="td">
+    								<w2:attributes></w2:attributes>
+    								<xf:group class="ly_form wa" id="" style="">
+    									<xf:input adjustMaxLength="false" class="wd-140" id="" initValue="2.5" placeholder=""
+    										style="" tabIndex="" autocomplete="" disabled="false">
+    									</xf:input>
+    									<w2:textbox id="" label="원/초" style="" tagname="span"></w2:textbox>
+    								</xf:group>
+    							</xf:group>
+    							<xf:group tagname="th" class="w2tb_th">
+    								<w2:attributes></w2:attributes>
+    								<w2:textbox class="req" id="" label="멤버십등급" style="" tagname="label"></w2:textbox>
+    							</xf:group>
+    							<xf:group tagname="td" class="w2tb_td">
+    								<w2:attributes></w2:attributes>
+    								<xf:select1 allOption="" appearance="minimal" chooseOption="true" chooseOptionLabel="" class="wd-150"
+    									direction="auto" disabled="false" disabledClass="w2selectbox_disabled" id="" nextTabID="" ref="" style="" submenuSize="auto">
+    									<xf:choices>
+    										<xf:item>
+    											<xf:label><![CDATA[일반]]></xf:label>
+    											<xf:value><![CDATA[]]></xf:value>
+    										</xf:item>
+    									</xf:choices>
+    								</xf:select1>
+    							</xf:group></xf:group>
+    						<xf:group style="" tagname="tr">
+    							<xf:group class="w2tb_th" style="" tagname="th">
+    								<w2:attributes>
+    									<w2:scope>row</w2:scope>
+    								</w2:attributes>
+    								<w2:textbox id="" label="요금제명" style="" tagname="label"></w2:textbox>
+    							</xf:group>
+    							<xf:group class="w2tb_td" style="" tagname="td">
+    								<xf:input adjustMaxLength="false" class="wd-full" id="" initValue="LTE 청소년 19" placeholder="" style=""></xf:input>
+    							</xf:group>
+    							<xf:group class="w2tb_th" style="" tagname="th">
+    								<w2:attributes>
+    									<w2:scope>row</w2:scope>
+    								</w2:attributes>
+    								<w2:textbox class="req" id="" label="문자요율" style="" tagname="label"></w2:textbox>
+    							</xf:group>
+    							<xf:group class="w2tb_td" style="" tagname="td">
+    								<xf:group class="ly_form wa" id="" style="">
+    									<xf:input adjustMaxLength="false" class="wd-140" id="" initValue="15" placeholder=""
+    										style="" tabIndex="" autocomplete="" disabled="false">
+    									</xf:input>
+    									<w2:textbox id="" label="원/건" style="" tagname="span"></w2:textbox>
+    								</xf:group>
+    							</xf:group>
+    							<xf:group tagname="th" class="w2tb_th">
+    								<w2:attributes></w2:attributes>
+    								<w2:textbox class="req" id="" label="청소년요금제" style="" tagname="label"></w2:textbox>
+    							</xf:group>
+    							<xf:group tagname="td" class="w2tb_td">
+    								<w2:attributes></w2:attributes>
+    								<xf:select1 allOption="" appearance="minimal" chooseOption="true" chooseOptionLabel="" class="wd-150"
+    									direction="auto" disabled="false" disabledClass="w2selectbox_disabled" id="" nextTabID="" ref="" style="" submenuSize="auto">
+    									<xf:choices>
+    										<xf:item>
+    											<xf:label><![CDATA[Y]]></xf:label>
+    											<xf:value><![CDATA[]]></xf:value>
+    										</xf:item>
+    										<xf:item>
+    											<xf:label><![CDATA[N]]></xf:label>
+    											<xf:value><![CDATA[]]></xf:value>
+    										</xf:item>
+    									</xf:choices>
+    								</xf:select1>
+    							</xf:group></xf:group>
+    						<xf:group style="" tagname="tr">
+    							<xf:group class="w2tb_th" style="" tagname="th">
+    								<w2:attributes>
+    									<w2:scope>row</w2:scope>
+    								</w2:attributes>
+    								<w2:textbox id="" label="요금제코드" style="" tagname="label"></w2:textbox>
+    							</xf:group>
+    							<xf:group class="w2tb_td" style="" tagname="td">
+    								<xf:input adjustMaxLength="false" class="wd-140 tar" id="" initValue="LPZ0001369" placeholder="" style=""></xf:input>
+    							</xf:group>
+    							<xf:group class="w2tb_th" style="" tagname="th">
+    								<w2:attributes>
+    									<w2:scope>row</w2:scope>
+    								</w2:attributes>
+    								<w2:textbox class="req" id="" label="데이터요율구분" style="" tagname="label"></w2:textbox>
+    							</xf:group>
+    							<xf:group class="w2tb_td" style="" tagname="td">
+    								<xf:select1 allOption="" appearance="minimal" chooseOption="true" chooseOptionLabel="" class="wd-140"
+    									direction="auto" disabled="false" disabledClass="w2selectbox_disabled" id="" nextTabID="" ref="" style="" submenuSize="auto">
+    									<xf:choices>
+    										<xf:item>
+    											<xf:label><![CDATA[단일요율]]></xf:label>
+    											<xf:value><![CDATA[]]></xf:value>
+    										</xf:item>
+    									</xf:choices>
+    								</xf:select1>
+    							</xf:group>
+    							<xf:group tagname="th" class="w2tb_th">
+    								<w2:attributes></w2:attributes>
+    								<w2:textbox class="" id="" label="강조여부" style="" tagname="label"></w2:textbox>
+    							</xf:group>
+    							<xf:group tagname="td" class="w2tb_td">
+    								<w2:attributes></w2:attributes>
+    								<xf:select1 allOption="" appearance="minimal" chooseOption="true" chooseOptionLabel="" class="wd-150"
+    									direction="auto" disabled="false" disabledClass="w2selectbox_disabled" id="" nextTabID="" ref="" style="" submenuSize="auto">
+    									<xf:choices>
+    										<xf:item>
+    											<xf:label><![CDATA[Y]]></xf:label>
+    											<xf:value></xf:value>
+    										</xf:item>
+    										<xf:item>
+    											<xf:label><![CDATA[N]]></xf:label>
+    											<xf:value></xf:value>
+    										</xf:item>
+    									</xf:choices>
+    								</xf:select1>
+    							</xf:group></xf:group>
+    						<xf:group style="" tagname="tr">
+    							<xf:group class="w2tb_th" style="" tagname="th">
+    								<w2:attributes>
+    									<w2:scope>row</w2:scope>
+    								</w2:attributes>
+    								<w2:textbox class="req" id="" label="기본료" style="" tagname="label"></w2:textbox>
+    							</xf:group>
+    							<xf:group class="w2tb_td" style="" tagname="td">
+    								<w2:attributes>
+    									<w2:colspan>1</w2:colspan>
+    									<w2:rowspan>1</w2:rowspan>
+    								</w2:attributes>
+    							<xf:group id="" class="ly_form wa"><xf:input adjustMaxLength="false" style="" id="" placeholder="" class="wd-140 tar" initValue="19,000" disabled=""></xf:input><w2:textbox tagname="span" style="" id="" label="원"></w2:textbox></xf:group></xf:group>
+    							<xf:group class="w2tb_th" tagname="th" text="">
+    								<w2:attributes></w2:attributes>
+    								<w2:textbox class="req" id="" label="데이터요율" style="" tagname="label"></w2:textbox>
+    							</xf:group>
+    							<xf:group class="w2tb_td" tagname="td">
+    								<w2:attributes></w2:attributes>
+    								<xf:group class="ly_form wa" id="" style="">
+    									<xf:input adjustMaxLength="false" class="wd-70 tar" id="" initValue="0.08" placeholder="" style=""
+    										tabIndex="">
+    									</xf:input>
+    									<w2:textbox id="" label="원/4KB, 20.48원/MB" style="" tagname="span"></w2:textbox>
+    								</xf:group>
+    							</xf:group>
+    							<xf:group tagname="th" class="w2tb_th">
+    								<w2:attributes></w2:attributes>
+    								<w2:textbox class="req" id="" label="사용여부" style="" tagname="label"></w2:textbox>
+    							</xf:group>
+    							<xf:group tagname="td" class="w2tb_td">
+    								<w2:attributes></w2:attributes>
+    								<xf:select1 allOption="" appearance="minimal" chooseOption="true" chooseOptionLabel="" class="wd-150"
+    									direction="auto" disabled="false" disabledClass="w2selectbox_disabled" id="" nextTabID="" ref="" style="" submenuSize="auto">
+    									<xf:choices>
+    										<xf:item>
+    											<xf:label><![CDATA[Y]]></xf:label>
+    											<xf:value></xf:value>
+    										</xf:item>
+    										<xf:item>
+    											<xf:label><![CDATA[N]]></xf:label>
+    											<xf:value></xf:value>
+    										</xf:item>
+    									</xf:choices>
+    								</xf:select1>
+    							</xf:group></xf:group>
+    						<xf:group style="" tagname="tr">
+    							<xf:group class="w2tb_th" style="" tagname="th">
+    								<w2:attributes>
+    									<w2:scope>row</w2:scope>
+    								</w2:attributes>
+    								<w2:textbox id="" label="정책구분" style="" tagname="label" class="req"></w2:textbox>
+    							</xf:group>
+    							<xf:group class="w2tb_td" style="" tagname="td">
+    								<xf:select1 allOption="" appearance="minimal" chooseOption="true" chooseOptionLabel="" class="wd-140"
+    									direction="auto" disabled="false" disabledClass="w2selectbox_disabled" id="" nextTabID="" ref="" style="" submenuSize="auto">
+    									<xf:choices>
+    										<xf:item>
+    											<xf:label><![CDATA[추천]]></xf:label>
+    											<xf:value><![CDATA[]]></xf:value>
+    										</xf:item>
+    									</xf:choices>
+    								</xf:select1>
+    							</xf:group>
+    							<xf:group class="w2tb_th" style="" tagname="th">
+    								<w2:attributes>
+    									<w2:scope>row</w2:scope>
+    								</w2:attributes>
+    								<w2:textbox class="req" id="" label="데이터상한금액" style="" tagname="label"></w2:textbox>
+    							</xf:group>
+    							<xf:group class="w2tb_td" style="" tagname="td">
+    								<w2:attributes><w2:colspan>3</w2:colspan><w2:rowspan>1</w2:rowspan></w2:attributes><xf:group class="ly_form wa" id="" style="">
+    									<xf:input adjustMaxLength="false" class="wd-140 tar" id="" initValue="150,000" placeholder="" style=""
+    										tabIndex="">
+    									</xf:input>
+    									<w2:textbox id="" label="원" style="" tagname="span"></w2:textbox>
+    								</xf:group>
+    							</xf:group></xf:group>
+    					</xf:group>
+    				</xf:group>
+    			</xf:group>
+    			<xf:group style="" id="" class="btnbox last">
+    				<xf:group id="" class="rta">
+    					<xf:trigger class="btn_df" ev:onclick="" id="" style="" type="button">
+    						<xf:label><![CDATA[신규]]></xf:label>
+    					</xf:trigger>
+    					<xf:trigger class="btn_cm save" ev:onclick="" id="" style="" type="button">
+    						<xf:label><![CDATA[저장]]></xf:label>
+    					</xf:trigger>
+    					<xf:trigger class="btn_df" ev:onclick="" id="" style="" type="button">
+    						<xf:label><![CDATA[삭제]]></xf:label>
+    					</xf:trigger>
+    				</xf:group>
+    			</xf:group>
+    		</xf:group></xf:group></xf:group>
+    </body>
+</html>

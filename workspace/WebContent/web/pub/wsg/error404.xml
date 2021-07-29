@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:ev="http://www.w3.org/2001/xml-events"
+    xmlns:w2="http://www.inswave.com/websquare" xmlns:xf="http://www.w3.org/2002/xforms">
+    <head meta_programName="페이지를 찾을 수 없습니다">
+    	<w2:type>DEFAULT</w2:type>
+        <w2:buildDate/>
+        <xf:model>
+            <xf:instance>
+                <data xmlns=""/>
+            </xf:instance>
+            <w2:dataCollection baseNode="map">
+            </w2:dataCollection>
+            <w2:workflowCollection>
+            </w2:workflowCollection>
+        </xf:model>
+         <script type="text/javascript" lazy="false"><![CDATA[
+        
+	scwin.onpageload = function() {
+		
+	};
+	
+	scwin.onpageunload = function() {
+		
+	};
+	
+	]]></script>
+    </head>
+    <body ev:onpageload="scwin.onpageload" ev:onpageunload="scwin.onpageunload"><xf:group id="" class="error_msg c1">
+		<w2:textbox tagname="h2" style="" id="" label="페이지를 찾을 수 없습니다." class=""></w2:textbox>
+		<w2:textbox class="" id="" label="요청하신 페이지가 존재하지 않거나 오류가 발생하였습니다.&lt;br/&gt;HelpDesk로 문의하시기 바랍니다." style="" tagname="p"></w2:textbox>
+		<w2:textbox class="contact" id="" label="&lt;b&gt;HelpDesk&lt;/b&gt; 070-7589-4980" style="" tagname="p"></w2:textbox>
+	</xf:group></body>
+</html>

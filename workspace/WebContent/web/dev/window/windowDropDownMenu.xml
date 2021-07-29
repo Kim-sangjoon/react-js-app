@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:ev="http://www.w3.org/2001/xml-events"
+    xmlns:w2="http://www.inswave.com/websquare" xmlns:xf="http://www.w3.org/2002/xforms">
+    <head meta_programName="드롭다운 메뉴 예시화면">
+    	<w2:type>DEFAULT</w2:type>
+    	<w2:buildDate />
+    	<xf:model>
+    		<xf:instance>
+    			<data xmlns="" />
+    		</xf:instance>
+    		<w2:dataCollection baseNode="map">
+    			<w2:dataList baseNode="list" ev:ondataload="scwin.dlt_grdAllData_ondataload" id="dlt_grdAllData" repeatNode="map"
+    				saveRemovedData="true" style="">
+    				<w2:columnInfo>
+    					<w2:column dataType="text" id="userNm" name="사용자명"></w2:column>
+    					<w2:column dataType="text" id="tlno" name="전화번호"></w2:column>
+    					<w2:column dataType="text" id="empId" name="사원아이디"></w2:column>
+    					<w2:column dataType="text" id="emailAddr" name="이메일주소"></w2:column>
+    				</w2:columnInfo>
+    				<w2:data use="true">
+    					<w2:row>
+    						<userNm><![CDATA[홍길동]]></userNm>
+    						<tlno><![CDATA[01055451234]]></tlno>
+    						<empId><![CDATA[1234567890]]></empId>
+    						<emailAddr><![CDATA[hong@naver.com]]></emailAddr>
+    					</w2:row>
+    					<w2:row>
+    						<userNm><![CDATA[김길동]]></userNm>
+    						<tlno><![CDATA[010544551234]]></tlno>
+    						<empId><![CDATA[0987654321]]></empId>
+    						<emailAddr><![CDATA[kim@naver.com]]></emailAddr>
+    					</w2:row>
+    					<w2:row>
+    						<userNm><![CDATA[차길동]]></userNm>
+    						<tlno><![CDATA[01065412412]]></tlno>
+    						<empId><![CDATA[5432167890]]></empId>
+    						<emailAddr><![CDATA[cha@naver.com]]></emailAddr>
+    					</w2:row>
+    					<w2:row>
+    						<userNm><![CDATA[오길동]]></userNm>
+    						<tlno><![CDATA[01157865487]]></tlno>
+    						<empId><![CDATA[3456712096]]></empId>
+    						<emailAddr><![CDATA[oh@naver.com]]></emailAddr>
+    					</w2:row>
+    				</w2:data>
+    			</w2:dataList>
+    		</w2:dataCollection>
+    		<w2:workflowCollection></w2:workflowCollection>
+    	</xf:model>
+    	<script type="text/javascript" lazy="false"><![CDATA[
+	scwin.onpageload = function() {
+		/*
+			com.win.openDropDownMenu 함수는 온페이지 로드시에 셋팅하면 버튼에 클릭이벤트가 바인딩 되어 동작됩니다.
+		*/
+
+		var menuInfo = [
+			{ "label" : "상단버튼 일번메뉴입니다" ,"func": "scwin.callBack1"},
+			{ "label" : "상단버튼 이번메뉴입니다" ,"func": "scwin.callBack2"},
+			{ "label" : "상단버튼 삼번메뉴입니다" ,"func": "scwin.callBack3"},
+			{ "label" : "상단버튼 시번메뉴입니다" ,"func": "scwin.callBack4"},
+		 ];
+		com.win.openDropDownMenu(btn_dropDown1,menuInfo);  //버튼 위치가 기준
+
+		var menuInfo = [
+			{ "label" : "하단버튼 일번메뉴입니다" ,"func": "scwin.callBack1"},
+			{ "label" : "하단버튼 이번메뉴입니다" ,"func": "scwin.callBack2"},
+			{ "label" : "하단버튼 삼번메뉴입니다" ,"func": "scwin.callBack3"},
+			{ "label" : "하단버튼 시번메뉴입니다" ,"func": "scwin.callBack4"},
+		 ];
+		com.win.openDropDownMenu(btn_dropDown2,menuInfo);  //버튼 위치가 기준
+
+
+	//gridView 인경우에는 온셀클릭시 동작한다.
+		var menuInfo = [
+			{ "label" : "그리드뷰 버튼 일번메뉴입니다" ,"func": "scwin.callBack1"},
+			{ "label" : "그리드뷰 버튼 하단버튼 이번메뉴입니다" ,"func": "scwin.callBack2"},
+			{ "label" : "그리드뷰 버튼 하단버튼 삼번메뉴입니다" ,"func": "scwin.callBack3"},
+			{ "label" : "그리드뷰 버튼 하단버튼 시번메뉴입니다" ,"func": "scwin.callBack4"},
+		];
+
+		var options = {
+			colId : "btnDropDown1,btnDropDown2" // dropDownMenu 적용 컬럼명지정 , 다건 컬럼명은 "btnDropDown,empId"으로 적용 없으면 모든컬럼에 적용
+		}
+		com.win.openDropDownMenu(grd_indexPage,menuInfo,options);  //포커스한 셀 위치가 기준
+	};
+
+	//버튼콜백
+	scwin.callBack1 = function(info) {
+		console.log(info.btnId); //btnObj의 아이디
+		console.log(info.label); //메뉴리스트에서 클릭한 메뉴의 라벨
+		console.log(info.rowIdx);//현재 클릭한 셀의 rowIdx btnObj가 그리드뷰였을 경우만 전달한다
+		console.log(info.colIdx);//현재 클릭한 셀의 colIdx btnObj가 그리드뷰였을 경우만 전달한다
+	};
+
+	//버튼콜백
+	scwin.callBack2 = function(info) {
+		console.log(info.btnId); //btnObj의 아이디
+		console.log(info.label); //메뉴리스트에서 클릭한 메뉴의 라벨
+		console.log(info.rowIdx);//현재 클릭한 셀의 rowIdx btnObj가 그리드뷰였을 경우만 전달한다
+		console.log(info.colIdx);//현재 클릭한 셀의 colIdx btnObj가 그리드뷰였을 경우만 전달한다
+	};
+
+	//버튼콜백
+	scwin.callBack3 = function(info) {
+		console.log(info.btnId); //btnObj의 아이디
+		console.log(info.label); //메뉴리스트에서 클릭한 메뉴의 라벨
+		console.log(info.rowIdx);//현재 클릭한 셀의 rowIdx btnObj가 그리드뷰였을 경우만 전달한다
+		console.log(info.colIdx);//현재 클릭한 셀의 colIdx btnObj가 그리드뷰였을 경우만 전달한다
+	};
+
+	//버튼콜백
+	scwin.callBack4 = function(info) {
+		console.log(info.btnId); //btnObj의 아이디
+		console.log(info.label); //메뉴리스트에서 클릭한 메뉴의 라벨
+		console.log(info.rowIdx);//현재 클릭한 셀의 rowIdx btnObj가 그리드뷰였을 경우만 전달한다
+		console.log(info.colIdx);//현재 클릭한 셀의 colIdx btnObj가 그리드뷰였을 경우만 전달한다
+	};
+
+
+
+
+
+
+
+
+
+	]]></script>
+    </head>
+    <body ev:onpageload="scwin.onpageload" ev:onpageunload="scwin.onpageunload">
+
+    	<xf:group id="" class="sub_wrapper">
+    		<w2:wframe src="../../..../../../common/xml/contentsTitle.xml" scope="true" style="" id="" class="page_header"></w2:wframe>
+    		<xf:group id="" class="page_contents">
+    		<xf:group id="" class="page_contents_inner"><xf:group id="" class="shbox">
+    				<xf:group id="" class="shbox_grp">
+    					<xf:group style="" id="" class="sh_grp">
+    						<xf:group id="" class="stb">
+    							<xf:group id="" class="th">
+    								<w2:textbox tagname="label" style="" id="" label="사용자명"></w2:textbox>
+    							</xf:group>
+    							<xf:group id="" class="td">
+    								<xf:input adjustMaxLength="false" style="" id="ibx_input" placeholder=""></xf:input>
+    							</xf:group>
+    						</xf:group>
+    					</xf:group>
+    					<xf:group style="" id="" class="sh_grp">
+    						<xf:group id="" class="stb">
+    							<xf:group id="" class="th">
+    								<w2:textbox tagname="label" style="" id="" label="주민번호 앞 6자리"></w2:textbox>
+    							</xf:group>
+    							<xf:group id="" class="td">
+    								<xf:input adjustMaxLength="false" style="" id="ibx_input2" placeholder=""></xf:input>
+    							</xf:group>
+    						</xf:group>
+    					</xf:group>
+    					<xf:group style="" id="" class="sh_grp">
+    						<xf:group id="" class="stb">
+    							<xf:group id="" class="th">
+    								<w2:textbox tagname="label" style="" id="" label="성별" class=""></w2:textbox>
+    							</xf:group>
+    							<xf:group id="" class="td">
+    								<xf:select1 ref="data:dm_basic.gender" appearance="full" style="" id="" renderType="radiogroup" rows="" cols="" selectedIndex="0">
+    									<xf:choices>
+    										<xf:itemset nodeset="data:dlt_rdoData">
+    											<xf:label ref="label"></xf:label>
+    											<xf:value ref="value"></xf:value>
+    										</xf:itemset>
+    									</xf:choices>
+    								</xf:select1>
+    							</xf:group>
+    						</xf:group>
+    					</xf:group>
+    					<xf:group style="" id="" class="sh_grp">
+    						<xf:group id="" class="stb">
+    							<xf:group id="" class="th">
+    								<w2:textbox tagname="label" style="" id="" label="역할그룹" class=""></w2:textbox>
+    							</xf:group>
+    							<xf:group id="" class="td">
+    								<xf:select1 ref="" submenuSize="auto" appearance="minimal" disabledClass="w2selectbox_disabled" chooseOption="" disabled="false" style="width: 120px;" allOption="" id="" class="" direction="auto">
+    									<xf:choices>
+    										<xf:item>
+    											<xf:label><![CDATA[new row]]></xf:label>
+    											<xf:value><![CDATA[]]></xf:value>
+    										</xf:item>
+    										<xf:item>
+    											<xf:label><![CDATA[new row]]></xf:label>
+    											<xf:value><![CDATA[]]></xf:value>
+    										</xf:item>
+    										<xf:item>
+    											<xf:label><![CDATA[new row]]></xf:label>
+    											<xf:value><![CDATA[]]></xf:value>
+    										</xf:item>
+    									</xf:choices>
+    								</xf:select1>
+    							</xf:group>
+    						</xf:group>
+    					</xf:group>
+
+    					<xf:group style="" id="" class="sh_grp last">
+    						<xf:group id="" class="stb">
+    							<xf:group id="" class="th">
+    								<w2:textbox tagname="label" style="" id="" label="사용자 ID"></w2:textbox>
+    							</xf:group>
+    							<xf:group id="" class="td">
+    								<xf:input adjustMaxLength="false" style="" id="" placeholder=""></xf:input>
+    							</xf:group>
+    						</xf:group>
+    					</xf:group>
+    					<xf:group tagname="ul" id="" class="list-inline">
+    						<xf:group tagname="li" id="">
+    							<xf:trigger ev:onclick="" style="" id="btn_dropDown1" type="button" class="btn_cm">
+    								<xf:label><![CDATA[드롭다운메뉴]]></xf:label>
+    							</xf:trigger>
+    						</xf:group>
+    						<xf:group tagname="li" style="" id="">
+    						</xf:group>
+    						<xf:group tagname="li" style="" id=""></xf:group>
+
+    					</xf:group>
+    				</xf:group>
+    				<xf:group style="" id="grp_scDetail" class="sh_detail_grp">
+    					<xf:group style="" id="" class="sh_grp">
+    						<xf:group id="" class="stb">
+    							<xf:group id="" class="th">
+    								<xf:select1 ref="" submenuSize="auto" appearance="minimal" disabledClass="w2selectbox_disabled" chooseOption="" disabled="false" style="width: 130px;" allOption="" id="" direction="auto">
+    									<xf:choices>
+    										<xf:item>
+    											<xf:label><![CDATA[조건명]]></xf:label>
+    											<xf:value></xf:value>
+    										</xf:item>
+    									</xf:choices>
+    								</xf:select1>
+    							</xf:group>
+    							<xf:group id="" class="td">
+    								<xf:input adjustMaxLength="false" style="" id="" placeholder="검색어"></xf:input>
+    							</xf:group>
+    						</xf:group>
+    					</xf:group>
+    					<xf:group style="" id="" class="sh_grp">
+    						<xf:group id="" class="stb">
+    							<xf:group id="" class="th">
+    								<w2:textbox tagname="label" style="" id="" label="조건명" class=""></w2:textbox>
+    							</xf:group>
+    							<xf:group id="" class="td">
+    								<xf:select1 ref="" submenuSize="auto" appearance="minimal" disabledClass="w2selectbox_disabled" chooseOption="" disabled="false" style="width: 120px;" allOption="true" id="" class="" direction="auto">
+    									<xf:choices>
+    										<xf:item>
+    											<xf:label><![CDATA[옵션1]]></xf:label>
+    											<xf:value></xf:value>
+    										</xf:item>
+    										<xf:item>
+    											<xf:label><![CDATA[옵션2]]></xf:label>
+    											<xf:value></xf:value>
+    										</xf:item>
+    										<xf:item>
+    											<xf:label><![CDATA[옵션3]]></xf:label>
+    											<xf:value></xf:value>
+    										</xf:item>
+    										<xf:item>
+    											<xf:label><![CDATA[기이인 옵션]]></xf:label>
+    											<xf:value></xf:value>
+    										</xf:item>
+    									</xf:choices>
+    								</xf:select1>
+    							</xf:group>
+    						</xf:group>
+    					</xf:group>
+    					<xf:group style="" id="" class="sh_grp">
+    						<xf:group id="" class="stb">
+    							<xf:group id="" class="th">
+    								<w2:textbox tagname="label" style="" id="" label="조건명" class=""></w2:textbox>
+    							</xf:group>
+    							<xf:group id="" class="td">
+    								<xf:group id="" class="grp_form">
+    									<xf:group style="" id="" class="tb_ly wauto">
+    										<xf:group id="" class="cell">
+    											<xf:input adjustMaxLength="false" style="width: 100px" id="" placeholder=""></xf:input>
+    										</xf:group>
+    										<xf:group style="" id="" class="cell txt">
+    											<w2:textbox tagname="span" style="" id="" label="~"></w2:textbox>
+    										</xf:group>
+    										<xf:group style="" id="" class="cell">
+    											<xf:input adjustMaxLength="false" style="width: 100px;" id="" placeholder=""></xf:input>
+    										</xf:group>
+    									</xf:group>
+    								</xf:group>
+    							</xf:group>
+    						</xf:group>
+    					</xf:group>
+    				</xf:group>
+    			</xf:group><xf:group style="" id="" class="dfbox1">
+    				<w2:textbox tagname="h3" style="" id="" label="드롭다운 메뉴"></w2:textbox>
+    			</xf:group><xf:group id="" class="gvwbox">
+    				<w2:gridView ev:oncellclick="scwin.grd_indexPage_oncellclick" ev:onscrollend="" scrollByColumnAdaptive="false" editModeEvent="onclick" rowNumVisible="" readOnly="true" scrollByColumn="false" sortable="true" defaultCellHeight="32" ev:onheaderclick="" focusMode="row" rowStatusVisible="true" tooltipDisplay="true" dataList="data:dlt_grdAllData" style="height: 132px;" autoFit="allColumn" ev:oncelldblclick="" id="grd_indexPage" visibleRowNum="all" class="wq_gvw">
+    					<w2:caption style="" id="caption2" value="this is a grid caption."></w2:caption>
+    					<w2:header style="" id="header2">
+    						<w2:row style="" id="row3">
+    							<w2:column removeBorderStyle="false" width="70" inputType="text" style="height:20px;" id="column84" value="드롭다운 메뉴1" blockSelect="false" displayMode="label">
+    							</w2:column>
+    							<w2:column removeBorderStyle="false" width="70" inputType="text" style="height:20px;" id="column81" value="userNm" blockSelect="false" displayMode="label">
+    							</w2:column>
+    							<w2:column removeBorderStyle="false" width="70" inputType="text" style="height:20px;" id="column77" value="empId" blockSelect="false" displayMode="label">
+    							</w2:column>
+    							<w2:column removeBorderStyle="false" width="70" inputType="text" style="height:20px;" id="column85" value="드롭다운메뉴2" blockSelect="false" displayMode="label">
+    							</w2:column>
+    						</w2:row>
+    					</w2:header>
+    					<w2:gBody style="" id="gBody2">
+    						<w2:row style="" id="row4">
+    							<w2:column removeBorderStyle="false" width="70" inputType="button" style="height:20px;" id="btnDropDown1" value="드룹다운메뉴1" blockSelect="false" displayMode="label">
+    							</w2:column>
+    							<w2:column displayFormatter="scwin.test" removeBorderStyle="false" width="70" inputType="text" style="height:20px;" id="userNm" value="" blockSelect="false" displayMode="label">
+    							</w2:column>
+    							<w2:column removeBorderStyle="false" width="70" inputType="text" style="height:20px;" id="empId" value="" blockSelect="false" displayMode="label">
+    							</w2:column>
+    							<w2:column removeBorderStyle="false" width="70" inputType="button" style="height:20px;" id="btnDropDown2" value="드룹다운메뉴2" blockSelect="false" displayMode="label">
+    							</w2:column>
+    						</w2:row>
+    					</w2:gBody>
+    				</w2:gridView>
+    			</xf:group><xf:group style="" id="" class="btnbox">
+    				<xf:group id="" class="rta">
+    					<xf:group tagname="button" ev:onclick="" id="btn_dropDown2" class="w2trigger btn_cm">
+    						<w2:attributes>
+    							<w2:type>button</w2:type>
+    						</w2:attributes>
+    						<w2:textbox tagname="span" style="" id="" label="드롭다운메뉴"></w2:textbox>
+    					</xf:group>
+    				</xf:group>
+    			</xf:group></xf:group></xf:group>
+    	</xf:group>
+    </body>
+</html>

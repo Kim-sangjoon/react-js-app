@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:ev="http://www.w3.org/2001/xml-events"
+    xmlns:w2="http://www.inswave.com/websquare" xmlns:xf="http://www.w3.org/2002/xforms">
+    <head meta_programName="시간 udc">
+    	<w2:type>UDC</w2:type>
+        <w2:buildDate/>
+        <w2:model></w2:model>
+    </head>
+    <body>
+    	<!--/** WEBSQUARE UDC */
+    		{
+    		"disableIcon": "",
+    		"notSupportBrowser": "",
+    		"htmlRender": "",
+    		"icon": "",
+    		"description": "",
+    		"version": "",
+    		"apis": [],
+    		"pluginName": "udc_timePicker",
+    		"width": "90px",
+    		"company": "",
+    		"developer": "",
+    		"componentName": "udc_timePicker",
+    		"category": "Basic",
+    		"properties": [
+    		{
+    		"default": "",
+    		"necessary": "Y",
+    		"hidden": "N",
+    		"name": "id",
+    		"description": "Component id",
+    		"type": "string",
+    		"bindparent": "",
+    		"option": ""
+    		},
+    		{
+    		"default": "",
+    		"necessary": "N",
+    		"hidden": "N",
+    		"name": "style",
+    		"description": "Component style",
+    		"type": "string",
+    		"bindparent": "",
+    		"option": ""
+    		},
+    		{
+    		"default": "",
+    		"necessary": "N",
+    		"hidden": "N",
+    		"name": "class",
+    		"description": "Component class",
+    		"type": "string",
+    		"bindparent": "",
+    		"option": ""
+    		},
+    		{
+    		"default": "",
+    		"necessary": "N",
+    		"hidden": "N",
+    		"name": "ref",
+    		"description": "Component ref",
+    		"type": "bindColumn",
+    		"bindparent": "",
+    		"option": ""
+    		}
+    		],
+    		"events": [],
+    		"height": ""
+    		}
+    	-->
+    	<xf:group class="udc_time_grp" id="" style="" pluginName="udc_timePicker">
+    		<link rel="stylesheet" type="text/css" href=""></link>
+    		<style type="text/css"><![CDATA[ ]]></style>
+    		<script type="text/javascript" src=""></script>
+    		<script ev:event="oncreated(options)" type="text/javascript"><![CDATA[
+				/**
+				 * //property handling
+				 * $w.log("id:" + options.id);
+				 * $w.log("style:" + options.style);
+				 * $w.log("class:" + options.class);
+				 * $w.log("ref:" + options.ref);
+				 *
+				 * //event trigger
+				*/
+
+				/**
+				 * //property handling
+				 * $w.log("id:" + options.id);
+				 * $w.log("style:" + options.style);
+				 * $w.log("class:" + options.class);
+				 * $w.log("ref:" + options.ref);
+				 *
+				 * //event trigger
+				*/
+
+				/**
+				 * //property handling
+				 * $w.log("id:" + options.id);
+				 * $w.log("style:" + options.style);
+				 * $w.log("class:" + options.class);
+				 * $w.log("ref:" + options.ref);
+				 *
+				 * //event trigger
+				*/
+
+				var pTop = $p.top();
+				if (com.util.isEmpty(pTop.com)) {
+					pTop = WebSquare.util.getMainFrame();
+				};
+				if(!com.util.isEmpty(pTop)){
+					var wfm_udcTimePicker = pTop.com.util.getComponent( "udcTimePicker" );
+						if (com.util.isEmpty(wfm_udcTimePicker)) {
+							wfm_udcTimePicker = pTop.com.util.createComponent("udcTimePicker", "wframe", {
+							src : gcm.CONTEXT_PATH + "/common/xml/commonTimePicker.xml"
+						}, WebSquare.getBody());
+					}
+				}else{
+					var wfm_udcTimePicker = com.util.getComponent( "udcTimePicker" );
+						if (com.util.isEmpty(wfm_udcTimePicker)) {
+							wfm_udcTimePicker = com.util.createComponent("udcTimePicker", "wframe", {
+							src : gcm.CONTEXT_PATH + "/common/xml/commonTimePicker.xml"
+						}, WebSquare.getBody());
+					}
+				}
+
+								//초기화함수
+				udc_obj._initDbCalenadr = function(v) {
+
+					scwin.setInitDataValue();
+
+					var ref =  options.ref || "";
+
+					if(ref !=""){
+						ipt_timeBox.setRef(ref);
+					}
+
+					var amPm = "01";
+					if(ipt_timeBox.getValue()==""){
+						ipt_timeBox.setValue(scwin.todayHour+scwin.todayMinute+scwin.todayAmPm);
+					}
+
+					ipt_timeBox.setDisplayFormatter(udc_obj.timeFormatter)
+
+
+
+				}
+
+				//[시계 버튼]클릭
+				udc_obj.showTimePicker = function() {
+					event.stopPropagation();
+					com.win._layerHideAll();
+					var paramJSON ={};
+					paramJSON.iptId = ipt_timeBox.id;
+					var timeVal = ipt_timeBox.getValue();
+
+
+					if(timeVal =="" || timeVal.length<6){
+						var todayMinute= Number(scwin.todayMinute);
+						todayMinute = Math.floor((todayMinute)/10)*10;
+						timeVal = scwin.todayHour + String(todayMinute) + scwin.todayAmPm;
+					}
+
+
+					paramJSON.timeVal = timeVal;
+
+					var paramStr = JSON.stringify(paramJSON);
+					var udcPopScwinObj = wfm_udcTimePicker.getObj("scwin");
+					udcPopScwinObj.timePickerinit(udc_obj.id,paramStr);
+				};
+
+
+				//시간값 초기화
+				scwin.setInitDataValue = function(){
+						scwin.isSetinitValue = true;
+						var todayHour   = cal_getTime.todayHelper.getHour();
+						var todayMinute = scwin.todayMinute = cal_getTime.todayHelper.getMinute();
+						var todayAmPm ="01";
+
+						if(todayHour>12){
+							todayHour =  todayHour -12;
+							todayAmPm ="02";
+						}
+
+						if(todayHour< 10){
+							todayHour = "0"+todayHour;
+						}
+
+
+						if(todayMinute< 10){
+							todayMinute = "0"+todayMinute;
+						}
+						scwin.todayHour   = String(todayHour);
+						scwin.todayMinute = String(todayMinute);
+						scwin.todayAmPm   = todayAmPm;
+				}
+
+				//인풋캘린더에서 직접입력후  온블러시 사용
+				udc_obj._popGotoCalendar = function(calType,value) {
+					//var udcPopScwinObj = udcDbCalendarPop.getObj("scwin");
+					//udcPopScwinObj.gotoCalendar(calType,value);
+				};
+
+
+				//시작 날짜 set 함수
+				udc_obj.setStValue = function(dateVal) {
+					return ipt_timeBox.setValue(dateVal);
+				};
+
+				//시작 날짜 get 함수
+				udc_obj.getStValue = function() {
+					return ipt_timeBox.getValue();
+				};
+
+
+				udc_obj.timeFormatter = function(timeVal) {
+					if(timeVal !=""){
+						var hour = timeVal.substr(0,2);
+						var minute = timeVal.substr(2,2);
+						var amPm = timeVal.substr(4,2);
+						var hourNum;
+						if(typeof hour == "string" && hour !=""  && parseInt(hour)>12){
+							hourNum = parseInt(hour);
+							hour =  String(hourNum -12);
+						}else{
+							hourNum = parseInt(hour);
+							hour =  String(hourNum);
+
+						}
+						var amPm;
+						if(amPm =="01"){
+							amPmStr ="AM"
+						}else{
+							amPmStr ="PM"
+						}
+						return hour + ":" + minute +" " + amPmStr;
+					}else{
+						return "";
+					}
+
+				};
+
+				//임시 : 공통화예정 달력레이어 생성
+				udc_obj.showLayer = function(btnId,popId,paramStr) {
+				    try {
+//				    		if(typeof scvar !="object"){
+//				    			scvar ={};
+//				    		}
+//				    		if(WebSquare.util.getComponentById(scvar.showLayer)){
+//				    			WebSquare.util.getComponentById(scvar.showLayer).hide();
+//				    		}
+//				    		scvar.btnObj = obj.id;
+//				    		scvar.showLayer = layer.id;
+					    	var btnObj = WebSquare.util.getComponentById(btnId);
+					    	var _layerObj = WebSquare.util.getComponentById(popId);
+
+				            var objLeft = WebSquare.style.getAbsoluteLeft(btnObj.render);
+				            var objTop = WebSquare.style.getAbsoluteTop(btnObj.render) + btnObj.render.offsetHeight + 5;
+				            var scrollLeft = document.documentElement.scrollLeft || document.body.scrollLeft;
+				            var scrollTop = document.documentElement.scrollTop ||document.body.scrollTop;
+				            var objWidth = parseInt(_layerObj.getStyle("width")) + parseInt(_layerObj.getStyle("border-right-width")) + parseInt(_layerObj.getStyle("border-left-width"));
+				            if (!btnObj.options.rightAlign) {
+				                if (objLeft + objWidth > scrollLeft + (document.documentElement.clientWidth || document.body.clientWidth)) {
+				                    objLeft = scrollLeft + (document.documentElement.clientWidth || document.body.clientWidth) - objWidth - 10;
+				                }
+				            }
+
+				           _layerObj.show("block", btnObj.uuid);
+				            var scrollHeight = document.documentElement.scrollHeight || document.body.scrollHeight;
+				            var scrollAdjust = scrollHeight -_layerObj.render.offsetHeight;
+				            if (objTop > scrollAdjust) {
+				                objTop = scrollAdjust;
+				            }
+				            if (btnObj.options.rightAlign) {
+				                objLeft = objLeft - (objWidth - btnObj.render.offsetWidth) - 23;
+				                if (objLeft < 0) {
+				                    objLeft = WebSquare.style.getAbsoluteLeft(btnObj.render);
+				                }
+				                if (objLeft + objWidth > scrollTop + (document.documentElement.clientWidth || document.body.clientWidth)) {
+				                    objLeft = scrollTop + (document.documentElement.clientWidth || document.body.clientWidth) - objWidth - 23;
+				                }
+				            }
+				           _layerObj.setPosition(objLeft, objTop);
+				            var direction = btnObj.options.direction || "auto";
+
+				            if (direction== "auto") {
+				                var reTop = WebSquare.style.getAbsoluteTop(btnObj.render) - scrollTop;
+				                var reHeight = document.documentElement.clientHeight - (reTop + btnObj.render.offsetHeight);
+				                var layerHeight =_layerObj.render.offsetHeight;
+				                if (reHeight < layerHeight && reTop > layerHeight) {
+				                    direction = "up";
+				                }
+				            }
+				            if (direction == "up") {
+				                objTop = WebSquare.style.getAbsoluteTop(btnObj.render) -_layerObj.render.offsetHeight - 5;
+				               _layerObj.setPosition(objLeft, objTop);
+				            }
+				    } catch (e) {
+				        WebSquare.exception.printStackTrace(e, null, btnObj);
+				    }
+				};
+
+				udc_obj._initDbCalenadr();
+
+
+
+				]]></script>
+    		<script ev:event="onattributeChanged(type,value)" type="text/javascript"><![CDATA[ ]]></script>
+    		<script ev:event="ondestroyed()" type="text/javascript"><![CDATA[ ]]></script>
+    		<xf:group class="udc_time" id="">
+    			<xf:group id="" tagname="span" class="icon" style="cursor: pointer;">
+    				<script ev:event="onclick(e)" type="text/javascript"><![CDATA[
+    					udc_obj.showTimePicker();
+    				 ]]></script>
+    			</xf:group>
+    			<xf:input adjustMaxLength="false" class="" dataType="" displayFormat="" id="ipt_timeBox" placeholder="" style=""
+    				displayFormatter="udc_obj.timeFormatter" readOnly="true">
+    			</xf:input>
+    		</xf:group>
+    		<w2:calendar footerDiv="false" id="cal_getTime" style="width: 100px;height: 100px;display: none;" maxYear="0"></w2:calendar>
+    	</xf:group>
+    </body>
+</html>

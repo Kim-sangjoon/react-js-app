@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:ev="http://www.w3.org/2001/xml-events"
+    xmlns:w2="http://www.inswave.com/websquare" xmlns:xf="http://www.w3.org/2002/xforms">
+    <head meta_programName="조회기본예시" meta_programId="">
+    	<w2:type>DEFAULT</w2:type>
+    	<w2:buildDate />
+    	<xf:model>
+    		<xf:instance>
+    			<data xmlns="" />
+    		</xf:instance>
+    		<w2:dataCollection baseNode="map">
+    			<w2:dataList baseNode="list" repeatNode="map" id="dlt_prodCatg" saveRemovedData="true">
+    				<w2:columnInfo>
+    					<w2:column id="catgId" name="카테고리ID" dataType="text"></w2:column>
+    					<w2:column id="catgNm" name="카테고리명" dataType="text"></w2:column>
+    				</w2:columnInfo>
+    			</w2:dataList>
+    			<w2:dataList baseNode="list" repeatNode="map" id="dtl_prod" saveRemovedData="true">
+    				<w2:columnInfo>
+    					<w2:column id="catgNm" name="분류명" dataType="text"></w2:column>
+    					<w2:column id="prodNm" name="상품명" dataType="text"></w2:column>
+    					<w2:column id="salePrc" name="판매원가" dataType="number"></w2:column>
+    					<w2:column id="csmrPrc" name="소비자가" dataType="number"></w2:column>
+    					<w2:column id="prodNo" name="상품번호" dataType="text"></w2:column>
+    					<w2:column id="qt" name="재고수량" dataType="number"></w2:column>
+    					<w2:column id="widtLen" name="가로" dataType="number"></w2:column>
+    					<w2:column id="vrtcLen" name="세로" dataType="number"></w2:column>
+    					<w2:column id="hght" name="높이" dataType="number"></w2:column>
+    					<w2:column id="cntn" name="내용" dataType="text"></w2:column>
+    					<w2:column id="catgId" name="카테고리ID" dataType="number"></w2:column>
+    				</w2:columnInfo>
+    			</w2:dataList>
+    			<w2:dataMap baseNode="map" id="dma_prodParam">
+    				<w2:keyInfo>
+    					<w2:key id="catgId" name="카테고리ID" dataType="number"></w2:key>
+    					<w2:key id="prodNm" name="상품명" dataType="text"></w2:key>
+    					<w2:key id="cntn" name="내용" dataType="text"></w2:key>
+    					<w2:key id="lowCsmrPrc" name="소비자가하한" dataType="number"></w2:key>
+    					<w2:key id="highCsmrPrc" name="소비자가상한" dataType="number"></w2:key>
+    				</w2:keyInfo>
+    			</w2:dataMap>
+    			<w2:dataMap baseNode="map" id="dma_pageInfo" style="">
+    				<w2:keyInfo>
+    					<w2:key dataType="text" id="last" name="마지막Index"></w2:key>
+    					<w2:key dataType="text" id="pageNo" name="페이지번호"></w2:key>
+    					<w2:key dataType="text" id="totalPage" name="총페이지수"></w2:key>
+    					<w2:key dataType="text" id="start" name="시작번호(1부터)"></w2:key>
+    					<w2:key id="pageSize" name="0" dataType="text"></w2:key>
+    					<w2:key dataType="text" id="totalRecord" name="총건수"></w2:key>
+    					<w2:key dataType="text" id="rowSize" name="Fetch한Row사이즈"></w2:key>
+    				</w2:keyInfo>
+    			</w2:dataMap>
+    		</w2:dataCollection>
+    		<w2:workflowCollection></w2:workflowCollection>
+    		<xf:submission id="sbm_prodCatg" ref="" target='data:json,{"action":"append","id":"dlt_prodCatg","key":"SERVER_RESULT"}'
+    			action="/tpl/web/prod/v1/catg" method="get" mediatype="application/json" encoding="UTF-8" instance="" replace="" errorHandler=""
+    			customHandler="" mode="asynchronous" processMsg="" ev:submit="" ev:submitdone="" ev:submiterror="" abortTrigger="">
+    		</xf:submission>
+    		<xf:submission id="sbm_prod" ref='data:json,["dma_prodParam","dma_pageInfo"]'
+    			target='data:json,[{"id":"dma_pageInfo","key":"SERVER_PAGING"},{"id":"dtl_prod","key":"SERVER_RESULT"}]'
+    			action="/tpl/web/prod/v1/prod" method="get" mediatype="application/json" encoding="UTF-8" instance="" replace="" errorHandler=""
+    			customHandler="" mode="asynchronous" processMsg="" ev:submit="" ev:submitdone="scwin.sbm_prod_submitdone" ev:submiterror=""
+    			abortTrigger="">
+    		</xf:submission>
+    	</xf:model>
+    	<script type="text/javascript" lazy="false"><![CDATA[
+
+	scwin.onpageload = function() {
+		//개인화 관련 서브미션과 데이터 리스트를 생성하는 초기셋팅 함수
+		com.win.loadUserSetInfo();
+	};
+
+	scwin.onpageunload = function() {
+
+	};
+
+	scwin.onloadcompleted = function() {
+		com.win.setPersonalSearchOption(); // 조회 최종설정 기억으로 개인화 셋팅 ,scwin.onloadcompleted 에서 호출해야함
+	};
+
+	// 조회개인화
+	scwin.btn_userSerchInfo_onclick = function() {
+		com.win.showPersonalLayer(btn_userSerchInfo,grp_searchBox);
+	};
+
+
+	// 조회버튼 클릭
+	scwin.btn_search_onclick = function(e) {
+		dma_pageInfo.set("rowSize", 5);
+		scwin.search(1);
+	};
+
+	// 조회 수행
+	scwin.search = function(pageNo) {
+		if (com.util.isEmpty(pageNo)) {
+			pageNo = 1;
+		}
+		// 페이지번호를 받아 다음을 조회한다.
+		dma_pageInfo.set("pageNo", pageNo);
+		com.win.finalSearchSave(grp_searchBox); //조회할때마다 현재 조회설정을 최종설정기억에 저장
+		com.sbm.execute(sbm_prod);
+	};
+
+	//조회 콜백
+	scwin.sbm_prod_submitdone = function(e) {
+
+		var pglFlag = true;
+		if("1" == dma_pageInfo.get("pageNo")){
+			pglFlag = false;
+		}
+		// paging component 에 페이징 정보를 설정한다.
+		pgl_checkSelect.setCount(dma_pageInfo.get("totalPage"),pglFlag);
+		// 총건수를 설정한다.
+		tbx_total.setValue(dma_pageInfo.get("totalRecord"));
+
+	};
+
+	// paging component 페이지 선택시 페이징 인덱스 변경
+	scwin.pageList_onviewchange = function(info) {
+		scwin.search(info.newSelectedIndex);
+	};
+
+]]></script>
+    	<w2:require src="/common/udc/udc_searchDetailToggle.xml"></w2:require>
+    	<w2:require src="../../../common/udc/udc_searchDetailToggle.xml"></w2:require>
+    	<w2:require src="../../../static"></w2:require>
+    </head>
+    <body ev:onpageload="scwin.onpageload" ev:onpageunload="scwin.onpageunload">
+    	<xf:group class="sub_wrapper" id="">
+    		<w2:wframe class="page_header" id="" scope="true" src="../../..../../../common/xml/contentsTitle.xml" style=""></w2:wframe>
+    		<xf:group class="page_contents" id="">
+    		<xf:group id="" class="page_contents_inner"><xf:group style="" id="grp_searchBox" class="shbox">
+    				<xf:group id="" class="shbox_grp">
+    					<xf:group style="" id="" class="sh_grp">
+    					<w2:textbox tagname="label" style="" id="" label="분류명" class=""></w2:textbox><xf:select1 ref="data:dma_prodParam.catgId" submenuSize="auto" appearance="minimal" disabledClass="w2selectbox_disabled" chooseOption="" disabled="false" style="" allOption="" id="sbx_sample1" class="wd-150" direction="auto">
+    									<xf:choices>
+    										<xf:itemset nodeset="data:dlt_prodCatg">
+    											<xf:label ref="catgNm"></xf:label>
+    											<xf:value ref="catgId"></xf:value>
+    										</xf:itemset>
+    									</xf:choices>
+    								</xf:select1></xf:group>
+    					<xf:group style="" id="" class="sh_grp">
+    					<w2:textbox tagname="label" style="" id="" label="상품명" class=""></w2:textbox><xf:input ref="data:dma_prodParam.prodNm" adjustMaxLength="false" style="" id="ibx_sample1" placeholder="" class="wd-200"></xf:input></xf:group>
+    					<xf:group tagname="" id="" class="sh_btn">
+    						<xf:trigger ev:onclick="scwin.btn_search_onclick" style="" id="btn_search" type="button" class="btn_sh">
+    							<xf:label><![CDATA[검색]]></xf:label>
+    						</xf:trigger>
+    						<w2:udc_searchDetailShow detailGrpId="grp_scDetail" style="" id=""></w2:udc_searchDetailShow>
+    						<xf:trigger class="btn_pz" ev:onclick="scwin.btn_userSerchInfo_onclick" id="btn_userSerchInfo" style="" type="button">
+    							<xf:label><![CDATA[조회조건 개인화]]></xf:label>
+    						</xf:trigger>
+    					</xf:group>
+    				</xf:group>
+    				<xf:group style="" id="grp_scDetail" class="shbox_grp detail">
+    					<xf:group style="" id="" class="sh_grp">
+    					<w2:textbox tagname="label" style="" id="" label="설명" class=""></w2:textbox><xf:input ref="data:dma_prodParam.cntn" adjustMaxLength="false" style="" id="ibx_sample2" placeholder="" class="wd-200"></xf:input></xf:group>
+    					<xf:group style="" id="" class="sh_grp">
+    					<w2:textbox tagname="label" style="" id="" label="소비자가" class=""></w2:textbox><xf:group style="" id="" class="ly_form">
+    									<xf:input ref="data:dma_prodParam.lowCsmrPrc" adjustMaxLength="false" style="" id="ibx_sample3" placeholder="" class="wd-100"></xf:input><w2:textbox tagname="span" style="" id="" label="~" class="txt"></w2:textbox><xf:input ref="data:dma_prodParam.highCsmrPrc" ev:onclick="" adjustMaxLength="false" style="" id="ibx_sample4" placeholder="" class="wd-100"></xf:input><w2:textbox tagname="span" style="" id="" label="원" class="txt"></w2:textbox></xf:group></xf:group>
+    				</xf:group>
+    			</xf:group><xf:group id="" tagname="section"><xf:group id="" class="dfbox">
+    				<w2:textbox tagname="h3" style="" id="" label="상품 목록"></w2:textbox>
+    			<xf:group tagname="" id="" class="gvw_info">
+    							<w2:textbox tagname="span" style="" id="" label="Total :" class=""></w2:textbox>
+    							<w2:textbox tagname="em" style="" id="tbx_total" label="0" class=""></w2:textbox>
+    						</xf:group></xf:group><w2:gridView ev:oncellclick="" scrollByColumnAdaptive="false" rowNumVisible="" scrollByColumn="false" readOnly="true" sortable="true" defaultCellHeight="" ev:onheaderclick="" rowStatusHeaderValue="" focusMode="row" rowStatusVisible="" rowNumWidth="" dataList="data:dtl_prod" style="height:237px;" autoFit="allColumn" id="grd_basic" visibleRowNum="" class="wq_gvw person">
+    					<w2:caption style="" id="caption1" value="this is a grid caption."></w2:caption>
+    					<w2:header style="" id="header1">
+    						<w2:row style="" id="row1">
+    							<w2:column removeBorderStyle="false" width="100" inputType="text" style="" id="column1" value="분류명" blockSelect="false" displayMode="label">
+    							</w2:column>
+    							<w2:column removeBorderStyle="false" width="200" inputType="text" style="" id="column2" value="상품명" blockSelect="false" displayMode="label">
+    							</w2:column>
+    							<w2:column removeBorderStyle="false" width="100" inputType="text" style="" id="column3" value="판매원가" blockSelect="false" displayMode="label">
+    							</w2:column>
+    							<w2:column removeBorderStyle="false" width="100" inputType="text" style="" id="column4" value="소비자가" blockSelect="false" displayMode="label">
+    							</w2:column>
+    							<w2:column removeBorderStyle="false" width="100" inputType="text" style="" id="column5" value="상품번호" blockSelect="false" displayMode="label">
+    							</w2:column>
+    							<w2:column removeBorderStyle="false" width="70" inputType="text" style="" id="column6" value="재고수량" blockSelect="false" displayMode="label">
+    							</w2:column>
+    							<w2:column removeBorderStyle="false" width="70" inputType="text" style="" id="column7" value="가로" blockSelect="false" displayMode="label">
+    							</w2:column>
+    							<w2:column removeBorderStyle="false" width="70" inputType="text" style="" id="column8" value="세로" blockSelect="false" displayMode="label">
+    							</w2:column>
+    							<w2:column removeBorderStyle="false" width="70" inputType="text" style="" id="column9" value="높이" blockSelect="false" displayMode="label">
+    							</w2:column>
+    						</w2:row>
+    					</w2:header>
+    					<w2:gBody style="" id="gBody1">
+    						<w2:row style="" id="row2">
+    							<w2:column removeBorderStyle="false" width="100" inputType="text" id="catgNm" blockSelect="false" displayMode="label">
+    							</w2:column>
+    							<w2:column textAlign="left" removeBorderStyle="false" width="200" inputType="text" id="prodNm" blockSelect="false" displayMode="label">
+    							</w2:column>
+    							<w2:column textAlign="right" removeBorderStyle="false" width="100" displayFormat="#,###" inputType="text" id="salePrc" blockSelect="false" displayMode="label">
+    							</w2:column>
+    							<w2:column textAlign="right" removeBorderStyle="false" width="100" displayFormat="#,###" inputType="text" id="csmrPrc" blockSelect="false" displayMode="label">
+    							</w2:column>
+    							<w2:column textAlign="right" removeBorderStyle="false" width="100" displayFormat="#,###" inputType="text" id="prodNo" blockSelect="false" displayMode="label">
+    							</w2:column>
+    							<w2:column textAlign="right" removeBorderStyle="false" width="70" displayFormat="#,###" inputType="text" id="qt" blockSelect="false" displayMode="label">
+    							</w2:column>
+    							<w2:column textAlign="right" removeBorderStyle="false" width="70" displayFormat="#,###" inputType="text" id="widtLen" blockSelect="false" displayMode="label">
+    							</w2:column>
+    							<w2:column textAlign="right" removeBorderStyle="false" width="70" displayFormat="#,###" inputType="text" id="vrtcLen" blockSelect="false" displayMode="label">
+    							</w2:column>
+    							<w2:column textAlign="right" removeBorderStyle="false" width="70" displayFormat="#,###" inputType="text" id="hght" blockSelect="false" displayMode="label">
+    							</w2:column>
+    						</w2:row>
+    					</w2:gBody>
+    				</w2:gridView><w2:pageList ev:onviewchange="scwin.pageList_onviewchange" displayButtonType="display" displayFormat="#" pageSize="5" style="" id="pgl_checkSelect" renderType="list">
+    				</w2:pageList></xf:group></xf:group></xf:group>
+    	</xf:group>
+    </body>
+</html>

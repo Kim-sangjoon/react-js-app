@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:ev="http://www.w3.org/2001/xml-events"
+    xmlns:w2="http://www.inswave.com/websquare" xmlns:xf="http://www.w3.org/2002/xforms">
+    <head meta_programName="공통토스트팝업" meta_programId="CMXM0004">
+    	<w2:type>DEFAULT</w2:type>
+        <w2:buildDate/>
+        <xf:model>
+            <xf:instance>
+                <data xmlns=""/>
+            </xf:instance>
+            <w2:dataCollection baseNode="map">
+            </w2:dataCollection>
+            <w2:workflowCollection>
+            </w2:workflowCollection>
+        </xf:model>
+         <script type="text/javascript" lazy="false"><![CDATA[
+
+	scwin.onpageload = function() {
+
+	};
+
+	scwin.onpageunload = function() {
+
+	};
+
+
+	scwin.showToast = function(msg,opt){
+		try{
+			if(com.util.isEmpty(msg) || typeof msg !== "string"){
+				msg ="메시지 없음";
+			}
+
+			var index = gen_toast.getChildrenCount();
+			gen_toast.insertChild( index );
+			var grp_toastPop = gen_toast.getChild( index , "grp_toastPop" );
+			grp_toastPop.setUserData("index",index);
+			var tbx_toastMsg = gen_toast.getChild( index , "tbx_toastMsg" );
+			tbx_toastMsg.setValue(msg);
+			var btn_closeToast = gen_toast.getChild( index , "btn_closeToast" );
+			btn_closeToast.setUserData("grpId",grp_toastPop.id);
+			if(index>0)
+				$("#"+ gen_toast.id+" li:last-child").before(grp_toastPop.render);
+
+			showToast(grp_toastPop)
+
+			function showToast (grpObj){
+				grpObj.setStyle("visibility","visible")
+				grpObj.setStyle("display","block");
+				grpObj.addClass("in");
+				hideToolTip(grpObj);
+			};
+
+			function hideToolTip(grpObj){
+				scwin.setTime = setTimeout(function(){
+					var genList  = gen_toast.childControlList;
+				 	$(this).remove();
+				 	for(var i=0; i<genList.length; i++){
+				 		if(genList[i].id == grpObj.id){
+				 			gen_toast.removeChild(i)
+				 			break;
+				 		}
+				 	}
+
+
+//					$("#"+grpObj.id).fadeOut(2000,function(){
+//					 	var genList  = gen_toast.childControlList;
+//					 	$(this).remove();
+//					 	for(var i=0; i<genList.length; i++){
+//					 		if(genList[i].id == this.id){
+//					 			gen_toast.removeChild(i)
+//					 			break;
+//					 		}
+//					 	}
+//					});
+				},3000);
+			};
+
+		}catch(e){
+			console.error(e);
+		 	return false;
+		}
+	};
+
+	scwin.btn_hideToast_onclick = function(e) {
+		try{
+			grp_toastPop.hide();
+		}catch(e){
+			console.error(e);
+		 	return false;
+		}
+	};
+
+
+
+	scwin.btn_closeToast_onclick = function(e) {
+		try{
+			var grpId = this.getUserData("grpId");
+		 	var genList  = gen_toast.childControlList;
+		 	$("#"+grpId).remove();
+		 	for(var i=0; i<genList.length; i++){
+		 		if(genList[i].id == grpId){
+		 			gen_toast.removeChild(i)
+		 			break;
+		 		}
+		 	}
+		}catch(e){
+			console.error(e);
+		 	return false;
+		}
+
+	};
+	]]></script>
+    </head>
+    <body ev:onpageload="scwin.onpageload" ev:onpageunload="scwin.onpageunload">
+
+    	<w2:generator style="" id="gen_toast" class="toast_ul" tagname="ul">
+    		<xf:group class="fade in" id="grp_toastPop" style="z-index: 6110;display: none;" tagname="li">
+    			<xf:group class="toast" id="">
+    				<xf:group class="toast_inner" id="">
+    					<w2:textbox class="" id="tbx_toastMsg" label="정상적으로 저장되었습니다." style="" tagname="span"></w2:textbox>
+    					<xf:trigger class="btn_toast_close" id="btn_closeToast" style="" type="button" ev:onclick="scwin.btn_closeToast_onclick">
+    						<xf:label><![CDATA[닫기]]></xf:label>
+    					</xf:trigger>
+    				</xf:group>
+    			</xf:group>
+    		</xf:group>
+    	</w2:generator>
+    </body>
+</html>

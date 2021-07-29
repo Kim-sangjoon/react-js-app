@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:w2="http://www.inswave.com/websquare"
+	xmlns:xf="http://www.w3.org/2002/xforms">
+	<head meta_programName="입력 폼 (날짜/시간)">
+		<w2:type>DEFAULT</w2:type>
+		<w2:buildDate />
+		<xf:model>
+			<xf:instance>
+				<data xmlns="" />
+			</xf:instance>
+			<w2:dataCollection baseNode="map"></w2:dataCollection>
+			<w2:workflowCollection></w2:workflowCollection>
+		</xf:model>
+		<script type="text/javascript" lazy="false"><![CDATA[
+
+	scwin.onpageload = function() {
+
+	};
+
+	scwin.onpageunload = function() {
+
+	};
+]]></script>
+
+		<w2:require src="../../../common/udc/udc_rangeCalendar.xml"></w2:require>
+		<w2:require src="../../../common/udc/udc_timePicker.xml"></w2:require>
+		<w2:require src="../../../static"></w2:require>
+	</head>
+	<body ev:onpageload="scwin.onpageload" ev:onpageunload="scwin.onpageunload">
+		<xf:group class="sub_wrapper" id="">
+			<w2:wframe class="page_header" id="" scope="true" src="../../../common/xml/contentsTitle.xml" style=""></w2:wframe>
+			<xf:group id="" class="page_contents">
+				<xf:group id="" class="page_contents_inner">
+					<xf:group style="" id="" class="content_info">
+						<xf:group tagname="ul" id="" class="content_list guide">
+							<w2:textbox tagname="li" style="" id="" label="날짜 입력폼은 항상 기본값을 적용한다."></w2:textbox>
+							<w2:textbox tagname="li" style="" id="" label="기간 설정시 사용성을 위해 최근1주일, 최근30일 등 기본 설정항목을 반드시 제공하며 최대 6개로 한다."></w2:textbox>
+							<w2:textbox tagname="li" style="" id="" label="년(year), 월(month)만 입력할 경우 plug-in 없이 select component를 적용한다.">
+							</w2:textbox>
+						</xf:group>
+					</xf:group>
+					<xf:group id="" class="module-wrapper">
+						<xf:group id="" class="dfbox">
+							<w2:textbox tagname="h3" style="" label="날짜/기간" id=""></w2:textbox>
+							<xf:group tagname="span" style="" id="" class="info tip">
+								<w2:textbox tagname="i" style="" id="" label="" class="fa fa-info-circle"></w2:textbox>
+								<w2:textbox tagname="span" style="" id="" label="날짜표기는 YYYY-MM-DD 형태로 표기한다. (예, 2018-01-01 ~ 2018-05-31)" class=""></w2:textbox>
+							</xf:group>
+						</xf:group>
+						<xf:group style="" id="" class="tbbox">
+							<xf:group tagname="table" style="" id="" class="w2tb tb">
+								<w2:attributes>
+									<w2:summary></w2:summary>
+								</w2:attributes>
+								<xf:group tagname="caption">디테일&amp;nbsp;테이블(1단)</xf:group>
+								<xf:group tagname="colgroup">
+									<xf:group tagname="col" style="width:250px;"></xf:group>
+									<xf:group tagname="col" style=""></xf:group>
+								</xf:group>
+								<xf:group tagname="tr">
+									<xf:group tagname="th" class="w2tb_th">
+										<w2:attributes>
+											<w2:scope>row</w2:scope>
+										</w2:attributes>
+										<w2:textbox class="" id="" label="년" style="" tagname="label"></w2:textbox>
+									</xf:group>
+									<xf:group tagname="td" class="w2tb_td">
+										<w2:attributes></w2:attributes>
+										<w2:inputCalendar calendarValueType="year" class="wd-90" displayFormat="" focusOnDateSelect="false"
+											footerDiv="false" id="" pickerType="dynamic" readOnly="" renderDiv="true" renderType="component" rightAlign="false" style="" calendarClass="class2">
+										</w2:inputCalendar>
+									</xf:group>
+								</xf:group>
+								<xf:group tagname="tr">
+									<xf:group tagname="th" class="w2tb_th">
+										<w2:attributes>
+											<w2:scope>row</w2:scope>
+										</w2:attributes>
+										<w2:textbox class="" id="" label="년월" style="" tagname="label"></w2:textbox>
+									</xf:group>
+									<xf:group tagname="td" class="w2tb_td">
+										<w2:attributes></w2:attributes>
+										<w2:inputCalendar calendarValueType="yearMonth" class="wd-90" displayFormat="" focusOnDateSelect="false"
+											footerDiv="false" id="" readOnly="" renderDiv="true" renderType="component" rightAlign="false" style="" pickerType="dynamic">
+										</w2:inputCalendar>
+									</xf:group>
+								</xf:group>
+								<xf:group tagname="tr" style="">
+									<xf:group tagname="th" style="" class="w2tb_th">
+										<w2:attributes>
+											<w2:scope>row</w2:scope>
+										</w2:attributes>
+										<w2:textbox tagname="label" style="" id="" label="Date picker (validate)" class=""></w2:textbox>
+									</xf:group>
+									<xf:group tagname="td" style="" class="w2tb_td">
+										<w2:attributes>
+											<w2:colspan>1</w2:colspan>
+											<w2:rowspan>1</w2:rowspan>
+										</w2:attributes>
+										<w2:inputCalendar footerDiv="false" rightAlign="false" focusOnDateSelect="false" displayFormat="" style=""
+											readOnly="" id="" renderType="component" renderDiv="true" class="wd-110" calendarValueType="yearMonthDate">
+										</w2:inputCalendar>
+									</xf:group>
+								</xf:group>
+								<xf:group tagname="tr" style="">
+									<xf:group tagname="th" style="" class="w2tb_th">
+										<w2:attributes>
+											<w2:scope>row</w2:scope>
+										</w2:attributes>
+										<w2:textbox tagname="label" style="" id="" label="Date range picker(same month)"></w2:textbox>
+									</xf:group>
+									<xf:group tagname="td" style="" class="w2tb_td">
+										<w2:udc_dbCaleandar pickerType="picker" style="" id=""></w2:udc_dbCaleandar>
+									</xf:group>
+								</xf:group>
+								<xf:group tagname="tr">
+									<xf:group tagname="th" class="w2tb_th">
+										<w2:attributes>
+											<w2:scope>row</w2:scope>
+										</w2:attributes>
+										<w2:textbox tagname="label" style="" id="" label="Date range picker (period picker)" class=""></w2:textbox>
+									</xf:group>
+									<xf:group tagname="td" class="w2tb_td">
+										<w2:attributes></w2:attributes>
+										<w2:udc_dbCaleandar pickerType="list" style="" id=""></w2:udc_dbCaleandar>
+									</xf:group>
+								</xf:group>
+								<xf:group tagname="tr">
+									<xf:group tagname="th" class="w2tb_th">
+										<w2:attributes>
+											<w2:scope>row</w2:scope>
+										</w2:attributes>
+										<w2:textbox tagname="label" style="" id="" label="요일 표기방식"></w2:textbox>
+									</xf:group>
+									<xf:group tagname="td" class="w2tb_td">
+										<w2:attributes></w2:attributes><xf:group id="" class="ly_form wa"><w2:textbox tagname="span" style="" id="" label="2018-01-12 (Fri)"></w2:textbox><xf:group tagname="span" style="" id="" class="info tip">
+													<w2:textbox tagname="i" style="" id="" label="" class="fa fa-info-circle"></w2:textbox>
+													<w2:textbox tagname="span" style="" id="" label="요일은 괄호안에 영문표기하며 첫 알파벳은 대문자로 표기한다." class=""></w2:textbox>
+												</xf:group></xf:group></xf:group>
+								</xf:group>
+								<xf:group tagname="tr">
+									<xf:group tagname="th" style="" class="w2tb_th">
+										<w2:attributes>
+											<w2:scope>row</w2:scope>
+										</w2:attributes>
+										<w2:textbox tagname="label" style="" id="" label="년도 제외한 날짜 표기방식"></w2:textbox>
+									</xf:group>
+									<xf:group tagname="td" style="" class="w2tb_td"><xf:group id="" class="ly_form wa"><w2:textbox tagname="span" style="" id="" label="Jan 05 (Fri)"></w2:textbox><xf:group tagname="span" style="" id="" class="info tip">
+													<w2:textbox tagname="i" style="" id="" label="" class="fa fa-info-circle"></w2:textbox>
+													<w2:textbox tagname="span" style="" id="" label="년도를 제외하고 표기할 경우 월(Month)을 세자리 영문표기(MMM)하며 첫 알파벳은 대문자로 표기한다." class="">
+													</w2:textbox>
+												</xf:group></xf:group></xf:group>
+								</xf:group>
+							</xf:group>
+						</xf:group>
+					</xf:group>
+					<xf:group style="" id="" class="module-wrapper">
+						<xf:group id="" class="dfbox">
+							<w2:textbox tagname="h3" style="" id="" label="시간"></w2:textbox>
+						</xf:group>
+						<xf:group style="" id="" class="tbbox">
+							<xf:group tagname="table" style="" id="" class="w2tb tb">
+								<w2:attributes>
+									<w2:summary></w2:summary>
+								</w2:attributes>
+								<xf:group tagname="caption">디테일&amp;nbsp;테이블(1단)</xf:group>
+								<xf:group tagname="colgroup">
+									<xf:group tagname="col" style="width:250px;"></xf:group>
+									<xf:group tagname="col" style=""></xf:group>
+								</xf:group>
+								<xf:group tagname="tr" style="">
+									<xf:group tagname="th" style="" class="w2tb_th">
+										<w2:attributes>
+											<w2:scope>row</w2:scope>
+										</w2:attributes>
+										<w2:textbox tagname="label" style="" id="" label="시간" class=""></w2:textbox>
+									</xf:group>
+									<xf:group tagname="td" style="" class="w2tb_td">
+										<w2:attributes>
+											<w2:colspan>1</w2:colspan>
+											<w2:rowspan>1</w2:rowspan>
+										</w2:attributes>
+										<w2:udc_timePicker style="" id=""></w2:udc_timePicker>
+									</xf:group>
+								</xf:group>
+								<xf:group tagname="tr" style="">
+									<xf:group tagname="th" style="" class="w2tb_th">
+										<w2:attributes>
+											<w2:scope>row</w2:scope>
+										</w2:attributes>
+										<w2:textbox tagname="label" style="" id="" label="근로시간"></w2:textbox>
+									</xf:group>
+									<xf:group tagname="td" style="" class="w2tb_td">
+
+										<xf:group style="" id="" class="ly_form wa">
+										<w2:udc_timePicker style="" id=""></w2:udc_timePicker><w2:textbox tagname="span" style="" id="" label="~" class="txt" dataType=""></w2:textbox><w2:udc_timePicker style="" id=""></w2:udc_timePicker></xf:group>
+									</xf:group>
+								</xf:group>
+							</xf:group>
+						</xf:group>
+					</xf:group>
+					<xf:group style="" id="" class="module-wrapper">
+						<xf:group id="" class="dfbox">
+							<w2:textbox tagname="h3" style="" id="" label="날짜 시간 조합"></w2:textbox>
+						</xf:group>
+						<xf:group style="" id="" class="tbbox">
+							<xf:group tagname="table" style="" id="" class="w2tb tb">
+								<w2:attributes>
+									<w2:summary></w2:summary>
+								</w2:attributes>
+								<xf:group tagname="caption">디테일&amp;nbsp;테이블(1단)</xf:group>
+								<xf:group tagname="colgroup">
+									<xf:group tagname="col" style="width:250px;"></xf:group>
+									<xf:group tagname="col" style=""></xf:group>
+								</xf:group>
+								<xf:group tagname="tr" style="">
+									<xf:group tagname="th" style="" class="w2tb_th">
+										<w2:attributes>
+											<w2:scope>row</w2:scope>
+										</w2:attributes>
+										<w2:textbox tagname="label" style="" id="" label="일시" class=""></w2:textbox>
+									</xf:group>
+									<xf:group tagname="td" style="" class="w2tb_td">
+										<w2:attributes>
+											<w2:colspan>1</w2:colspan>
+											<w2:rowspan>1</w2:rowspan>
+										</w2:attributes>
+										<xf:group style="" id="" class="ly_form wa">
+										<w2:inputCalendar footerDiv="false" rightAlign="false" focusOnDateSelect="false" readOnly="" style="" id="" renderType="component" class="wd-110" renderDiv="true" calendarValueType="yearMonthDate">
+												</w2:inputCalendar><w2:udc_timePicker style="" id=""></w2:udc_timePicker></xf:group>
+									</xf:group>
+								</xf:group>
+							</xf:group>
+						</xf:group>
+					</xf:group>
+					<xf:group style="" id="" class="btnbox last">
+						<xf:group id="" class="rta">
+							<xf:trigger style="" id="" type="button" class="btn_df">
+								<xf:label><![CDATA[날설정]]></xf:label>
+							</xf:trigger>
+							<xf:trigger style="" id="" type="button" class="btn_cm">
+								<xf:label><![CDATA[값일기]]></xf:label>
+							</xf:trigger>
+							<xf:trigger class="btn_df list" id="" style="" type="button">
+								<xf:label><![CDATA[목록]]></xf:label>
+							</xf:trigger>
+						</xf:group>
+					</xf:group>
+				</xf:group>
+			</xf:group>
+		</xf:group>
+	</body>
+</html>

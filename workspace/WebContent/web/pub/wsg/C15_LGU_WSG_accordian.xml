@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:w2="http://www.inswave.com/websquare"
+	xmlns:xf="http://www.w3.org/2002/xforms">
+	<head meta_programName="아코디언">
+		<w2:type>DEFAULT</w2:type>
+		<w2:buildDate />
+		<xf:model>
+			<xf:instance>
+				<data xmlns="" />
+			</xf:instance>
+			<w2:dataCollection baseNode="map">
+			</w2:dataCollection>
+			<w2:workflowCollection>
+			</w2:workflowCollection>
+		</xf:model>
+		<script type="text/javascript" lazy="false"><![CDATA[
+        
+	scwin.onpageload = function() {
+		for(var i=0; i < 3; i++){
+            gen_accordion.insertChild();
+        }
+	};
+	
+	scwin.onpageunload = function() {
+		
+	};
+	
+	
+	// 아코디언
+	scwin.btn_acd_onclick = function() {
+		var obj = $('#'+this.id).parent().parent().parent();
+		
+		if(!obj.hasClass('active')) {
+			obj.siblings().removeClass('active');
+			obj.addClass('active');
+		} else {
+			obj.removeClass('active');
+		}
+	};]]></script>
+	</head>
+	<body ev:onpageload="scwin.onpageload" ev:onpageunload="scwin.onpageunload">
+
+		<xf:group class="sub_wrapper" id="">
+			<w2:wframe class="page_header" id="" scope="true" src="../../../common/xml/contentsTitle.xml" style=""></w2:wframe>
+		<xf:group id="" class="page_contents"><xf:group id="" class="page_contents_inner"><xf:group style="" id="" class="content_info">
+				<xf:group tagname="ul" id="" class="content_list">
+					<w2:textbox tagname="li" style="" id="" label="WebSquare 기본 Accordian Component 적용"></w2:textbox>
+					<w2:textbox tagname="li" style="" id="" label="주로 FAQ UI에 사용하며 스크롤이 길게 발생하는 Text위주의 화면에 사용한다."></w2:textbox>
+				</xf:group>
+			</xf:group><xf:group id="" tagname="section"><w2:accordion collapseAll="true" style="" id="" selectedPanel="" collapsible="true" class="acd" titleDivTag="">
+				<w2:panels style="" id="panels1" class="">
+					<w2:panelTitle style="" id="panelTitle1" label="Collapsible Group 1" class=""></w2:panelTitle>
+					<w2:panelContent style="" id="panelContent1" class="">
+						<xf:group style="" id="" class="acd_body">
+							<w2:textbox tagname="p" style="" id="" label="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.">
+							</w2:textbox>
+						</xf:group>
+					</w2:panelContent>
+				</w2:panels>
+				<w2:panels style="" id="panels2" class="">
+					<w2:panelTitle style="" id="panelTitle2" label="Collapsible Group 2" class=""></w2:panelTitle>
+					<w2:panelContent style="" id="panelContent2" class="">
+						<xf:group style="" id="" class="acd_body">
+							<w2:textbox tagname="p" style="" id="" label="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.">
+							</w2:textbox>
+						</xf:group>
+					</w2:panelContent>
+				</w2:panels>
+				<w2:panels style="" id="panels3" class="">
+					<w2:panelTitle style="" id="panelTitle3" label="Collapsible Group 3" class=""></w2:panelTitle>
+					<w2:panelContent style="" id="panelContent3" class="">
+						<xf:group style="" id="" class="acd_body">
+							<w2:textbox tagname="p" style="" id="" label="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.">
+							</w2:textbox>
+						</xf:group>
+					</w2:panelContent>
+				</w2:panels>
+			</w2:accordion></xf:group><xf:group id="" tagname="section"><xf:group style="" id="" class="dfbox">
+				<w2:textbox tagname="h3" style="" id="" label="아코디언 (Generator)"></w2:textbox>
+			</xf:group><w2:generator tagname="ul" style="" id="gen_accordion" class="acd_gen">
+				<xf:group tagname="li" id="" class="">
+					<xf:group id="" class="acd_header">
+						<xf:group tagname="h4" id="" text="" class="acd_title">
+							<w2:anchor outerDiv="false" ev:onclick="scwin.btn_acd_onclick" style="" id="btn_acd">
+								<xf:label><![CDATA[Collapsible Group 1]]></xf:label>
+							</w2:anchor>
+							<w2:textbox tagname="i" style="" id="" label="">
+							</w2:textbox>
+						</xf:group>
+					</xf:group>
+					<xf:group style="" id="" class="acd_content">
+						<w2:textbox tagname="p" style="" id="" label="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat." class="acd_body">
+						</w2:textbox>
+					</xf:group>
+				</xf:group>
+			</w2:generator></xf:group></xf:group></xf:group></xf:group>
+	</body>
+</html>

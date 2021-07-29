@@ -1,0 +1,832 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:ev="http://www.w3.org/2001/xml-events"
+    xmlns:w2="http://www.inswave.com/websquare" xmlns:xf="http://www.w3.org/2002/xforms">
+    <head meta_programName="P4-1 Master/Detail [1:1]">
+    	<w2:type>DEFAULT</w2:type>
+    	<w2:buildDate />
+    	<xf:model>
+    		<xf:instance>
+    			<data xmlns="" />
+    		</xf:instance>
+    		<w2:dataCollection baseNode="map">
+    			<w2:dataList baseNode="list" repeatNode="map" id="dlt_grdAllData" saveRemovedData="true">
+    				<w2:columnInfo>
+    					<w2:column id="chk" name="name1" dataType="text"></w2:column>
+    					<w2:column id="name1" name="name2" dataType="text"></w2:column>
+    					<w2:column id="position" name="name3" dataType="text"></w2:column>
+    					<w2:column id="office" name="name4" dataType="text"></w2:column>
+    					<w2:column id="age" name="name5" dataType="text"></w2:column>
+    					<w2:column id="startDate" name="name6" dataType="text"></w2:column>
+    					<w2:column id="salary" name="name7" dataType="text"></w2:column>
+    				</w2:columnInfo>
+    				<w2:data use="true">
+    					<w2:row>
+    						<name1><![CDATA[Airi Satou]]></name1>
+    						<position><![CDATA[Accountant]]></position>
+    						<chk><![CDATA[0]]></chk>
+    						<office><![CDATA[Tokyo]]></office>
+    						<age><![CDATA[33]]></age>
+    						<startDate><![CDATA[2008.11.28]]></startDate>
+    						<salary><![CDATA[$162,700]]></salary>
+    					</w2:row>
+    					<w2:row>
+    						<name1><![CDATA[Angelica Ramos]]></name1>
+    						<position><![CDATA[Chief Executive Officer (CEO)]]></position>
+    						<chk><![CDATA[0]]></chk>
+    						<office><![CDATA[London]]></office>
+    						<age><![CDATA[47]]></age>
+    						<startDate><![CDATA[2009.10.09]]></startDate>
+    						<salary><![CDATA[$1,200,000]]></salary>
+    					</w2:row>
+    					<w2:row>
+    						<name1><![CDATA[Ashton Cox]]></name1>
+    						<position><![CDATA[Junior Technical Author]]></position>
+    						<chk><![CDATA[0]]></chk>
+    						<office><![CDATA[San Francisco]]></office>
+    						<age><![CDATA[66]]></age>
+    						<startDate><![CDATA[2009.01.12]]></startDate>
+    						<salary><![CDATA[$86,000]]></salary>
+    					</w2:row>
+    					<w2:row>
+    						<name1><![CDATA[Bradley Greer]]></name1>
+    						<position><![CDATA[Software Engineer]]></position>
+    						<chk><![CDATA[0]]></chk>
+    						<office><![CDATA[London]]></office>
+    						<age><![CDATA[41]]></age>
+    						<startDate><![CDATA[2012.10.13]]></startDate>
+    						<salary><![CDATA[$132,000]]></salary>
+    					</w2:row>
+    					<w2:row>
+    						<name1><![CDATA[Brenden Wagner]]></name1>
+    						<position><![CDATA[Software Engineer]]></position>
+    						<chk><![CDATA[0]]></chk>
+    						<office><![CDATA[San Francisco]]></office>
+    						<age><![CDATA[28]]></age>
+    						<startDate><![CDATA[2011.06.07]]></startDate>
+    						<salary><![CDATA[$206,850]]></salary>
+    					</w2:row>
+    					<w2:row>
+    						<name1><![CDATA[Brielle Williamson]]></name1>
+    						<position><![CDATA[Integration Specialist]]></position>
+    						<chk><![CDATA[0]]></chk>
+    						<office><![CDATA[New York]]></office>
+    						<age><![CDATA[61]]></age>
+    						<startDate><![CDATA[2012.12.02]]></startDate>
+    						<salary><![CDATA[$372,000]]></salary>
+    					</w2:row>
+    					<w2:row>
+    						<name1><![CDATA[Bruno Nash]]></name1>
+    						<position><![CDATA[Software Engineer]]></position>
+    						<chk><![CDATA[0]]></chk>
+    						<office><![CDATA[London]]></office>
+    						<age><![CDATA[38]]></age>
+    						<startDate><![CDATA[2011.05.03]]></startDate>
+    						<salary><![CDATA[$163,500]]></salary>
+    					</w2:row>
+    					<w2:row>
+    						<name1><![CDATA[Caesar Vance]]></name1>
+    						<position><![CDATA[Pre-Sales Support]]></position>
+    						<chk><![CDATA[0]]></chk>
+    						<office><![CDATA[New York]]></office>
+    						<age><![CDATA[21]]></age>
+    						<startDate><![CDATA[2011.12.12]]></startDate>
+    						<salary><![CDATA[$106,450]]></salary>
+    					</w2:row>
+    					<w2:row>
+    						<name1><![CDATA[Cara Stevens]]></name1>
+    						<position><![CDATA[Sales Assistant]]></position>
+    						<chk><![CDATA[0]]></chk>
+    						<office><![CDATA[New York]]></office>
+    						<age><![CDATA[46]]></age>
+    						<startDate><![CDATA[2011.12.06]]></startDate>
+    						<salary><![CDATA[$145,600]]></salary>
+    					</w2:row>
+    					<w2:row>
+    						<name1><![CDATA[Cedric Kelly]]></name1>
+    						<position><![CDATA[Senior Javascript Developer]]></position>
+    						<chk><![CDATA[0]]></chk>
+    						<office><![CDATA[Edinburgh]]></office>
+    						<age><![CDATA[22]]></age>
+    						<startDate><![CDATA[2012.03.29]]></startDate>
+    						<salary><![CDATA[$433,060]]></salary>
+    					</w2:row>
+    					<w2:row>
+    						<name1><![CDATA[Charde Marshall]]></name1>
+    						<position><![CDATA[Regional Director]]></position>
+    						<chk><![CDATA[0]]></chk>
+    						<office><![CDATA[San Francisco]]></office>
+    						<age><![CDATA[36]]></age>
+    						<startDate><![CDATA[2008.10.16]]></startDate>
+    						<salary><![CDATA[$470,600]]></salary>
+    					</w2:row>
+    					<w2:row>
+    						<name1><![CDATA[Colleen Hurst]]></name1>
+    						<position><![CDATA[Javascript Developer]]></position>
+    						<chk><![CDATA[0]]></chk>
+    						<office><![CDATA[San Francisco]]></office>
+    						<age><![CDATA[39]]></age>
+    						<startDate><![CDATA[2009.09.15]]></startDate>
+    						<salary><![CDATA[$205,500]]></salary>
+    					</w2:row>
+    					<w2:row>
+    						<name1><![CDATA[Dai Rios]]></name1>
+    						<position><![CDATA[Personnel Lead]]></position>
+    						<chk><![CDATA[0]]></chk>
+    						<office><![CDATA[Edinburgh]]></office>
+    						<age><![CDATA[35]]></age>
+    						<startDate><![CDATA[2012.09.26]]></startDate>
+    						<salary><![CDATA[$217,500]]></salary>
+    					</w2:row>
+    					<w2:row>
+    						<name1><![CDATA[Donna Snider]]></name1>
+    						<position><![CDATA[Customer Support]]></position>
+    						<chk><![CDATA[0]]></chk>
+    						<office><![CDATA[New York]]></office>
+    						<age><![CDATA[27]]></age>
+    						<startDate><![CDATA[2011.01.25]]></startDate>
+    						<salary><![CDATA[$112,000]]></salary>
+    					</w2:row>
+    					<w2:row>
+    						<name1><![CDATA[Doris Wilder]]></name1>
+    						<position><![CDATA[Sales Assistant]]></position>
+    						<chk><![CDATA[0]]></chk>
+    						<office><![CDATA[Sidney]]></office>
+    						<age><![CDATA[23]]></age>
+    						<startDate><![CDATA[2010.09.20]]></startDate>
+    						<salary><![CDATA[$85,600]]></salary>
+    					</w2:row>
+    					<w2:row>
+    						<name1><![CDATA[Finn Camacho]]></name1>
+    						<position><![CDATA[Support Engineer]]></position>
+    						<chk><![CDATA[0]]></chk>
+    						<office><![CDATA[San Francisco]]></office>
+    						<age><![CDATA[47]]></age>
+    						<startDate><![CDATA[2009.07.07]]></startDate>
+    						<salary><![CDATA[$87,500]]></salary>
+    					</w2:row>
+    					<w2:row>
+    						<name1><![CDATA[Fiona Green]]></name1>
+    						<position><![CDATA[Chief Operating Officer (COO)]]></position>
+    						<chk><![CDATA[0]]></chk>
+    						<office><![CDATA[San Francisco]]></office>
+    						<age><![CDATA[48]]></age>
+    						<startDate><![CDATA[2010.03.11]]></startDate>
+    						<salary><![CDATA[$850,000]]></salary>
+    					</w2:row>
+    					<w2:row>
+    						<name1><![CDATA[Garrett Winters]]></name1>
+    						<position><![CDATA[Accountant]]></position>
+    						<chk><![CDATA[0]]></chk>
+    						<office><![CDATA[Tokyo]]></office>
+    						<age><![CDATA[63]]></age>
+    						<startDate><![CDATA[2011.07.25]]></startDate>
+    						<salary><![CDATA[$170,750]]></salary>
+    					</w2:row>
+    					<w2:row>
+    						<name1><![CDATA[Gavin Cortez]]></name1>
+    						<position><![CDATA[Team Leader]]></position>
+    						<chk><![CDATA[0]]></chk>
+    						<office><![CDATA[San Francisco]]></office>
+    						<age><![CDATA[22]]></age>
+    						<startDate><![CDATA[2008.10.26]]></startDate>
+    						<salary><![CDATA[$235,500]]></salary>
+    					</w2:row>
+    					<w2:row>
+    						<name1><![CDATA[Gavin Joyce]]></name1>
+    						<position><![CDATA[Developer]]></position>
+    						<chk><![CDATA[0]]></chk>
+    						<office><![CDATA[Edinburgh]]></office>
+    						<age><![CDATA[42]]></age>
+    						<startDate><![CDATA[2010.12.22]]></startDate>
+    						<salary><![CDATA[$92,575]]></salary>
+    					</w2:row>
+    					<w2:row>
+    						<name1><![CDATA[Gloria Little]]></name1>
+    						<position><![CDATA[Systems Administrator]]></position>
+    						<chk><![CDATA[0]]></chk>
+    						<office><![CDATA[New York]]></office>
+    						<age><![CDATA[59]]></age>
+    						<startDate><![CDATA[2009.04.10]]></startDate>
+    						<salary><![CDATA[$237,500]]></salary>
+    					</w2:row>
+    					<w2:row>
+    						<name1><![CDATA[Haley Kennedy]]></name1>
+    						<position><![CDATA[Senior Marketing Designer]]></position>
+    						<chk><![CDATA[0]]></chk>
+    						<office><![CDATA[London]]></office>
+    						<age><![CDATA[43]]></age>
+    						<startDate><![CDATA[2012.12.18]]></startDate>
+    						<salary><![CDATA[$313,500]]></salary>
+    					</w2:row>
+    					<w2:row>
+    						<name1><![CDATA[Hermione Butler]]></name1>
+    						<position><![CDATA[Regional Director]]></position>
+    						<chk><![CDATA[0]]></chk>
+    						<office><![CDATA[London]]></office>
+    						<age><![CDATA[47]]></age>
+    						<startDate><![CDATA[2011.03.21]]></startDate>
+    						<salary><![CDATA[$356,250]]></salary>
+    					</w2:row>
+    					<w2:row>
+    						<name1><![CDATA[Herrod Chandler]]></name1>
+    						<position><![CDATA[Sales Assistant]]></position>
+    						<chk><![CDATA[0]]></chk>
+    						<office><![CDATA[San Francisco]]></office>
+    						<age><![CDATA[59]]></age>
+    						<startDate><![CDATA[2012.08.06]]></startDate>
+    						<salary><![CDATA[$137,500]]></salary>
+    					</w2:row>
+    					<w2:row>
+    						<name1><![CDATA[Hope Fuentes]]></name1>
+    						<position><![CDATA[Secretary]]></position>
+    						<chk><![CDATA[0]]></chk>
+    						<office><![CDATA[San Francisco]]></office>
+    						<age><![CDATA[41]]></age>
+    						<startDate><![CDATA[2010.02.12]]></startDate>
+    						<salary><![CDATA[$109,850]]></salary>
+    					</w2:row>
+    					<w2:row>
+    						<name1><![CDATA[Howard Hatfield]]></name1>
+    						<position><![CDATA[Office Manager]]></position>
+    						<chk><![CDATA[0]]></chk>
+    						<office><![CDATA[San Francisco]]></office>
+    						<age><![CDATA[51]]></age>
+    						<startDate><![CDATA[2008.12.16]]></startDate>
+    						<salary><![CDATA[$164,500]]></salary>
+    					</w2:row>
+    					<w2:row>
+    						<name1><![CDATA[Jackson Bradshaw]]></name1>
+    						<position><![CDATA[Director]]></position>
+    						<chk><![CDATA[0]]></chk>
+    						<office><![CDATA[New York]]></office>
+    						<age><![CDATA[65]]></age>
+    						<startDate><![CDATA[2008.09.26]]></startDate>
+    						<salary><![CDATA[$645,750]]></salary>
+    					</w2:row>
+    					<w2:row>
+    						<name1><![CDATA[Jena Gaines]]></name1>
+    						<position><![CDATA[Office Manager]]></position>
+    						<chk><![CDATA[0]]></chk>
+    						<office><![CDATA[London]]></office>
+    						<age><![CDATA[30]]></age>
+    						<startDate><![CDATA[2008.12.19]]></startDate>
+    						<salary><![CDATA[$90,560]]></salary>
+    					</w2:row>
+    					<w2:row>
+    						<name1><![CDATA[Jenette Caldwell]]></name1>
+    						<position><![CDATA[Development Lead]]></position>
+    						<chk><![CDATA[0]]></chk>
+    						<office><![CDATA[New York]]></office>
+    						<age><![CDATA[30]]></age>
+    						<startDate><![CDATA[2011.09.03]]></startDate>
+    						<salary><![CDATA[$345,000]]></salary>
+    					</w2:row>
+    					<w2:row>
+    						<name1><![CDATA[Jennifer Acosta]]></name1>
+    						<position><![CDATA[Junior Javascript Developer]]></position>
+    						<chk><![CDATA[0]]></chk>
+    						<office><![CDATA[Edinburgh]]></office>
+    						<age><![CDATA[43]]></age>
+    						<startDate><![CDATA[2013.02.01]]></startDate>
+    						<salary><![CDATA[$75,650]]></salary>
+    					</w2:row>
+    					<w2:row>
+    						<name1><![CDATA[Jennifer Chang]]></name1>
+    						<position><![CDATA[Regional Director]]></position>
+    						<chk><![CDATA[0]]></chk>
+    						<office><![CDATA[Singapore]]></office>
+    						<age><![CDATA[28]]></age>
+    						<startDate><![CDATA[2010.11.14]]></startDate>
+    						<salary><![CDATA[$357,650]]></salary>
+    					</w2:row>
+    					<w2:row>
+    						<name1><![CDATA[Jonas Alexander]]></name1>
+    						<position><![CDATA[Developer]]></position>
+    						<chk><![CDATA[0]]></chk>
+    						<office><![CDATA[San Francisco]]></office>
+    						<age><![CDATA[30]]></age>
+    						<startDate><![CDATA[2010.07.14]]></startDate>
+    						<salary><![CDATA[$86,500]]></salary>
+    					</w2:row>
+    					<w2:row>
+    						<name1><![CDATA[Lael Greer]]></name1>
+    						<position><![CDATA[Systems Administrator]]></position>
+    						<chk><![CDATA[0]]></chk>
+    						<office><![CDATA[London]]></office>
+    						<age><![CDATA[21]]></age>
+    						<startDate><![CDATA[2009.02.27]]></startDate>
+    						<salary><![CDATA[$103,500]]></salary>
+    					</w2:row>
+    					<w2:row>
+    						<name1><![CDATA[Martena Mccray]]></name1>
+    						<position><![CDATA[Post-Sales support]]></position>
+    						<chk><![CDATA[0]]></chk>
+    						<office><![CDATA[Edinburgh]]></office>
+    						<age><![CDATA[46]]></age>
+    						<startDate><![CDATA[2011.03.09]]></startDate>
+    						<salary><![CDATA[$324,050]]></salary>
+    					</w2:row>
+    					<w2:row>
+    						<name1><![CDATA[Michael Bruce]]></name1>
+    						<position><![CDATA[Javascript Developer]]></position>
+    						<chk><![CDATA[0]]></chk>
+    						<office><![CDATA[Singapore]]></office>
+    						<age><![CDATA[29]]></age>
+    						<startDate><![CDATA[2011.06.27]]></startDate>
+    						<salary><![CDATA[$183,000]]></salary>
+    					</w2:row>
+    					<w2:row>
+    						<name1><![CDATA[Michael Silva]]></name1>
+    						<position><![CDATA[Marketing Designer]]></position>
+    						<chk><![CDATA[0]]></chk>
+    						<office><![CDATA[London]]></office>
+    						<age><![CDATA[66]]></age>
+    						<startDate><![CDATA[2012.11.27]]></startDate>
+    						<salary><![CDATA[$198,500]]></salary>
+    					</w2:row>
+    					<w2:row>
+    						<name1><![CDATA[Michelle House]]></name1>
+    						<position><![CDATA[Integration Specialist]]></position>
+    						<chk><![CDATA[0]]></chk>
+    						<office><![CDATA[Sidney]]></office>
+    						<age><![CDATA[37]]></age>
+    						<startDate><![CDATA[2011.06.02]]></startDate>
+    						<salary><![CDATA[$95,400]]></salary>
+    					</w2:row>
+    					<w2:row>
+    						<name1><![CDATA[Olivia Liang]]></name1>
+    						<position><![CDATA[Support Engineer]]></position>
+    						<chk><![CDATA[0]]></chk>
+    						<office><![CDATA[Singapore]]></office>
+    						<age><![CDATA[64]]></age>
+    						<startDate><![CDATA[2011.02.03]]></startDate>
+    						<salary><![CDATA[$234,500]]></salary>
+    					</w2:row>
+    					<w2:row>
+    						<name1><![CDATA[Paul Byrd]]></name1>
+    						<position><![CDATA[Chief Financial Officer (CFO)]]></position>
+    						<chk><![CDATA[0]]></chk>
+    						<office><![CDATA[New York]]></office>
+    						<age><![CDATA[64]]></age>
+    						<startDate><![CDATA[2010.06.09]]></startDate>
+    						<salary><![CDATA[$725,000]]></salary>
+    					</w2:row>
+    					<w2:row>
+    						<name1><![CDATA[Prescott Bartlett]]></name1>
+    						<position><![CDATA[Technical Author]]></position>
+    						<chk><![CDATA[0]]></chk>
+    						<office><![CDATA[London]]></office>
+    						<age><![CDATA[27]]></age>
+    						<startDate><![CDATA[2011.05.07]]></startDate>
+    						<salary><![CDATA[$145,000]]></salary>
+    					</w2:row>
+    					<w2:row>
+    						<name1><![CDATA[Quinn Flynn]]></name1>
+    						<position><![CDATA[Support Lead]]></position>
+    						<chk><![CDATA[0]]></chk>
+    						<office><![CDATA[Edinburgh]]></office>
+    						<age><![CDATA[22]]></age>
+    						<startDate><![CDATA[2013.03.03]]></startDate>
+    						<salary><![CDATA[$342,000]]></salary>
+    					</w2:row>
+    					<w2:row>
+    						<name1><![CDATA[Rhona Davidson]]></name1>
+    						<position><![CDATA[Integration Specialist]]></position>
+    						<chk><![CDATA[0]]></chk>
+    						<office><![CDATA[Tokyo]]></office>
+    						<age><![CDATA[55]]></age>
+    						<startDate><![CDATA[2010.10.14]]></startDate>
+    						<salary><![CDATA[$327,900]]></salary>
+    					</w2:row>
+    					<w2:row>
+    						<name1><![CDATA[Sakura Yamamoto]]></name1>
+    						<position><![CDATA[Support Engineer]]></position>
+    						<chk><![CDATA[0]]></chk>
+    						<office><![CDATA[Tokyo]]></office>
+    						<age><![CDATA[37]]></age>
+    						<startDate><![CDATA[2009.08.19]]></startDate>
+    						<salary><![CDATA[$139,575]]></salary>
+    					</w2:row>
+    					<w2:row>
+    						<name1><![CDATA[Serge Baldwin]]></name1>
+    						<position><![CDATA[Data Coordinator]]></position>
+    						<chk><![CDATA[0]]></chk>
+    						<office><![CDATA[Singapore]]></office>
+    						<age><![CDATA[64]]></age>
+    						<startDate><![CDATA[2012.04.09]]></startDate>
+    						<salary><![CDATA[$138,575]]></salary>
+    					</w2:row>
+    					<w2:row>
+    						<name1><![CDATA[Shad Decker]]></name1>
+    						<position><![CDATA[Regional Director]]></position>
+    						<chk><![CDATA[0]]></chk>
+    						<office><![CDATA[Edinburgh]]></office>
+    						<age><![CDATA[51]]></age>
+    						<startDate><![CDATA[2008.11.13]]></startDate>
+    						<salary><![CDATA[$183,000]]></salary>
+    					</w2:row>
+    					<w2:row>
+    						<name1><![CDATA[Shou Itou]]></name1>
+    						<position><![CDATA[Regional Marketing]]></position>
+    						<chk><![CDATA[0]]></chk>
+    						<office><![CDATA[Tokyo]]></office>
+    						<age><![CDATA[20]]></age>
+    						<startDate><![CDATA[2011.08.14]]></startDate>
+    						<salary><![CDATA[$163,000]]></salary>
+    					</w2:row>
+    					<w2:row>
+    						<name1><![CDATA[Sonya Frost]]></name1>
+    						<position><![CDATA[Software Engineer]]></position>
+    						<chk><![CDATA[0]]></chk>
+    						<office><![CDATA[Edinburgh]]></office>
+    						<age><![CDATA[23]]></age>
+    						<startDate><![CDATA[2008.12.13]]></startDate>
+    						<salary><![CDATA[$103,600]]></salary>
+    					</w2:row>
+    					<w2:row>
+    						<name1><![CDATA[Suki Burks]]></name1>
+    						<position><![CDATA[Developer]]></position>
+    						<chk><![CDATA[0]]></chk>
+    						<office><![CDATA[London]]></office>
+    						<age><![CDATA[53]]></age>
+    						<startDate><![CDATA[2009.10.22]]></startDate>
+    						<salary><![CDATA[$114,500]]></salary>
+    					</w2:row>
+    					<w2:row>
+    						<name1><![CDATA[Tatyana Fitzpatrick]]></name1>
+    						<position><![CDATA[Regional Director]]></position>
+    						<chk><![CDATA[0]]></chk>
+    						<office><![CDATA[London]]></office>
+    						<age><![CDATA[19]]></age>
+    						<startDate><![CDATA[2010.03.17]]></startDate>
+    						<salary><![CDATA[$385,750]]></salary>
+    					</w2:row>
+    					<w2:row>
+    						<name1><![CDATA[Thor Walton]]></name1>
+    						<position><![CDATA[Developer]]></position>
+    						<chk><![CDATA[0]]></chk>
+    						<office><![CDATA[New York]]></office>
+    						<age><![CDATA[61]]></age>
+    						<startDate><![CDATA[2013.08.11]]></startDate>
+    						<salary><![CDATA[$98,540]]></salary>
+    					</w2:row>
+    					<w2:row>
+    						<name1><![CDATA[Tiger Nixon]]></name1>
+    						<position><![CDATA[System Architect]]></position>
+    						<chk><![CDATA[0]]></chk>
+    						<office><![CDATA[Edinburgh]]></office>
+    						<age><![CDATA[61]]></age>
+    						<startDate><![CDATA[2011.04.25]]></startDate>
+    						<salary><![CDATA[$320,800]]></salary>
+    					</w2:row>
+    					<w2:row>
+    						<name1><![CDATA[Timothy Mooney]]></name1>
+    						<position><![CDATA[Office Manager]]></position>
+    						<chk><![CDATA[0]]></chk>
+    						<office><![CDATA[London]]></office>
+    						<age><![CDATA[37]]></age>
+    						<startDate><![CDATA[2008.12.11]]></startDate>
+    						<salary><![CDATA[$136,200]]></salary>
+    					</w2:row>
+    					<w2:row>
+    						<name1><![CDATA[Unity Butler]]></name1>
+    						<position><![CDATA[Marketing Designer]]></position>
+    						<chk><![CDATA[0]]></chk>
+    						<office><![CDATA[San Francisco]]></office>
+    						<age><![CDATA[47]]></age>
+    						<startDate><![CDATA[2009.12.09]]></startDate>
+    						<salary><![CDATA[$85,675]]></salary>
+    					</w2:row>
+    					<w2:row>
+    						<name1><![CDATA[Vivian Harrell]]></name1>
+    						<position><![CDATA[Financial Controller]]></position>
+    						<chk><![CDATA[0]]></chk>
+    						<office><![CDATA[San Francisco]]></office>
+    						<age><![CDATA[62]]></age>
+    						<startDate><![CDATA[2009.02.14]]></startDate>
+    						<salary><![CDATA[$452,500]]></salary>
+    					</w2:row>
+    					<w2:row>
+    						<name1><![CDATA[Yuri Berry]]></name1>
+    						<position><![CDATA[Chief Marketing Officer (CMO)]]></position>
+    						<chk><![CDATA[0]]></chk>
+    						<office><![CDATA[New York]]></office>
+    						<age><![CDATA[40]]></age>
+    						<startDate><![CDATA[2009.06.25]]></startDate>
+    						<salary><![CDATA[$675,000]]></salary>
+    					</w2:row>
+    					<w2:row>
+    						<name1><![CDATA[Zenaida Frank]]></name1>
+    						<position><![CDATA[Software Engineer]]></position>
+    						<chk><![CDATA[0]]></chk>
+    						<office><![CDATA[New York]]></office>
+    						<age><![CDATA[63]]></age>
+    						<startDate><![CDATA[2010.01.04]]></startDate>
+    						<salary><![CDATA[$125,250]]></salary>
+    					</w2:row>
+    					<w2:row>
+    						<name1><![CDATA[Zorita Serrano]]></name1>
+    						<position><![CDATA[Software Engineer]]></position>
+    						<chk><![CDATA[0]]></chk>
+    						<office><![CDATA[San Francisco]]></office>
+    						<age><![CDATA[56]]></age>
+    						<startDate><![CDATA[2012.06.01]]></startDate>
+    						<salary><![CDATA[$115,000]]></salary>
+    					</w2:row>
+    				</w2:data>
+    			</w2:dataList>
+    			<w2:dataList baseNode="list" id="dlt_grdData" repeatNode="map" saveRemovedData="true" style="">
+    				<w2:columnInfo>
+    					<w2:column dataType="text" id="chk" name="Chk" ignoreStatus="true"></w2:column>
+    					<w2:column dataType="text" id="name1" name="Name1"></w2:column>
+    					<w2:column dataType="text" id="position" name="Position"></w2:column>
+    					<w2:column id="office" name="Office" dataType="text"></w2:column>
+    					<w2:column id="age" name="Age" dataType="text"></w2:column>
+    					<w2:column id="startDate" name="Start date" dataType="text"></w2:column>
+    					<w2:column id="salary" name="Salary" dataType="text"></w2:column>
+    				</w2:columnInfo>
+    				<w2:data use="false"></w2:data>
+    			</w2:dataList>
+    			<w2:dataList baseNode="list" repeatNode="map" id="dlt_grdUserSetHeaderList" saveRemovedData="true">
+    				<w2:columnInfo>
+    					<w2:column id="colNm" name="name1" dataType="text"></w2:column>
+    					<w2:column id="isHidden" name="name2" dataType="text"></w2:column>
+
+    				</w2:columnInfo>
+    			</w2:dataList>
+    		</w2:dataCollection>
+    		<w2:workflowCollection></w2:workflowCollection>
+    	</xf:model>
+    	<script type="text/javascript" lazy="false"><![CDATA[
+        
+	scwin.onpageload = function() {
+
+	};
+	
+	scwin.onpageunload = function() {
+		
+	};
+	
+
+
+	]]></script>
+    	<w2:require src="/common/udc/udc_searchDetailToggle.xml"></w2:require>
+    	<w2:require src="/common/udc/udc_rangeCalendar.xml"></w2:require>
+    </head>
+    <body ev:onpageload="scwin.onpageload" ev:onpageunload="scwin.onpageunload">
+    	<xf:group class="sub_wrapper" id="">
+    		<w2:wframe class="page_header" id="" scope="true" src="../../../common/xml/contentsTitle.xml" style=""></w2:wframe>
+    	<xf:group id="" class="page_contents"><xf:group id="" class="page_contents_inner"><xf:group style="" id="" class="shbox">
+    			<xf:group id="" class="shbox_grp">
+    				<xf:group style="" id="" class="sh_grp">
+    				<w2:textbox tagname="label" style="" id="" label="사용자ID"></w2:textbox><xf:input adjustMaxLength="false" style="" id="" placeholder="검색어" class="wd-200"></xf:input></xf:group>
+    				<xf:group tagname="" id="" class="sh_btn">
+    				<xf:trigger style="" id="trigger1" type="button" class="btn_sh">
+    							<xf:label><![CDATA[검색]]></xf:label>
+    						</xf:trigger><w2:udc_searchDetailShow detailGrpId="grp_scDetail" style="" id=""></w2:udc_searchDetailShow></xf:group>
+    			</xf:group>
+    			<xf:group style="" id="grp_scDetail" class="shbox_grp detail">
+    				<xf:group style="" id="" class="sh_grp">
+    				<w2:textbox tagname="label" style="" id="" label="조건명" class=""></w2:textbox><xf:select1 ref="" submenuSize="auto" appearance="minimal" disabledClass="w2selectbox_disabled" chooseOption="" disabled="false" style="" allOption="true" id="" class="wd-150" direction="auto" renderType="">
+    								<xf:choices>
+    									<xf:item>
+    										<xf:label><![CDATA[옵션1]]></xf:label>
+    										<xf:value></xf:value>
+    									</xf:item>
+    									<xf:item>
+    										<xf:label><![CDATA[옵션2]]></xf:label>
+    										<xf:value></xf:value>
+    									</xf:item>
+    									<xf:item>
+    										<xf:label><![CDATA[옵션3]]></xf:label>
+    										<xf:value></xf:value>
+    									</xf:item>
+    									<xf:item>
+    										<xf:label><![CDATA[기이인 옵션]]></xf:label>
+    										<xf:value></xf:value>
+    									</xf:item>
+    								</xf:choices>
+    							</xf:select1></xf:group>
+    				<xf:group style="" id="" class="sh_grp">
+    				<w2:textbox tagname="label" style="" id="" label="조건명" class=""></w2:textbox><xf:input adjustMaxLength="false" style="" id="" placeholder="" class="wd-200"></xf:input></xf:group>
+    			</xf:group>
+    		</xf:group><xf:group id="" tagname="section"><xf:group style="" id="" class="dfbox">
+    			<w2:textbox tagname="h3" style="" id="" label="개인정보 (Master)"></w2:textbox>
+    		</xf:group><xf:group style="" id="" class="tbbox">
+    			<xf:group tagname="table" style="width:100%;" id="" class="w2tb tb">
+    				<w2:attributes>
+    					<w2:summary></w2:summary>
+    				</w2:attributes>
+    				<xf:group tagname="caption"></xf:group>
+    				<xf:group tagname="colgroup">
+    					<xf:group tagname="col" style="width:140px;"></xf:group>
+    					<xf:group tagname="col" style=""></xf:group>
+    					<xf:group tagname="col" style="width:140px;"></xf:group>
+    					<xf:group tagname="col" style=""></xf:group>
+    				</xf:group>
+    				<xf:group tagname="tr" style="">
+    					<xf:group tagname="th" style="" class="w2tb_th"><w2:attributes>
+    							<w2:scope>row</w2:scope>
+    						</w2:attributes><w2:textbox tagname="label" style="" id="" label="사용자 ID" class="req"></w2:textbox></xf:group>
+    					<xf:group tagname="td" style="" class="w2tb_td">
+    						<w2:attributes>
+    							<w2:colspan>3</w2:colspan>
+    							<w2:rowspan>1</w2:rowspan>
+    						</w2:attributes>
+    						<w2:textbox tagname="span" style="" id="" label="Satou"></w2:textbox>
+    					</xf:group>
+    				</xf:group>
+    				<xf:group tagname="tr" style="">
+    					<xf:group tagname="th" style="" class="w2tb_th">
+    						<w2:attributes>
+    							<w2:scope>row</w2:scope>
+    						</w2:attributes>
+    						<w2:textbox tagname="label" style="" id="" label="사용자명"></w2:textbox>
+    					</xf:group>
+    					<xf:group tagname="td" style="" class="w2tb_td">
+    						<w2:textbox tagname="span" style="" id="" label="Airi Satou"></w2:textbox>
+    					</xf:group>
+    					<xf:group tagname="th" style="" class="w2tb_th"><w2:attributes>
+    							<w2:scope>row</w2:scope>
+    						</w2:attributes><w2:textbox tagname="label" style="" id="" label="역할그룹" class=""></w2:textbox></xf:group>
+    					<xf:group tagname="td" style="" class="w2tb_td">
+    						<w2:textbox tagname="span" style="" id="" label="게시판관리그룹"></w2:textbox>
+    					</xf:group>
+    				</xf:group>
+    				<xf:group tagname="tr">
+    					<xf:group tagname="th" style="" class="w2tb_th">
+    						<w2:attributes>
+    							<w2:scope>row</w2:scope>
+    						</w2:attributes>
+    						<w2:textbox tagname="label" style="" id="" label="휴대폰"></w2:textbox>
+    					</xf:group>
+    					<xf:group tagname="td" style="" class="w2tb_td">
+    						<w2:textbox tagname="span" style="" id="" label="010-9876-5432"></w2:textbox>
+    					</xf:group>
+    					<xf:group tagname="th" style="" class="w2tb_th">
+    						<w2:attributes>
+    							<w2:scope>row</w2:scope>
+    						</w2:attributes>
+    						<w2:textbox tagname="label" style="" id="" label="자택전화" class=""></w2:textbox>
+    					</xf:group>
+    					<xf:group tagname="td" style="" class="w2tb_td">
+    						<w2:textbox tagname="span" style="" id="" label="02-9876-5432"></w2:textbox>
+    					</xf:group>
+    				</xf:group>
+    				<xf:group tagname="tr">
+    					<xf:group tagname="th" style="" class="w2tb_th">
+    						<w2:attributes>
+    							<w2:scope>row</w2:scope>
+    						</w2:attributes>
+    						<w2:textbox tagname="label" style="" id="" label="등록여부"></w2:textbox>
+    					</xf:group>
+    					<xf:group tagname="td" style="" class="w2tb_td">
+    						<w2:textbox tagname="span" style="" id="" label="Y"></w2:textbox>
+    					</xf:group>
+    					<xf:group tagname="th" style="" class="w2tb_th">
+    						<w2:attributes>
+    							<w2:scope>row</w2:scope>
+    						</w2:attributes>
+    						<w2:textbox tagname="label" style="" id="" label="주시스템" class=""></w2:textbox>
+    					</xf:group>
+    					<xf:group tagname="td" style="" class="w2tb_td">
+    						<w2:textbox tagname="span" style="" id="" label="UCube"></w2:textbox>
+    					</xf:group>
+    				</xf:group>
+    				<xf:group tagname="tr">
+    					<xf:group tagname="th" style="" class="w2tb_th">
+    						<w2:attributes>
+    							<w2:scope>row</w2:scope>
+    						</w2:attributes>
+    						<w2:textbox tagname="label" style="" id="" label="사용자시스템"></w2:textbox>
+    					</xf:group>
+    					<xf:group tagname="td" style="" class="w2tb_td">
+    						<w2:attributes>
+    							<w2:colspan>3</w2:colspan>
+    							<w2:rowspan>1</w2:rowspan>
+    						</w2:attributes>
+    					</xf:group>
+    				</xf:group>
+    				<xf:group tagname="tr">
+    					<xf:group tagname="th" style="" class="w2tb_th">
+    						<w2:attributes>
+    							<w2:scope>row</w2:scope>
+    						</w2:attributes>
+    						<w2:textbox tagname="label" style="" id="" label="등록자"></w2:textbox>
+    					</xf:group>
+    					<xf:group tagname="td" style="" class="w2tb_td">
+    						<w2:attributes>
+    							<w2:colspan>3</w2:colspan>
+    							<w2:rowspan>1</w2:rowspan>
+    						</w2:attributes>
+    						<w2:textbox tagname="span" style="" id="" label="홍길동 책임 아키텍처팀"></w2:textbox>
+    					</xf:group>
+    				</xf:group>
+    			</xf:group>
+    		</xf:group></xf:group><xf:group id="" tagname="section"><xf:group style="" id="" class="dfbox">
+    			<w2:textbox tagname="h3" style="" id="" label="권한신청 (종속관계)"></w2:textbox>
+    		</xf:group><xf:group style="" id="" class="tbbox">
+    			<xf:group tagname="table" style="width:100%;" id="" class="w2tb tb">
+    				<w2:attributes>
+    					<w2:summary></w2:summary>
+    				</w2:attributes>
+    				<xf:group tagname="caption"></xf:group>
+    				<xf:group tagname="colgroup">
+    					<xf:group tagname="col" style="width:140px;"></xf:group>
+    					<xf:group tagname="col" style=""></xf:group>
+    					<xf:group tagname="col" style="width:140px;"></xf:group>
+    					<xf:group tagname="col" style=""></xf:group>
+    				</xf:group>
+    				<xf:group tagname="tr" style="">
+    					<xf:group tagname="th" style="" class="w2tb_th"><w2:attributes>
+    							<w2:scope>row</w2:scope>
+    						</w2:attributes><w2:textbox tagname="label" style="" id="" label="권한 사용기간" class="req"></w2:textbox></xf:group>
+    					<xf:group tagname="td" style="" class="w2tb_td">
+    						<w2:udc_dbCaleandar pickerType="picker" style="" id="" class="req"></w2:udc_dbCaleandar>
+    					</xf:group>
+    					<xf:group tagname="th" style="" class="w2tb_th"><w2:attributes>
+    							<w2:scope>row</w2:scope>
+    						</w2:attributes><w2:textbox tagname="label" style="" id="" label="권한그룹명" class="req"></w2:textbox></xf:group>
+    					<xf:group tagname="td" style="" class="w2tb_td">
+    						<xf:input adjustMaxLength="false" style="" id="" placeholder="" class="wd-150 req" initValue=""></xf:input>
+    					</xf:group>
+    				</xf:group>
+    				<xf:group tagname="tr">
+    					<xf:group tagname="th" style="" class="w2tb_th">
+    						<w2:attributes>
+    							<w2:scope>row</w2:scope>
+    						</w2:attributes>
+    						<w2:textbox tagname="label" style="" id="" label="장비구분" class="req"></w2:textbox>
+    					</xf:group>
+    					<xf:group tagname="td" style="" class="w2tb_td">
+    						<xf:select1 ref="" submenuSize="auto" appearance="minimal" disabledClass="w2selectbox_disabled" chooseOption="true" disabled="false" style="" allOption="" id="" class="wd-200 req" direction="auto">
+    							<xf:choices></xf:choices>
+    						</xf:select1>
+    					</xf:group>
+    					<xf:group tagname="th" style="" class="w2tb_th">
+    						<w2:attributes>
+    							<w2:scope>row</w2:scope>
+    						</w2:attributes>
+    						<w2:textbox tagname="label" style="" id="" label="대리인" class=""></w2:textbox>
+    					</xf:group>
+    					<xf:group tagname="td" style="" class="w2tb_td">
+    						<xf:input adjustMaxLength="false" style="" id="" placeholder="" class="wd-150" initValue=""></xf:input>
+    					</xf:group>
+    				</xf:group>
+    				<xf:group tagname="tr">
+    					<xf:group tagname="th" style="" class="w2tb_th">
+    						<w2:attributes>
+    							<w2:scope>row</w2:scope>
+    						</w2:attributes>
+    						<w2:textbox tagname="label" style="" id="" label="비용처리" class="req"></w2:textbox>
+    					</xf:group>
+    					<xf:group tagname="td" style="" class="w2tb_td">
+    						<w2:attributes>
+    							<w2:colspan>3</w2:colspan>
+    							<w2:rowspan>1</w2:rowspan>
+    						</w2:attributes>
+    						<xf:select1 ref="" submenuSize="auto" appearance="minimal" disabledClass="w2selectbox_disabled" chooseOption="" disabled="false" style="" allOption="" id="" class="wd-200 req" direction="auto">
+    							<xf:choices>
+    								<xf:item>
+    									<xf:label><![CDATA[아키텍처팀]]></xf:label>
+    									<xf:value><![CDATA[]]></xf:value>
+    								</xf:item>
+    								<xf:item>
+    									<xf:label><![CDATA[U+마당 포탈 구축]]></xf:label>
+    									<xf:value><![CDATA[]]></xf:value>
+    								</xf:item>
+    							</xf:choices>
+    						</xf:select1>
+    					</xf:group>
+    				</xf:group>
+    				<xf:group tagname="tr">
+    					<xf:group tagname="th" class="w2tb_th">
+    						<w2:attributes>
+    							<w2:scope>row</w2:scope>
+    						</w2:attributes>
+    						<w2:textbox tagname="label" style="" id="" label="승인자"></w2:textbox>
+    					</xf:group>
+    					<xf:group tagname="td" class="w2tb_td">
+    						<w2:attributes>
+    							<w2:colspan>3</w2:colspan>
+    							<w2:rowspan>1</w2:rowspan>
+    						</w2:attributes>
+    						<xf:input adjustMaxLength="false" style="" disabled="true" id="" placeholder="" class="wd-200" initValue="아키텍처팀 홍길동 책임">
+    						</xf:input>
+    					</xf:group>
+    				</xf:group>
+    			</xf:group>
+    		</xf:group></xf:group><xf:group style="" id="" class="btnbox last">
+    			<xf:group id="" class="rta">
+    				<xf:trigger anchorWithGroupClass="" class="btn_cm save" ev:onclick="" id=""
+    					style="" type="button">
+    					<xf:label><![CDATA[결재요청]]></xf:label>
+    				</xf:trigger>
+    				<xf:trigger ev:onclick="" style="" id="" type="button" class="btn_df">
+    					<xf:label><![CDATA[초기화]]></xf:label>
+    				</xf:trigger>
+    			</xf:group>
+</xf:group></xf:group></xf:group></xf:group>
+    </body>
+</html>

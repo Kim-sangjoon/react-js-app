@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:ev="http://www.w3.org/2001/xml-events"
+    xmlns:w2="http://www.inswave.com/websquare" xmlns:xf="http://www.w3.org/2002/xforms">
+    <head>
+    	<w2:type>DEFAULT</w2:type>
+        <w2:buildDate/>
+        <xf:model>
+            <xf:instance>
+                <data xmlns=""/>
+            </xf:instance>
+            <w2:dataCollection baseNode="map">
+            </w2:dataCollection>
+            <w2:workflowCollection>
+            </w2:workflowCollection>
+        </xf:model>
+         <script type="text/javascript" lazy="false"><![CDATA[
+        
+	scwin.onpageload = function() {
+		
+	};
+	
+	scwin.onpageunload = function() {
+		
+	};
+	
+	scwin.btn_favSlide_onclick = function() {
+		$('#'+this.id).toggleClass('fold');
+		grp_trvBox.toggleClass('hide');
+	};
+	
+	
+	scwin.btn_fix_onclick = function(e) {
+		$('#'+this.id).hide();
+		$('.side').removeClass('on');
+		$('.btn_nav.close').hide();
+		$('.btn_nav.fix').show();
+		$('.mf_container').toggleClass('folded');		
+	};
+	]]></script>
+    </head>
+    <body ev:onpageload="scwin.onpageload" ev:onpageunload="scwin.onpageunload">
+    	<xf:group class="lnb_fav_list" id="" style="" tagname="">
+    		<xf:group class="lnb_header" id="" style="">
+    			<xf:select1 allOption="" appearance="minimal" chooseOption="" class="sbx lnb_sel" direction="auto" disabled="false"
+    				disabledClass="w2selectbox_disabled" id="" ref="" style="" submenuSize="auto" renderType="">
+    				<xf:choices>
+    					<xf:item>
+    						<xf:label><![CDATA[모바일]]></xf:label>
+    						<xf:value><![CDATA[]]></xf:value>
+    					</xf:item>
+    					<xf:item>
+    						<xf:label><![CDATA[홈]]></xf:label>
+    						<xf:value><![CDATA[]]></xf:value>
+    					</xf:item>
+    				</xf:choices>
+    			</xf:select1>
+    			<xf:trigger class="btn_allmenu" ev:onclick="" id="" style="" type="button" toolTip="">
+    				<xf:label><![CDATA[메뉴]]></xf:label>
+    			</xf:trigger>
+    			<xf:trigger class="btn_fix" ev:onclick="scwin.btn_fix_onclick" id="btn_fix" style="" toolTip="" type="button">
+    				<xf:label><![CDATA[나의 메뉴 고정]]></xf:label>
+    			</xf:trigger>
+    		</xf:group>
+    		<xf:group class="menu_search" id="" style="">
+    			<xf:input adjustMaxLength="false" class="" ev:onkeyup="" ev:onviewchange="" id="ibx_searchMenu" placeholder="메뉴명을 검색하세요"
+    				style="" ev:onclick="">
+    			</xf:input>
+    			<xf:trigger class="btn_menu_search" ev:onclick="" id="btn_menuSearch" style="" type="button">
+    				<xf:label><![CDATA[검색]]></xf:label>
+    			</xf:trigger>
+    		</xf:group>
+    		<xf:group class="lnb_fav_inner" id="grp_lnbFavInner">
+    			<xf:group class="fav_box" id="">
+    				<xf:group id="" tagname="h3">
+    					<w2:anchor outerDiv="false" ev:onclick="scwin.btn_favSlide_onclick" style="" id="btn_favSlide">
+    						<xf:label><![CDATA[나의 메뉴]]></xf:label>
+    					</w2:anchor>
+    				</xf:group>
+    				<xf:group id="gen_favList" tagname="ul" class="fav depth01" style="display: none;">
+    					<xf:group tagname="li" style="" id="" class="">
+    						<xf:trigger ev:onclick="" style="" id="btn_favUpdate" title="" type="button" class="btn_fav_star">
+    							<xf:label><![CDATA[]]></xf:label>
+    						</xf:trigger>
+    						<xf:group tagname="a" ev:onclick="scwin.grp_favBtn_onclick" style="" id="grp_btnMenuNm" class="">
+    							<w2:attributes>
+    								<w2:href>javascript:void(null);</w2:href>
+    							</w2:attributes>
+    							<w2:textbox tagname="span" style="" id="tbx_menuNm" label="비가입자상담등록"></w2:textbox>
+    						</xf:group>
+    					</xf:group>
+    					<xf:group class="" id="" style="" tagname="li">
+    						<xf:trigger class="btn_fav_star" ev:onclick="" id="" style="" title="" type="button">
+    							<xf:label><![CDATA[]]></xf:label>
+    						</xf:trigger>
+    						<xf:group class="" ev:onclick="" id="group1" style="" tagname="a">
+    							<w2:attributes>
+    								<w2:href>javascript:void(null);</w2:href>
+    							</w2:attributes>
+    							<w2:textbox id="" label="단말기판매관리" style="" tagname="span"></w2:textbox>
+    						</xf:group>
+    					</xf:group>
+    					<xf:group id="" tagname="li">
+    						<xf:trigger class="btn_fav_star" ev:onclick="" id="" style="" title="" type="button">
+    							<xf:label><![CDATA[]]></xf:label>
+    						</xf:trigger>
+    						<xf:group tagname="a" ev:onclick="" style="" id="" class="">
+    							<w2:attributes>
+    								<w2:href>javascript:void(null);</w2:href>
+    							</w2:attributes>
+    							<w2:textbox tagname="span" style="" id="" label="단말기할부"></w2:textbox>
+    						</xf:group>
+    					</xf:group>
+    					<xf:group class="" id="" style="" tagname="li">
+    						<xf:trigger class="btn_folder" ev:onclick="scwin.btn_folder_onclick" id="btn_folder" style="" title=""
+    							type="button">
+    							<xf:label><![CDATA[]]></xf:label>
+    						</xf:trigger>
+    						<w2:textbox id="" label="폴더명01" style="" tagname="span"></w2:textbox>
+    						<xf:group id="" class="depth02" tagname="ul">
+
+    							<xf:group class="" id="" style="" tagname="li">
+    								<xf:trigger class="btn_fav_star" ev:onclick="" id="" style="" title="" type="button">
+    									<xf:label><![CDATA[]]></xf:label>
+    								</xf:trigger>
+    								<xf:group class="" ev:onclick="" id="" style="" tagname="a">
+    									<w2:attributes>
+    										<w2:href>javascript:void(null);</w2:href>
+    									</w2:attributes>
+    									<w2:textbox id="" label="보완스캔/스캔목록조회" style="" tagname="span"></w2:textbox>
+    								</xf:group>
+    							</xf:group>
+    							<xf:group class="" id="" style="" tagname="li">
+    								<xf:trigger class="btn_fav_star" ev:onclick="" id="" style="" title="" type="button">
+    									<xf:label><![CDATA[]]></xf:label>
+    								</xf:trigger>
+    								<xf:group class="" ev:onclick="" id="" style="" tagname="a">
+    									<w2:attributes>
+    										<w2:href>javascript:void(null);</w2:href>
+    									</w2:attributes>
+    									<w2:textbox id="" label="보완스캔/스캔목록조회" style="" tagname="span"></w2:textbox>
+    								</xf:group>
+    							</xf:group>
+    						</xf:group>
+    					</xf:group>
+
+    				</xf:group>
+    			<xf:group id="grp_trvBox" class="fav_trv">
+    				<w2:treeview tooltipGroupClass="false" dataType="listed" style="" id="" lineShow="false" showCheckbox="true" showTreeDepth="2" tooltipDisplay="true" rowHeight="30" renderType="virtual" falseValue="N" trueValue="Y" alwaysDraw="true" tooltipTime="1">
+    					<w2:node>
+    						<w2:label><![CDATA[비가입자상담등록]]></w2:label>
+    						<w2:value><![CDATA[]]></w2:value>
+    						<w2:folder><![CDATA[]]></w2:folder>
+    						<w2:checkbox><![CDATA[]]></w2:checkbox>
+    						<w2:checkboxDisabled><![CDATA[]]></w2:checkboxDisabled>
+    						<w2:image><![CDATA[]]></w2:image>
+    						<w2:iconImage><![CDATA[]]></w2:iconImage>
+    						<w2:selectedImage><![CDATA[]]></w2:selectedImage>
+    						<w2:expandedImage><![CDATA[]]></w2:expandedImage>
+    						<w2:leafImage><![CDATA[]]></w2:leafImage>
+    					</w2:node>
+    					<w2:node>
+    						<w2:label><![CDATA[단말기판매관리]]></w2:label>
+    						<w2:value><![CDATA[]]></w2:value>
+    						<w2:folder><![CDATA[]]></w2:folder>
+    						<w2:checkbox><![CDATA[]]></w2:checkbox>
+    						<w2:checkboxDisabled><![CDATA[]]></w2:checkboxDisabled>
+    						<w2:image><![CDATA[]]></w2:image>
+    						<w2:iconImage><![CDATA[]]></w2:iconImage>
+    						<w2:selectedImage><![CDATA[]]></w2:selectedImage>
+    						<w2:expandedImage><![CDATA[]]></w2:expandedImage>
+    						<w2:leafImage><![CDATA[]]></w2:leafImage>
+    					</w2:node>
+    					<w2:node>
+    						<w2:label><![CDATA[단말기할부]]></w2:label>
+    						<w2:value><![CDATA[]]></w2:value>
+    						<w2:folder><![CDATA[]]></w2:folder>
+    						<w2:checkbox><![CDATA[]]></w2:checkbox>
+    						<w2:checkboxDisabled><![CDATA[]]></w2:checkboxDisabled>
+    						<w2:image><![CDATA[]]></w2:image>
+    						<w2:iconImage><![CDATA[]]></w2:iconImage>
+    						<w2:selectedImage><![CDATA[]]></w2:selectedImage>
+    						<w2:expandedImage><![CDATA[]]></w2:expandedImage>
+    						<w2:leafImage><![CDATA[]]></w2:leafImage>
+    					</w2:node>
+    					<w2:node>
+    						<w2:label><![CDATA[폴더명01]]></w2:label>
+    						<w2:value><![CDATA[]]></w2:value>
+    						<w2:folder><![CDATA[]]></w2:folder>
+    						<w2:checkbox><![CDATA[]]></w2:checkbox>
+    						<w2:checkboxDisabled><![CDATA[]]></w2:checkboxDisabled>
+    						<w2:image><![CDATA[]]></w2:image>
+    						<w2:iconImage><![CDATA[]]></w2:iconImage>
+    						<w2:selectedImage><![CDATA[]]></w2:selectedImage>
+    						<w2:expandedImage><![CDATA[]]></w2:expandedImage>
+    						<w2:leafImage><![CDATA[]]></w2:leafImage>
+    						<w2:node>
+    							<w2:label><![CDATA[보완스캔/스캔목록조회]]></w2:label>
+    							<w2:value><![CDATA[]]></w2:value>
+    							<w2:folder><![CDATA[]]></w2:folder>
+    							<w2:checkbox><![CDATA[]]></w2:checkbox>
+    							<w2:checkboxDisabled><![CDATA[]]></w2:checkboxDisabled>
+    							<w2:image><![CDATA[]]></w2:image>
+    							<w2:iconImage><![CDATA[]]></w2:iconImage>
+    							<w2:selectedImage><![CDATA[]]></w2:selectedImage>
+    							<w2:expandedImage><![CDATA[]]></w2:expandedImage>
+    							<w2:leafImage><![CDATA[]]></w2:leafImage>
+    						</w2:node>
+    						<w2:node>
+    							<w2:label><![CDATA[보완스캔/스캔목록조회]]></w2:label>
+    							<w2:value><![CDATA[]]></w2:value>
+    							<w2:folder><![CDATA[]]></w2:folder>
+    							<w2:checkbox><![CDATA[]]></w2:checkbox>
+    							<w2:checkboxDisabled><![CDATA[]]></w2:checkboxDisabled>
+    							<w2:image><![CDATA[]]></w2:image>
+    							<w2:iconImage><![CDATA[]]></w2:iconImage>
+    							<w2:selectedImage><![CDATA[]]></w2:selectedImage>
+    							<w2:expandedImage><![CDATA[]]></w2:expandedImage>
+    							<w2:leafImage><![CDATA[]]></w2:leafImage>
+    						</w2:node>
+    					</w2:node>
+    					<w2:node>
+    						<w2:label><![CDATA[폴더명02]]></w2:label>
+    						<w2:value><![CDATA[]]></w2:value>
+    						<w2:folder><![CDATA[]]></w2:folder>
+    						<w2:checkbox><![CDATA[]]></w2:checkbox>
+    						<w2:checkboxDisabled><![CDATA[]]></w2:checkboxDisabled>
+    						<w2:image><![CDATA[]]></w2:image>
+    						<w2:iconImage><![CDATA[]]></w2:iconImage>
+    						<w2:selectedImage><![CDATA[]]></w2:selectedImage>
+    						<w2:expandedImage><![CDATA[]]></w2:expandedImage>
+    						<w2:leafImage><![CDATA[]]></w2:leafImage>
+    						<w2:node>
+    							<w2:label><![CDATA[보완스캔/스캔목록조회]]></w2:label>
+    							<w2:value><![CDATA[]]></w2:value>
+    							<w2:folder><![CDATA[]]></w2:folder>
+    							<w2:checkbox><![CDATA[]]></w2:checkbox>
+    							<w2:checkboxDisabled><![CDATA[]]></w2:checkboxDisabled>
+    							<w2:image><![CDATA[]]></w2:image>
+    							<w2:iconImage><![CDATA[]]></w2:iconImage>
+    							<w2:selectedImage><![CDATA[]]></w2:selectedImage>
+    							<w2:expandedImage><![CDATA[]]></w2:expandedImage>
+    							<w2:leafImage><![CDATA[]]></w2:leafImage>
+    						</w2:node>
+    						<w2:node>
+    							<w2:label><![CDATA[보완스캔/스캔목록조회]]></w2:label>
+    							<w2:value><![CDATA[]]></w2:value>
+    							<w2:folder><![CDATA[]]></w2:folder>
+    							<w2:checkbox><![CDATA[]]></w2:checkbox>
+    							<w2:checkboxDisabled><![CDATA[]]></w2:checkboxDisabled>
+    							<w2:image><![CDATA[]]></w2:image>
+    							<w2:iconImage><![CDATA[]]></w2:iconImage>
+    							<w2:selectedImage><![CDATA[]]></w2:selectedImage>
+    							<w2:expandedImage><![CDATA[]]></w2:expandedImage>
+    							<w2:leafImage><![CDATA[]]></w2:leafImage>
+    						</w2:node>
+    					</w2:node>
+    				</w2:treeview></xf:group></xf:group>
+    		</xf:group>
+    		<xf:group class="lnb_fav_edit" id="" style="">
+    		<xf:group id="" class="fr"><xf:trigger anchorWithGroupClass="" ev:onclick="" disabled="" style="" id="" type="button" class="btn_fav_edit">
+    				<xf:label><![CDATA[편집]]></xf:label>
+    			</xf:trigger><xf:trigger anchorWithGroupClass="" ev:onclick="" disabled="" style="display: none" id="" type="button" class="btn_fav_menu">
+    				<xf:label><![CDATA[메뉴 가져오기]]></xf:label>
+    			</xf:trigger><xf:trigger anchorWithGroupClass="" ev:onclick="" disabled="" style="display: none" id="" type="button" class="btn_fav_ok">
+    				<xf:label><![CDATA[완료]]></xf:label>
+    			</xf:trigger></xf:group></xf:group>
+    	</xf:group>
+    </body>
+</html>
