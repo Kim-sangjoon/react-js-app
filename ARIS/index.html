@@ -1,0 +1,894 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>U+ARIS</title>
+    <script src="./js/jquery.min.js"></script>
+    <!-- <link rel="stylesheet" type="text/css" href="./css/style.css"> -->
+    <style>
+    /* font */
+    @font-face {font-family: 'LGSmHaR'; src: url('fonts/LGSmHaTR.woff') format('woff');}
+    @font-face {font-family: 'LGSmHSB'; src: url('fonts/LGSmHaTSB.woff') format('woff');}
+    
+    /* reset */
+    html, body, div, span, applet, object, iframe,
+    h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+    a, abbr, acronym, address, big, cite, code,
+    del, dfn, em, img, ins, kbd, q, s, samp,
+    small, strike, strong, sub, sup, tt, var,
+    b, u, i, center,
+    dl, dt, dd, ol, ul, li,
+    fieldset, form, label, legend,
+    table, caption, tbody, tfoot, thead, tr, th, td,
+    article, aside, canvas, details, embed, 
+    figure, figcaption, footer, header, hgroup, 
+    menu, nav, output, ruby, section, summary,
+    time, mark, audio, video {margin: 0; padding: 0; border: 0; box-sizing: border-box; font-weight: normal;}
+    /* HTML5 display-role reset for older browsers */
+    article, aside, details, figcaption, figure, 
+    footer, header, hgroup, menu, nav, section {display: block;}
+    body, input, textarea, select, button{ font-family: 'LGSmHaR', LGSmHaR, '맑은 고딕', Malgun Gothic, '돋움', Dotum, sans-serif; font-size: 13px; color: #202020;}
+    ul, ol{list-style: none;}
+    img, fieldset{border: 0;}
+    em, address{font-style: normal;}
+    *:focus{outline: none;}
+    input, img, select, label{vertical-align: middle;}
+    hr, legend, caption{display: none;}
+    table{width: 100%; border-collapse: collapse;}
+    button{border: 0 none; background-color: transparent; cursor: pointer;}
+    a{text-decoration: none;}
+    a:hover{text-decoration: none;}
+
+    /* common */
+    .txt_normal{font-family: 'LGSmHaR'; font-weight: normal;}
+    .txt_bold{font-family: 'LGSmHSB'; font-weight: normal;}
+    .txt_black{color: #2C3238;}
+    .blind{overflow: hidden; visibility: hidden; position: absolute; left: -9999px; width: 1px; height: 1px; font-size: 0; line-height: 0;}
+    .hide{display: none;}
+    .show{display: block;}
+
+
+    /* button */        
+    button.move{position: relative; background: #DECAE8; border-radius: 5px; font-size: 12px; line-height: 12px; color: #603973; padding: 5px 14px 5px 6px; border: 1px solid #EEE5F2;}
+    button.move:hover{position: relative; background: #4C2B5B; border-radius: 5px; font-size: 12px; line-height: 12px; color: #FFFFFF; padding: 5px 14px 5px 6px; border: 1px solid #EEE5F2;}
+    button.move::after{content: ""; background: url(images/arrow_right_btn.svg) no-repeat; position: absolute; width: 17px; height: 17px; right: 0; top: 2px;}
+    button.move:hover::after{content: ""; background: url(images/arrow_right_white.svg) no-repeat; position: absolute; width: 17px; height: 17px; right: 0; top: 2px;}
+
+    .icon{color: transparent; font-size: 0; text-indent: -9999px;}
+    .btn_group{display: inline-table;}
+    .btn_group > .btn_df{margin-right: 6px;}
+    .btn_group > .btn_df:last-child{margin-right: 0;}
+    button.btn_df{position: relative; background: #FFFFFF; border: 1px solid #BEC9D4; box-sizing: border-box; border-radius: 3px; color: #56606B; font-size: 11px; line-height: 11px; padding: 8px 6px 6px 26px; box-sizing: border-box;}
+    button.allopen::before{content: ""; position: absolute; display: block; width: 18px; height: 18px; top: 3px; left: 6px; background: url(images/btn_icon_plus.svg) no-repeat;}
+    button.allclose::before{content: ""; position: absolute; display: block; width: 18px; height: 18px; top: 3px; left: 6px; background: url(images/btn_icon_minus.svg) no-repeat;}
+    button.btn_close{position: relative; display: block; width: 26px; height: 26px;}
+    button.black::before{content: ""; position: absolute; display: block; width: 26px; height: 26px; top: 0; left: 0; background: url(images/ico_close_black.svg) no-repeat;}
+    button.white::before{content: ""; position: absolute; display: block; width: 26px; height: 26px; top: 0; left: 0; background: url(images/ico_close_white.svg) no-repeat;}
+
+
+    /* container */
+    body{background: #E8EFF5; height: 100%;}
+    .content_wrap{background: #E8EFF5; height: 100%; min-width: 1440px;}
+    .type_F{padding: 50px;}
+    .innerwrap{background: transparent;}
+    .ct_title{padding-bottom: 30px;}
+    .ct_title > h2{color: #202020; font-size: 28px; line-height: 30px; margin-bottom: 11px;}
+    .ct_title > p{color: #555555; font-size: 16px; line-height: 17px;}
+    .cont_wrap{padding-bottom: 20px;}
+    .cont_wrap > .dfbox{display: inline-block; width:100%; border: 1px solid #DAE3ED; box-sizing: border-box; background: #FFFFFF; padding: 18px 0; vertical-align: middle;}
+    .cont_wrap > .dfbox .lta{display: block; float: left;}
+    .cont_wrap > .dfbox .lta > h3{position: relative; color: #2C3238; font-size: 22px; line-height: 28px; padding-left: 50px; cursor:pointer;}
+    .cont_wrap > .dfbox .lta > h3::before{transition-duration: .2s; content: ""; position:absolute; background: url(images/btn_minus_typeA.svg) no-repeat; display: block; width: 28px; height: 28px; top: 0px; left: 16px;}
+    .cont_wrap > .dfbox.plus .lta > h3::before{transform: rotate(-180deg); background: url(images/btn_plus_typeA.svg) no-repeat;}
+    .cont_wrap > .dfbox.on .lta > h3::before{content: ""; position:absolute; background: url(images/btn_plus_typeA.svg) no-repeat; display: block; width: 28px; height: 28px; top: 0px; left: 16px;}
+    .cont_wrap > .dfbox .rta{display: block; float: right; padding-right: 20px; padding-top: 6.5px;}
+    .cont_wrap.type1 > .dfbox .rta span{position: relative; font-size: 14px; line-height: 15px; color: #202020;}
+    .cont_wrap.type1 > .dfbox .rta span::before{content: ""; display: block; position: absolute; width:15px; height:15px; background-color: #7B558D; border-radius: 3px; left: -18px;}
+    .cont_wrap.type2 > .dfbox .rta span{position: relative; font-size: 14px; line-height: 15px; color: #202020;}
+    .cont_wrap.type2 > .dfbox .rta span::before{content: ""; display: block; position: absolute; width:15px; height:15px; background-color:#139989; border-radius: 3px; left: -18px;}
+    .cont_wrap .tb_wrap{padding: 30px; background: #F5F7FA; border: 1px solid #DAE3ED; border-top: 0 none; box-sizing: border-box;} 
+    .cont_wrap .tb_wrap > .tb_head {padding-bottom: 28.5px;}
+    .cont_wrap .tb_wrap > .tb_head ul{display: flex; flex-direction: row; justify-content: center; white-space: nowrap;}
+    .cont_wrap .tb_wrap > .tb_head ul > li{margin-right: 25px;}
+    .cont_wrap .tb_wrap > .tb_head ul > li:last-child{margin-right: 0;}
+    .cont_wrap .tb_wrap > .tb_head ul > li > span{cursor: pointer;}
+    .cont_wrap.type1 .tb_wrap > .tb_head ul > li > span:hover{color: #4C2B5B; border-bottom: 1px solid #4C2B5B; padding-bottom: 0; height: 20px; display: inline-block;}
+    .cont_wrap.type2 .tb_wrap > .tb_head ul > li > span:hover{color: #00544B; border-bottom: 1px solid #00544B; padding-bottom: 0; height: 20px; display: inline-block;}
+    .cont_wrap.type1 .tb_wrap > .tb_head ul > li > i{display: block; width: 22px; height: 22px; background: url(images/icon_tbhead_type1.svg) no-repeat;  position:absolute; left:3px; top: 0; cursor: pointer;}
+    .cont_wrap.type2 .tb_wrap > .tb_head ul > li > i{display: block; width: 22px; height: 22px; background: url(images/icon_tbhead_type2.svg) no-repeat;  position:absolute; left:3px; top: 0; cursor: pointer;}
+    .cont_wrap.type1 .tb_wrap > .tb_head ul > li > i:hover{background: url(images/icon_tbhead_type1_over.svg) no-repeat;}
+    .cont_wrap.type2 .tb_wrap > .tb_head ul > li > i:hover{background: url(images/icon_tbhead_type2_over.svg) no-repeat;}
+    .cont_wrap .tb_wrap > .tb_head ul > li > p{width: calc(100% + 21px); height:14px; background: url(images/arrow_tbhead_bg.png) repeat-x; margin-left: -35px;}
+    .cont_wrap.type1 .tb_wrap > .tb_head ul > li{flex: 1; display: block; position: relative; background: transparent; color: #7B558D; font-size: 20px; line-height: 22px; font-family: 'LGSmHSB'; font-weight: normal; padding-left: 35px;}        
+    .cont_wrap.type2 .tb_wrap > .tb_head ul > li{flex: 1; display: block; position: relative; background: transparent; color:#139989; font-size: 20px; line-height: 22px; font-family: 'LGSmHSB'; font-weight: normal; padding-left: 35px;}
+    .cont_wrap.type1 .tb_wrap > .tb_head ul > li::after{content: ""; display:block; position: absolute; background: url(images/arrow_tbhead_right.png) no-repeat; width: 12px; height: 14px; right: 2px; top: 22px;} 
+    .cont_wrap.type2 .tb_wrap > .tb_head ul > li::after{content: ""; display:block; position: absolute; background: url(images/arrow_tbhead_right.png) no-repeat; width: 12px; height: 14px; right: 2px; top: 22px;} 
+    .cont_wrap .tb_wrap > .tb_body > ul {display: flex; flex-direction: row; justify-content: center;}
+    .cont_wrap .tb_wrap > .tb_body > ul > li{margin-right: 25px;}
+    .cont_wrap .tb_wrap > .tb_body > ul > li:last-child{margin-right: 0;}
+    .cont_wrap .tb_wrap > .tb_body > ul > li{flex: 1; display: block; font-size: 13px;}
+    .cont_wrap .tb_wrap > .tb_body > ul > li > ul > li{position: relative;}
+    .cont_wrap.type1 .tb_wrap > .tb_body > ul > li > ul > li > span:hover{background:#E8EFF5; border: 1px solid #8996A3; box-sizing: border-box; box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.1); text-decoration: underline; cursor: pointer;}
+    .cont_wrap.type1 .tb_wrap > .tb_body > ul > li > ul > li > span:active{background:#2C3238; border: 1px solid #2C3238; box-sizing: border-box; box-shadow: none; cursor: pointer; color: #F5F7FA; text-decoration: none;}
+    .cont_wrap.type2 .tb_wrap > .tb_body > ul > li > ul > li > span:hover{background:#E8EFF5; border: 1px solid #8996A3; box-sizing: border-box; box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.1); text-decoration: underline; cursor: pointer;}
+    .cont_wrap.type2 .tb_wrap > .tb_body > ul > li > ul > li > span:active{background:#2C3238; border: 1px solid #2C3238; box-sizing: border-box; box-shadow: none; cursor: pointer; color: #F5F7FA; text-decoration: none;}
+    .cont_wrap.type1 .tb_wrap > .tb_body > ul > li > ul > li.on > span{background-color: #7B558D; color:#FFFFFF; border: 1px solid #7B558D; cursor: pointer;}
+    .cont_wrap.type2 .tb_wrap > .tb_body > ul > li > ul > li.on > span{background-color: #139989; color:#FFFFFF; border: 1px solid #139989; cursor: pointer;}
+    .cont_wrap.type1 .tb_wrap > .tb_body > ul > li > ul > li.on > span:hover{background: #8D669F; border: 1px solid #4C2B5B; box-sizing: border-box; box-shadow: 0px 8px 8px rgba(123, 85, 141, 0.25); color:#FFFFFF; text-decoration: underline;}
+    .cont_wrap.type1 .tb_wrap > .tb_body > ul > li > ul > li.on > span:active{background: #4C2B5B; border: 1px solid #4C2B5B; box-sizing: border-box; box-shadow: none; color:#FFFFFF; text-decoration: none;}        
+    .cont_wrap.type2 .tb_wrap > .tb_body > ul > li > ul > li.on > span:hover{background: #2FB8A8; border: 1px solid #00544B; box-sizing: border-box; box-shadow: 0px 8px 8px rgba(19, 153, 137, 0.25); color:#FFFFFF; text-decoration: underline;}
+    .cont_wrap.type2 .tb_wrap > .tb_body > ul > li > ul > li.on > span:active{background: #00544B; border: 1px solid #00544B; box-sizing: border-box; box-shadow: none; color:#FFFFFF; text-decoration: none;}
+    .cont_wrap.type1 .tb_wrap > .tb_body > ul > li > ul > li > span{display: block; position: relative; height: 48px; width: calc(100% - 30px); padding: 16px 10px; font-size: 15px; line-height: 16px; background: #DAE3ED; margin-bottom: 15px; white-space: nowrap; border:1px solid #DAE3ED;}
+    .cont_wrap.type2 .tb_wrap > .tb_body > ul > li > ul > li > span{display: block; position: relative; height: 48px; width: calc(100% - 30px); padding: 16px 10px; font-size: 15px; line-height: 16px; background: #DAE3ED; margin-bottom: 15px; white-space: nowrap; border:1px solid #DAE3ED;}
+    .cont_wrap .tb_wrap > .tb_body > ul > li > ul > li > p{display:block; position: absolute; background: url(images/ico_menu_off.svg) no-repeat 50% 50% #DAE3ED; width: 30px; height: 48px; right: 0; top: 0; border-left: 1px solid rgba(255, 255, 255, 0.5); cursor: pointer;}
+    .cont_wrap .tb_wrap > .tb_body > ul > li > ul > li > p:hover{background: url(images/ico_menu_off.svg) no-repeat 50% 50% #E8EFF5; border: 1px solid #8996A3; box-sizing: border-box; box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.1); cursor: pointer; width: 29px; height: 48px;}
+    .cont_wrap .tb_wrap > .tb_body > ul > li > ul > li > p:active{background: url(images/ico_menu_on.svg) no-repeat 50% 50% #2C3238; border: 1px solid  #2C3238; box-sizing: border-box; box-shadow: none; cursor: pointer; width: 29px; height: 48px;}
+    .cont_wrap.type1 .tb_wrap > .tb_body > ul > li > ul > li.on > p{display:block; position: absolute; background: url(images/ico_menu_on.svg) no-repeat 50% 50% #7B558D; width: 30px; height: 48px; right: 0; top: 0; border-left: 1px solid rgba(255, 255, 255, 0.5); cursor: pointer;}
+    .cont_wrap.type1 .tb_wrap > .tb_body > ul > li > ul > li.on > p:hover{background: url(images/ico_menu_on.svg) no-repeat 50% 50% #8D669F;  border: 1px solid #4C2B5B; box-shadow: 0px 8px 8px rgba(123, 85, 141, 0.25); width: 29px; height: 48px; cursor: pointer;}
+    .cont_wrap.type1 .tb_wrap > .tb_body > ul > li > ul > li.on > p:active{background: url(images/ico_menu_on.svg) no-repeat 50% 50% #4C2B5B;  border: 1px solid #4C2B5B; box-shadow: none; width: 29px; height: 48px; cursor: pointer;}
+    .cont_wrap.type2 .tb_wrap > .tb_body > ul > li > ul > li.on > p{display:block; position: absolute; background: url(images/ico_menu_on.svg) no-repeat 50% 50%#139989; width: 30px; height: 48px; right: 0; top: 0; border-left: 1px solid rgba(255, 255, 255, 0.5); cursor: pointer;}
+    .cont_wrap.type2 .tb_wrap > .tb_body > ul > li > ul > li.on > p:hover{background: url(images/ico_menu_on.svg) no-repeat 50% 50% #2FB8A8;  border: 1px solid #00544B; box-shadow: 0px 8px 8px rgba(19, 153, 137, 0.25); cursor: pointer; width: 29px; height: 48px;}
+    .cont_wrap.type2 .tb_wrap > .tb_body > ul > li > ul > li.on > p:active{background: url(images/ico_menu_on.svg) no-repeat 50% 50% #00544B;  border: 1px solid #00544B; box-shadow: none; cursor: pointer;}
+    .cont_wrap.type1 .tb_wrap > .tb_body > ul > li > ul > li > p.sel{background: url(images/ico_menu_on.svg) no-repeat 50% 50% #4C2B5B;  border: 1px solid #4C2B5B; box-shadow: 0px 8px 8px rgba(123, 85, 141, 0.25); width: 29px; height: 48px; cursor: pointer;}
+    .cont_wrap.type1 .tb_wrap > .tb_body > ul > li > ul > li.on{position: relative;}
+
+    .cont_wrap .tb_wrap > .tb_body > ul > li > ul > li > p + .menu_depth1{display: none;}
+    .cont_wrap.type1 .tb_wrap > .tb_body > ul > li > ul > li > p.sel + .menu_depth1{display: block; position: absolute; width: 287px; top: 48px; left: calc(100% - 30px); background: #FFFFFF; color: #2C3238; font-size: 12px; border: 1px solid #603973; filter: drop-shadow(0px 8px 16px rgba(0, 0, 0, 0.25)); z-index: 10;}
+    .cont_wrap.type1 .tb_wrap > .tb_body > ul > li > ul > li > p.sel + .menu_depth1 > ul > li{position:relative; line-height: 31px; border-top: 1px solid transparent; border-bottom: 1px solid #E8EFF5; padding-left: 8px; white-space: nowrap;}
+    .cont_wrap.type1 .tb_wrap > .tb_body > ul > li > ul > li > p.sel + .menu_depth1 > ul > li::before{content: ""; background: url(images/arrow_right_black.svg) no-repeat; display: block; position: absolute; width:17px; height: 17px; top: 6.5px; right: 34px;}
+    .cont_wrap.type1 .tb_wrap > .tb_body > ul > li > ul > li > p.sel + .menu_depth1 > ul > li::after{content: ""; background: url(images/ico_menu_off.svg) no-repeat; display: block; position: absolute; width:9.15px; height: 10.46px; top: 10px; right: 12.85px;}
+    .cont_wrap.type1 .tb_wrap > .tb_body > ul > li > ul > li > p.sel + .menu_depth1 > ul > li:hover{position:relative; line-height: 31px; border-top: 1px solid transparent; border-bottom: 1px solid #E8EFF5; padding-left: 8px; white-space: nowrap; background: #603973; color: #FFFFFF;  cursor: default;}
+    .cont_wrap.type1 .tb_wrap > .tb_body > ul > li > ul > li > p.sel + .menu_depth1 > ul > li:hover::after{content: ""; background: url(images/ico_menu_on.svg) no-repeat; display: block; position: absolute; width:9.15px; height: 10.46px; top: 10px; right: 12.85px;}
+    .cont_wrap.type1 .tb_wrap > .tb_body > ul > li > ul > li > p.sel + .menu_depth1 > ul > li:last-child{border-bottom: 0 none;}
+    .cont_wrap.type1 .tb_wrap > .tb_body > ul > li > ul > li > p.sel + .menu_depth1 > ul > li > .menu_depth2{display: none;}
+    .cont_wrap.type1 .tb_wrap > .tb_body > ul > li > ul > li > p.sel + .menu_depth1 > ul > li.over > .menu_depth2{position: absolute; display:block; background:#FFFFFF; width:300px; top: -2px; left: 100%; background: #FFFFFF; border: 1px solid #603973; box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.25); z-index: 20;}
+    .cont_wrap.type1 .tb_wrap > .tb_body > ul > li > ul > li > p.sel + .menu_depth1 > ul > li.over > .menu_depth2 > ul > li{position: relative; color: #2C3238; line-height: 31px; border-top: 1px solid transparent; border-bottom: 1px solid #E8EFF5; padding-left: 30px; white-space: nowrap;}
+    .cont_wrap.type1 .tb_wrap > .tb_body > ul > li > ul > li > p.sel + .menu_depth1 > ul > li.over > .menu_depth2 > ul > li:hover{background: #603973 ; color: #FFFFFF; text-decoration: underline;  cursor: pointer;}
+    .cont_wrap.type1 .tb_wrap > .tb_body > ul > li > ul > li > p.sel + .menu_depth1 > ul > li.over > .menu_depth2 > ul > li:hover::before{background: url(images/ico_depth2_list_over.svg) no-repeat}
+    .cont_wrap.type1 .tb_wrap > .tb_body > ul > li > ul > li > p.sel + .menu_depth1 > ul > li.over > .menu_depth2 > ul > li:last-child{border-bottom: 0 none;}
+    .cont_wrap.type1 .tb_wrap > .tb_body > ul > li > ul > li > p.sel + .menu_depth1 > ul > li.over > .menu_depth2 > ul > li::before{content: ""; position: absolute; display: block; background: url(images/ico_depth2_list.svg) no-repeat ; width:16px; height: 16px; top: 8px; left: 10px;}
+    .cont_wrap.type1 .tb_wrap > .tb_body > ul > li > ul > li > p.sel + .menu_depth1 > ul > li:hover > .menu_depth2{position: absolute; display:block; background:#FFFFFF; width:300px; top: -2px; left: 100%; background: #FFFFFF; border: 1px solid #603973; box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.25); z-index: 20;}
+    .cont_wrap.type1 .tb_wrap > .tb_body > ul > li > ul > li > p.sel + .menu_depth1 > ul > li:hover > .menu_depth2 > ul > li{position: relative; color: #2C3238; line-height: 31px; border-top: 1px solid transparent; border-bottom: 1px solid #E8EFF5; padding-left: 30px; white-space: nowrap;}
+    .cont_wrap.type1 .tb_wrap > .tb_body > ul > li > ul > li > p.sel + .menu_depth1 > ul > li:hover > .menu_depth2 > ul > li:hover{background: #603973 ; color: #FFFFFF; text-decoration: underline;  cursor: pointer;}
+    .cont_wrap.type1 .tb_wrap > .tb_body > ul > li > ul > li > p.sel + .menu_depth1 > ul > li:hover > .menu_depth2 > ul > li:hover::before{background: url(images/ico_depth2_list_over.svg) no-repeat}
+    .cont_wrap.type1 .tb_wrap > .tb_body > ul > li > ul > li > p.sel + .menu_depth1 > ul > li:hover > .menu_depth2 > ul > li:last-child{border-bottom: 0 none;}
+    .cont_wrap.type1 .tb_wrap > .tb_body > ul > li > ul > li > p.sel + .menu_depth1 > ul > li:hover > .menu_depth2 > ul > li::before{content: ""; position: absolute; display: block; background: url(images/ico_depth2_list.svg) no-repeat ; width:16px; height: 16px; top: 8px; left: 10px;}
+    .cont_wrap.type1 .tb_wrap > .tb_body > ul > li > ul > li > p.sel + .menu_depth1 > ul > li > button{display: none;} 
+    .cont_wrap.type1 .tb_wrap > .tb_body > ul > li > ul > li > p.sel + .menu_depth1 > ul > li:hover > button{position: absolute; display: block; top: 3px; right: 33px;}
+    .cont_wrap.type1 .tb_wrap > .tb_body > ul > li > ul > li > p.lmenu.sel + .menu_depth1 > ul > li::before{content: ""; background: url(images/icon_arrow_gray.svg) no-repeat; display: block; position: absolute; width:19px; height: 19px; top: 6px; right: 33px;}
+    .cont_wrap.type1 .tb_wrap > .tb_body > ul > li > ul > li > p.lmenu.sel + .menu_depth1 > ul > li:hover > .menu_depth2{position: absolute; display:block; background:#FFFFFF; width:300px; top: -2px; left: -300px; background: #FFFFFF; border: 1px solid #603973; box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.25); z-index: 20;}
+
+    .cont_wrap.type2 .tb_wrap > .tb_body > ul > li > ul > li > p.sel + .menu_depth1{display: block; position: absolute; width: 287px; top: 48px; left: calc(100% - 30px); background: #FFFFFF; color: #2C3238; font-size: 12px; border: 1px solid #603973; filter: drop-shadow(0px 8px 16px rgba(0, 0, 0, 0.25)); z-index: 10;}
+    .cont_wrap.type2 .tb_wrap > .tb_body > ul > li > ul > li > p.sel + .menu_depth1 > ul > li{position:relative; line-height: 31px; border-top: 1px solid transparent; border-bottom: 1px solid #E8EFF5; padding-left: 8px; white-space: nowrap;}
+    .cont_wrap.type2 .tb_wrap > .tb_body > ul > li > ul > li > p.sel + .menu_depth1 > ul > li::before{content: ""; background: url(images/arrow_right_black.svg) no-repeat; display: block; position: absolute; width:17px; height: 17px; top: 6.5px; right: 34px;}
+    .cont_wrap.type2 .tb_wrap > .tb_body > ul > li > ul > li > p.sel + .menu_depth1 > ul > li::after{content: ""; background: url(images/ico_menu_off.svg) no-repeat; display: block; position: absolute; width:9.15px; height: 10.46px; top: 10px; right: 12.85px;}
+    .cont_wrap.type2 .tb_wrap > .tb_body > ul > li > ul > li > p.sel + .menu_depth1 > ul > li:hover{position:relative; line-height: 31px; border-top: 1px solid transparent; border-bottom: 1px solid #E8EFF5; padding-left: 8px; white-space: nowrap; background: #603973; color: #FFFFFF;  cursor: default;}
+    .cont_wrap.type2 .tb_wrap > .tb_body > ul > li > ul > li > p.sel + .menu_depth1 > ul > li:hover::after{content: ""; background: url(images/ico_menu_on.svg) no-repeat; display: block; position: absolute; width:9.15px; height: 10.46px; top: 10px; right: 12.85px;}
+    .cont_wrap.type2 .tb_wrap > .tb_body > ul > li > ul > li > p.sel + .menu_depth1 > ul > li:last-child{border-bottom: 0 none;}
+    .cont_wrap.type2 .tb_wrap > .tb_body > ul > li > ul > li > p.sel + .menu_depth1 > ul > li > .menu_depth2{display: none;}
+    .cont_wrap.type2 .tb_wrap > .tb_body > ul > li > ul > li > p.sel + .menu_depth1 > ul > li.over > .menu_depth2{position: absolute; display:block; background:#FFFFFF; width:300px; top: -2px; left: 100%; background: #FFFFFF; border: 1px solid #603973; box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.25); z-index: 20;}
+    .cont_wrap.type2 .tb_wrap > .tb_body > ul > li > ul > li > p.sel + .menu_depth1 > ul > li.over > .menu_depth2 > ul > li{position: relative; color: #2C3238; line-height: 31px; border-top: 1px solid transparent; border-bottom: 1px solid #E8EFF5; padding-left: 30px; white-space: nowrap;}
+    .cont_wrap.type2 .tb_wrap > .tb_body > ul > li > ul > li > p.sel + .menu_depth1 > ul > li.over > .menu_depth2 > ul > li:hover{background: #603973 ; color: #FFFFFF; text-decoration: underline;  cursor: pointer;}
+    .cont_wrap.type2 .tb_wrap > .tb_body > ul > li > ul > li > p.sel + .menu_depth1 > ul > li.over > .menu_depth2 > ul > li:hover::before{background: url(images/ico_depth2_list_over.svg) no-repeat}
+    .cont_wrap.type2 .tb_wrap > .tb_body > ul > li > ul > li > p.sel + .menu_depth1 > ul > li.over > .menu_depth2 > ul > li:last-child{border-bottom: 0 none;}
+    .cont_wrap.type2 .tb_wrap > .tb_body > ul > li > ul > li > p.sel + .menu_depth1 > ul > li.over > .menu_depth2 > ul > li::before{content: ""; position: absolute; display: block; background: url(images/ico_depth2_list.svg) no-repeat ; width:16px; height: 16px; top: 8px; left: 10px;}
+    .cont_wrap.type2 .tb_wrap > .tb_body > ul > li > ul > li > p.sel + .menu_depth1 > ul > li:hover > .menu_depth2{position: absolute; display:block; background:#FFFFFF; width:300px; top: -2px; left: 100%; background: #FFFFFF; border: 1px solid #603973; box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.25); z-index: 20;}
+    .cont_wrap.type2 .tb_wrap > .tb_body > ul > li > ul > li > p.sel + .menu_depth1 > ul > li:hover > .menu_depth2 > ul > li{position: relative; color: #2C3238; line-height: 31px; border-top: 1px solid transparent; border-bottom: 1px solid #E8EFF5; padding-left: 30px; white-space: nowrap;}
+    .cont_wrap.type2 .tb_wrap > .tb_body > ul > li > ul > li > p.sel + .menu_depth1 > ul > li:hover > .menu_depth2 > ul > li:hover{background: #603973 ; color: #FFFFFF; text-decoration: underline;  cursor: pointer;}
+    .cont_wrap.type2 .tb_wrap > .tb_body > ul > li > ul > li > p.sel + .menu_depth1 > ul > li:hover > .menu_depth2 > ul > li:hover::before{background: url(images/ico_depth2_list_over.svg) no-repeat}
+    .cont_wrap.type2 .tb_wrap > .tb_body > ul > li > ul > li > p.sel + .menu_depth1 > ul > li:hover > .menu_depth2 > ul > li:last-child{border-bottom: 0 none;}
+    .cont_wrap.type2 .tb_wrap > .tb_body > ul > li > ul > li > p.sel + .menu_depth1 > ul > li:hover > .menu_depth2 > ul > li::before{content: ""; position: absolute; display: block; background: url(images/ico_depth2_list.svg) no-repeat ; width:16px; height: 16px; top: 8px; left: 10px;}
+    .cont_wrap.type2 .tb_wrap > .tb_body > ul > li > ul > li > p.sel + .menu_depth1 > ul > li > button{display: none;} 
+    .cont_wrap.type2 .tb_wrap > .tb_body > ul > li > ul > li > p.sel + .menu_depth1 > ul > li:hover > button{position: absolute; display: block; top: 3px; right: 33px;}
+    .cont_wrap.type2 .tb_wrap > .tb_body > ul > li > ul > li > p.lmenu.sel + .menu_depth1 > ul > li::before{content: ""; background: url(images/icon_arrow_gray.svg) no-repeat; display: block; position: absolute; width:19px; height: 19px; top: 6px; right: 33px;}
+    .cont_wrap.type2 .tb_wrap > .tb_body > ul > li > ul > li > p.lmenu.sel + .menu_depth1 > ul > li:hover > .menu_depth2{position: absolute; display:block; background:#FFFFFF; width:300px; top: -2px; left: -300px; background: #FFFFFF; border: 1px solid #603973; box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.25); z-index: 20;}
+
+
+    /* megadrop */
+    .megadrop_wrap{display: none; position: fixed; top: 0px; left: 0px; width: 100%; height: 100%; background: linear-gradient(0deg, #FFFFFF, #FFFFFF), #F7F2FA; border: 1px solid #6B7682; box-sizing: border-box; box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.22), 0px 7px 30px rgba(0, 0, 0, 0.17); z-index: 999; overflow: hidden;}
+    .megadrop_head{display:flex; flex-direction: row; height: 46px; background: #373D45;}
+    .megadrop_head .lta{flex: 1; padding-top: 14px; padding-left: 16px;}
+    .megadrop_head .lta span{font-size: 16px; line-height: 17px; color: #FFFFFF;}
+    .megadrop_head{flex: none;}
+    .megadrop_head .btn_close{position: absolute; top: 10px; right: 18px;}
+
+    .megadrop_body{display: flex; flex-direction: row; width: 100%; height: calc(100% - 46px); overflow: auto;}
+    .megadrop_body h3{color: #7B558D; display: block; padding-left: 12px; margin-left: 9px;}
+    .megadrop_body h3::after {content: ""; display: block; position: absolute; width: 6px; height: 6px; left: 0px; top: 5px; background: #7B558D; border-radius: 50%;}
+    .megadrop_body ul > li > span{display: block; width: 230px;height: 26px; padding-left: 15px; padding-top: 7px; margin-bottom: 6px; margin-left: 5px; font-size: 13px; font-weight: bold;}
+    .megadrop_body ul > li > ul > li{display: block; width: 216px; height: 32px;}
+    .megadrop_body ul > li > ul > li:hover{background: #7B558D; color: #FFFFFF !important;}
+    .megadrop_body .lta{flex: none; width: 262px; height: 797px; border-right: 1px solid #DAE3ED;}  
+    .megadrop_body .list_type2{padding-left: 16px; padding-top: 13px;}
+    .megadrop_body .list_type2 > h3{font-size: 15px; line-height: 16px; padding-bottom: 22px; margin-bottom: 8px; cursor: default;}
+    .megadrop_body .list_type2 > ul{display: flex; flex-direction: row; width: 226px; height: calc(100% - 42px);}
+    .megadrop_body .list_type2 > ul > li{flex: none; color: #333333; font-size: 12px; padding-right: 16px; padding-left: 16px; margin-bottom: -26px; border-right: 1px dashed #DAE3ED; cursor: default;}
+    .megadrop_body .list_type2.feature > ul > li{border-right: 1px solid transparent;}
+    .megadrop_body .list_type2.feature > ul > li.feature_end{border-right: 1px dashed #DAE3ED; padding-right: 55px;} 
+    .megadrop_body .list_type2 > ul > li:first-child{padding-left: 0px;}
+    .megadrop_body .list_type2 > ul > li > ul{font-family: 'LGSmHaR'; font-size: 12px; line-height: 26px; color: #424952; padding-left: 15px; margin-bottom: 22px;}
+    .megadrop_body .list_type2 > ul > li.notitle > ul{padding-top: 37px;}
+    .megadrop_body .list_type2 > ul > li > ul > li{position: relative; display: block; height: 32px; width: 216px; padding-left: 16px;  padding-top: 4px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; cursor: pointer;}
+    .megadrop_body .list_type2 > ul > li > ul > li::before{content: ""; display: block; position: absolute; top: 0; left: 4px; width: 2px; height: 32px; background: #E8EFF5;}
+    .megadrop_body .list_type2 {margin-top: 60px;}
+    .megadrop_body .list_type2 > ul > li > h3 {position: relative; margin-top: -40px; font-size: 15px; margin-bottom: 23px; cursor: default; font-weight: bold;}
+    .megadrop_body .list_type2 > ul > li.last{border-right: none;}
+    </style>
+</head>
+<body>
+    <div class="content_wrap">
+        <div class="type_F">
+            <div class="innerwrap">
+                <div class="ct_title">
+                    <h2>전사 프로세스 체계도</h2>
+                    <p>전사 Core Process 와 Support Process 체계 입니다.</p>
+                </div>
+                <section class="cont_wrap type1">
+                    <div class="dfbox">
+                        <div class="lta">
+                            <h3>Core Process</h3>
+                        </div>
+                        <div class="rta">
+                            <span>PI 수행에 따른 Core Process 개선영역</span>
+                        </div>
+                    </div>
+                    <div class="tb_wrap">
+                        <div class="tb_head">
+                            <ul>
+                                <li><i></i><span>마케팅</span><p class="menu_btn"></p></li>
+                                <li><i></i><span>고객관리</span><p class="menu_btn"></p></li>
+                                <li><i onclick="megaOpen(mega01)"></i><span class="tooltip" title="메가명 클릭 시 해당 메가 다이어그램 MAP 페이지로 이동예정">영업</span><p class="menu_btn"></p></li>
+                                <li><i onclick="megaOpen(mega03)"></i><span>빌링</span><p class="menu_btn"></p></li>
+                                <li><i></i><span>파트너관리</span><p class="menu_btn"></p></li>
+                                <li><i></i><span>단말관리</span><p class="menu_btn"></p></li>
+                                <li><i></i><span>NW운영지원</span><p class="menu_btn"></p></li>
+                            </ul>
+                        </div>
+                        <div class="tb_body">
+                            <ul>
+                                <li>
+                                    <ul>
+                                        <li><span>시장환경파악</span><p class="menu_btn"></p></li>
+                                        <li><span>전략수립</span><p class="menu_btn"></p></li>
+                                        <li class="on"><span>상품Life Cycle관리</span><p class="menu_btn"></p></li>
+                                        <li class="on"><span>프로모션기획</span><p class="menu_btn"></p></li>
+                                        <li class="on"><span>마케팅성과분석</span><p class="menu_btn"></p></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <ul>
+                                        <li><span>고객전략수립</span><p class="menu_btn"></p></li>
+                                        <li class="on"><span>CRM관리</span><p class="menu_btn"></p></li>
+                                        <li class="on"><span>고객상담관리</span><p class="menu_btn"></p></li>
+                                        <li class="on"><span>고객정보관리</span><p class="menu_btn"></p></li>
+                                        <li><span>서비스이슈관리</span><p class="menu_btn"></p></li>
+                                        <li><span>서비스품질관리</span><p class="menu_btn"></p></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <ul>
+                                        <li><span>기회</span><p class="menu_btn"></p></li>
+                                        <li><span>수주영업</span><p class="menu_btn"></p></li>
+                                        <li><span>이행/서비스</span><p class="menu_btn"></p></li>
+                                        <li><span>영업사전검토</span><p class="menu_btn"></p></li>
+                                        <li class="on">
+                                            <span class="tooltip" title="그룹명 영역 클릭 시 해당 그룹의 다이어그램 MAP 페이지로 이동 예정">가입관리</span>
+                                            <p class="menu_btn"></p>
+                                            <div class="menu_depth1">
+                                                <ul>
+                                                    <li>
+                                                        <span class="menu_title">G01.서비스가입_컨슈머</span>
+                                                        <button class="move">이동</button>
+                                                        <div class="menu_depth2">
+                                                            <ul>
+                                                                <li>P010.가입_모바일(신규/번호이동)4</li>
+                                                                <li>P020.가입_모바일(선불)</li>
+                                                                <li>P030.가입_소호(개별)</li>
+                                                                <li>P040.가입_스마트홈(개별)</li>
+                                                                <li>P050.가입_스마트홈(홈다회선일괄)</li>
+                                                                <li>P060.가입_홈IOT_일괄</li>
+                                                                <li>P070.셀프가입_모바일</li>
+                                                                <li>P080.셀프가입_스마트홈</li>
+                                                            </ul>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <span class="menu_title">G02.서비스가입_기업</span>
+                                                        <button class="move">이동</button>
+                                                        <div class="menu_depth2">
+                                                            <ul>
+                                                                <li>P010.가입_모바일(신규/번호이동)4</li>
+                                                                <li>P020.가입_모바일(선불)</li>
+                                                                <li>P030.가입_소호(개별)</li>
+                                                                <li>P040.가입_스마트홈(개별)</li>
+                                                                <li>P050.가입_스마트홈(홈다회선일괄)</li>
+                                                                <li>P060.가입_홈IOT_일괄</li>
+                                                                <li>P070.셀프가입_모바일</li>
+                                                                <li>P080.셀프가입_스마트홈</li>
+                                                            </ul>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <span class="menu_title">G03.서비스결합_컨슈머</span>
+                                                        <button class="move">이동</button>
+                                                        <div class="menu_depth2">
+                                                            <ul>
+                                                                <li>P010.가입_모바일(신규/번호이동)4</li>
+                                                                <li>P020.가입_모바일(선불)</li>
+                                                                <li>P030.가입_소호(개별)</li>
+                                                                <li>P040.가입_스마트홈(개별)</li>
+                                                                <li>P050.가입_스마트홈(홈다회선일괄)</li>
+                                                                <li>P060.가입_홈IOT_일괄</li>
+                                                                <li>P070.셀프가입_모바일</li>
+                                                                <li>P080.셀프가입_스마트홈</li>
+                                                            </ul>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <span class="menu_title">G04.서비스결합_기업</span>
+                                                        <button class="move">이동</button>
+                                                    </li>
+                                                    <li>
+                                                        <span class="menu_title">G05.서비스관리_컨슈머</span>
+                                                        <button class="move">이동</button>
+                                                    </li>
+                                                    <li>
+                                                        <span class="menu_title">G06.서비스관리_기업</span>
+                                                        <button class="move">이동</button>
+                                                    </li>
+                                                    <li>
+                                                        <span class="menu_title">G07.서비스자원관리_컨슈머</span>
+                                                        <button class="move">이동</button>
+                                                    </li>
+                                                    <li>
+                                                        <span class="menu_title">G08.서비스자원관리_기업</span>
+                                                        <button class="move">이동</button>
+                                                    </li>
+                                                    <li>
+                                                        <span class="menu_title">G09.전자문서관리_컨슈머</span>
+                                                        <button class="move">이동</button>
+                                                    </li>
+                                                    <li>
+                                                        <span class="menu_title">G10.전자문서관리_기업</span>
+                                                        <button class="move">이동</button>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li class="on"><span>영업지원관리</span><p class="menu_btn"></p></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <ul>
+                                        <li class="on"><span>과금</span><p class="menu_btn"></p></li>
+                                        <li class="on"><span>청구</span><p class="menu_btn"></p></li>
+                                        <li class="on"><span>수납처리</span><p class="menu_btn"></p></li>
+                                        <li class="on"><span>미납관리</span><p class="menu_btn"></p></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <ul>
+                                        <li class="on"><span>대리점관리</span><p class="menu_btn"></p></li>
+                                        <li class="on"><span>대리점수수료</span><p class="menu_btn"></p></li>
+                                        <li><span>제휴사관리</span><p class="menu_btn"></p></li>
+                                        <li><span>파트너정산</span><p class="menu_btn"></p></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <ul>
+                                        <li class="on">
+                                            <span>단말기획</span>
+                                            <p class="menu_btn lmenu"></p>
+                                            <div class="menu_depth1">
+                                                <ul>
+                                                    <li>
+                                                        <span class="menu_title">G01.서비스가입_컨슈머</span>
+                                                        <button class="move">이동</button>
+                                                        <div class="menu_depth2">
+                                                            <ul>
+                                                                <li>P010.가입_모바일(신규/번호이동)4</li>
+                                                                <li>P020.가입_모바일(선불)</li>
+                                                                <li>P030.가입_소호(개별)</li>
+                                                                <li>P040.가입_스마트홈(개별)</li>
+                                                                <li>P050.가입_스마트홈(홈다회선일괄)</li>
+                                                                <li>P060.가입_홈IOT_일괄</li>
+                                                                <li>P070.셀프가입_모바일</li>
+                                                                <li>P080.셀프가입_스마트홈</li>
+                                                            </ul>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <span class="menu_title">G02.서비스가입_기업</span>
+                                                        <button class="move">이동</button>
+                                                        <div class="menu_depth2">
+                                                            <ul>
+                                                                <li>P010.가입_모바일(신규/번호이동)4</li>
+                                                                <li>P020.가입_모바일(선불)</li>
+                                                                <li>P030.가입_소호(개별)</li>
+                                                                <li>P040.가입_스마트홈(개별)</li>
+                                                                <li>P050.가입_스마트홈(홈다회선일괄)</li>
+                                                                <li>P060.가입_홈IOT_일괄</li>
+                                                                <li>P070.셀프가입_모바일</li>
+                                                                <li>P080.셀프가입_스마트홈</li>
+                                                            </ul>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <span class="menu_title">G03.서비스결합_컨슈머</span>
+                                                        <button class="move">이동</button>
+                                                        <div class="menu_depth2">
+                                                            <ul>
+                                                                <li>P010.가입_모바일(신규/번호이동)4</li>
+                                                                <li>P020.가입_모바일(선불)</li>
+                                                                <li>P030.가입_소호(개별)</li>
+                                                                <li>P040.가입_스마트홈(개별)</li>
+                                                                <li>P050.가입_스마트홈(홈다회선일괄)</li>
+                                                                <li>P060.가입_홈IOT_일괄</li>
+                                                                <li>P070.셀프가입_모바일</li>
+                                                                <li>P080.셀프가입_스마트홈</li>
+                                                            </ul>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li class="on"><span>수요/구매</span><p class="menu_btn"></p></li>
+                                        <li class="on"><span>물류관리</span><p class="menu_btn"></p></li>
+                                        <li class="on"><span>회수/AS</span><p class="menu_btn"></p></li>
+                                        <li class="on"><span>재고관리</span><p class="menu_btn"></p></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <ul>
+                                        <li><span>OPEX</span><p class="menu_btn"></p></li>
+                                        <li><span>개통관리</span><p class="menu_btn"></p></li>
+                                        <li><span>공사관리</span><p class="menu_btn"></p></li>
+                                        <li><span>구성관리</span><p class="menu_btn"></p></li>
+                                        <li><span>자산관리</span><p class="menu_btn"></p></li>
+                                        <li><span>장애작업관리</span><p class="menu_btn"></p></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+                <section class="cont_wrap type2">
+                    <div class="dfbox plus">
+                        <div class="lta">
+                            <h3>Support Process</h3>
+                        </div>
+                        <div class="rta">
+                            <span>PI 수행에 따른 Support Process 개선영역</span>
+                        </div>
+                    </div>
+                    <div class="tb_wrap">
+                        <div class="tb_head">
+                            <ul>
+                                <li><i></i><span>전략기획</span><p class="menu_btn"></p></li>
+                                <li><i></i><span>경영관리</span><p class="menu_btn"></p></li>
+                                <li><i></i><span>인사관리</span><p class="menu_btn"></p></li>
+                                <li><i onclick="megaOpen(mega02)"></i><span>IT서비스관리</span><p class="menu_btn"></p></li>
+                                <li><i></i><span>일반관리</span><p class="menu_btn"></p></li>
+                            </ul>
+                        </div>
+                        <div class="tb_body">
+                            <ul>
+                                <li>
+                                    <ul>
+                                        <li><span>전략기획</span><p class="menu_btn"></p></li>
+                                        <li><span>사업제휴</span><p class="menu_btn"></p></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <ul>
+                                        <li><span>경영기획</span><p class="menu_btn"></p></li>                                        
+                                        <li><span>법무</span><p class="menu_btn"></p></li>
+                                        <li><span>재무/회계</span><p class="menu_btn"></p></li>
+                                        <li><span>IR</span><p class="menu_btn"></p></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <ul>
+                                        <li><span>HRD</span><p class="menu_btn"></p></li>
+                                        <li><span>HRM</span><p class="menu_btn"></p></li>
+                                        <li><span>노경관리</span><p class="menu_btn"></p></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <ul>
+                                        <li class="on"><span>기준정보관리</span><p class="menu_btn"></p></li>
+                                        <li class="on"><span>권한관리</span><p class="menu_btn"></p></li>
+                                    </ul>
+                                </li>
+                                <li></li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+
+    <!-- megadrop popup 영업 -->
+    <div id="mega01" class="megadrop_wrap">
+        <div class="megadrop_head">
+            <div class="lta">
+                <span class="txt_bold">영업</span>
+            </div>
+            <div class="rta">
+                <button class="btn_close white icon" onclick="megaClose(mega01)">닫기</button>
+            </div>
+        </div>
+        <div class="megadrop_body">
+            <div class="list_type2 feature">
+                <ul>
+                    <li>
+                        <h3>가입관리</h3>
+                        <span>서비스가입_컨슈머</span>
+                        <ul>
+                            <li>가입_모바일(신규/번호이동)길어서 잘리는 메뉴</li>
+                            <li>가입_모바일(선불)</li>
+                            <li>가입_소호(개별)</li>
+                            <li>가입_스마트홈(개별)</li>
+                            <li>가입_스마트홈(홈다회선일괄)</li>
+                            <li>가입_홈IOT_일괄</li>
+                            <li>셀프가입_모바일</li>
+                            <li>셀프가입_스마트홈</li>
+                        </ul>
+                        <span>서비스가입_기업</span>
+                        <ul>
+                            <li>서비스가입_계약가입접수</li>
+                            <li>서비스가입_시내전화</li>
+                            <li>서비스가입_시외전화</li>
+                            <li>서비스가입_기업070(신규)</li>
+                            <li>서비스가입_기업070(변경)</li>
+                            <li>서비스가입_오피스넷(신규)</li>
+                            <li>서비스가입_오피스넷(변경)</li>
+                            <li>서비스가입_오피스넷(비대면 변...</li>
+                            <li>서비스가입_구내통신</li>
+                            <li>서비스가입_콜링카드</li>
+                            <li>서비스가입_국제시외</li>
+                            <li>서비스가입_기업부가</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <span>서비스결합_컨슈머</span>
+                        <ul>
+                            <li>결합_개인(최초결합)</li>
+                            <li>결합_개인(구성원추가)</li>
+                            <li>결합_개인(구성원삭제)</li>
+                            <li>결합_개인(결합해지)</li>
+                            <li>결합_개인(할인지정변경)</li>
+                            <li>결합_개인(결합상품변경)</li>
+                        </ul>
+                        <span>서비스관리_컨슈머</span>
+                        <ul>
+                            <li>명의변경</li>
+                            <li>단말판매변경_모바일(정책기변/...</li>
+                            <li>단말판매변경_모바일(기기/USIM...</li>
+                            <li>단말판매변경_스마트홈</li>
+                            <li>데이터서비스_모바일(데이터주고...</li>
+                            <li>데이터서비스_모바일(데이터쉐어...</li>
+                            <li>로밍등록변경_모바일</li>
+                            <li>번호변경_모바일</li>
+                            <li>번호변경_스마트홈</li>
+                            <li>상품등록변경_모바일</li>
+                            <li>상품등록변경_스마트홈</li>
+                            <li>선불충전_모바일</li>
+                            <li>약정_모바일(선택약정할인)</li>
+                            <li>P140.약정_모바일(약정요금할인)</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <span>서비스관리_컨슈머</span>
+                        <ul>
+                            <li>서비스해지가입(직권해지)</li>
+                            <li>서비스미납정지가입(유예)</li>
+                            <li>서비스일시정지해제가입(일시정...</li>
+                            <li>서비스일시정지해제가입(일시해...</li>
+                            <li>긴급통신정보</li>
+                            <li>사은품등록</li>
+                            <li>P280.설치변경_스마트홈(댁내)</li>
+                            <li>P290.설치변경_스마트홈(댁외)</li>
+                            <li>P300.설치변경_스마트홈(상품추가)</li>
+                            <li>P310.설치변경_스마트홈(기가상향)</li>
+                            <li>P320.설치변경_스마트홈(기가하향)</li>
+                            <li>P330.설치변경_스마트홈(광랜F전환)</li>
+                            <li>P340.설치변경_스마트홈(망일괄전환)</li>
+                            <li>P350.오퍼등록</li>
+                            <li>P360.재약정_스마트홈</li>
+                            <li>P370.처리중변경취소_스마트홈</li>
+                            <li>P380.중고폰가격보장가입/해지</li>
+                            <li>P390.분실파손보험등록</li>
+                            <li>P400.복지할인등록/삭제</li>
+                            <li>P410.셀프CS</li>
+                            <li>P420.문자관리</li>
+                        </ul>
+                    </li>
+                    <li class="feature_end">
+                        <span>서비스관리_기업</span>
+                        <ul>
+                            <li>P010.서비스재약정</li>
+                            <li>P020.서비스미납정지가입</li>
+                            <li>P030.서비스일시정지가입(온라인)</li>
+                            <li>P040.서비스일시정지가입(연동)</li>
+                            <li>P050.서비스일시해제가입(시스템)</li>
+                            <li>P060.서비스일시해제가입(온라인)</li>
+                            <li>P070.서비스일시해제가입(연동)</li>
+                            <li>P080.서비스일반해지가입(시스템해지)</li>
+                            <li>P090.서비스일반해지가입(기업온라인...</li>
+                            <li>P100.서비스일반해지가입(연동해지)</li>
+                            <li>P110.서비스미납해제가입</li>
+                            <li>P120.서비스미납해지가입</li>
+                            <li>P130.서비스장기미처리취소</li>
+                            <li>P140.가입진척관리</li>
+                        </ul>
+                        <span>서비스자원관리_컨슈머</span>
+                        <ul>
+                            <li>P010.설치주소관리_스마트홈</li>
+                            <li>P020.홈코드분리통합_스마트홈(안내)</li>
+                            <li>P030.홈코드분리통합_스마트홈(신청)</li>
+                            <li>P040.번호이동관리_모바일(사전동의/...</li>
+                            <li>P050.번호자원관리_모바일(채번)</li>
+                            <li>P060.번호자원관리_스마트홈</li>
+                        </ul>
+                    </li>
+                    <li class="last">
+                        <h3>영업활동관리</h3>
+                        <span>서비스관리_기업</span>
+                        <ul>
+                            <li>P010.서비스재약정</li>
+                            <li>P020.서비스미납정지가입</li>
+                            <li>P030.서비스일시정지가입(온라인)</li>
+                            <li>P040.서비스일시정지가입(연동)</li>
+                            <li>P050.서비스일시해제가입(시스템)</li>
+                            <li>P060.서비스일시해제가입(온라인)</li>
+                            <li>P070.서비스일시해제가입(연동)</li>
+                            <li>P080.서비스일반해지가입(시스템해지)</li>
+                            <li>P090.서비스일반해지가입(기업온라인...</li>
+                            <li>P100.서비스일반해지가입(연동해지)</li>
+                            <li>P110.서비스미납해제가입</li>
+                            <li>P120.서비스미납해지가입</li>
+                            <li>P130.서비스장기미처리취소</li>
+                            <li>P140.가입진척관리</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- megadrop popup IT서비스관리-->
+    <div id="mega02" class="megadrop_wrap">
+        <div class="megadrop_head">
+            <div class="lta">
+                <span class="txt_bold">IT서비스관리</span>
+            </div>
+            <div class="rta">
+                <button class="btn_close white icon" onclick="megaClose(mega02)">닫기</button>
+            </div>
+        </div>
+        <div class="megadrop_body">
+            <div class="list_type2">
+                <ul>
+                    <li>
+                        <h3>기준정보관리</h3>
+                        <span>기준정보운영관리</span>
+                        <ul>
+                            <li>가입_모바일(신규/번호이동)</li>
+                            <li>가입_모바일(선불)</li>
+                            <li>가입_소호(개별)</li>
+                        </ul>
+                        <span>기준정보변경관리</span>
+                        <ul>
+                            <li>서비스가입_계약가입접수</li>
+                            <li>서비스가입_시내전화</li>
+                            <li>서비스가입_시외전화</li>
+                            <li>가입_홈IOT_일괄</li>
+                            <li>셀프가입_모바일</li>
+                            <li>셀프가입_스마트홈</li>
+                            <li>서비스가입_기업070(신규)</li>
+                            <li>서비스가입_기업070(변경)</li>
+                        </ul>
+                        <span>기준정보품질관리</span>
+                        <ul>
+                            <li>서비스가입_계약가입접수</li>
+                            <li>서비스가입_시내전화</li>
+                        </ul>
+                    </li>
+                    <li class="last">
+                        <h3>권한관리</h3>
+                        <span>권한정의</span>
+                        <ul>
+                            <li>가입_모바일(신규/번호이동)</li>
+                        </ul>
+                        <span>권한정보관리</span>
+                        <ul>
+                            <li>서비스가입_계약가입접수</li>
+                            <li>서비스가입_시내전화</li>
+                            <li>서비스가입_시외전화</li>
+                        </ul>
+                        <span>권한적용</span>
+                        <ul>
+                            <li>서비스가입_계약가입접수</li>
+                            <li>서비스가입_계약가입접수</li>
+                            <li>서비스가입_시내전화</li>
+                        </ul>
+                        <span>권한변경관리</span>
+                        <ul>
+                            <li>서비스가입_계약가입접수</li>
+                            <li>서비스가입_시내전화</li>
+                            <li>서비스가입_시외전화</li>
+                        </ul>
+                        <span>권한모니터링</span>
+                        <ul>
+                            <li>가입_모바일(신규/번호이동)</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- megadrop popup 빌링-->
+    <div id="mega03" class="megadrop_wrap">
+        <div class="megadrop_head">
+            <div class="lta">
+                <span class="txt_bold">빌링</span>
+            </div>
+            <div class="rta">
+                <button class="btn_close white icon" onclick="megaClose(mega03)">닫기</button>
+            </div>
+        </div>
+        <div class="megadrop_body">
+            <div class="list_type2">
+                <ul>
+                    <li>
+                        <h3>과금</h3>
+                        <span>과금</span>
+                        <ul>
+                            <li>가입_모바일(신규/번호이동)</li>
+                            <li>가입_모바일(선불)</li>
+                            <li>가입_소호(개별)</li>
+                            <li>가입_스마트홈(개별)</li>
+                            <li>가입_스마트홈(홈다회선일괄)</li>
+                            <li>가입_홈IOT_일괄</li>
+                            <li>셀프가입_모바일</li>
+                            <li>셀프가입_스마트홈</li>
+                            <li>셀프가입_모바일</li>
+                            <li>셀프가입_스마트홈</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h3>청구</h3>
+                        <span>사전작업</span>
+                        <ul>
+                            <li>가입_모바일(신규/번호이동)</li>
+                            <li>가입_모바일(선불)</li>
+                        </ul>
+                        <span>요금계산</span>
+                        <ul>
+                            <li>서비스가입_계약가입접수</li>
+                            <li>서비스가입_시내전화</li>
+                            <li>서비스가입_시외전화</li>
+                            <li>서비스가입_기업070(신규)</li>
+                            <li>가입_소호(개별)</li>
+                            <li>가입_스마트홈(개별)</li>
+                            <li>셀프가입_모바일</li>
+                            <li>셀프가입_스마트홈</li>
+                            <li>서비스가입_기업070(변경)</li>
+                        </ul>
+                        <span>청구서발행</span>
+                        <ul>
+                            <li>서비스가입_시내전화</li>
+                        </ul>
+                        <span>매출추정</span>
+                        <ul>
+                            <li>서비스가입_시내전화</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h3>수납처리</h3>
+                        <span>수납</span>
+                        <ul>
+                            <li>가입_모바일(신규/번호이동)</li>
+                            <li>가입_모바일(선불)</li>
+                            <li>가입_소호(개별)</li>
+                            <li>가입_스마트홈(개별)</li>
+                            <li>셀프가입_모바일</li>
+                            <li>서비스가입_계약가입접수</li>
+                            <li>서비스가입_시내전화</li>
+                            <li>서비스가입_기업070(신규)</li>
+                            <li>셀프가입_스마트홈</li>
+                        </ul>
+                        <span>조정환불</span>
+                        <ul>
+                            <li>서비스가입_시외전화</li>
+                            <li>서비스가입_기업070(변경)</li>
+                        </ul>
+                        <span>수납결산</span>
+                        <ul>
+                            <li>서비스가입_계약가입접수</li>
+                            <li>서비스가입_시내전화</li>
+                        </ul>
+                    </li>
+                    <li class="last">
+                        <h3>미납관리</h3>
+                        <span>미납</span>
+                        <ul>
+                            <li>가입_모바일(신규/번호이동)</li>
+                            <li>가입_모바일(선불)</li>
+                            <li>가입_소호(개별)</li>
+                            <li>가입_스마트홈(개별)</li>
+                            <li>셀프가입_모바일</li>
+                            <li>셀프가입_스마트홈</li>
+                            <li>셀프가입_모바일</li>
+                            <li>서비스가입_계약가입접수</li>
+                            <li>서비스가입_시내전화</li>
+                        </ul>
+                        <span>미납결산</span>
+                        <ul>
+                            <li>서비스가입_계약가입접수</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script>
+    // onload ready
+    $(document).ready(function(){
+        $('.dfbox.plus').next('.tb_wrap').hide(); // head plus아이콘 tb접기
+    });
+    // 타이틀바 클릭했을때 접혔다 폈다
+    $('.dfbox > .lta').click(function() {
+        if ($(this).parent().hasClass('plus')){
+            $(this).parent().removeClass('plus');
+            $(this).parent().next('.tb_wrap').slideDown(200);
+        } else {
+            $(this).parent().addClass('plus');
+            $(this).parent().next('.tb_wrap').slideUp(200);
+        }
+    });
+    // 리스트 메뉴 있는것만 클릭했을때 보여주기
+    $('.menu_btn').click(function(){
+        if ($(this).hasClass('sel')){
+            $(this).removeClass('sel');
+        } else if($(this).next().hasClass('menu_depth1')){
+            $(this).addClass('sel');
+        } else {
+            return false;
+        }
+    });
+    // 메뉴버튼과 첫번째 메뉴 외 다른곳 클릭하면 메뉴가 닫힌다.
+    $('html').click(function(e) {
+        if(!$(e.target).hasClass('menu_btn') && !$(e.target).hasClass('menu_title') && !$(e.target).children().hasClass('menu_depth2')) {
+            $('.menu_btn').removeClass('sel');
+        }
+    });
+    // 팝업열고닫기    
+    function megaOpen(e){
+        var cId = "#" + e.id;
+        var cHeightId = cId + " > .megadrop_body"
+        $(cId).fadeIn(200);
+        // 스크롤시 구분선 세로 꽉차게
+        $(cHeightId).scroll(function() {
+            var cHeight = $(cHeightId).height();
+            // console.log("cHeight:::::" + cHeight);
+            var scValue = $(cHeightId).scrollTop();
+            // console.log("scValue:::::" + scValue);
+            var scHeight = (cHeight + scValue) - 60 + "px";
+            // console.log("scHeight:::::" + scHeight);
+            var list_type2 = cHeightId + " .list_type2";
+            $(list_type2).css("height", scHeight);
+        });
+    }
+    function megaClose(e){
+        var cId = "#" + e.id;
+        $(cId).fadeOut(200);
+    }
+    </script>
+</body>
+</html>
