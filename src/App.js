@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Button, Segment } from 'semantic-ui-react';
 import ThemingLayout from './ThemingLayout';
+import TopNav from './component/TopNav';
 
 
 class App extends Component {
@@ -19,6 +20,7 @@ class App extends Component {
       <Segment>
         <Button id='darkbtn' onClick={this.chgMode}>어둡게</Button>
         <ThemingLayout />
+        <TopNav />
       </Segment>
     );
   }
